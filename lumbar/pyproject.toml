@@ -1,0 +1,13 @@
+[project]
+name = "lumbar"
+version = "0.1.0"
+description = "Lumbar spine (L1-L5) segmentation from CT: preprocessing, QC audit, segmentation, vertebral-body centroids."
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "nibabel", "pandas", "matplotlib"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

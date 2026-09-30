@@ -1,0 +1,36 @@
+# Data: downloaded by hand on each machine, never committed (size, licences, GDPR)
+data/
+*.zip
+*.nii
+*.nii.gz
+*.npz
+
+# Generated reports: re-created by the scripts
+outputs/
+
+# Model weights and training runs: too large for git; shipped in the deliverable zip
+*.pt
+*.pth
+*.ckpt
+runs/
+checkpoints/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Claude Code machine-local settings
+.claude/settings.local.json
