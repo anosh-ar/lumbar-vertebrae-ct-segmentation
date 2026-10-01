@@ -1,0 +1,114 @@
+{
+ "case_id": "s0470",
+ "source": "totalseg_v3_test",
+ "subject_id": "s0470",
+ "flags": "TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 61.68,
+   "pred_ml": 57.51,
+   "dice": 0.9191607441175638,
+   "dice_if_pred_one_level_up": 5.951318216985062e-05,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.9456271260836168,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 13.2,
+   "pred_ml": 10.95,
+   "dice": 0.8776737033412554,
+   "dice_if_pred_one_level_up": 0.00019092167438308435,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.9337229379731704,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -7.6,
+    -167.91,
+    -342.84
+   ],
+   "gt_body": [
+    -1.9,
+    -168.12,
+    -342.89
+   ],
+   "gt_whole": [
+    -1.68,
+    -178.75,
+    -345.34
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    0.66,
+    -161.84,
+    -365.61
+   ],
+   "gt_body": [
+    0.75,
+    -162.13,
+    -365.44
+   ],
+   "gt_whole": [
+    0.75,
+    -162.13,
+    -365.44
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    -93.22,
+    -62.37,
+    -126.62
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    -61.64,
+    -39.51,
+    -154.09
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    -16.94,
+    -69.77,
+    -90.86
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  }
+ },
+ "seconds": 5.2
+}

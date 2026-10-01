@@ -1,0 +1,114 @@
+{
+ "case_id": "s1119",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1119",
+ "flags": "PAD_OUTSIDE_FOV TRUNCATED MULTI_CC",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 60.58,
+   "pred_ml": 47.3,
+   "dice": 0.8416080087595808,
+   "dice_if_pred_one_level_up": 0.0008187171332304689,
+   "dice_if_pred_one_level_down": 0.06203139327903339,
+   "dice_ceiling": 0.9474124470220834,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 2.56,
+   "pred_ml": 1.98,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0005415651232060655,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.8700486448922863,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    3.42,
+    -20.0,
+    -371.37
+   ],
+   "gt_body": [
+    7.96,
+    -22.32,
+    -372.23
+   ],
+   "gt_whole": [
+    8.43,
+    -31.96,
+    -373.27
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    26.25,
+    -19.64,
+    -369.72
+   ],
+   "gt_body": [
+    6.62,
+    -11.13,
+    -391.78
+   ],
+   "gt_whole": [
+    6.62,
+    -11.13,
+    -391.78
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    -124.48,
+    44.42,
+    -171.6
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    159.21,
+    -15.87,
+    -315.17
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    156.66,
+    52.65,
+    -319.08
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 7.1
+}

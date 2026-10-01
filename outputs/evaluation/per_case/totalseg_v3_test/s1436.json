@@ -1,0 +1,114 @@
+{
+ "case_id": "s1436",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1436",
+ "flags": "TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 19.44,
+   "pred_ml": 20.14,
+   "dice": 0.8515391830817771,
+   "dice_if_pred_one_level_up": 0.000547645125958379,
+   "dice_if_pred_one_level_down": 0.0002870264064293915,
+   "dice_ceiling": 0.9117620870804024,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 5.89,
+   "pred_ml": 4.07,
+   "dice": 0.7956624872924433,
+   "dice_if_pred_one_level_up": 0.01271076523994812,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.9539797395079594,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    9.6,
+    -29.85,
+    -227.0
+   ],
+   "gt_body": [
+    10.09,
+    -30.23,
+    -226.94
+   ],
+   "gt_whole": [
+    11.75,
+    -42.87,
+    -228.34
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    14.25,
+    -33.02,
+    -244.36
+   ],
+   "gt_body": [
+    14.37,
+    -34.92,
+    -244.09
+   ],
+   "gt_whole": [
+    14.37,
+    -34.92,
+    -244.09
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    106.48,
+    -33.82,
+    -172.76
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    108.42,
+    -26.05,
+    -182.08
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    -87.96,
+    -45.66,
+    -22.0
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 4.2
+}

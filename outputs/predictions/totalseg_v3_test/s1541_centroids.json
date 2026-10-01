@@ -1,0 +1,12 @@
+{
+  "case_id": "s1541",
+  "coordinate_system": "RAS",
+  "unit": "mm",
+  "centroids": {
+    "L5": [
+      -5.02,
+      -89.68,
+      -128.93
+    ]
+  }
+}

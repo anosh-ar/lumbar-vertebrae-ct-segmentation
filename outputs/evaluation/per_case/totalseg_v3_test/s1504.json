@@ -1,0 +1,27 @@
+{
+ "case_id": "s1504",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1504",
+ "flags": "NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L5"
+ ],
+ "centroids": {
+  "L5": {
+   "pred_body": [
+    35.78,
+    173.87,
+    116.01
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 0.7
+}
