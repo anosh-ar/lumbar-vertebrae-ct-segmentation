@@ -3,7 +3,8 @@ name = "lumbar"
 version = "0.1.0"
 description = "Lumbar spine (L1-L5) segmentation from CT: preprocessing, QC audit, segmentation, vertebral-body centroids."
 requires-python = ">=3.10"
-dependencies = ["numpy", "scipy", "nibabel", "pandas", "matplotlib"]
+# torch: install the build for your machine first (CUDA for training, CPU is enough for inference)
+dependencies = ["numpy", "scipy", "nibabel", "pandas", "matplotlib", "torch", "dynamic-network-architectures"]
 
 [build-system]
 requires = ["setuptools>=61"]

@@ -19,6 +19,8 @@ ARCHIVES_DIR = DATA_ROOT / "archives"
 EXTRACTED_DIR = DATA_ROOT / "raw"
 PREPROCESSED_DIR = DATA_ROOT / "preprocessed"
 QC_REPORTS_DIR = PROJECT_ROOT / "outputs" / "qc"
+# trained network (step 4); lives inside lumbar/ so it ships with the code zip
+WEIGHTS_FILE = PROJECT_ROOT / "lumbar" / "weights" / "lumbar_vertebrae_resenc_unet.pt"
 
 TOTALSEG_V3_ZIP = ARCHIVES_DIR / "Totalsegmentator_dataset_v300.zip"
 
