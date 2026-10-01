@@ -17,6 +17,7 @@ checkpoints/
 
 # Python
 .venv/
+.venv_inference/
 venv/
 __pycache__/
 *.py[cod]

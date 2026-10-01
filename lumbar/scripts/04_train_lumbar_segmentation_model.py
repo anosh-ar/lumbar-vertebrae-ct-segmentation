@@ -80,9 +80,11 @@ def validate(net, val_data: dict, device) -> dict:
     return res
 
 
-def save_checkpoint(path, net, opt, scaler, step, best, extra):
-    torch.save({"model_state": net.state_dict(), "optimizer_state": opt.state_dict(),
-                "scaler_state": scaler.state_dict(), "step": step, "best_val_dice": best,
+def save_checkpoint(path, net, opt, scaler, step, best, extra, for_resuming=True):
+    """for_resuming=False writes only the weights and settings (half the size: the
+    optimizer state is only needed to continue training)."""
+    resume = {"optimizer_state": opt.state_dict(), "scaler_state": scaler.state_dict()} if for_resuming else {}
+    torch.save({"model_state": net.state_dict(), **resume, "step": step, "best_val_dice": best,
                 "network_settings": NETWORK_SETTINGS, "patch_size": PATCH_SIZE,
                 "spacing_mm": TARGET_SPACING, "hu_window": HU_WINDOW,
                 "class_names": {i: CANONICAL.get(i, "background") for i in range(NETWORK_SETTINGS["num_classes"])},
@@ -164,7 +166,8 @@ def main():
             if res["val_dice_mean"] > best:
                 best = res["val_dice_mean"]
                 save_checkpoint(WEIGHTS_FILE, net, opt, scaler, step, best,
-                                {"training_cases": len(train_ids), "validation_cases": len(val_ids)})
+                                {"training_cases": len(train_ids), "validation_cases": len(val_ids)},
+                                for_resuming=False)
                 msg += "  -> new best, saved"
             print(f"   [validation] step {step}: {msg}", flush=True)
             save_checkpoint(last_path, net, opt, scaler, step, best, {})

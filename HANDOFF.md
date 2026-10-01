@@ -1,6 +1,6 @@
 # Handoff: Lumbar Spine L1–L5 take-home assignment
 
-State as of 2026-09-30. Written for the next AI assistant working on this project.
+State as of 2026-10-01. Written for the next AI assistant working on this project.
 Everything below was checked against the files on disk when this was written.
 
 ---
@@ -61,6 +61,14 @@ every design decision, so keep code legible and choices explicit.
   Versions last used on the laptop: Python 3.12.5, numpy 2.5.3, scipy 1.18.1, nibabel 5.4.2,
   pandas 3.0.6, matplotlib 3.11.2. **torch/MONAI are not installed yet** (needed for Part B).
 - Data root defaults to `<repo>/data`; override with env var `LUMBAR_DATA`.
+- **Workstation (main machine since 2026-10-01):** Windows 11, Intel i9-10980XE (18 cores / 36
+  threads), 128 GB RAM, **NVIDIA RTX 3090 24 GB** (driver 555.85), D: 363 GB free (C: only ~44 GB).
+  Repo at `D:\Users\za76buso\temp\lumbar-spine-segmentation` (no spaces in the path).
+  No plain Python: conda only. Environment **`EMGNet`** (Python 3.12.14, `pip install -e lumbar`;
+  same package versions as above). conda is *not* on PATH in the assistant's shell: call
+  `C:\Users\za76buso\AppData\Local\miniconda3\envs\EMGNet\python.exe` directly
+  (conda.exe: `C:\Users\za76buso\AppData\Local\miniconda3\Scripts\conda.exe`).
+  The user said to ask before installing anything into an existing environment.
 - Git: repository initialised 2026-09-30 on branch `main`; `.gitignore` excludes `data/`,
   `outputs/`, `.venv/`, weights (`*.pt`, `*.pth`, `*.ckpt`), zips and NIfTI files.
 
@@ -108,10 +116,9 @@ deleted: the full v3 dataset replaces it. Every script defaults to all downloade
   `meta.csv` (`;`-separated, utf-8-sig) has a `split` column: **1830 train / 109 test, no val**.
   v3 added 291 paediatric CTs and "fixed the vertebrae label mixups" of v2. **Use v3 for the
   official split, training and in-domain test.**
-- Lumbar coverage in v3, **estimated** from compressed mask sizes in the zip (an empty gzipped mask
-  is ~200–400 bytes; threshold 1000 bytes); confirm with the real audit:
-  train 732 with all L1–L5, 1096 with ≥1 level, 734 with none;
-  test 57 with all L1–L5, 79 with ≥1 level, 30 with none.
+- Lumbar coverage in v3, **measured by the full audit (2026-10-01)**:
+  train 1830 = 750 all L1–L5 / 387 some / 693 none;
+  test 109 = **57 all L1–L5 / 25 some / 27 none** (in-domain test n = 82 cases with any lumbar level).
 - **Small subset** (`_small_v201.zip`): 102 subjects, **v2.0.1 labels** (pre-fix), split
   98 train / 4 val / **0 test**. A dev/debug set only; it cannot provide the official test split.
 - Spine mask files: `vertebrae_C1..C7, T1..T12, L1..L5, vertebrae_S1, sacrum`. S1 and sacrum
@@ -203,12 +210,63 @@ With no `--source`, each script processes every downloaded source. `--limit N` f
   `centroids_ras` and `<level>_ml` columns.
 
 Runtime on the old laptop, 3 workers: ≈1.5 s per case for step 1 and for step 2.
+Runtime on the workstation, `--workers 12`, all 2019 cases: step 00 14 s, step 01 3 min,
+step 02 3.3 min, step 03 4 min. Peak memory per worker 2.4 GB (so 12 workers is far from the limit).
+Step 00 has no `--limit`. Step 01/02 print progress every 10 cases.
 
 ---
 
 ## 6. Results so far
 
-**No current outputs exist**: the old laptop results and a 4-case smoke test were deleted before the move. The smoke test (steps 1-3, 4 cases each of `totalseg_v3_test` and `verse19_validation`) ran cleanly: worst centroid error 0.42 mm on the non-RAS VerSe cases, side views correctly oriented.
+### Full run on the workstation (2026-10-01): steps 00–03 on all four sources, no errors
+
+Outputs: `outputs/qc/anomaly_report.md`, `anomalies_per_case_<source>.csv`,
+`preprocessing_check_<folder>.csv` + side views; arrays in `data/preprocessed/<source>_2mm_lumbar_crop/`.
+
+**Step 01 (anomalies), counts in cases, train / test / VerSe19 val / VerSe19 test:**
+- v3 headers are uniform: all RAS, 1.5 mm isotropic, int16, sform-only. No header problems at all.
+  Every problem in v3 is in the labels: MASK_OVERLAP 760 / 57, TRUNCATED 402 / 29,
+  MULTI_CC 156 / 10, FRAGMENT 135 / 11, METAL 118 / 6, PAD_OUTSIDE_FOV 92 / 12,
+  VOLUME_OUTLIER 31 / 1, LEVEL_GAP 1 (s1048, train).
+- VerSe19 test: PIR 17 / LAS 15 / PSR 8, NONAXIAL 25, ANISO 2 (sub-verse040,
+  sub-verse414_split-verse241), qform-only 37, float32 CT 39, LABEL_FLOAT 1 (sub-verse012),
+  METAL 2 (sub-verse040, sub-verse144), NO_LUMBAR 4, TRUNCATED 5, SPLIT_SCAN 6.
+  VerSe19 val numbers match §6 below (NONAXIAL 23, ANISO 2, METAL 2: sub-verse093, sub-verse264).
+- **L6 cases: sub-verse023 (val), sub-verse083 and sub-verse131 (test).** No T13 anywhere.
+  No ORDER_VIOLATION, no LOAD_ERROR, no NO_XFORM/BAD_PIXDIM/SHEAR/IMG_SCALED/HU_OFFSET anywhere.
+- VerSe lumbar coverage: test 31 all / 5 some / 4 none; val 26 / 5 / 9.
+- **VerSe ctd = vertebral body centre, confirmed on both splits:** voxel-index reading 12.1 mm
+  (test) / 12.2 mm (val) from the mask centre vs 26.3 / 17.9 mm for the mm reading; the point sits
+  a median **+11.75 mm (test) / +11.71 mm (val) anterior** of the whole-vertebra centre
+  (IQR test 11.5–13.1, val 10.9–12.5). The near-identical medians are real, not a bug.
+
+**Step 02 (preprocessing, 2 mm, lumbar crop):** written train 1257 / test 87 / val 32 / test 36;
+skipped (no spine label) 573 / 22 / 8 / 4; 0 errors; 1.9 GB total (train 1.7 GB).
+**Of the written crops, 120 train, 5 test and 1 VerSe val are NO_LUMBAR** (T12/sacrum only;
+see issue 1). Several of those are crops around a 0.1–0.2 ml T12 scrap that look like noise
+(e.g. s0530, s0813, s0532, test s0802).
+
+**Step 03 (check):** worst centroid error per case, median / max:
+train 0.30 / 5.91 mm (s0818 L4), test 0.31 / 2.01 mm (s0907 L3), VerSe val 0.17 / 0.42 mm,
+VerSe test 0.16 / 0.48 mm. Volume ratio preprocessed/original: train 0.68–1.35, test 0.82–1.13,
+VerSe 0.98–1.01. Train: 46 cases > 1 mm, 13 > 2 mm; 45 cases with a volume ratio outside
+0.9–1.1. **Nearly all outliers are TRUNCATED and/or MULTI_CC tiny partial vertebrae** (e.g. s0818
+L4 = 3.3 ml cut-off piece), where a few voxels move the centre and volume a lot: not a pipeline bug.
+
+**Side views:** orientation correct everywhere (all VerSe orientations, head up, anterior right);
+L6 shown below L5 in the three L6 cases. Things to know:
+- Many train crops are thorax-only (grey T12 + sliver of L1) or pelvis-only (L4/L5/sacrum).
+- "Sliver" cases where the scan shows only a thin edge of the spine: s1205 (L3–L5 1–6 ml each),
+  s1246 (L5 1.2 ml + sacrum), s0525 (L2 0.1 ml, L3 29 ml). Poor training examples.
+- VerSe cases with only 1–2 lumbar levels: val sub-verse116, 125, 150; test sub-verse012 (ends at
+  L3), 059, 119. Scoliosis makes the mid-sagittal view look jumbled: val sub-verse022, 080.
+- s0573 (v3): plausible L4/L5/sacrum; the old v2 "sacrum over L3" error is gone (still METAL +
+  FRAGMENT). s1221 (v3): only TRUNCATED, old fragments gone. v3 fixed both.
+- Cosmetic: the page title overlaps the first row of case titles.
+
+### Earlier (before the move)
+
+The old laptop results and a 4-case smoke test were deleted before the move. The smoke test (steps 1-3, 4 cases each of `totalseg_v3_test` and `verse19_validation`) ran cleanly: worst centroid error 0.42 mm on the non-RAS VerSe cases, side views correctly oriented.
 
 Findings from the old run (small v2 subset + VerSe19 val) that stay valid for VerSe:
 - VerSe19 val: orientations PIR 17 / LAS 17 / PSR 6; 23 NONAXIAL; 2 ANISO (max voxel 3 mm);
@@ -225,19 +283,27 @@ Findings from the old run (small v2 subset + VerSe19 val) that stay valid for Ve
 
 Correctness (the anomaly texts now state these honestly; the code is unchanged):
 1. **NO_LUMBAR cases are still preprocessed** when they contain T12 or sacrum (step 02 only skips
-   cases with none of ids 1–9). With full v3 this may be hundreds of thorax/pelvis crops. Filter
+   cases with none of ids 1–9). Measured: **120 train, 5 test, 1 VerSe val** such crops. Filter
    by the `labels` column of `preprocessing_status.csv` when choosing training cases, or skip them
-   in step 02 (they could instead serve as negatives against issue 8).
+   in step 02 (they could instead serve as negatives against issue 8). Not decided yet.
 2. **NO_XFORM and BAD_PIXDIM are only flagged**, not excluded (the report says so now).
 3. **Clip before blurring**: `preprocess_case_to_canonical` blurs, then `normalise_hu_to_0_1`
    clips. Padding values like −3024 HU get smeared into the outermost ring of the field of view.
    Minor; fix = clip HU (e.g. to [−1024, window max or higher]) before the Gaussian.
 4. Texts starting "Plan (Part D)" describe future evaluation policy, not implemented code.
 
-Runs still to do (existing code):
-5. Full step 01 on all four sources (≈1939 v3 + 80 VerSe cases, ≈1 h on the laptop with 3 workers; faster with more).
-6. Full step 02 on all four sources (v3 train is the big one; ~4 GB estimated).
-7. Full step 03, then look at the side views: s0573, s1221 (v3 labels now), PIR/PSR VerSe cases.
+Runs (existing code):
+5–7. **Done 2026-10-01** on the workstation: full steps 00–03, side views checked (see §6).
+
+What the runs mean for the next parts (nothing implemented, wait for the user):
+- **Training-case selection (Part B):** 750 train cases have all of L1–L5. Beyond NO_LUMBAR
+  (issue 1), consider dropping or down-weighting cases where a lumbar level is a FRAGMENT / sliver
+  (< 2 ml; e.g. s1205, s1246, s0525), and decide how to treat MULTI_CC/VOLUME_OUTLIER labels
+  (label noise). MASK_OVERLAP (760) is expected (S1 vs L5) and handled by the merge order.
+- **Evaluation (Part D):** in-domain test = 82 v3 test cases with ≥1 lumbar level (57 complete);
+  OOD = VerSe19 36 + 31 = 67 scans with ≥1 lumbar level; report L6 cases (sub-verse023, 083, 131)
+  separately. Truncated/partial vertebrae need the explicit policy from §8.
+- **Part C validation:** the ctd evidence above (+11.7 mm anterior) is ready to quote in the report.
 
 Design risks to raise with the user (Part B decisions):
 8. **Crop-only training bias**: the training arrays are cropped to T12..sacrum + 30 mm, so the model
@@ -253,40 +319,85 @@ Design risks to raise with the user (Part B decisions):
 
 ---
 
-## 8. Agreed plan for the remaining parts (discussed with the user, nothing implemented)
+## 8. Parts B–D: decisions and code (built 2026-10-01, user approved each choice)
 
-**Part B, model (on the GPU workstation):** 3D U-Net (MONAI suggested for legibility; nnU-Net
-rejected because it hides the decisions the user must defend in review). Input 2 mm, **128³
-patches** (≈256 mm, fits T12..sacrum so the network can count levels). 8 output classes (bg,
-L1–L5, T12, sacrum); report only L1–L5. Dice + cross-entropy; foreground-biased patch sampling; AMP.
-Augmentation: **left–right flip only** (never flip superior–inferior or anterior–posterior; that
-breaks level order), rotation ±10°, scaling 0.9–1.1, gamma, noise, and **simulated thick-slice
-anisotropy** (the targeted countermeasure for VerSe; best single ablation). Train on ~200–300 v3
-train cases with all L1–L5; checkpoint often. Inference: sliding window with Gaussian blending over
-the full image, then a **rule-based level-consistency step** (connected components ordered along
-superior–inferior, enforce monotonic labels), then resample back to the input grid. Inference must
-run **CPU-only** on a fresh machine.
+User decisions (2026-10-01): train on the lumbar crops only (no `--crop none`, the assignment
+proposes cropping); **no augmentation** beyond random patch placement (no flips: L-R flip creates
+mirrored anatomy and is unnecessary because the loader makes everything RAS; S-I flip would swap
+L1/L5; no simulated thick slices); use **all** usable training cases; larger batch; training
+**at most 3 h** ("a short run is fine"), then use the best checkpoint; commit + push code at each
+stage (user's git identity only, no Claude co-author lines); stick to what the assignment asks.
 
-**Part C, vertebral body centroid:** per vertebra mask: erode with a ~5 mm ball (pedicles are
-thin, ~7–10 mm; the body is ~45×30 mm) → keep the most anterior component (+y in RAS) → geodesic /
-conditional dilation back inside the original mask → centre of mass → world RAS mm via the affine.
-Cross-check with a second estimate (anterior half along A–P) and flag >5 mm disagreement. Validate on
-TotalSegmentator GT masks first, then against VerSe ctd: expect the whole-vertebra centroid ≈12 mm
-posterior of the annotation and the body centroid within a few mm. Output JSON with
-`"coordinate_system": "RAS"`.
+### Part B: model and training (`network.py`, `training.py`, `inference.py`, script 04)
+- **Architecture:** residual-encoder U-Net (ResEnc) from Isensee et al., "nnU-Net Revisited"
+  (MICCAI 2024, https://papers.miccai.org/miccai-2024/paper/2847_paper.pdf). Report argument: their
+  fair benchmark (same GPU budget, all trained from scratch) found CNN U-Nets with residual encoders
+  beat Transformer (SwinUNETR, nnFormer) and Mamba models; configuration matters more than novelty.
+  Network code from their package `dynamic_network_architectures` (0.4.4), layout of their smallest
+  preset "M": 6 stages, 32→320 channels, blocks 1-3-4-6-6-6, instance norm, leaky ReLU, no deep
+  supervision; 102 M parameters; trained from scratch (no pretrained spine model).
+- **Not the nnU-Net framework** (report argument): it would replace our Part A loader, chooses
+  settings automatically (hard to defend in review), and mirrors along all axes by default
+  (would swap L1/L5).
+- **Patch 96 × 96 × 160 voxels at 2 mm (19 × 19 × 32 cm)**, chosen from the crop sizes (median
+  86 × 82 × 152, 95 % within 98 × 97 × 208): one patch sees T12..sacrum → the network can count levels.
+- **Training cases:** v3 train crops minus NO_LUMBAR (120) and FRAGMENT (135) → 1002 cases;
+  10 % (100, seed 0) held out as validation (v3 has no val split); **902 for training**.
+  List with reasons: `outputs/training/resenc_m_2mm/training_cases.csv`.
+- **Patch sampling:** 2/3 centred on a random voxel of a randomly chosen present lumbar level
+  (rare edge levels L1/L5 seen as often as middle ones), 1/3 uniform random.
+- **Loss:** cross-entropy + soft Dice (foreground classes, batch Dice). **Optimiser = nnU-Net
+  defaults unchanged** (SGD, momentum 0.99, Nesterov, lr 0.01, poly decay ^0.9, weight decay 3e-5,
+  gradient clip 12), mixed precision. "Unchanged defaults" is the argument: nothing hand-tuned.
+- **Batch 8** (16.5 GB on the RTX 3090). Benchmark: throughput is ~10 patches/s for batch 4–8
+  (GPU already saturated at 4), batch 10 spills into shared memory and is 25× slower. So a larger
+  batch did not shorten training; it only means fewer, larger steps.
+- **Run:** 11 000 steps planned (= 88 000 patches ≈ 98 passes over the 902 cases), 0.72 s/step,
+  validation every 1000 steps (sliding window on the 100 validation crops, Dice L1–L5),
+  best checkpoint → `lumbar/weights/lumbar_vertebrae_resenc_unet.pt` (gitignored, shipped in zip),
+  hard stop at 3 h. Started 2026-10-01 02:25 as a detached process (the assistant's background
+  tasks are killed after 2 h): logs in `outputs/training/resenc_m_2mm/console_output.txt`,
+  `training_log.csv`. Resume: `--resume`.
+- **Inference** (`inference.py`): whole CT → same canonical space as training (no crop) →
+  sliding window, 50 % overlap, Gaussian weighting → argmax → **largest connected piece per class**
+  (a vertebra is one bone; removes e.g. a thoracic vertebra called "L1" outside the training crop)
+  → nearest-neighbour back to the CT grid. The rule-based level re-ordering from the old plan was
+  NOT built (keep it simple; mention as "next").
 
-**Part D, evaluation:** in-domain = v3 official test (report n ≈ 57–79 lumbar cases);
-OOD = VerSe19 validation + test. Label harmonisation table (VerSe 20–24 → L1–L5; 25 L6 and 28 T13
-→ separate, cases reported separately). Dice per level on the **original image grid**. State the
-empty-case policy explicitly. Report strict Dice **and** level-shift-corrected Dice (best global
-shift in {−1, 0, +1}) to separate naming errors from segmentation errors. Report the **resampling
-ceiling** (GT → 2 mm → back, Dice vs itself). Group split scans by subject. Expected explanations:
-anisotropy, pathology/metal, field-of-view differences, label protocol differences, TotalSegmentator
-label noise, transitional vertebrae, partial annotations.
+### Part C: vertebral body centre (`body_centroid.py`)
+Per level in the 2 mm RAS grid: erode with a 6 mm ball (removes everything thinner than 12 mm:
+pedicles ~8–10 mm, laminae, processes) → largest remaining piece that is not more than 5 mm
+behind the whole-vertebra centre → dilate back 6 mm inside the original mask → centre of mass →
+world RAS mm. Fallback: whole-vertebra centre (reported as `whole_vertebra_fallback`).
+**Check on VerSe ground-truth masks (305 vertebrae, val + test):** body centre → VerSe point
+median **0.9 mm**, 90th pct 4.0 mm, max 20 mm; whole-vertebra centre → VerSe point median
+**12.4 mm** (90th 14.6). A-P offset VerSe − body median 0.4 mm. Strong evidence for the report.
+Honesty note for the report: the "not behind the centre" rule was added after seeing VerSe
+outliers (max 30 → 20 mm); no further tuning on VerSe was done to avoid fitting the test set.
+Remaining outliers: sub-verse032 L5 (20 mm), sub-verse078 L1 (16 mm), sub-verse144 L1/L2
+(metal; posterior elements apparently removed: whole centre 0.8 mm from the point), sub-verse022 L3
+(scoliosis).
 
-**Report "what not to do":** don't chase Dice with bigger models (the ceiling is label protocol
-and grid); don't train or tune on VerSe (it destroys the OOD measurement); don't build a learned body
-segmenter without ground truth.
+### Part D: evaluation (`evaluation.py`, script 06)
+Rules fixed before seeing results (docstring of `evaluation.py`): Dice on the original CT grid;
+level scored only where GT has it and it is not a FRAGMENT; predicted-but-absent levels counted as
+false-positive levels, not as Dice 0; truncated vertebrae scored and also reported without;
+shifted Dice (rename predicted levels one step up/down along T12-L1..L5-sacrum) to separate
+counting errors from segmentation errors; resampling ceiling (GT → 2 mm → back); L6 patients
+reported separately. Script 06 caches per case (`outputs/evaluation/per_case/`), saves predicted
+labels + centroid JSONs (`outputs/predictions/<source>/`) so analysis can continue on the laptop
+without a GPU (`--report-only` rebuilds the report).
 
-**Deliverable zip:** `lumbar/` + weights + `run_inference.sh` + pinned requirements + README
-(OS, GPU optional, Docker optional). Exclude data.
+### Deliverable
+`lumbar/run_inference.sh <in> <out>`: creates `.venv_inference`, installs CPU torch 2.6.0 +
+pinned `requirements_inference.txt`, runs script 05 on the CPU. Output per CT:
+`<case>_lumbar_labels.nii.gz` (CT grid, 1–5 = L1–L5) + `<case>_centroids.json` (assignment format, RAS).
+
+### Pitfall hit
+`pip install dynamic-network-architectures` pulls `timm` → `torchvision` and **silently replaced
+the CUDA torch with torch 2.14.1+cpu**. Fixed by reinstalling `torch==2.6.0 torchvision==0.21.0`
+from `https://download.pytorch.org/whl/cu124` (driver 555 supports CUDA ≤ 12.5). Always check
+`torch.cuda.is_available()` after installing anything.
+
+### Results and Part D observations
+(to be filled in after training and evaluation)
