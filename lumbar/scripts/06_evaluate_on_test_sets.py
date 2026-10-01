@@ -144,6 +144,24 @@ def load_all_results(sources) -> tuple[pd.DataFrame, pd.DataFrame, list[dict]]:
     return pd.DataFrame(lv), pd.DataFrame(ct), cases
 
 
+def false_positive_level_sizes(cases: list[dict]) -> pd.DataFrame:
+    """Volume of every predicted level that the ground truth does not have, read from
+    the saved prediction, and whether it touches the scan border (cut off)."""
+    rows = []
+    for r in cases:
+        if not r["false_positive_levels"]:
+            continue
+        img = nib.load(PRED_DIR / r["source"] / f"{r['case_id']}_predicted_labels.nii.gz")
+        lab = np.asarray(img.dataobj)
+        voxel_ml = float(abs(np.linalg.det(img.affine[:3, :3]))) / 1000
+        for name in r["false_positive_levels"]:
+            idx = np.argwhere(lab == NAME_TO_ID[name])
+            at_edge = bool((idx.min(0) == 0).any() or (idx.max(0) == np.array(lab.shape) - 1).any())
+            rows.append({"group": GROUP[r["source"]], "case_id": r["case_id"], "level": name,
+                         "ml": len(idx) * voxel_ml, "at_edge": at_edge})
+    return pd.DataFrame(rows)
+
+
 def fmt(s: pd.Series) -> str:
     s = s.dropna()
     return f"{s.mean():.3f} / {s.median():.3f} ({len(s)})" if len(s) else "-"
@@ -190,13 +208,21 @@ def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
 
     # false positives
     L += ["### Levels predicted where the ground truth has none", "",
-          "| Test set | cases | cases with a false-positive level | of these: ground truth has no lumbar level at all |",
-          "|---|---|---|---|"]
+          "Size matters: a speck of a few voxels and a whole extra vertebra are different errors. "
+          "A lumbar vertebra is about 60 ml; 'vertebra-sized' = 20 ml or more.", "",
+          "| Test set | cases | cases with a false-positive level | of these: no lumbar level in the ground truth "
+          "| false-positive levels: median size | vertebra-sized ones |", "|---|---|---|---|---|---|"]
+    fp = false_positive_level_sizes(cases)
     cdf = pd.DataFrame([{"group": GROUP[r["source"]], "fp": bool(r["false_positive_levels"]),
                          "no_gt": not r["levels"]} for r in cases])
     for g, d in cdf.groupby("group"):
-        L.append(f"| {g} | {len(d)} | {int(d['fp'].sum())} | {int((d['fp'] & d['no_gt']).sum())} |")
-    L.append("")
+        f = fp[fp["group"] == g] if len(fp) else fp
+        L.append(f"| {g} | {len(d)} | {int(d['fp'].sum())} | {int((d['fp'] & d['no_gt']).sum())} "
+                 f"| {f['ml'].median():.1f} ml ({len(f)}) | {int((f['ml'] >= 20).sum())} |")
+    big = fp[fp["ml"] >= 20].sort_values("ml", ascending=False) if len(fp) else fp
+    L += ["", "Vertebra-sized false-positive levels: " + (", ".join(
+        f"{r.case_id} {r.level} {r.ml:.0f} ml{' (touches scan edge)' if r.at_edge else ''}"
+        for r in big.itertuples()) or "none"), ""]
 
     # L6 patients
     l6 = [r for r in cases if r["gt_has_L6"]]
@@ -212,7 +238,7 @@ def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
     # worst cases
     L += ["### Lowest mean Dice per test set (for a visual check)", ""]
     per_case = scored.groupby(["group", "case_id"])["dice"].mean().reset_index()
-    flags = {r["case_id"]: r["flags"] for r in cases}
+    flags = {r["case_id"]: r["flags"] if isinstance(r["flags"], str) else "" for r in cases}
     for g, d in per_case.groupby("group"):
         worst = d.nsmallest(8, "dice")
         L.append(f"- {g}: " + "; ".join(f"{r.case_id} {r.dice:.2f} [{flags.get(r.case_id, '')}]" for r in worst.itertuples()))
@@ -231,8 +257,10 @@ def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
     for g, d in ct.groupby("group"):
         L.append(f"| {g} | {q(d['pred_body_to_gt_body_mm'])} | {q(d['pred_body_to_verse_point_mm'])} | "
                  f"{q(d['gt_body_to_verse_point_mm'])} | {q(d['gt_whole_to_verse_point_mm'])} |")
-    fb = ct["pred_method"].eq("whole_vertebra_fallback").sum()
-    L += ["", f"Predicted vertebrae where the body could not be separated (whole-vertebra centre used instead): {fb}.", ""]
+    real = ct[ct["gt_method"].notna() & ct["pred_method"].notna()]
+    fb = real["pred_method"].eq("whole_vertebra_fallback").sum()
+    L += ["", f"Of {len(real)} predicted vertebrae that also exist in the ground truth, {fb} were too small to "
+          "separate the body (mostly cut off by the scan edge); their whole-vertebra centre is used.", ""]
 
     t = [r["seconds"] for r in cases]
     L += [f"Inference + scoring time per case on this machine: median {np.median(t):.0f} s, max {np.max(t):.0f} s.", ""]

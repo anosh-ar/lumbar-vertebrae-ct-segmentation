@@ -4,16 +4,21 @@ data/
 *.nii
 *.nii.gz
 *.npz
+# ...except the predicted label maps of the test sets (model output, small)
+!outputs/predictions/**/*.nii.gz
 
-# Generated reports: re-created by the scripts
-outputs/
-
-# Model weights and training runs: too large for git; shipped in the deliverable zip
+# Model weights: only the final weights-only file is committed (via Git LFS, see
+# .gitattributes); resume checkpoints (819 MB, optimizer state) stay local
 *.pt
 *.pth
 *.ckpt
+!lumbar/weights/lumbar_vertebrae_resenc_unet.pt
 runs/
 checkpoints/
+
+# Report build by-products
+report/*.log
+report/*_page*.png
 
 # Python
 .venv/

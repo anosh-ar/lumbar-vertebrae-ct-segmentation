@@ -1,6 +1,6 @@
 # Handoff: Lumbar Spine L1–L5 take-home assignment
 
-State as of 2026-10-01. Written for the next AI assistant working on this project.
+State as of 2026-10-01 (Parts A–D done, report written). Written for the next AI assistant working on this project.
 Everything below was checked against the files on disk when this was written.
 
 ---
@@ -279,7 +279,7 @@ Findings from the old run (small v2 subset + VerSe19 val) that stay valid for Ve
   scan with label fragments. Check whether these recur in v3 (s0573/s1221 are also v3 cases).
 - Old cache check (small subset): worst centroid error per case median 0.31 mm, max 2.88 mm.
 
-## 7. Known issues and open TODOs (none started; wait for the user)
+## 7. Known issues and open TODOs
 
 Correctness (the anomaly texts now state these honestly; the code is unchanged):
 1. **NO_LUMBAR cases are still preprocessed** when they contain T12 or sacrum (step 02 only skips
@@ -399,5 +399,51 @@ the CUDA torch with torch 2.14.1+cpu**. Fixed by reinstalling `torch==2.6.0 torc
 from `https://download.pytorch.org/whl/cu124` (driver 555 supports CUDA ≤ 12.5). Always check
 `torch.cuda.is_available()` after installing anything.
 
-### Results and Part D observations
-(to be filled in after training and evaluation)
+### Results (2026-10-01) — all numbers also in `outputs/evaluation/evaluation_report.md`
+- **Training:** 11 000 steps in 2.62 h; best validation mean Dice **0.897 at step 8000**
+  (L1 .908, L2 .896, L3 .899, L4 .894, L5 .885); stored weights-only (391 MB). The 819 MB
+  resume checkpoints stay local (`outputs/training/resenc_m_2mm/*.pt`, not pushed).
+- **Dice, mean / median:** TotalSeg test (78 cases, 328 vertebrae) **0.881 / 0.928**; complete
+  vertebrae only 0.908 / 0.930. VerSe19 val+test (67 cases, 305 vertebrae) **0.851 / 0.919**;
+  complete only 0.854 / 0.919. Resampling ceiling 0.94 on both. Per level in the report table.
+- **Part C on the test sets:** predicted body vs GT body median 0.6 mm (TS) / 0.5 mm (VerSe);
+  predicted body vs VerSe point 1.0 mm (90th pct 7.5); GT body vs VerSe point 0.9 mm (3.9);
+  GT whole vertebra vs VerSe point 12.5 mm. 32 of 642 predicted vertebrae fell back to the whole
+  centre (small cut-off pieces).
+- **Speed:** GPU evaluation median 4 s per case (the zip reading dominates, ~1 h for 189 cases);
+  CPU inference 16–18 s per CT; `run_inference.sh` tested end to end in a fresh venv (CPU torch).
+  On this workstation the first `pip install` is slow because its pip config lists an unreachable
+  extra index (`pypi.ngc.nvidia.com`); not our problem, a fresh machine does not have it.
+
+### Part D observations (the answers to "why the differences? anything odd?")
+1. **Medians ≈ equal (0.93 vs 0.92) and near the 0.94 ceiling; the gap is in the means** → a few
+   whole-case failures, not worse boundaries.
+2. **Counting errors (off by one level)** in 5 cases, found by the shifted Dice: s0829 (TS, short
+   chest scan), sub-verse093 (metal; 0.00 → 0.67), sub-verse078 (fractures; 0.14 → 0.79),
+   sub-verse085, sub-verse260. Fix idea: rule-based level check with T12 ribs / sacrum anchors.
+3. **VerSe does not label vertebrae cut off by the scan edge; TotalSegmentator does.** 12
+   vertebra-sized (≥ 20 ml) "false-positive" levels on VerSe, 8 touch the scan edge; checked 5
+   (sub-verse012 L4, 116 L4, 081 L3, 150 L3, 018 L5): real bone 200–360 HU, directly adjacent to
+   the last labelled level, GT background. → protocol difference, not a model error. Also why
+   "complete vertebrae only" changes TS (0.88 → 0.91) but not VerSe.
+4. **Specks in scans without a lumbar spine**: all 27 TS test NO_LUMBAR scans get some lumbar
+   label, median 0.8 ml (234 false-positive levels overall, only 16 vertebra-sized). Cause: training
+   on lumbar crops only (issue 8, user chose crops). Fix idea: full-scan patches or a presence gate.
+5. **L6 patients fine** (sub-verse023/083/131: 0.87–0.94 per level): the model names levels from
+   the top like VerSe and leaves L6 unlabelled.
+6. Other oddities for the report: VerSe CTs float with non-integer HU (pre-resampled by the
+   provider); TS S1/L5 mask overlap in 817 cases (label noise at the L5/sacrum boundary);
+   Part C outliers sub-verse032/078/144/022.
+- Failure figure: `report/figures/failure_cases_side_views.png` (script 07): sub-verse012, s0829,
+  sub-verse093, sub-verse078.
+
+### Report
+`report/lumbar_spine_report.tex` + `.pdf` (2 pages, XeLaTeX via Tectonic in the separate conda env
+`latex`: `C:\Users\za76buso\AppData\Local\miniconda3\envs\latex\Library\bin\tectonic.exe`).
+Pipeline diagram (TikZ, abstract stages, not modules): `report/pipeline_diagram.tex`.
+Fonts are loaded by file name (texgyrepagella/heros) because Tectonic cannot find them by name.
+
+### Git (user decision 2026-10-01)
+Push everything except raw and preprocessed data: code, report, `outputs/` (qc, evaluation,
+predictions, training logs), and the weights via **Git LFS** (`lumbar/weights/*.pt`, 391 MB; GitHub
+rejects > 100 MB in plain git). Not pushed: `data/`, the two 819 MB resume checkpoints.

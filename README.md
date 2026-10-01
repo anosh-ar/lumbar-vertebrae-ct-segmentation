@@ -1,8 +1,22 @@
 # Lumbar spine L1–L5 segmentation from CT
 
 Take-home assignment: preprocessing, 3D segmentation, vertebral body centroids and
-cross-dataset evaluation for the lumbar vertebrae L1–L5. The code is in `lumbar/`.
-Part A (preprocessing and its checks) is written; Parts B–D are planned in `HANDOFF.md`.
+cross-dataset evaluation for the lumbar vertebrae L1–L5. The code is in `lumbar/`, the
+two-page report in `report/lumbar_spine_report.pdf` (LaTeX source next to it).
+
+## 0. Only want to run the trained model?
+
+```bash
+cd lumbar
+./run_inference.sh <folder with CT .nii.gz files> <output folder>
+```
+
+Needs Python 3.10–3.12 and internet on the first run (it installs the pinned packages into
+`lumbar/.venv_inference`). CPU only: no GPU, no Docker. About 5–20 s per CT. Tested on Windows 11
+(Git Bash); plain bash, so Linux and macOS work the same. Output per CT:
+`<case>_lumbar_labels.nii.gz` (same grid as the CT, 1–5 = L1–L5) and `<case>_centroids.json`
+(vertebral body centres in world mm, RAS). The weights (`lumbar/weights/*.pt`, 391 MB) are stored
+with Git LFS: run `git lfs pull` after cloning.
 
 ## 1. Set up (any OS, Python 3.10+, no GPU needed for steps 0–3)
 
@@ -40,5 +54,19 @@ python scripts/02_preprocess_cases_for_training.py --workers 8     # -> data/pre
 python scripts/03_verify_preprocessed_cases.py                     # -> outputs/qc/preprocessing_check_*
 ```
 
-Add `--limit 5` to any step for a quick test. Each script's `--help` explains what it does
+Add `--limit 5` to steps 01, 02 and 06 for a quick test. Each script's `--help` explains what it does
 and what it writes.
+
+Parts B–D (training needs an NVIDIA GPU: install the CUDA build of PyTorch first, e.g.
+`pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124`;
+check `torch.cuda.is_available()` afterwards, because installing other packages can replace it with
+the CPU build):
+
+```bash
+python scripts/04_train_lumbar_segmentation_model.py     # Part B: ~2.6 h on an RTX 3090 -> lumbar/weights/
+python scripts/05_predict_lumbar_vertebrae.py <in> <out> # Parts B+C on any CT folder (what run_inference.sh calls)
+python scripts/06_evaluate_on_test_sets.py               # Part D: -> outputs/evaluation/evaluation_report.md
+python scripts/07_make_report_figures.py                 # failure-case figure for the report
+```
+
+To rebuild the report PDF: `tectonic report/lumbar_spine_report.tex` (or any XeLaTeX).
