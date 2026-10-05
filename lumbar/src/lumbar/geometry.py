@@ -67,10 +67,17 @@ def resample_onto_grid(arr: np.ndarray, src_affine: np.ndarray, dst_affine: np.n
                        dst_shape, order: int, cval: float = 0.0) -> np.ndarray:
     """Pull ``arr`` onto the destination voxel grid. Handles any combination of
     axis permutation, flips, spacing and shear (gantry tilt) in one step,
-    because it works purely through the voxel->world->voxel mapping."""
+    because it works purely through the voxel->world->voxel mapping.
+
+    mode="grid-constant": every source voxel is a cube reaching half a voxel around
+    its centre, so a sample point just outside the outermost voxel centre (e.g. at
+    -0.01 in a slightly tilted scan) still reads that voxel; only points more than
+    half a voxel outside get ``cval``. (mode="constant" dropped such points and with
+    them parts of the outermost slice, e.g. half of a vertebra cut off by the scan
+    edge: HANDOFF issue 11.)"""
     m = np.linalg.inv(src_affine) @ dst_affine
     return ndimage.affine_transform(arr, m[:3, :3], offset=m[:3, 3], output_shape=tuple(dst_shape),
-                                    order=order, mode="constant", cval=cval, prefilter=False)
+                                    order=order, mode="grid-constant", cval=cval, prefilter=False)
 
 
 def ras_grid_covering_volume(src_affine: np.ndarray, src_shape, spacing: float,

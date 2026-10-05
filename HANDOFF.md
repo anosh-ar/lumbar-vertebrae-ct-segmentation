@@ -325,6 +325,16 @@ Design risks to raise with the user (Part B decisions):
     Also used when predictions go back to the CT grid. Left unfixed so the 2 mm vs 1.5 mm
     comparison runs identical code; the fix is one word (`grid-constant` for label/order-0 resampling)
     and should be applied to both models together, then steps 02–06 re-run.
+    **Update 2026-10-05: fix applied in `geometry.py` (`grid-constant`) on branch retrain-1.5mm and
+    only step 06 re-run for the 1.5 mm model** (same weights) → `outputs/evaluation_1.5mm_gridfix/`,
+    comparison `outputs/evaluation_comparison_1.5mm_vs_1.5mm_gridfix.md`. Result: no measurable
+    change. 621 of 645 vertebrae identical; TotalSeg all numbers identical to 3 decimals; VerSe mean
+    0.906 → 0.905. 18 vertebrae gained slightly (up to +0.04), the only real drop is sub-verse252
+    (already the one miscounted VerSe case: its border input changed and the model renamed levels
+    differently). Reason: the loss mattered for cut-off vertebrae in the *training crops*, not in
+    evaluation (on the CT grid the model grid at 1.5 mm nearly coincides with the TotalSeg grid).
+    A real test of the fix needs re-running step 02 + retraining. Note: `outputs/evaluation_1.5mm/`
+    was made with the old code, `_gridfix` with the new.
 
 ---
 
