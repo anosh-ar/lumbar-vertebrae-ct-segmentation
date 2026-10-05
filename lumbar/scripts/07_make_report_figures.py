@@ -2,17 +2,20 @@
 
 What it does
   For each chosen test case: the CT, its ground-truth labels and the saved
-  prediction of step 6 are put on the 2 mm RAS grid; the side view (sagittal
+  prediction of step 6 are put on a 2 mm RAS display grid; the side view (sagittal
   slice through the middle of the lumbar labels, head up, front of the body
   right) is drawn twice: ground truth | prediction.
 
-Needs: step 6 (outputs/predictions/).
+Needs: step 6 (outputs/predictions/, or outputs/predictions_<tag>/ with --tag).
 
 Output
   report/figures/failure_cases_side_views.png
 
     python scripts/07_make_report_figures.py
+    python scripts/07_make_report_figures.py --tag 1.5mm     # 1.5 mm model, file name gets _1.5mm
 """
+
+import argparse
 
 import matplotlib
 matplotlib.use("Agg")
@@ -35,15 +38,15 @@ CASES = [
 ]
 # background, L1 red, L2 orange, L3 yellow, L4 green, L5 blue, T12 grey, sacrum purple, L6 pink
 COLORS = ["#000000", "#e6194b", "#f58231", "#ffe119", "#3cb44b", "#4363d8", "#a9a9a9", "#911eb4", "#f032e6", "#9a6324"]
-OUT = PROJECT_ROOT / "report" / "figures" / "failure_cases_side_views.png"
+FIGURES_DIR = PROJECT_ROOT / "report" / "figures"
 
 
-def side_view(source: str, case_id: str):
+def side_view(source: str, case_id: str, predictions_dir):
     case = next(c for c in load_cases(source) if c.case_id == case_id)
     img = case.load_ct()
     image, affine = ct_to_model_grid(img)
     gt, _ = merge_label_files_to_canonical(case, img)
-    pred = np.asarray(nib.load(PROJECT_ROOT / "outputs" / "predictions" / source /
+    pred = np.asarray(nib.load(predictions_dir / source /
                                f"{case_id}_predicted_labels.nii.gz").dataobj)
     gt = resample_onto_grid(gt, img.affine, affine, image.shape, order=0)
     pred = resample_onto_grid(pred, img.affine, affine, image.shape, order=0)
@@ -58,11 +61,17 @@ def side_view(source: str, case_id: str):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--tag", default="", help="predictions of another model, e.g. 1.5mm -> outputs/predictions_1.5mm/")
+    args = ap.parse_args()
+    suffix = f"_{args.tag}" if args.tag else ""
+    predictions_dir = PROJECT_ROOT / "outputs" / f"predictions{suffix}"
+    out = FIGURES_DIR / f"failure_cases_side_views{suffix}.png"
     cmap = ListedColormap(COLORS)
     fig, axes = plt.subplots(1, 2 * len(CASES), figsize=(2.0 * len(CASES) * 1.55, 3.0),
                              gridspec_kw={"wspace": 0.04})
     for k, (source, cid, caption) in enumerate(CASES):
-        im, gt, pred = side_view(source, cid)
+        im, gt, pred = side_view(source, cid, predictions_dir)
         for j, (lab, title) in enumerate([(gt, "ground truth"), (pred, "prediction")]):
             ax = axes[2 * k + j]
             ax.imshow(im, origin="lower", cmap="gray", vmin=0.3, vmax=0.9)
@@ -71,9 +80,9 @@ def main():
             ax.set_title(f"{cid}\n{title}" if j == 0 else f"\n{title}", fontsize=7)
             ax.axis("off")
         axes[2 * k].text(1.02, -0.03, caption, transform=axes[2 * k].transAxes, ha="center", va="top", fontsize=7)
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(OUT, dpi=220, bbox_inches="tight")
-    print(f"[figures] -> {OUT}")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out, dpi=220, bbox_inches="tight")
+    print(f"[figures] -> {out}")
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 """Part C: centre of the vertebral body only (without pedicles, laminae and processes).
 
-Neither dataset labels the body, so we separate it by shape. In the 2 mm RAS grid:
+Neither dataset labels the body, so we separate it by shape. In the model's isotropic
+RAS grid (2 or 1.5 mm; all sizes below are in mm and converted to voxels):
   1. Erode (shrink) the vertebra mask with a ball of radius 6 mm. Every part
      thinner than 12 mm disappears: the pedicles (about 8-10 mm wide), the
      laminae and the processes. The body (about 45 mm wide, 30 mm deep, 25 mm

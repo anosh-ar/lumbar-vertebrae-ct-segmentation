@@ -16,8 +16,8 @@ Scoring rules (decided before looking at results)
   - Shifted Dice: the same Dice after renaming every predicted level one step up
     or down (T12 <- L1 <- L2 ... <- L5 <- sacrum). If a shift scores much higher than
     the strict Dice, the model found the vertebrae but counted them wrong.
-  - Resampling ceiling: the ground truth sent to the 2 mm model grid and back,
-    compared with itself. No model working at 2 mm can beat this number.
+  - Resampling ceiling: the ground truth sent to the model grid (2 or 1.5 mm) and
+    back, compared with itself. No model working at that voxel size can beat it.
 """
 
 from __future__ import annotations

@@ -11,7 +11,8 @@ Which cases we train on (choose_training_cases)
   checkpoint.
 
 Patches (sample_patch)
-  The crops are small (median 86 x 82 x 152 voxels), so all of them fit in RAM.
+  The crops are small (median 86 x 82 x 152 voxels at 2 mm, about 2.4x more voxels
+  at 1.5 mm: 3.5 GB vs 8.2 GB for all cases), so all of them fit in RAM.
   A patch is taken at a random position; with probability 2/3 it is centred on
   a random voxel of a randomly chosen lumbar level that is present, so rare
   levels at the crop edges (L1, L5) are seen as often as the middle ones.
@@ -41,10 +42,24 @@ VALIDATION_FRACTION = 0.10
 FOREGROUND_PATCH_PROBABILITY = 2 / 3
 
 
-def choose_training_cases(source: str = "totalseg_v3_train", spacing: float = 2.0, seed: int = 0):
+def choose_training_cases(source: str = "totalseg_v3_train", spacing: float = 2.0, seed: int = 0,
+                          same_cases_as=None):
     """(training case ids, validation case ids, table of every case with the reason
-    it was kept or excluded)."""
+    it was kept or excluded).
+
+    same_cases_as: a training_cases.csv of an earlier run. Its train/validation lists
+    are reused exactly (for a fair comparison between runs), after checking that every
+    case also exists in this voxel size's preprocessed folder."""
     folder = preprocessed_folder(source, spacing, "lumbar")
+    if same_cases_as is not None:
+        t = pd.read_csv(same_cases_as)
+        done = pd.read_csv(folder / "preprocessing_status.csv")
+        written = set(done.loc[done["status"].isin(["written", "already_done"]), "case_id"])
+        used = t.loc[t["use"].isin(["train", "validation"]), "case_id"]
+        missing = sorted(set(used) - written)
+        if missing:
+            raise ValueError(f"{len(missing)} cases of {same_cases_as} are not preprocessed in {folder}: {missing[:5]}")
+        return (sorted(t.loc[t["use"] == "train", "case_id"]), sorted(t.loc[t["use"] == "validation", "case_id"]), t)
     status = pd.read_csv(folder / "preprocessing_status.csv")
     flags = pd.read_csv(QC_REPORTS_DIR / f"anomalies_per_case_{source}.csv")[["case_id", "flags"]]
     t = status.merge(flags, on="case_id", how="left")

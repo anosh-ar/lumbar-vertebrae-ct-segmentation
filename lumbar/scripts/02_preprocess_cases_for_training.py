@@ -3,11 +3,11 @@
 What it does, per case
   1. merge the label files into one mask with our label ids (lumbar/labels.py)
   2. crop to the labelled region T12..sacrum plus 30 mm
-  3. rotate to RAS and resample to 2 mm cubic voxels (CT: smoothed where it is
+  3. rotate to RAS and resample to cubic voxels of --spacing mm, default 2 (CT: smoothed where it is
      downsampled, then linear interpolation; mask: nearest neighbour)
   4. clip the CT to -1000..1500 HU and scale it to 0..1
 
-Output (data/preprocessed/<source>_2mm_lumbar_crop/)
+Output (data/preprocessed/<source>_<spacing>mm_lumbar_crop/, e.g. ..._2mm_..., ..._1.5mm_...)
   <case>_image_and_label.npz   CT (float16, 0..1), mask (uint8), affine (voxel -> RAS mm)
   <case>_provenance.json       where it came from: original header, crop box, fixes applied
   preprocessing_status.csv     one row per case: written / already_done / skipped_no_spine / error

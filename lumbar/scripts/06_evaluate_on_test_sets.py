@@ -15,7 +15,8 @@ What it does, per case
      for VerSe also the annotated centroid points (which mark the body centre)
   Results are cached per case, so the script can be stopped and resumed.
 
-Output
+Output (for the 2 mm model; a model with another voxel size writes to
+outputs/evaluation_<s>mm/ and outputs/predictions_<s>mm/ instead, see --tag)
   outputs/predictions/<source>/<case>_predicted_labels.nii.gz   all classes, CT grid
   outputs/predictions/<source>/<case>_centroids.json            body centres (assignment format)
   outputs/evaluation/per_case/<source>/<case>.json              every number for that case
@@ -24,7 +25,8 @@ Output
 
     python scripts/06_evaluate_on_test_sets.py
     python scripts/06_evaluate_on_test_sets.py --source verse19_test --limit 3
-    python scripts/06_evaluate_on_test_sets.py --report-only        # rebuild the report from the cache
+    python scripts/06_evaluate_on_test_sets.py --weights weights/lumbar_vertebrae_resenc_unet_1.5mm.pt
+    python scripts/06_evaluate_on_test_sets.py --report-only [--tag 1.5mm]   # rebuild a report from its cache
 """
 
 import argparse
@@ -49,8 +51,14 @@ TEST_SOURCES = ["totalseg_v3_test", "verse19_validation", "verse19_test"]
 GROUP = {"totalseg_v3_test": "TotalSegmentator v3 test (in-domain)",
          "verse19_validation": "VerSe19 val + test (out-of-domain)",
          "verse19_test": "VerSe19 val + test (out-of-domain)"}
-EVAL_DIR = PROJECT_ROOT / "outputs" / "evaluation"
-PRED_DIR = PROJECT_ROOT / "outputs" / "predictions"
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
+
+def output_folders(tag: str):
+    """(evaluation folder, predictions folder). No tag: outputs/evaluation and outputs/predictions
+    (the 2 mm model); tag "1.5mm": outputs/evaluation_1.5mm and outputs/predictions_1.5mm."""
+    suffix = f"_{tag}" if tag else ""
+    return OUTPUTS_DIR / f"evaluation{suffix}", OUTPUTS_DIR / f"predictions{suffix}"
 
 
 def verse_annotated_points(case, img) -> dict:
@@ -67,13 +75,13 @@ def verse_annotated_points(case, img) -> dict:
     return out
 
 
-def evaluate_case(case, source: str, net, ckpt, device, audit_row: dict) -> dict:
+def evaluate_case(case, source: str, net, ckpt, device, audit_row: dict, pred_dir) -> dict:
     t0 = time.time()
     img = case.load_ct()
     res = predict_ct(net, img, ckpt["patch_size"], device, ckpt["spacing_mm"], batch_size=4)
     pred = res["label_original_grid"]
     gt, _ = merge_label_files_to_canonical(case, img)
-    # resampling ceiling: ground truth -> 2 mm model grid -> back to the CT grid
+    # resampling ceiling: ground truth -> model grid (voxel size of the checkpoint) -> back to the CT grid
     gt_model = resample_onto_grid(gt, img.affine, res["model_affine"], res["label_model_grid"].shape, order=0)
     gt_back = resample_onto_grid(gt_model, res["model_affine"], img.affine, img.shape[:3], order=0)
 
@@ -108,7 +116,7 @@ def evaluate_case(case, source: str, net, ckpt, device, audit_row: dict) -> dict
                      "pred_method": pred_c.get(n, {}).get("method"), "gt_method": gt_c.get(n, {}).get("method")}
                  for n in TARGET_LEVELS if n in pred_c or n in gt_c}
 
-    out_dir = PRED_DIR / source
+    out_dir = pred_dir / source
     out_dir.mkdir(parents=True, exist_ok=True)
     nib.save(nib.Nifti1Image(res["label_original_grid"], img.affine), out_dir / f"{case.case_id}_predicted_labels.nii.gz")
     (out_dir / f"{case.case_id}_centroids.json").write_text(json.dumps(centroid_json(case.case_id, pred_c), indent=2))
@@ -117,7 +125,8 @@ def evaluate_case(case, source: str, net, ckpt, device, audit_row: dict) -> dict
     return {"case_id": case.case_id, "source": source, "subject_id": case.subject_id,
             "flags": audit_row.get("flags", ""), "gt_has_L6": NAME_TO_ID["L6"] in present,
             "gt_has_T13": NAME_TO_ID["T13"] in present, "levels": levels, "false_positive_levels": fp_levels,
-            "centroids": centroids, "seconds": round(time.time() - t0, 1)}
+            "centroids": centroids, "seconds": round(time.time() - t0, 1),
+            "model_spacing_mm": ckpt["spacing_mm"]}
 
 
 # --------------------------------------------------------------------------- report
@@ -126,8 +135,8 @@ def distance(a, b):
     return float(np.linalg.norm(np.subtract(a, b))) if a is not None and b is not None else np.nan
 
 
-def load_all_results(sources) -> tuple[pd.DataFrame, pd.DataFrame, list[dict]]:
-    cases = [json.loads(p.read_text()) for s in sources for p in sorted((EVAL_DIR / "per_case" / s).glob("*.json"))]
+def load_all_results(sources, eval_dir) -> tuple[pd.DataFrame, pd.DataFrame, list[dict]]:
+    cases = [json.loads(p.read_text()) for s in sources for p in sorted((eval_dir / "per_case" / s).glob("*.json"))]
     lv, ct = [], []
     for r in cases:
         base = {"source": r["source"], "group": GROUP[r["source"]], "case_id": r["case_id"],
@@ -144,14 +153,14 @@ def load_all_results(sources) -> tuple[pd.DataFrame, pd.DataFrame, list[dict]]:
     return pd.DataFrame(lv), pd.DataFrame(ct), cases
 
 
-def false_positive_level_sizes(cases: list[dict]) -> pd.DataFrame:
+def false_positive_level_sizes(cases: list[dict], pred_dir) -> pd.DataFrame:
     """Volume of every predicted level that the ground truth does not have, read from
     the saved prediction, and whether it touches the scan border (cut off)."""
     rows = []
     for r in cases:
         if not r["false_positive_levels"]:
             continue
-        img = nib.load(PRED_DIR / r["source"] / f"{r['case_id']}_predicted_labels.nii.gz")
+        img = nib.load(pred_dir / r["source"] / f"{r['case_id']}_predicted_labels.nii.gz")
         lab = np.asarray(img.dataobj)
         voxel_ml = float(abs(np.linalg.det(img.affine[:3, :3]))) / 1000
         for name in r["false_positive_levels"]:
@@ -167,7 +176,7 @@ def fmt(s: pd.Series) -> str:
     return f"{s.mean():.3f} / {s.median():.3f} ({len(s)})" if len(s) else "-"
 
 
-def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
+def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict], pred_dir) -> str:
     scored = lv[~lv["fragment"]]
     L = ["# Part D: evaluation on the test sets", "",
          "Made by `scripts/06_evaluate_on_test_sets.py`. Scoring rules: `lumbar/src/lumbar/evaluation.py`. "
@@ -184,7 +193,8 @@ def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
 
     L += level_table(scored, "Dice per vertebra (strict)")
     L += level_table(scored[~scored["truncated"]], "Dice per vertebra, complete vertebrae only (not cut off by the scan edge)")
-    L += level_table(scored, "Resampling ceiling (ground truth -> 2 mm -> back; best possible at 2 mm)", "dice_ceiling")
+    mm = f"{cases[0].get('model_spacing_mm', 2.0):g} mm"     # results cached before this field existed are 2 mm
+    L += level_table(scored, f"Resampling ceiling (ground truth -> {mm} -> back; best possible at {mm})", "dice_ceiling")
     L += level_table(scored[~scored["gt_has_L6"]], "Dice per vertebra, without the L6 patients")
 
     # shifts: per case, which renaming of the predicted levels fits best
@@ -212,7 +222,7 @@ def build_report(lv: pd.DataFrame, ct: pd.DataFrame, cases: list[dict]) -> str:
           "A lumbar vertebra is about 60 ml; 'vertebra-sized' = 20 ml or more.", "",
           "| Test set | cases | cases with a false-positive level | of these: no lumbar level in the ground truth "
           "| false-positive levels: median size | vertebra-sized ones |", "|---|---|---|---|---|---|"]
-    fp = false_positive_level_sizes(cases)
+    fp = false_positive_level_sizes(cases, pred_dir)
     cdf = pd.DataFrame([{"group": GROUP[r["source"]], "fp": bool(r["false_positive_levels"]),
                          "no_gt": not r["levels"]} for r in cases])
     for g, d in cdf.groupby("group"):
@@ -274,16 +284,24 @@ def main():
     ap.add_argument("--limit", type=int, help="only the first N cases per source, for quick tests")
     ap.add_argument("--device", default="auto")
     ap.add_argument("--report-only", action="store_true", help="only rebuild the report from cached results")
+    ap.add_argument("--tag", help="results folder suffix, e.g. 1.5mm -> outputs/evaluation_1.5mm; default: "
+                                  "none for a 2 mm model, '<voxel size>mm' otherwise (with --report-only: none)")
     args = ap.parse_args()
 
     if not args.report_only:
         device = torch.device("cuda" if args.device == "auto" and torch.cuda.is_available()
                               else ("cpu" if args.device == "auto" else args.device))
         net, ckpt = load_trained_network(args.weights, device)
-        print(f"[evaluate] weights from training step {ckpt['step']} (validation Dice {ckpt['best_val_dice']:.3f}), {device}")
+        if args.tag is None:   # never mix models: the voxel size of the weights picks the folders
+            args.tag = "" if ckpt["spacing_mm"] == 2.0 else f"{ckpt['spacing_mm']:g}mm"
+    eval_dir, pred_dir = output_folders(args.tag or "")
+    if not args.report_only:
+        print(f"[evaluate] weights {args.weights} from training step {ckpt['step']} "
+              f"(validation Dice {ckpt['best_val_dice']:.3f}, {ckpt['spacing_mm']:g} mm voxels), {device} "
+              f"-> {eval_dir.name}/, {pred_dir.name}/")
         for src in args.source:
             audit = pd.read_csv(QC_REPORTS_DIR / f"anomalies_per_case_{src}.csv").set_index("case_id")
-            cache = EVAL_DIR / "per_case" / src
+            cache = eval_dir / "per_case" / src
             cache.mkdir(parents=True, exist_ok=True)
             cases = load_cases(src)[:args.limit]
             print(f"[evaluate] {src}: {len(cases)} cases", flush=True)
@@ -292,18 +310,18 @@ def main():
                 if out.exists():
                     continue
                 row = audit.loc[case.case_id].to_dict() if case.case_id in audit.index else {}
-                r = evaluate_case(case, src, net, ckpt, device, row)
+                r = evaluate_case(case, src, net, ckpt, device, row, pred_dir)
                 out.write_text(json.dumps(r, indent=1))
                 d = [v["dice"] for v in r["levels"].values()]
                 print(f"   {i}/{len(cases)} {case.case_id}: mean Dice {np.mean(d) if d else float('nan'):.3f} "
                       f"over {len(d)} levels, false-positive levels {r['false_positive_levels'] or '-'} "
                       f"({r['seconds']:.0f} s)", flush=True)
 
-    lv, ct, cases = load_all_results(args.source)
-    lv.to_csv(EVAL_DIR / "dice_per_level.csv", index=False)
-    ct.to_csv(EVAL_DIR / "centroid_distances.csv", index=False)
-    (EVAL_DIR / "evaluation_report.md").write_text(build_report(lv, ct, cases), encoding="utf-8")
-    print(f"[evaluate] report -> {EVAL_DIR / 'evaluation_report.md'}")
+    lv, ct, cases = load_all_results(args.source, eval_dir)
+    lv.to_csv(eval_dir / "dice_per_level.csv", index=False)
+    ct.to_csv(eval_dir / "centroid_distances.csv", index=False)
+    (eval_dir / "evaluation_report.md").write_text(build_report(lv, ct, cases, pred_dir), encoding="utf-8")
+    print(f"[evaluate] report -> {eval_dir / 'evaluation_report.md'}")
 
 
 if __name__ == "__main__":

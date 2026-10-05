@@ -19,8 +19,16 @@ ARCHIVES_DIR = DATA_ROOT / "archives"
 EXTRACTED_DIR = DATA_ROOT / "raw"
 PREPROCESSED_DIR = DATA_ROOT / "preprocessed"
 QC_REPORTS_DIR = PROJECT_ROOT / "outputs" / "qc"
-# trained network (step 4); lives inside lumbar/ so it ships with the code zip
-WEIGHTS_FILE = PROJECT_ROOT / "lumbar" / "weights" / "lumbar_vertebrae_resenc_unet.pt"
+# trained network (step 4); lives inside lumbar/ so it ships with the code zip.
+# WEIGHTS_FILE is the model the deliverable uses (trained at 2 mm); models trained at
+# another voxel size get the size in their name (weights_file_for_spacing).
+WEIGHTS_DIR = PROJECT_ROOT / "lumbar" / "weights"
+WEIGHTS_FILE = WEIGHTS_DIR / "lumbar_vertebrae_resenc_unet.pt"
+
+
+def weights_file_for_spacing(spacing: float) -> Path:
+    """2 mm -> the existing lumbar_vertebrae_resenc_unet.pt; e.g. 1.5 mm -> ..._1.5mm.pt."""
+    return WEIGHTS_FILE if spacing == 2.0 else WEIGHTS_DIR / f"lumbar_vertebrae_resenc_unet_{spacing:g}mm.pt"
 
 TOTALSEG_V3_ZIP = ARCHIVES_DIR / "Totalsegmentator_dataset_v300.zip"
 
@@ -49,7 +57,7 @@ def downloaded_sources() -> list[str]:
 
 
 def preprocessed_folder(source: str, spacing: float, crop: str) -> Path:
-    """Folder name records the settings, so a 2 mm lumbar-crop cache and a
-    full-image cache can never be mixed up: e.g. totalseg_v3_train_2mm_lumbar_crop."""
+    """Folder name records the settings, so caches with another voxel size or crop
+    can never be mixed up: e.g. totalseg_v3_train_2mm_lumbar_crop, ..._1.5mm_lumbar_crop."""
     crop_name = {"lumbar": "lumbar_crop", "none": "full_image"}[crop]
     return PREPROCESSED_DIR / f"{source}_{spacing:g}mm_{crop_name}"

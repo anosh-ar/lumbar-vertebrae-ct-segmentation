@@ -2,7 +2,8 @@
 
 Steps for one CT
   1. bring the CT into the canonical space exactly as in training
-     (preprocess.py: HU, smoothing where downsampled, RAS 2 mm grid, HU window -> 0..1);
+     (preprocess.py: HU, smoothing where downsampled, RAS grid with the voxel size
+     stored in the checkpoint (2 or 1.5 mm), HU window -> 0..1);
      the whole scan is used, because at inference there is no label to crop with
   2. slide a patch-sized window over the volume with 50 % overlap; average the
      class probabilities of overlapping windows, weighting each window's centre
@@ -114,7 +115,7 @@ def predict_labels_on_model_grid(net, image: np.ndarray, patch_size, device, bat
 
 def predict_ct(net, img: nib.Nifti1Image, patch_size, device, spacing: float = TARGET_SPACING,
                batch_size: int = 2) -> dict:
-    """Full inference for one CT. Returns the labels on the model grid (2 mm RAS,
+    """Full inference for one CT. Returns the labels on the model grid (RAS, ``spacing`` mm,
     used for the centroids) and on the original CT grid (used for Dice and output)."""
     image, model_affine = ct_to_model_grid(img, spacing)
     label_model = predict_labels_on_model_grid(net, image, patch_size, device, batch_size)

@@ -1,6 +1,7 @@
 """Part A: bring any case into the canonical space.
 
-Canonical space: RAS-aligned axes, 2.0 mm isotropic voxels, intensities
+Canonical space: RAS-aligned axes, isotropic voxels (TARGET_SPACING = 2 mm by
+default; 1.5 mm is the alternative, chosen per run with --spacing), intensities
 clipped to a fixed HU window and scaled to [0, 1], labels in the canonical
 ids of ``labels.py``.
 
@@ -21,7 +22,7 @@ from .geometry import (AFFINE_TOL, antialias_sigma_per_axis, has_no_value_scalin
                        ras_grid_covering_volume, read_header_summary, resample_onto_grid)
 from .labels import CANONICAL, ROI_IDS
 
-TARGET_SPACING = 2.0                 # mm; L1-L5 + sacrum (~250 mm) fits one 128^3 patch
+TARGET_SPACING = 2.0                 # mm, default voxel size of the deliverable model; scripts take --spacing
 HU_WINDOW = (-1000.0, 1500.0)
 AIR_HU = -1024.0
 ROI_MARGIN_MM = 30.0

@@ -4,7 +4,8 @@ This is the inference script of the deliverable (run_inference.sh calls it).
 It needs only the CT files and the trained weights; no labels, no GPU.
 
 What it does, per CT
-  1. canonical space as in training: RAS, 2 mm, HU window -> 0..1 (whole scan, no crop)
+  1. canonical space as in training: RAS, the voxel size stored in the weights file
+     (2 or 1.5 mm), HU window -> 0..1 (whole scan, no crop)
   2. sliding-window segmentation with the trained network, largest piece per class
   3. vertebral body centre per level L1-L5 (lumbar/body_centroid.py), world mm, RAS
   4. labels resampled back onto the CT's own grid

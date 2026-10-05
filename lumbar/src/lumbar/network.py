@@ -15,8 +15,8 @@ Choice and reason
   mirroring along every axis would swap L1 and L5.
 
 Input and output
-  One channel: CT in our canonical space (RAS, 2 mm voxels, HU window scaled to
-  0..1). Eight output channels: background, L1-L5, T12, sacrum (lumbar/labels.py).
+  One channel: CT in our canonical space (RAS, isotropic voxels of the size stored
+  in the checkpoint: 2 mm or 1.5 mm, HU window scaled to 0..1). Eight output channels: background, L1-L5, T12, sacrum (lumbar/labels.py).
   T12 and sacrum are "anchor" classes: they help the network count the levels;
   only L1-L5 are reported.
 """
@@ -29,11 +29,20 @@ from dynamic_network_architectures.architectures.unet import ResidualEncoderUNet
 
 from .labels import NUM_TRAIN_CLASSES
 
-# Patch in voxels (x, y, z) at 2 mm = 19 x 19 x 32 cm. Chosen from the training
-# crops (median 86 x 82 x 152 voxels, 95 % within 98 x 97 x 208): one patch sees
-# almost the whole region T12..sacrum, which the network needs to count levels.
-# Every side is divisible by 32, as the 5 downsampling steps require.
-PATCH_SIZE = (96, 96, 160)
+# The patch is fixed in centimetres, not voxels: 19.2 x 19.2 x 32 cm (x, y, z).
+# Chosen from the 2 mm training crops (median 86 x 82 x 152 voxels, 95 % within
+# 98 x 97 x 208): one patch sees almost the whole region T12..sacrum, which the
+# network needs to count levels. In voxels every side must be divisible by 32,
+# because the network halves the image 5 times.
+PATCH_SIZE_MM = (192.0, 192.0, 320.0)
+DOWNSAMPLING_FACTOR = 32
+
+
+def patch_size_for_spacing(spacing_mm: float) -> tuple[int, int, int]:
+    """Patch in voxels for a voxel size: each side rounded to the nearest multiple of 32.
+    2 mm -> (96, 96, 160) = 19.2 x 19.2 x 32 cm; 1.5 mm -> (128, 128, 224) = 19.2 x 19.2 x 33.6 cm."""
+    f = DOWNSAMPLING_FACTOR
+    return tuple(max(f, int(round(mm / spacing_mm / f)) * f) for mm in PATCH_SIZE_MM)
 
 NETWORK_SETTINGS = {
     "input_channels": 1,
