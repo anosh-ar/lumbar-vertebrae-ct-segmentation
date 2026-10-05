@@ -18,6 +18,8 @@ checkpoints/
 
 # Report build by-products
 report/*.log
+report/*.aux
+report/*.out
 report/*_page*.png
 
 # Python
