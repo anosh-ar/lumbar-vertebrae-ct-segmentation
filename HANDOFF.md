@@ -542,3 +542,6 @@ best validation Dice **0.905 at step 11 000** (2 mm: 0.897 at 8000; each on its 
 - **Deliverable zip:** `lumbar_spine_segmentation_code.zip` at the project root (not in git,
   `*.zip` is ignored): `lumbar/` without venvs/caches, only the 1.5 mm weights, `README.md`,
   `report/lumbar_spine_report.pdf`; 411 MB. Rebuild it after any code or report change.
+- **Zip tested standalone** (unpacked to a new folder, fresh `.venv_inference`): works, output
+  byte-identical to the repo run. Pitfall found: unpacked under a very long Windows path, torch's
+  DLLs fail to load (`WinError 206`, 260-character limit); README tells users to use a short path.

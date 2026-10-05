@@ -24,7 +24,8 @@ Needs Python 3.10–3.12 and internet on the first run (it installs the pinned p
 (vertebral body centres in world mm, RAS). It uses `lumbar/weights/lumbar_vertebrae_resenc_unet_1.5mm.pt`.
 The weights (`lumbar/weights/*.pt`, 391 MB each) are stored with Git LFS: run `git lfs pull` after
 cloning. If Python is not found (on Windows `python3` is often only a Microsoft Store placeholder,
-which the script skips), set `PYTHON=/path/to/python`.
+which the script skips), set `PYTHON=/path/to/python`. On Windows, unpack to a short folder path
+(well under ~100 characters): PyTorch's DLLs fail to load beyond the 260-character path limit.
 
 ## 1. Set up (any OS, Python 3.10+, no GPU needed for steps 0–3)
 
