@@ -1,6 +1,8 @@
 # Handoff: Lumbar Spine L1–L5 take-home assignment
 
-State as of 2026-10-01 (Parts A–D done, report written). Written for the next AI assistant working on this project.
+State as of 2026-10-05 (Parts A–D done; deliverable = 1.5 mm model on `main`, 2 mm model on
+branch `model-2mm`; see §10). Sections 1–8 describe the first (2 mm) run and stay valid for it.
+Written for the next AI assistant working on this project.
 Everything below was checked against the files on disk when this was written.
 
 ---
@@ -508,3 +510,35 @@ best validation Dice **0.905 at step 11 000** (2 mm: 0.897 at 8000; each on its 
   VerSe 3 → 16 (whole thoracic vertebrae called L1–L5, e.g. s0684, sub-verse250). Crop-only training
   weakness (issue 8), stronger at 1.5 mm; possible cause (unproven): fewer patches seen.
 - TS centre p90 worse because of miscounted / FP-adjacent levels (s1248: 5 levels > 10 mm), median better.
+
+## 10. Deliverable = 1.5 mm model; two branches (2026-10-05, user decision)
+
+- **Branches:** `main` = deliverable, 1.5 mm model (fast-forwarded from `retrain-1.5mm`, then the
+  changes below). `model-2mm` = the first model exactly as it was on `main` before, plus the plain
+  two-page report written for it. Keep both; never merge one into the other. `retrain-1.5mm` is
+  fully contained in `main` and can be deleted.
+- **Defaults switched to 1.5 mm on `main`:** `preprocess.TARGET_SPACING = 1.5`;
+  `sources.WEIGHTS_FILE = weights_file_for_spacing(1.5)` (2 mm keeps the old file name);
+  script 04 `--batch-size` default 3; `run_inference.sh` loads `..._1.5mm.pt`. Inference and
+  evaluation still read the voxel size and patch size from the checkpoint.
+- **run_inference.sh bug fixed:** on a fresh Windows 11 laptop `python3` is the Microsoft Store
+  placeholder, so the script stopped at once ("Python was not found"). It now tries `$PYTHON`,
+  `python3`, `python`, `py -3` and takes the first that really runs Python 3.10–3.12.
+- **Report:** `report/lumbar_spine_report.tex` is now the plain two-page version (formerly
+  `_short`, written 2026-10-05 for 2 mm) updated to the 1.5 mm results; the older long version and
+  `pipeline_diagram.tex` are only on `model-2mm` and in history. Build: `pdflatex` (MiKTeX on the
+  laptop). Figures: `failure_cases_side_views_1.5mm.png` (script 07 `--tag 1.5mm`, new case list:
+  sub-verse012, s0829, s1248, sub-verse250) and `body_centre_steps.png` (script 09, renumbered from
+  an uncommitted `08_draw_body_centre_steps.py` because 08 was taken).
+- **Key 1.5 mm facts for the review:** whole-vertebra false positives in scans *without* a lumbar
+  spine rose from 3 (2 mm) to 23 (TS 7, VerSe 16); in scans *with* a lumbar spine unchanged (TS 4,
+  VerSe 10, half at the scan edge). Preprocessing check at 1.5 mm: centre error median 0.07 mm TS,
+  ~0.46 mm VerSe (VerSe voxels do not sit on the 1.5 mm grid; still < 1 mm, p95 0.89).
+- **Fresh-machine test on the laptop (2026-10-05):** `run_inference.sh` from a clean state
+  (no `.venv_inference`) installs and runs; 3 CTs (s1446, sub-verse020, sub-verse053) took
+  106 / 164 / 45 s (workstation: 22 / 45 / 12 s). Output equals the workstation predictions up to
+  CPU/GPU float noise (≤ 75 of ~130 000 voxels). JSON has `case_id`, `coordinate_system: RAS`,
+  `unit`, `centroids` as the assignment asks.
+- **Deliverable zip:** `lumbar_spine_segmentation_code.zip` at the project root (not in git,
+  `*.zip` is ignored): `lumbar/` without venvs/caches, only the 1.5 mm weights, `README.md`,
+  `report/lumbar_spine_report.pdf`; 411 MB. Rebuild it after any code or report change.

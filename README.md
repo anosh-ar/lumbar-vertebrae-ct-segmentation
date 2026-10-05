@@ -4,6 +4,12 @@ Take-home assignment: preprocessing, 3D segmentation, vertebral body centroids a
 cross-dataset evaluation for the lumbar vertebrae L1–L5. The code is in `lumbar/`, the
 two-page report in `report/lumbar_spine_report.pdf` (LaTeX source next to it).
 
+Two trained models, one per branch. **`main` (this branch) is the deliverable: the model trained at
+1.5 mm voxels**, the native TotalSegmentator size. Branch `model-2mm` keeps the first model, trained at
+2 mm, with its own results and report. The 1.5 mm model is better on both test sets (median Dice
+0.97 vs 0.93 on TotalSegmentator, 0.94 vs 0.92 on VerSe; comparison in
+`outputs/evaluation_comparison_2mm_vs_1.5mm.md`).
+
 ## 0. Only want to run the trained model?
 
 ```bash
@@ -12,11 +18,13 @@ cd lumbar
 ```
 
 Needs Python 3.10–3.12 and internet on the first run (it installs the pinned packages into
-`lumbar/.venv_inference`). CPU only: no GPU, no Docker. About 5–20 s per CT. Tested on Windows 11
+`lumbar/.venv_inference`). CPU only: no GPU, no Docker. About 1–3 min per CT on a laptop CPU (median 34 s on an 18-core workstation). Tested on Windows 11
 (Git Bash); plain bash, so Linux and macOS work the same. Output per CT:
 `<case>_lumbar_labels.nii.gz` (same grid as the CT, 1–5 = L1–L5) and `<case>_centroids.json`
-(vertebral body centres in world mm, RAS). The weights (`lumbar/weights/*.pt`, 391 MB) are stored
-with Git LFS: run `git lfs pull` after cloning.
+(vertebral body centres in world mm, RAS). It uses `lumbar/weights/lumbar_vertebrae_resenc_unet_1.5mm.pt`.
+The weights (`lumbar/weights/*.pt`, 391 MB each) are stored with Git LFS: run `git lfs pull` after
+cloning. If Python is not found (on Windows `python3` is often only a Microsoft Store placeholder,
+which the script skips), set `PYTHON=/path/to/python`.
 
 ## 1. Set up (any OS, Python 3.10+, no GPU needed for steps 0–3)
 
@@ -50,7 +58,7 @@ On a machine with more cores and RAM, raise `--workers` (each worker holds one C
 cd lumbar
 python scripts/00_extract_verse_archives.py                        # unzip VerSe into data/raw/
 python scripts/01_find_header_and_label_anomalies.py --workers 8   # -> outputs/qc/anomaly_report.md
-python scripts/02_preprocess_cases_for_training.py --workers 8     # -> data/preprocessed/
+python scripts/02_preprocess_cases_for_training.py --workers 8     # -> data/preprocessed/*_1.5mm_lumbar_crop/
 python scripts/03_verify_preprocessed_cases.py                     # -> outputs/qc/preprocessing_check_*
 ```
 
@@ -63,22 +71,18 @@ check `torch.cuda.is_available()` afterwards, because installing other packages 
 the CPU build):
 
 ```bash
-python scripts/04_train_lumbar_segmentation_model.py     # Part B: ~2.6 h on an RTX 3090 -> lumbar/weights/
-python scripts/05_predict_lumbar_vertebrae.py <in> <out> # Parts B+C on any CT folder (what run_inference.sh calls)
-python scripts/06_evaluate_on_test_sets.py               # Part D: -> outputs/evaluation/evaluation_report.md
-python scripts/07_make_report_figures.py                 # failure-case figure for the report
+python scripts/04_train_lumbar_segmentation_model.py --max-hours 6 \
+    --same-cases-as ../outputs/training/resenc_m_2mm/training_cases.csv
+                                                      # Part B: 2.6 h on an RTX 3090 (batch 3) -> weights/..._1.5mm.pt
+python scripts/05_predict_lumbar_vertebrae.py <in> <out>   # Parts B+C on any CT folder (what run_inference.sh calls)
+python scripts/06_evaluate_on_test_sets.py                 # Part D: -> outputs/evaluation_1.5mm/evaluation_report.md
+python scripts/07_make_report_figures.py --tag 1.5mm       # failure-case figure for the report
+python scripts/08_compare_two_evaluations.py               # -> outputs/evaluation_comparison_2mm_vs_1.5mm.md
+python scripts/09_draw_body_centre_steps.py                # body-centre figure for the report (Part C)
 ```
 
-Another voxel size (here 1.5 mm, the native TotalSegmentator size) runs side by side with the
-2 mm model, every file name carries the voxel size, and nothing of the 2 mm run is overwritten:
+All defaults are the 1.5 mm model. The 2 mm model is reproduced with `--spacing 2` in steps 02–04
+(add `--batch-size 8`, which fits at 2 mm) and `--weights weights/lumbar_vertebrae_resenc_unet.pt` in
+steps 05–06; every file name carries the voxel size, so the two never overwrite each other.
 
-```bash
-python scripts/02_preprocess_cases_for_training.py --spacing 1.5 --workers 8
-python scripts/03_verify_preprocessed_cases.py --spacing 1.5
-python scripts/04_train_lumbar_segmentation_model.py --spacing 1.5 --batch-size 3 --max-hours 6 \
-    --same-cases-as ../outputs/training/resenc_m_2mm/training_cases.csv   # -> weights/..._1.5mm.pt
-python scripts/06_evaluate_on_test_sets.py --weights weights/lumbar_vertebrae_resenc_unet_1.5mm.pt
-python scripts/08_compare_two_evaluations.py      # -> outputs/evaluation_comparison_2mm_vs_1.5mm.md
-```
-
-To rebuild the report PDF: `tectonic report/lumbar_spine_report.tex` (or any XeLaTeX).
+To rebuild the report PDF: `cd report && pdflatex lumbar_spine_report.tex` (any LaTeX with TikZ).

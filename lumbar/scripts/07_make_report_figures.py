@@ -29,13 +29,22 @@ from lumbar.inference import ct_to_model_grid
 from lumbar.preprocess import merge_label_files_to_canonical
 from lumbar.sources import PROJECT_ROOT, load_cases
 
-# (source, case id, caption): one example per failure type found in step 6
-CASES = [
-    ("verse19_test", "sub-verse012", "VerSe leaves the cut-off\nvertebra unlabelled; model: L4"),
-    ("totalseg_v3_test", "s0829", "short scan, no sacrum:\ncounted one level off"),
-    ("verse19_validation", "sub-verse093", "metal implants:\ncounted one level off"),
-    ("verse19_validation", "sub-verse078", "fractured vertebrae:\ncounted one level off"),
-]
+# (source, case id, caption): one example per failure type found in step 6, per model
+# (key = --tag); the two models fail on partly different scans
+CASES_PER_MODEL = {
+    "": [   # 2 mm model
+        ("verse19_test", "sub-verse012", "VerSe leaves the cut-off\nvertebra unlabelled; model: L4"),
+        ("totalseg_v3_test", "s0829", "short scan, no sacrum:\ncounted one level off"),
+        ("verse19_validation", "sub-verse093", "metal implants:\ncounted one level off"),
+        ("verse19_validation", "sub-verse078", "fractured vertebrae:\ncounted one level off"),
+    ],
+    "1.5mm": [
+        ("verse19_test", "sub-verse012", "VerSe leaves the cut-off\nvertebra unlabelled; model: L4"),
+        ("totalseg_v3_test", "s0829", "short scan, no sacrum:\ncounted one level off"),
+        ("totalseg_v3_test", "s1248", "metal near the spine:\ncounted one level off"),
+        ("verse19_test", "sub-verse250", "no lumbar spine (neck/chest scan):\nother vertebrae called L1-L5"),
+    ],
+}
 # background, L1 red, L2 orange, L3 yellow, L4 green, L5 blue, T12 grey, sacrum purple, L6 pink
 COLORS = ["#000000", "#e6194b", "#f58231", "#ffe119", "#3cb44b", "#4363d8", "#a9a9a9", "#911eb4", "#f032e6", "#9a6324"]
 FIGURES_DIR = PROJECT_ROOT / "report" / "figures"
@@ -67,10 +76,11 @@ def main():
     suffix = f"_{args.tag}" if args.tag else ""
     predictions_dir = PROJECT_ROOT / "outputs" / f"predictions{suffix}"
     out = FIGURES_DIR / f"failure_cases_side_views{suffix}.png"
+    cases = CASES_PER_MODEL[args.tag]
     cmap = ListedColormap(COLORS)
-    fig, axes = plt.subplots(1, 2 * len(CASES), figsize=(2.0 * len(CASES) * 1.55, 3.0),
+    fig, axes = plt.subplots(1, 2 * len(cases), figsize=(2.0 * len(cases) * 1.55, 3.0),
                              gridspec_kw={"wspace": 0.04})
-    for k, (source, cid, caption) in enumerate(CASES):
+    for k, (source, cid, caption) in enumerate(cases):
         im, gt, pred = side_view(source, cid, predictions_dir)
         for j, (lab, title) in enumerate([(gt, "ground truth"), (pred, "prediction")]):
             ax = axes[2 * k + j]

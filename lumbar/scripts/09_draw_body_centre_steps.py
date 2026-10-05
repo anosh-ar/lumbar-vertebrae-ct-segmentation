@@ -1,7 +1,7 @@
 """Step 9: picture of how the vertebral body centre is found (Part C), for the report.
 
 What it does
-  Takes one VerSe vertebra (ground-truth mask, 2 mm RAS grid, same code as
+  Takes one VerSe vertebra (ground-truth mask, 1.5 mm RAS grid, same code as
   training) and draws one slice seen from above (front of the body up) after
   each step of the body-centre method:
     1. the vertebra mask,
@@ -35,7 +35,7 @@ OUT = PROJECT_ROOT / "report" / "figures" / "body_centre_steps.png"
 
 
 def verse_point_in_grid(case, level: str, grid_affine: np.ndarray):
-    """VerSe annotated point of ``level`` as a voxel position in the 2 mm grid, or None."""
+    """VerSe annotated point of ``level`` as a voxel position in the model grid, or None."""
     img = case.load_ct()
     ctd = case.load_verse_centroids()
     if not ctd or not ctd["direction"]:

@@ -12,7 +12,7 @@
   ]
   % training row
   \node[io] (tsin) {TotalSegmentator\\ training CTs + labels};
-  \node[step=teal, right=of tsin] (std1) {\textbf{Standardise}\\ \scriptsize RAS, 2\,mm, HU window};
+  \node[step=teal, right=of tsin] (std1) {\textbf{Standardise}\\ \scriptsize RAS, 1.5\,mm, HU window};
   \node[step=orange, right=of std1] (crop) {\textbf{Crop}\\ \scriptsize T12 to sacrum};
   \node[step=orange, right=of crop] (train) {\textbf{Train 3D U-Net}\\ \scriptsize from scratch};
   \node[io, right=of train] (weights) {model weights};

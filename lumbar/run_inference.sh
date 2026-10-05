@@ -20,15 +20,30 @@ fi
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV="$HERE/.venv_inference"
-PYTHON="${PYTHON:-$(command -v python3 || command -v python)}"
+
+# The first Python 3.10-3.12 that really runs. Trying each one matters on Windows, where
+# "python3" is often only a Microsoft Store placeholder. Override with PYTHON=/path/to/python.
+find_python() {
+    local candidate
+    for candidate in "${PYTHON:-}" python3 python "py -3"; do
+        [ -n "$candidate" ] || continue
+        if $candidate -c 'import sys; sys.exit(not (3, 10) <= sys.version_info[:2] <= (3, 12))' >/dev/null 2>&1; then
+            echo "$candidate"
+            return 0
+        fi
+    done
+    echo "error: no Python 3.10-3.12 found; install one or set PYTHON=/path/to/python" >&2
+    return 1
+}
 
 if [ -x "$VENV/bin/python" ]; then
     PY="$VENV/bin/python"
 elif [ -x "$VENV/Scripts/python.exe" ]; then
     PY="$VENV/Scripts/python.exe"
 else
-    echo "[setup] creating $VENV (first run only)"
-    "$PYTHON" -m venv "$VENV"
+    PYTHON="$(find_python)"
+    echo "[setup] creating $VENV with $PYTHON (first run only)"
+    $PYTHON -m venv "$VENV"
     if [ -x "$VENV/bin/python" ]; then PY="$VENV/bin/python"; else PY="$VENV/Scripts/python.exe"; fi
     "$PY" -m pip install --quiet --upgrade pip
     # CPU build of PyTorch first, then everything else at the pinned versions
@@ -38,4 +53,4 @@ else
 fi
 
 "$PY" "$HERE/scripts/05_predict_lumbar_vertebrae.py" "$1" "$2" \
-    --weights "$HERE/weights/lumbar_vertebrae_resenc_unet.pt" --device cpu
+    --weights "$HERE/weights/lumbar_vertebrae_resenc_unet_1.5mm.pt" --device cpu

@@ -105,7 +105,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--spacing", type=float, default=TARGET_SPACING, help="voxel size in mm; step 2 must have run with it")
     ap.add_argument("--steps", type=int, default=11000, help="planned training steps (sets the learning-rate schedule)")
-    ap.add_argument("--batch-size", type=int, default=8,
+    ap.add_argument("--batch-size", type=int, default=3,
                     help="patches per step (RTX 3090: 8 at 2 mm uses ~16.5 GB, 3 at 1.5 mm ~15.5 GB)")
     ap.add_argument("--max-hours", type=float, default=3.0, help="stop when this much time has passed")
     ap.add_argument("--validate-every", type=int, default=1000)

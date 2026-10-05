@@ -20,15 +20,18 @@ EXTRACTED_DIR = DATA_ROOT / "raw"
 PREPROCESSED_DIR = DATA_ROOT / "preprocessed"
 QC_REPORTS_DIR = PROJECT_ROOT / "outputs" / "qc"
 # trained network (step 4); lives inside lumbar/ so it ships with the code zip.
-# WEIGHTS_FILE is the model the deliverable uses (trained at 2 mm); models trained at
-# another voxel size get the size in their name (weights_file_for_spacing).
+# The first model (2 mm) keeps its original name; models at other voxel sizes carry the
+# size in the name. WEIGHTS_FILE is the model the deliverable uses: 1.5 mm.
 WEIGHTS_DIR = PROJECT_ROOT / "lumbar" / "weights"
-WEIGHTS_FILE = WEIGHTS_DIR / "lumbar_vertebrae_resenc_unet.pt"
 
 
 def weights_file_for_spacing(spacing: float) -> Path:
-    """2 mm -> the existing lumbar_vertebrae_resenc_unet.pt; e.g. 1.5 mm -> ..._1.5mm.pt."""
-    return WEIGHTS_FILE if spacing == 2.0 else WEIGHTS_DIR / f"lumbar_vertebrae_resenc_unet_{spacing:g}mm.pt"
+    """2 mm -> lumbar_vertebrae_resenc_unet.pt; e.g. 1.5 mm -> ..._1.5mm.pt."""
+    name = "lumbar_vertebrae_resenc_unet" + ("" if spacing == 2.0 else f"_{spacing:g}mm")
+    return WEIGHTS_DIR / f"{name}.pt"
+
+
+WEIGHTS_FILE = weights_file_for_spacing(1.5)
 
 TOTALSEG_V3_ZIP = ARCHIVES_DIR / "Totalsegmentator_dataset_v300.zip"
 
