@@ -1,0 +1,45 @@
+% Pipeline overview for the short report: training (top row) and inference (bottom row)
+% use the same "standardise" step, so the network sees the same kind of input in both.
+\begin{tikzpicture}[
+    font=\sffamily\footnotesize,
+    node distance=4mm and 5mm,
+    step/.style={draw=#1!70!black, fill=#1!12, rounded corners=2pt, align=center,
+                 minimum height=9mm, text width=25mm, inner sep=2pt},
+    io/.style={draw=black!55, fill=black!4, rounded corners=2pt, align=center,
+               minimum height=9mm, text width=22mm, inner sep=2pt},
+    arr/.style={-{Stealth[length=2mm]}, thick, black!65},
+    lane/.style={font=\sffamily\scriptsize\bfseries, text=black!60, anchor=south west},
+  ]
+  % training row
+  \node[io] (tsin) {TotalSegmentator\\ training CTs + labels};
+  \node[step=teal, right=of tsin] (std1) {\textbf{Standardise}\\ \scriptsize RAS, 2\,mm, HU window};
+  \node[step=orange, right=of std1] (crop) {\textbf{Crop}\\ \scriptsize T12 to sacrum};
+  \node[step=orange, right=of crop] (train) {\textbf{Train 3D U-Net}\\ \scriptsize from scratch};
+  \node[io, right=of train] (weights) {model weights};
+
+  % inference row
+  \node[io, below=8mm of tsin] (ctin) {any CT\\ \scriptsize (test scans, new data)};
+  \node[step=teal, right=of ctin] (std2) {\textbf{Standardise}\\ \scriptsize same code as above};
+  \node[step=blue, right=of std2] (seg) {\textbf{Segment L1--L5}\\ \scriptsize whole scan};
+  \node[step=violet, right=of seg] (body) {\textbf{Body centres}\\ \scriptsize shrink, keep body, regrow};
+  \node[io, right=of body] (out) {label map\\ + centroid JSON};
+
+  % evaluation
+  \node[step=red, below=3mm of body, text width=55mm, xshift=-15mm] (eval)
+       {\textbf{Evaluate} against ground truth\\ \scriptsize Dice per level, distance to VerSe points};
+
+  \draw[arr] (tsin) -- (std1);
+  \draw[arr] (std1) -- (crop);
+  \draw[arr] (crop) -- (train);
+  \draw[arr] (train) -- (weights);
+  \draw[arr] (ctin) -- (std2);
+  \draw[arr] (std2) -- (seg);
+  \draw[arr] (seg) -- (body);
+  \draw[arr] (body) -- (out);
+  \draw[arr, dashed] (weights.south) |- ($(seg.north)+(0,3.5mm)$) -- (seg.north);
+  \draw[arr] (out.south) |- (eval.east);
+
+  \node[lane] at ($(tsin.north west)+(0,0.5mm)$) {TRAINING (Parts A, B)};
+  \node[lane] at ($(ctin.north west)+(0,0.5mm)$) {INFERENCE (Parts A, B, C)};
+  \node[lane, anchor=north west] at ($(eval.south west)+(0,-0.5mm)$) {EVALUATION (Part D)};
+\end{tikzpicture}
