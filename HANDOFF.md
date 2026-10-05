@@ -316,6 +316,15 @@ Design risks to raise with the user (Part B decisions):
 10. Each image is read twice overall (steps 01 and 02 are separate passes); `load_ct_as_hu` loads
     the full CT before cropping, and step 02 loads the CT even for cases it then skips. Fine for
     16 GB RAM; optimise only if the v3 run is too slow.
+11. **Border-slice loss in `geometry.resample_onto_grid` (found 2026-10-05, NOT fixed on purpose).**
+    With `mode="constant"`, sample points that land a hair outside the image (slightly tilted
+    scans: direction-matrix off-diagonal ~0.07) return background, so the outermost slice can be
+    dropped. Only vertebrae cut off at the scan border are affected. Worst case s0978 (L1 occupies
+    4 border slices): 719 of 1366 voxels kept at 1.5 mm; with `mode="grid-constant"` all 1368.
+    Shows up in step 03 as the few remaining > 1 mm / < 0.9 volume cases at 1.5 mm (10 train, 0 test).
+    Also used when predictions go back to the CT grid. Left unfixed so the 2 mm vs 1.5 mm
+    comparison runs identical code; the fix is one word (`grid-constant` for label/order-0 resampling)
+    and should be applied to both models together, then steps 02–06 re-run.
 
 ---
 
@@ -447,3 +456,55 @@ Fonts are loaded by file name (texgyrepagella/heros) because Tectonic cannot fin
 Push everything except raw and preprocessed data: code, report, `outputs/` (qc, evaluation,
 predictions, training logs), and the weights via **Git LFS** (`lumbar/weights/*.pt`, 391 MB; GitHub
 rejects > 100 MB in plain git). Not pushed: `data/`, the two 819 MB resume checkpoints.
+
+---
+
+## 9. Retraining at 1.5 mm voxels (2026-10-05, branch `retrain-1.5mm`, user request)
+
+**Why (user):** every TotalSegmentator v3 CT is 1.5 mm isotropic, so at 1.5 mm the training
+domain loses nothing to resampling. User-measured ceiling: 2 mm TS 0.937 / VerSe 0.938;
+1.5 mm TS 1.000 / VerSe 0.956 (our step 06 reproduces exactly these numbers).
+**Rule:** change ONLY the voxel size; same train/validation cases, loss, optimiser, 11 000 steps,
+checkpoint rule. Keep all 2 mm results; 1.5 mm results get their own names. Which model goes into
+the deliverable and report is **not decided yet** (user decides after the comparison).
+
+**Code changes (commit 42fd3d0):** voxel size is now a parameter end to end.
+- `network.patch_size_for_spacing()`: patch fixed in cm (19.2 × 19.2 × 32), rounded to multiples of
+  32 → 2 mm (96, 96, 160) unchanged, 1.5 mm (128, 128, 224) = 19.2 × 19.2 × 33.6 cm (213 → 224, the
+  nearest multiple of 32; 192 would be only 28.8 cm).
+- `sources.weights_file_for_spacing()`: 2 mm keeps `lumbar_vertebrae_resenc_unet.pt`;
+  1.5 mm → `lumbar_vertebrae_resenc_unet_1.5mm.pt`.
+- `training.choose_training_cases(same_cases_as=...)` + script 04 `--same-cases-as`: reuse the exact
+  split of an earlier run (checked: all cases exist at the new voxel size).
+- Script 04: `--spacing`, `--weights-out`; run folder `resenc_m_<s>mm`; checkpoint stores the real
+  voxel size + patch (before: always 2 mm). **Refuses to overwrite an existing weights file**
+  without `--overwrite-weights` (protects the 2 mm deliverable model).
+- Script 06 `--tag` (picked from the checkpoint): `outputs/evaluation_1.5mm/`, `outputs/predictions_1.5mm/`.
+  The 2 mm report rebuilds byte-identical. Script 07 `--tag`. New script 08 compares two evaluations.
+- Already correct before: 05/06 read spacing + patch from the checkpoint; body-centre rules are in mm.
+
+**Run facts:** step 02 at 1.5 mm: same counts as 2 mm (1257/87/32/36 written), 4.0 GB disk.
+Step 03: TS centre error median 0.06–0.07 mm (2 mm: 0.3); TS test cases > 1 mm: 2 → 0; train 46 → 10
+(the 10 are issue 11). RAM for training data 8.2 GB (2 mm: 3.5). **Batch 3** (15.5 GB, 0.72–0.78 s/step;
+batch 4 = 20.3 GB but 3× slower per step, batch 5 overflows). → only 33 000 patches seen vs 88 000 at
+2 mm (same steps): the one unavoidable difference. Training 2.59 h (`--max-hours 6` as safety only),
+best validation Dice **0.905 at step 11 000** (2 mm: 0.897 at 8000; each on its own grid).
+
+**Comparison (`outputs/evaluation_comparison_2mm_vs_1.5mm.md`, script 08):**
+| | 2 mm TS | 1.5 mm TS | 2 mm VerSe | 1.5 mm VerSe |
+|---|---|---|---|---|
+| Dice all, mean / median | .881 / .928 | **.894 / .965** | .851 / .919 | **.906 / .939** |
+| Dice not cut off | .908 / .930 | .921 / .968 | .854 / .919 | .913 / .939 |
+| ceiling | .937 | 1.000 | .938 | .956 |
+| miscounted cases | 1 (s0829) | 2 (s0829, s1248) | 4 (078, 085, 093, 260) | 1 (252) |
+| FP levels: cases / levels / median size | 51 / 158 / 0.8 ml | 52 / 194 / 3.1 ml | 23 / 76 / 1.1 ml | 23 / 91 / 7.0 ml |
+| vertebra-sized FP (≥ 20 ml) | 4 | 11 | 12 | 26 |
+| body centre pred vs GT body, median / p90 | 0.6 / 8.9 | 0.3 / 15.7 | 0.5 / 7.5 | 0.6 / 3.9 |
+| pred body vs VerSe point | – | – | 1.0 / 7.5 | 1.0 / 5.6 |
+| CPU s/scan (6 scans, 18 cores), median | 13.5 | 33.5 (2.5×) | | |
+- L5 on TS is the only level where 1.5 mm is lower in the mean (.879 → .869), due to s1248 (miscounted).
+- **All extra vertebra-sized FPs are in scans with NO lumbar spine**: scans that contain a lumbar
+  spine: TS 4 → 4, VerSe 9 → 10 (VerSe's unlabelled cut-off vertebrae); no-lumbar scans: TS 0 → 7,
+  VerSe 3 → 16 (whole thoracic vertebrae called L1–L5, e.g. s0684, sub-verse250). Crop-only training
+  weakness (issue 8), stronger at 1.5 mm; possible cause (unproven): fewer patches seen.
+- TS centre p90 worse because of miscounted / FP-adjacent levels (s1248: 5 levels > 10 mm), median better.

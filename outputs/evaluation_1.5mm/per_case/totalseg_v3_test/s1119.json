@@ -1,0 +1,115 @@
+{
+ "case_id": "s1119",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1119",
+ "flags": "PAD_OUTSIDE_FOV TRUNCATED MULTI_CC",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 60.58,
+   "pred_ml": 25.21,
+   "dice": 0.5702596380802518,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.47153575516086643,
+   "dice_ceiling": 1.0,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 2.56,
+   "pred_ml": 19.04,
+   "dice": 0.011253516723976243,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 1.0,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    3.72,
+    -27.83,
+    -382.75
+   ],
+   "gt_body": [
+    7.98,
+    -21.99,
+    -372.24
+   ],
+   "gt_whole": [
+    8.56,
+    -31.95,
+    -373.25
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    21.76,
+    -24.61,
+    -366.45
+   ],
+   "gt_body": [
+    6.56,
+    -11.18,
+    -391.6
+   ],
+   "gt_whole": [
+    6.56,
+    -11.18,
+    -391.6
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    12.5,
+    81.09,
+    -108.2
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    23.98,
+    -54.84,
+    -161.15
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    -102.33,
+    32.89,
+    -270.94
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 13.7,
+ "model_spacing_mm": 1.5
+}

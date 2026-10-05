@@ -1,0 +1,132 @@
+{
+ "case_id": "s0735",
+ "source": "totalseg_v3_test",
+ "subject_id": "s0735",
+ "flags": "LABEL_AFFINE_EPS",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 44.52,
+   "pred_ml": 45.39,
+   "dice": 0.948577434126567,
+   "dice_if_pred_one_level_up": 0.0003931126660901014,
+   "dice_if_pred_one_level_down": 0.0035146511913032815,
+   "dice_ceiling": 0.9981796116504854,
+   "truncated": false,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 43.66,
+   "pred_ml": 38.06,
+   "dice": 0.8819593589955395,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.9977199829964833,
+   "truncated": false,
+   "fragment": false
+  },
+  "L3": {
+   "gt_ml": 27.46,
+   "pred_ml": 23.46,
+   "dice": 0.890833167627759,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.9977271331162848,
+   "truncated": false,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    18.69,
+    102.57,
+    -269.84
+   ],
+   "gt_body": [
+    19.42,
+    102.75,
+    -270.16
+   ],
+   "gt_whole": [
+    16.84,
+    93.08,
+    -269.44
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    10.8,
+    100.8,
+    -297.94
+   ],
+   "gt_body": [
+    10.89,
+    100.62,
+    -298.06
+   ],
+   "gt_whole": [
+    9.2,
+    90.53,
+    -298.87
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L3": {
+   "pred_body": [
+    -2.34,
+    110.57,
+    -319.41
+   ],
+   "gt_body": [
+    -3.75,
+    107.95,
+    -319.52
+   ],
+   "gt_whole": [
+    -0.03,
+    100.66,
+    -320.08
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L4": {
+   "pred_body": [
+    51.42,
+    77.86,
+    -184.69
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    114.54,
+    75.65,
+    -171.27
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 7.3,
+ "model_spacing_mm": 1.5
+}

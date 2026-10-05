@@ -1,0 +1,89 @@
+{
+ "case_id": "sub-verse059",
+ "source": "verse19_test",
+ "subject_id": "sub-verse059",
+ "flags": "NONAXIAL LABEL_AFFINE_EPS TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 59.42,
+   "pred_ml": 56.44,
+   "dice": 0.9321802772167849,
+   "dice_if_pred_one_level_up": 0.0011697958706205767,
+   "dice_if_pred_one_level_down": 0.0008738435819988222,
+   "dice_ceiling": 0.9636048526863085,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L2",
+  "L3",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -14.91,
+    -201.47,
+    -194.94
+   ],
+   "gt_body": [
+    -15.18,
+    -201.44,
+    -194.73
+   ],
+   "gt_whole": [
+    -14.22,
+    -212.26,
+    -197.99
+   ],
+   "verse_point": [
+    -14.9,
+    -201.15,
+    -194.77
+   ],
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    -20.28,
+    -194.35,
+    -225.87
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    -31.05,
+    -181.13,
+    -237.74
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    -40.11,
+    -239.76,
+    -43.47
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 1.6,
+ "model_spacing_mm": 1.5
+}

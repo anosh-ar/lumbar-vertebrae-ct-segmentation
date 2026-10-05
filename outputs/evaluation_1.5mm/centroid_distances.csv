@@ -1,0 +1,932 @@
+source,group,case_id,subject_id,gt_has_L6,level,pred_body_to_gt_body_mm,pred_body_to_verse_point_mm,gt_body_to_verse_point_mm,gt_whole_to_verse_point_mm,pred_method,gt_method
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L1,0.1187434208703756,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L2,0.21189620100417686,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L3,0.30610455730028274,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L4,0.19646882704388488,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L5,0.30561413579870983,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L1,0.02449489742782727,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L2,0.20273134932714404,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L3,1.3150665382405642,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L4,0.23727621035408808,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L5,0.6976388750635961,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L1,0.09219544457290436,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L2,0.07874007874012545,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L3,0.2009975124224169,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L4,0.42684891940826064,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L5,0.11045361017187764,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L1,0.24392621835301118,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L2,0.09486832980504013,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L3,0.07874007874012783,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L4,1.9925862591115109,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L5,0.4466542286825558,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L1,0.06999999999999901,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L2,0.09380831519647151,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L3,0.21260291625469882,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L4,0.05830951894845755,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L5,211.67118793071486,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L1,121.63192919624353,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L4,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L1,0.5732364259186615,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L2,0.6974955196988775,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L3,0.9658674857349722,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L4,0.5501817881391524,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L5,0.8444524853418321,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L1,0.2111871208194417,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L2,0.4796873982084685,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L3,0.16673332000531332,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L4,1.0257192598367315,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L5,4.58624029025954,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L1,0.12409673645991229,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L2,0.19339079605814363,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L3,0.1183215956619889,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L4,0.16031219541881,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L5,2.6378968895694146,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L1,0.3264965543462879,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L2,0.2861817604250745,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L3,0.23366642891097597,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L4,0.2738612787525853,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L5,0.2839013913315533,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0295,s0295,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0295,s0295,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0295,s0295,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0295,s0295,False,L4,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0295,s0295,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L1,0.11180339887496724,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L2,0.15362291495736055,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L3,0.3405877273185304,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L4,4.0213057580840434,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L5,9.63351441582976,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L1,0.3725587202039436,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L2,0.49050993873722487,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L3,2.5160683615514294,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L4,0.16031219541880923,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L5,0.33660065359414365,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L1,0.46108567533593864,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L2,0.28982753492380176,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L3,3.059182897441733,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L4,36.3462969227953,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L5,40.80924160040224,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L1,0.06708203932498405,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L2,0.11747340124471115,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L3,0.27928480087538327,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L4,0.23727621035408955,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L5,0.12845232578664406,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L1,0.16431676725155808,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L2,0.10770329614269702,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L3,0.03741657386776354,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L4,0.11489125293074946,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L5,0.28635642126552735,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L1,2.8812150214796532,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L2,0.2300000000000103,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L3,2.0372530525194876,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L4,0.11000000000001364,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L5,0.2601922366251498,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L1,0.8248636250920466,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L2,5.417287143949461,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L1,0.06708203932499676,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L2,0.237276210354077,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L3,0.49527769988160825,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L4,0.31128764832549477,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L5,1.5280706789936047,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L1,0.4273172123844084,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L2,3.1686590223626108,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L4,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L1,8.16339390204834,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L1,0.14456832294801278,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L2,0.11747340124470042,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L3,0.27018512172210774,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L4,0.10816653826393774,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L5,3.8641169754550657,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L1,0.18493242008906777,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L2,0.23345235059854755,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L3,2.8007141946296312,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L4,0.613921819126835,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L5,0.45387222871638117,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L1,0.078740078740102,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L2,0.28231188426984016,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L3,0.6178996682310247,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L4,1.03677384226262,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L5,0.891571646027379,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L1,0.09219544457291824,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L2,0.2186321110908032,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L3,0.307408522978797,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L4,2.421920725374805,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L5,0.8275868534480195,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L1,0.8025584090893328,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L2,1.3228000604777699,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L3,1.9216919628285907,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L4,0.07549834435271648,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L5,0.20469489490458623,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L4,13.127992992076132,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L5,5.360046641588141,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0684,s0684,False,L1,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0684,s0684,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0684,s0684,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0684,s0684,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0684,s0684,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L1,0.19949937343257992,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L2,0.04999999999997105,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L3,0.13638181696988216,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L4,0.031622776601684804,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L5,0.16031219541881525,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L1,0.8171291207636863,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L2,0.23430749027719625,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L3,2.977347813071214,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L1,26.32767745168571,,,,whole_vertebra_fallback,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0802,s0802,False,L1,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0802,s0802,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0802,s0802,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0802,s0802,False,L4,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0802,s0802,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L1,28.724874238192907,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L3,167.04444229006847,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L4,0.3266496594212231,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L5,170.39559648066032,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L1,0.21610182784973792,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L2,0.5426785420485974,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L3,0.8857764955111254,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L4,0.09486832980504374,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L5,3.0589540696126716,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L1,0.40804411526205436,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L2,0.34014702703388583,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L3,0.28948229652260216,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L4,0.04242640687118315,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L5,1.5527395145355194,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L3,52.16527293132856,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L4,17.24419902459955,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L5,6.423869550356695,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L1,0.23515952032608792,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L2,0.08306623862917877,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L3,0.0877496438739141,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L4,0.33120990323362726,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L5,0.2184032966784066,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1051,s1051,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1051,s1051,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1051,s1051,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1051,s1051,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1051,s1051,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1053,s1053,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1053,s1053,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1053,s1053,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1053,s1053,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1053,s1053,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L3,170.11793879541335,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L4,4.570229753524433,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L5,2.8446440902158567,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1075,s1075,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1075,s1075,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1075,s1075,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1075,s1075,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1075,s1075,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1094,s1094,False,L1,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1094,s1094,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1094,s1094,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1094,s1094,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1094,s1094,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L1,81.35389234695535,,,,eroded_body,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1112,s1112,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1112,s1112,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1112,s1112,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1112,s1112,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1112,s1112,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L1,12.755912354669102,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L2,32.309865366479045,,,,eroded_body,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L1,5.366134549189028,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L2,0.12409673645986183,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L3,0.11874342087039923,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L4,573.6209168954704,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L5,1.5858751527153732,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L1,0.15132745950422993,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L2,0.2959729717389746,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L3,0.8321057625085844,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L4,2.6551271156010627,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L5,0.4409081537009735,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L1,0.26191601707417844,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L2,0.16763054614240225,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L3,0.13341664064126435,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L4,0.4313930922024618,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L5,2.5299011838409853,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L1,0.15684387141358488,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L2,0.16522711641857604,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L3,0.13152946437965457,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L4,39.0677590859778,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1184,s1184,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1184,s1184,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1184,s1184,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1184,s1184,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1184,s1184,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1192,s1192,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1192,s1192,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1192,s1192,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1192,s1192,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1192,s1192,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1195,s1195,False,L1,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1195,s1195,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1195,s1195,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1195,s1195,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1195,s1195,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L1,0.21977260975835913,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L2,0.3695943722515081,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L3,2.431542720167591,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L4,0.9396275858019562,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L5,1.8095579570712927,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L1,0.35440090293338705,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L2,0.08944271909999157,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L3,0.15165750888103183,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L4,0.14352700094409276,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L5,11.630705051715482,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L1,28.25218752592439,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L2,27.631599664152628,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L3,26.743339357679336,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L4,29.29667216596452,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L5,10.530645754178625,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L1,0.32171415884291116,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L2,0.3535533905932739,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L3,0.5728001396647777,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L4,0.4654030511288049,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L5,0.7747257579298509,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L1,0.6123724356958162,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L2,0.725327512231523,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L3,1.5446358794227253,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L4,2.720294101747096,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L5,1.4541664278891955,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L1,0.11357816691600352,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L2,0.1431782106327626,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L3,0.06928203230275054,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L4,1.4897650821522137,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L5,0.306757233003545,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L1,131.78362303412362,,,,eroded_body,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L4,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L5,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L1,0.16970562748477303,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L2,0.05099019513593721,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L3,0.23021728866443275,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L4,0.06164414002968557,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L5,0.9433451118228097,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L1,10.286000194439046,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L2,1.2095453691366833,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L3,0.24454038521275034,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L4,0.2908607914449785,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L5,0.39812058474788325,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L2,249.13420840984483,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L3,7.097788387941703,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L4,1.7259779836371034,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L5,15.686793808806177,,,,whole_vertebra_fallback,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L1,0.0761577310586398,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L2,0.07000000000005104,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L3,0.14798648586949364,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L4,2.2420303298572954,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L5,0.10295630140985608,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L1,0.36138621999184994,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L2,0.11357816691600969,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L3,0.20469489490457518,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L4,0.4770744176750731,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L5,0.40902322672433866,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L1,0.8907300376657307,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L2,1.7400574703152738,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L1,0.17146428199482025,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L2,0.15842979517754557,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L3,0.2736786436680949,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L4,0.2111871208194271,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L5,0.25416530054278846,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L1,0.28861739379322787,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L2,1.050095233776414,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L3,0.4323193264243414,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L4,0.6883313155741161,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L5,0.7111258679024267,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1458,s1458,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1458,s1458,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1458,s1458,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1458,s1458,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1458,s1458,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1463,s1463,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1463,s1463,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1463,s1463,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1463,s1463,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1463,s1463,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1504,s1504,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1504,s1504,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1504,s1504,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L1,0.38858718455451086,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L2,0.7103520254071227,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L3,0.3670149860700536,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L4,0.567097875150313,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L5,0.42059481689625755,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1541,s1541,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1541,s1541,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1541,s1541,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1541,s1541,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1541,s1541,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L1,0.6630987860040273,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L2,0.5632938842203089,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L3,0.6155485358604951,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L4,0.7071774883294908,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L5,4.188054440906899,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L4,5.610080213330287,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L5,1.2446686306001276,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L1,0.12409673645989075,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L2,0.26888659319496994,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L3,0.27313000567493495,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L4,0.5088221693283496,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L5,0.5565968020030176,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L4,126.21381540861523,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L5,0.2947880594596709,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L2,274.82763070695785,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L3,233.61827389996702,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1626,s1626,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1626,s1626,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1626,s1626,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1626,s1626,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1631,s1631,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1631,s1631,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1631,s1631,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1631,s1631,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1631,s1631,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1641,s1641,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1641,s1641,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1641,s1641,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1641,s1641,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1641,s1641,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1725,s1725,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1725,s1725,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1725,s1725,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1725,s1725,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1725,s1725,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1728,s1728,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1728,s1728,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1728,s1728,False,L3,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1728,s1728,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1728,s1728,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1736,s1736,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1736,s1736,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1736,s1736,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1736,s1736,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1736,s1736,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L1,324.7891395967544,,,,eroded_body,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L2,295.7998924949095,,,,whole_vertebra_fallback,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L3,2.9194006234156835,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L4,0.13747727084867215,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L5,296.64838951189336,,,,whole_vertebra_fallback,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1773,s1773,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1773,s1773,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1773,s1773,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1773,s1773,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1773,s1773,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L1,0.11090536506408236,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L2,0.14142135623728136,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L3,0.1529705854077841,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L4,0.07280109889281022,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L5,0.11357816691599287,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L1,0.2014944167960884,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L2,0.058309518948438055,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L3,0.04582575694955006,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L4,0.7420916385460924,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L5,0.5009990019949881,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L1,0.150332963783732,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L2,0.0854400374531685,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L3,0.1374772708486396,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L4,0.22561028345357584,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L5,0.8581375181169874,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1827,s1827,False,L1,120.29953698996516,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1827,s1827,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1827,s1827,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1827,s1827,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L1,0.40360872141220216,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L2,0.1431782106327632,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L3,0.211187120819429,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L4,0.08999999999999812,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L5,0.18493242008906632,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L1,0.15684387141358488,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L2,0.2619160170741398,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L3,0.1349073756323373,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L4,1.5133406754594176,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L5,1.9821957521899998,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1932,s1932,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1932,s1932,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1932,s1932,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1932,s1932,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1932,s1932,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1933,s1933,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1933,s1933,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1933,s1933,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1933,s1933,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1933,s1933,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L1,0.13564659966250378,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L2,0.08062257748297562,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L3,0.05099019513591004,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L4,0.42166337284615935,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L5,0.2851315485876628,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1951,s1951,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1951,s1951,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1951,s1951,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1951,s1951,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L1,0.4699999999999928,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L2,9.06405538376725,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L3,6.0506941750513334,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L4,248.65620322043043,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L1,0.3465544690232953,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L2,0.49689032995219085,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L1,0.33436506994600973,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L2,0.10630145812733804,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L3,0.19339079605813192,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L4,0.0806225774829862,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L5,0.23727621035408755,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L1,0.11357816691596473,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L2,0.3507135583350118,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L3,0.14491376746187928,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L4,0.2126029162546908,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L5,0.17291616465790985,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2048,s2048,False,L2,,,,,eroded_body,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2048,s2048,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2048,s2048,False,L4,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2048,s2048,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L1,28.866600076905492,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L2,16.132244109236638,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L3,15.489241427519945,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L4,0.8496469855181054,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L5,0.28913664589603194,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L1,0.28017851452244136,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L2,0.31527765540868435,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L3,0.12409673645990821,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L4,0.2824889378365151,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L5,2.497138362205824,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2081,s2081,False,L1,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2081,s2081,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L1,0.16340134638367246,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L2,0.096436507609945,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L3,2.2191439791054512,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L4,0.33436506994600435,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L5,174.41758340259162,,,,eroded_body,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L1,0.0927361849549574,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L2,0.2044504830026054,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L3,0.11489125293075288,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L4,3.0799512983162614,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L5,3.955919614956807,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L1,0.20663978319770535,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L2,0.09486832980505591,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L3,0.2641968962724587,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L4,0.20445048300260754,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L5,4.049567878181572,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L1,0.5003998401278696,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L2,0.8364807230295339,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L3,1.5248278591368951,,,,eroded_body,eroded_body
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L4,189.93524922983622,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L5,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L2,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L3,,,,,whole_vertebra_fallback,
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L4,154.82935057669135,,,,whole_vertebra_fallback,whole_vertebra_fallback
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L5,1.8008053753806932,,,,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L1,0.6725325270944115,1.5995624401691786,1.8124293089662873,11.45745608763132,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L2,0.7455199527846509,0.9930256794262728,0.70434366611761,10.680823938254939,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L3,0.5078385570237749,0.4368065933568349,0.6320601237224336,11.073513444250656,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L4,0.48795491595023704,0.5128352561983359,0.5441507144165204,11.104093839661118,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L5,0.5969087032369512,0.9548821916865009,0.9944345126754287,11.0785558625662,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse011,sub-verse011,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse011,sub-verse011,False,L2,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse011,sub-verse011,False,L3,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse011,sub-verse011,False,L4,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse011,sub-verse011,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L1,2.9894982856660133,2.995830435789045,1.8321844885272445,12.054517825280275,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L2,0.8636550237218336,2.2614375958667945,1.688964179608296,13.228261412596892,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L3,0.7645913941446089,1.0080178569846905,0.6320601237224228,13.657342347616522,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L4,0.25475478405714813,0.7545859791965334,0.5654201977290849,12.581911619463874,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L5,0.057445626465389886,0.5924525297439454,0.6344288770224689,11.10649359609052,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L1,0.6544463308782458,0.2603843313258288,0.526592821827263,11.647660709344168,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L2,0.5368426212587911,0.6415605972938389,0.43197222132910545,12.821723753068468,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L3,0.36796738985948063,0.457383865041202,0.4855924216871864,13.44423296436059,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L4,0.4574931693479288,0.7930952023559328,0.6796322535018401,12.135307989499093,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L5,0.24392621835299547,1.090687856354877,1.1483466375619977,10.87953583568709,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L1,0.5216320542297865,0.4318564576337825,0.19339079605814094,13.149307966581377,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L2,0.2968164415931331,0.40804411526208917,0.14352700094408305,12.730333852652874,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L3,0.22135943621179605,0.495277699881559,0.31764760348532883,11.885983341734928,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L4,0.4405678154381968,0.6705967491719577,0.29799328851505513,10.888989852139646,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L1,0.7325298628724977,1.8186258548695406,1.233369368842922,9.71017507566161,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L2,2.2995869194270497,3.062645914891249,0.9024965373894915,10.779601105792358,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L3,23.90292032367593,14.21241007007607,11.745271388946279,14.096428625719348,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L4,0.7025667228100153,0.5813776741499422,0.5436910887627202,9.352892600687756,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L5,0.5440588203494265,1.070747402518455,1.1926860441876723,8.889353182318722,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L1,0.2083266665600027,1.3771347065556088,1.3816294727603398,10.702887460867744,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L2,0.7951729371652249,1.3011149065320913,1.249079661190589,11.894696297089725,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L3,0.6363961030678995,4.338260019869728,3.803590409074038,13.250547158513871,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L4,0.7416872656315472,4.3942803733944675,3.748039487518759,13.40379796923244,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L5,0.5408326913195961,2.4630671935616952,2.462884487750081,11.366701368470977,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L1,1.2236421045387356,2.399874996744635,3.291519405988674,12.005207203542968,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L2,0.4350861983561505,0.7264296249465445,1.0399038417084536,11.334072524913525,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L3,0.23280893453645776,0.2998332870112808,0.4257933771208651,10.70665680779952,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L4,0.1449137674618962,0.3132091952673284,0.2410394158639025,11.435401173548753,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L5,0.224944437584051,0.5831809324728962,0.7244998274671833,11.122387333661777,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L1,0.3602776706930326,0.5198076567346809,0.6896375859826619,12.619750393728085,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L2,0.29546573405388576,0.8986100377805745,0.9659192512834786,13.927688250388151,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L3,0.4879549159502136,4.12122554587832,4.0905500852574885,13.488739748397569,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L4,3.360386882488403,5.092160641613736,2.07424685126914,13.25608539501765,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L5,4.345411372931212,5.545349402878063,7.2986231578291525,13.954017342686647,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L1,0.6267375846397074,0.6403905058634275,0.7384443106964811,12.309398848034789,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L2,0.28999999999999704,0.31320919526730806,0.24779023386726926,12.973180026500824,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L3,0.11357816691600145,0.45033320996788384,0.40112342240262305,13.621578469472594,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L4,0.3241913015489568,0.19261360284257403,0.45387222871640936,12.081411341395498,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L5,0.10677078252031051,0.6621933252457296,0.6918814927427779,11.1214837139655,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L1,0.11180339887494882,0.5412947441089783,0.6352164985262647,14.853918674881742,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L2,0.46786750261161275,0.488262224629337,0.5496362433464586,14.6488054120464,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L3,0.34885527085024665,0.4106093033530377,0.547265931700548,14.471147155633528,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L4,0.24413111231469567,1.9773972792536834,1.8895766721676002,12.660288306353857,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L5,0.5852349955359776,5.508402672281664,5.045294837767132,11.018938242861678,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L1,0.37027017163142556,0.5647123161397899,0.32280024783137923,11.2818482528352,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L2,0.2092844953645394,0.9732420048477155,0.7953615530059225,11.805227655577031,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L3,0.1584297951775442,0.664981202741865,0.7289032857656917,11.777096416349837,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L4,0.30561413579870356,0.504876222454578,0.4895916665957441,10.717317761455062,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L5,0.9459915433025861,1.0107917688623973,0.6751296171846937,10.671148016966132,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L1,0.26248809496812814,0.35679125549822377,0.20049937655763064,11.22275367278461,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L2,0.523832034148354,0.39874804074753545,0.6051446108162932,12.587636791709558,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L3,0.22360679774997372,0.5243090691567452,0.5092150822589481,13.182147017841977,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L4,0.49939963956735267,0.26532998322843115,0.37496666518504795,12.3570627577916,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L5,0.32588341473602134,1.3468852957843072,1.621264938250383,10.749125545829301,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L1,0.32710854467589956,0.1568438714136089,0.27459060435493793,12.01447044192959,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L2,0.25495097567963143,0.22561028345359743,0.3910242959203334,13.959229921453424,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L3,0.4215447781671223,0.5852349955360211,0.72097156670707,13.112227118228233,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L4,1.7372391890583077,3.810131231335705,2.331244302942071,12.31922887197084,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L5,7.45644687502028,7.358974113285084,5.0161838084343975,8.714688749462011,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L1,0.47675989764241655,0.2193171219946171,0.5914389233048591,12.498355891876345,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L2,0.4255584566190587,0.5394441583704592,0.5586591089385571,13.049279673606517,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L3,0.4921381919745802,0.6549045732013331,0.7798076685952893,13.053643169628941,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L4,0.867006343690745,0.6637770710110503,0.893252483903635,11.69961537829344,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L5,1.0973149046650206,0.8489994110716509,1.4875819305167937,12.25679811370003,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L1,0.47707441767506265,0.2607680962081149,0.6029925372672614,11.896373396964325,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L2,0.5608029957123893,0.6770524351924341,1.1643453096053547,13.052417400619696,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L3,0.6941901756723373,0.6978538528947275,0.8082697569499939,13.071541607629925,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L4,0.39064049969249526,1.2322743201089692,1.0774506949276141,11.863684082105374,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L5,0.9916148445843344,4.441959027276132,3.802854191262126,9.98532923843774,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L1,26.19310214541225,16.894525740606035,15.08342136254239,17.511964481462392,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L2,0.49769468552517343,0.5278257288158549,0.9428149341201503,15.225997504268793,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L3,0.6438167441128124,0.41988093550433914,0.8235289915965399,14.997429779798942,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L4,0.7887331614684314,3.4136930149033655,3.16167677032298,14.139239724963971,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L5,0.5017967716117844,1.1934404048799419,1.0683164325236132,13.956575511206164,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L1,2.321314282900956,0.8814193099767758,2.0041955992367892,14.925836659966508,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L2,1.3625344032353708,1.0293687385966264,1.4443337564427345,15.693441305207735,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L3,0.9981983770774084,0.8026830009412125,1.5229904792873692,16.064874727180403,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L4,2.199886360701374,3.803196024398409,3.0123744787127635,15.833546665229473,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L5,3.917116286249368,2.9575327555244546,6.135340251363426,13.497973922037342,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L1,0.4324349662088093,0.6224146527838061,0.497393204617841,13.789622910000109,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L2,2.353656729431913,7.671753384983126,6.323203302124626,14.202851826305894,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L3,4.828964692353836,8.861207592647846,4.304102693942144,14.046999679646879,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L4,0.5974110812497352,1.3800724618656992,1.5787019984784998,12.96474450191752,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L5,0.3666060555964578,1.3149144458861153,1.2050726119201436,11.622417992827506,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L1,0.15394804318339206,0.22561028345355805,0.3316624790355349,11.24186817215006,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L2,0.2908607914449489,0.28495613697552546,0.2626785107312227,12.408827503031842,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L3,0.32588341473594096,0.4236744032863576,0.5100000000000088,13.321929289708775,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L4,0.35524639336661656,1.1604309544302864,1.06329676008157,13.993377004854844,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L5,0.35735136770418036,0.742495791233848,0.6942621983084124,11.458363757535363,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L4,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L5,10.266903135804862,9.49207564234503,1.2474774547060898,11.576467509564404,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L1,0.5457105459856775,0.34713109915420404,0.47127486671790686,13.636080815248933,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L2,0.18439088914586046,0.5337602458032984,0.4984977432245811,13.494506289597998,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L3,3.032259883321354,3.783715105554333,0.9319334740205464,12.950718126806718,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L4,1.063860893162285,1.607233648229165,0.6217716622683831,11.064370745776733,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L5,0.8445708969648659,0.7685050422736339,0.5437830449728998,10.652483278559957,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L1,0.8472307831990027,1.5341773039645688,1.1957842614786374,11.230271590660688,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L2,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L1,0.8685620300243378,9.139786649588709,8.888785068838148,14.892112006025204,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L2,0.6081940479814041,0.8810221336606672,0.6268173577685846,13.947135906701421,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L3,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L4,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L5,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L1,0.20396078054369013,0.9089554444525919,1.112744355186745,13.237987007094382,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L2,0.3465544690233008,0.853287759199683,0.8828363381737484,12.65958135168776,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L3,0.13674794331179674,1.3624977064200845,1.463249807790864,13.435479150369005,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L4,1.6684423873781276,2.520099204396523,0.8909545442950432,12.729658282923383,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L5,0.3108054053584108,0.5801723881744103,0.6019966777316994,12.502583732972964,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse205,sub-verse205,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse205,sub-verse205,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse205,sub-verse205,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse205,sub-verse205,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse205,sub-verse205,False,L5,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse221,sub-verse221,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse221,sub-verse221,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse221,sub-verse221,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse221,sub-verse221,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse221,sub-verse221,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse225,sub-verse225,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse225,sub-verse225,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse225,sub-verse225,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse225,sub-verse225,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse225,sub-verse225,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse230,sub-verse230,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse230,sub-verse230,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse230,sub-verse230,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse230,sub-verse230,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse230,sub-verse230,False,L5,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse242,sub-verse242,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse242,sub-verse242,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse242,sub-verse242,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse242,sub-verse242,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse242,sub-verse242,False,L5,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L1,28.321281750655302,28.53217482071776,0.2738612787525618,10.77267840418528,whole_vertebra_fallback,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L2,36.317837215340916,36.55320095422561,0.30364452901376826,11.644470790894728,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L3,38.62188110385095,39.132803375173594,0.6469930447848626,11.251133276252645,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L4,38.23232794377033,39.536854958380296,2.2254437759691745,10.967460964142973,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L1,1.3132402674301493,2.433228308235807,1.590408752491044,11.086735317486376,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L2,0.6827151675479748,0.43058100283228307,0.3848376280978828,12.36512029864652,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L3,0.6445153217729492,0.372692903071688,0.507838557023789,12.231210079137725,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L4,1.726557268091683,1.871550159627055,0.3201562118716278,11.191711218575982,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L5,1.4591093173576613,4.611767557021948,4.904997451579392,10.699771025587452,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L1,0.6160357132504696,0.2649528259898286,0.5575840743780407,13.24961508874882,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L2,0.518169856321261,0.39623225512315935,0.6526101439603978,13.128602362780281,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L3,0.6862943974709373,0.4883646178829732,0.46010868281308975,13.96405027203784,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L4,0.6020797289395919,0.47507894080875185,0.6100819617067853,13.33685495159932,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L5,3.8706201053577947,0.5605354582896622,3.3600744039380905,12.280378658657062,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L1,0.20518284528682676,0.43081318457074885,0.4276680956068634,10.845008068231197,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L2,0.34176014981270686,0.6087692502089845,0.653758365147246,11.863410133684154,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L3,0.46529560496528355,0.6303967004989505,0.298496231131948,11.538929759730756,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L4,0.2709243436828656,0.41340053217185924,0.23685438564653333,11.482007664167412,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L5,0.19748417658130088,0.6014149981501821,0.5423098745181931,10.983892752571828,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse090,sub-verse400,False,L1,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse090,sub-verse400,False,L2,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse090,sub-verse400,False,L3,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse090,sub-verse400,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse090,sub-verse400,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L1,0.3987480407475372,1.4107444843060466,1.0462313319720182,12.532174591825614,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L2,0.6276145313805417,1.1604309544303029,0.9771898484941051,13.424134981442927,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L3,9.465616725813485,12.926519253070415,4.393517952620659,13.920010775857893,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L4,0.4301162633521288,2.550156857920701,2.972053162377811,11.376721847702866,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L5,2.2233982999003885,1.1067520047418038,3.2291484945725033,9.624188277460107,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse209,sub-verse404,False,L1,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse209,sub-verse404,False,L2,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse209,sub-verse404,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse209,sub-verse404,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse209,sub-verse404,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L1,0.4086563348340601,0.7128113354878608,0.7655716818169347,12.639782434836437,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L2,0.2963106478006004,0.48846698967276453,0.6084406298070173,12.87980589915859,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L3,0.36891733491390927,0.7349149610669308,0.818290901819118,13.464895097994653,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L4,1.4061649974309531,3.269571837412346,2.5812787528664884,12.31849016722421,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L5,1.3871914071244849,2.375310506018078,1.1849894514298112,11.156594462469272,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse235,sub-verse412,False,L1,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse235,sub-verse412,False,L2,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse235,sub-verse412,False,L3,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse235,sub-verse412,False,L4,,,,,whole_vertebra_fallback,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse235,sub-verse412,False,L5,,,,,eroded_body,
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L1,0.9792854537876085,1.4052046114356336,0.6797058187186308,13.753010579505835,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L2,0.3865229618017475,1.2407255941585213,1.5739123228439513,14.839289066528764,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L3,3.9772477921296328,3.9389592534069293,6.580949779477136,14.662390664553987,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L4,1.4162626874983164,4.544722213733189,5.747425510609077,13.662422918355277,eroded_body,eroded_body
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L5,15.365161893061849,16.9991911572286,5.583699490481167,13.635882809704688,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L1,0.12688577540449628,1.4179915373513312,1.5149257407543022,14.17354578078471,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L2,0.33120990323359417,0.6571149062378688,0.6224949798994402,13.181384601019742,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L3,0.7487322618933976,3.3090633115732255,2.747744529609684,14.563224230918108,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L4,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L1,10.031879185875397,6.295784303802037,5.912774306533287,15.298499926463387,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L2,0.48764741360948916,0.9780593029055138,0.6696267617113136,14.912320409647844,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L3,0.1630950643030032,0.37920970451716113,0.28178005607209744,13.719948979496975,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L4,0.22045407685048762,0.6526101439603681,0.500099990001972,14.018402191405405,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L5,0.8023091673413708,1.4603424255975004,1.0974971526158863,10.989240192115176,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L1,0.8556284240252845,0.4944694126030474,0.3987480407475386,13.158776538873212,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L2,0.9532051195833995,0.5897457079114575,0.8934203937676921,13.825053345285873,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L3,0.8820997676000201,0.6874590896918583,1.0504760825454462,13.467145206018982,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L4,0.750066663703977,0.5414794548272006,0.9428679653058525,13.269800299929155,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L5,0.7176350047203649,1.2753822956274719,1.7927074496414606,11.438286584974149,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L1,0.48394214530251284,3.217840891032379,2.815475093123724,13.8387174261201,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L2,0.2163330765278364,1.032956920689336,1.084527546906931,14.008272555886398,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L3,0.434741302385687,0.9087904048789184,1.1282287002199456,14.685857142162323,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L4,2.1496511344867266,4.554569134396805,2.657461194448561,12.66826349583872,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L5,29.5779394143676,14.242671799911705,20.150558304920487,15.034008114937267,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L1,0.2351595203260995,0.7222188034107183,0.6717886572427617,11.887207409648422,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L2,0.1746424919657274,0.9800510190801272,0.8804544281222183,12.184797905587105,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L3,4.932058393814913,7.182221104922919,2.6034400319577187,13.948498127038636,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L4,6.0281755117116465,8.514417184986883,2.874960869298919,11.76871275883647,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L5,0.25159491250817945,4.76199538009016,4.757867169226153,11.737478434484975,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L1,1.540551849176161,1.839945651371237,1.7736121334723567,12.226401760125555,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L2,0.38026306683667077,0.5870264048575601,0.259615099714989,11.640390886907534,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L3,0.6198386886924919,0.47791212581392284,0.5978294071054169,12.839929906350743,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L4,1.920104163841167,2.564410263588898,0.7711031059461718,15.58580764670216,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L5,17.307463707892072,16.364825083085986,1.5174979406905833,10.723217800641761,whole_vertebra_fallback,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L1,0.7449161026585414,0.635137780328031,0.74639131827749,11.24203273434124,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L2,0.7235329985563892,0.7785884663928718,1.1706835610018633,11.888237884564726,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L3,1.2742841127472146,4.278153807426749,3.183677119307188,12.64176016225589,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L4,3.5064797161825965,5.2701518004702566,2.7031278179175984,10.865615491080122,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L5,1.1017713011328434,0.9819368615140204,1.2895347998406061,10.016561286189996,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L1,0.5057667446560757,0.5895761189193449,1.0882095386459374,13.139516733883324,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L2,0.36180105030251275,0.9900000000000099,0.8584870412533988,14.908943624549675,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L3,0.3605551275463784,0.3875564475015224,0.7114773362518104,12.72668849308412,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L4,2.265987643390863,2.1946753746283427,1.6032778923193594,9.067557554270078,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L5,1.5480956042828984,0.7696752561957609,1.0358571330062873,12.441499105815202,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L1,0.21095023109729538,0.6810286337592543,0.8077747210701826,11.145896105742244,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L2,0.47465777145223415,1.4739742195845875,1.7378434912269762,13.842842916106498,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L3,1.6896153408394512,1.1539497389401248,2.775319801392263,14.428253532565867,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L4,0.0871779788708106,0.9952386648437648,1.0507616285342818,14.359860723558588,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L5,4.463866037416449,5.004108312177108,0.9060905032059393,15.0208721451186,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L1,1.7513994404475746,0.9945350672550262,2.677106647109903,12.808614288829213,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L2,0.9747820269167924,3.6674377977002046,3.6343224953215163,14.30709614142576,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L3,0.660378679243956,4.349402257782095,4.117717814518145,14.591898437146575,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L4,1.120446339634344,4.649956989048402,3.9875431032153155,15.655867909509213,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L5,3.5123069341958133,4.013489753319414,4.110498753192831,12.731535649716417,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse059,sub-verse059,False,L1,0.34336569426779256,0.36249137920782526,0.40509258201057774,11.587186888973513,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse059,sub-verse059,False,L2,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse059,sub-verse059,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse059,sub-verse059,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L1,0.41484937025381835,0.8051086883148111,0.47000000000000347,14.294369520898769,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L2,0.24269322199023372,0.5921148537235011,0.4674398357008143,14.550958731300144,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L3,0.29899832775451873,0.11224972160321837,0.2541653005427837,15.007258243929824,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L4,0.338378486313766,0.5458021619598057,0.24041630560342622,13.688352713164582,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L5,1.5165750888103058,6.4747355158338324,7.843379373713854,11.15408893634974,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L1,8.03816521352976,7.774586805740867,6.2309951051176204,14.977202676067378,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L2,2.0201237585851053,3.6580595949218977,1.8800265955565791,12.309626314393151,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L3,1.6755596080116006,3.2398919735077687,1.8385320231097555,12.665693822290203,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L4,0.5906775770248681,1.8655026132386037,2.305428376679709,11.830422646718928,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L5,14.216391947326171,12.312806341366695,6.497768847843109,11.21267586261195,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L1,25.925944534384854,14.643896339430974,11.804249234915366,13.400873105883822,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L2,1.3120213412898525,1.9714715316230218,1.1164676439557022,12.344824826622675,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L3,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L1,0.9552486587271554,0.7145628033979721,1.5726092966786167,12.561226054808508,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L2,0.1048808848170424,0.06999999999999648,0.043588989435463674,11.710106745884122,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L3,0.3945883931389914,0.2167948338867842,0.2238302928560532,11.816281140866609,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L4,0.24289915602983933,0.5355371135598299,0.3580502757993297,12.66223518972856,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L5,0.417971290880117,0.4581484475581805,0.14696938456697667,12.127204954151637,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L1,4.340080644412037,5.674451515344896,1.5072159765607573,11.794418171321544,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L2,1.2706691150728344,2.871167010119746,1.992837173479055,12.999357676439233,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L3,1.8644033898274275,2.826110401240557,1.8756598838808904,13.188745201875722,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L4,2.1926011949280744,6.309627564286181,4.938795399690078,14.171908834027963,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L5,7.44818769903122,8.214444594736765,3.8069410292254475,12.230772665698613,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L1,0.31953090617337787,0.5287721626560903,0.31064449134018957,13.012501681075776,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L2,0.1849324200890828,0.32893768406803786,0.28879058156392773,13.366065240002385,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L3,0.36290494623242964,0.39000000000000384,0.20346989949384225,14.777391515419767,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L4,0.306104557300346,1.32128725113052,1.0770793842609319,13.82385257444538,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L5,0.6664082832618473,0.9600520819205363,1.2934450123604067,12.412292294334689,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L1,1.2694880858046673,2.0542881978923995,1.2969579792730244,13.302879387561191,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L2,1.4592121161777625,2.5433245958784045,1.5316657598836667,12.804507019014805,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L3,1.843285110882195,1.833957469517753,1.2390722335683086,13.399425360813048,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L4,0.5000000000000026,3.957625550756405,4.219763026521751,11.915892748762026,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L5,0.6475337829024821,4.214142854721456,4.463642010735189,10.096841090162817,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L1,0.5271622141238754,0.25495097567963276,0.4229657196511179,11.840629206254212,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L2,0.3911521443121754,0.23151673805581002,0.4071854614300522,12.803397986472174,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L3,0.43324358044867617,0.420713679359241,0.5894913061275704,13.294021212560162,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L4,0.42731721238441367,0.6166846844214521,0.6503076195155655,12.181925135215694,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L5,0.730547739713151,0.6562011886608855,0.9942333730065478,10.617221858848,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L1,33.11350328793377,33.32344670048403,0.49638694583963977,10.39762472875416,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L2,3.290774984711087,3.4239304899486545,0.3721558813185827,10.69180059671897,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L3,0.13341664064126763,0.3038091506192672,0.4036087214122157,11.380461326325927,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L4,0.19209372712294853,0.46529560496523653,0.6407807737439554,10.029980059800709,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L5,0.35972211497207446,0.7606576102294919,0.7126008700527904,11.299637162316328,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse119,sub-verse119,False,L1,0.5464430436925717,0.32264531609800823,0.36290494623247693,12.446079704067458,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse119,sub-verse119,False,L2,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse119,sub-verse119,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse119,sub-verse119,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L1,0.49162994213124833,0.24351591323773095,0.6606057825965466,11.005575859535929,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L2,0.747796763833597,1.3327790514560396,1.3992497989994614,13.829497460139338,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L3,0.7545859791965539,0.20149441679608415,0.5623166367804064,13.347261891489204,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L4,0.7284915922644635,0.894483090952557,0.6341923998283154,13.091042739216771,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L5,0.6491532946846964,1.8574713995106273,1.638841053915825,11.093002298746713,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L1,0.4681879964287665,1.543437721451677,1.2498799942394616,12.53127288027836,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L2,0.2670205984563816,0.5223025942880348,0.38587562763150657,11.619436303022628,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L3,0.31591137997862345,0.7009279563549905,0.43116122274619717,12.95440465633214,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L4,0.24351591323772248,0.6419501538281632,0.788923316932637,12.698661346771956,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L5,0.38379682124790726,1.0329085148260169,1.3184081310429239,12.09843378293243,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L1,0.6624198064671729,0.49739320461784586,0.5968249324550846,11.499343459519775,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L2,0.6816157275180857,0.346698716467181,0.7609204951898549,12.161829632090713,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L3,0.7168681887209077,0.7224264668462739,0.9478396488858084,12.376097931092803,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L4,3.364817974274382,5.285130083545703,1.9632116544071274,10.915740927669567,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L5,0.8996666049153844,5.089685648446268,5.795938232935183,10.508834378750077,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L1,1.0549407566304418,0.7154019849007851,0.816884324736378,12.625743542461175,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L2,2.0148945381830847,2.4045581714734947,0.7009279563549954,14.917509845815422,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L3,1.696761621442449,2.622479742533773,1.5917914436257055,13.704108872889183,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L4,1.1794066304714304,1.4328293687665645,0.5466260147486537,13.438552749459314,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L5,1.2751862609046605,0.8774394566008453,1.2756958885251475,11.563472661791526,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L1,28.067933661030334,28.462580698172832,8.79981817993986,5.201778541998903,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L2,31.82129632808822,23.26202914622885,13.1211622960773,1.0435516278555577,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L3,2.557205506016282,2.7821214926742486,0.3700000000000069,2.15264953023013,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L4,5.815685686142264,1.7960512242138178,7.327987445404086,12.402955292993674,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L5,8.970278702470758,8.438655106117341,1.4024977718342355,11.663087069897056,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L1,0.668281377864147,0.21047565179848657,0.5142956348249507,12.094998966515048,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L2,0.502792203599057,0.3330165161069387,0.4210700654285355,12.800753884049179,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L3,0.5324471804789759,1.9724096937502633,2.4338241514127525,13.569719967633803,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L4,0.948999473129454,2.4312342544477135,1.9578304318811521,12.544839576495178,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L5,1.0470912090166697,3.281143093496534,3.2107787217433903,12.120614670882029,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L1,1.7552777557982024,1.2030793822520678,0.6823488843692572,14.611098521329605,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L2,0.6780855403265724,0.5532630477449195,0.5879625838435396,15.579037197465063,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L3,0.38288379438154696,1.8011107683871086,1.8153236626012235,17.637309885580635,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L4,0.6226556030423246,2.47414631741941,2.1814903162746444,14.858549727345528,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L5,1.041585330157792,1.3456225325105182,2.2017720136289975,13.097423410732361,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L1,0.43977266854590696,0.13601470508735114,0.35818989377143867,14.671826743797107,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L2,0.4198809355043359,0.3201562118716498,0.27604347483685104,15.088021739114792,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L3,0.7415524256584757,0.5008991914547335,0.33256578296628453,15.665624788051062,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L4,0.5894064811316724,4.56697930803283,4.886522280722772,14.07040155788028,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L5,3.006542865152594,4.464728435190679,5.873831798749443,12.864579278002067,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse217,sub-verse217,False,L1,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse217,sub-verse217,False,L2,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse217,sub-verse217,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse217,sub-verse217,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse217,sub-verse217,False,L5,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L1,0.5909314681077259,0.7170076708097056,1.0703737664946713,11.303366755086737,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L2,0.7664202502544128,1.3837991183694185,1.9048621997404347,12.66195482538145,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L3,0.4101219330882,2.472448179436745,2.5300197627686787,12.959371126717546,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L4,0.9701030873056734,5.389972170614619,6.028706328890115,12.622143241145706,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L5,0.8185963596303242,2.8087363706834396,3.4403633529032827,11.643414447660964,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse250,sub-verse250,False,L1,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse250,sub-verse250,False,L2,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse250,sub-verse250,False,L3,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse250,sub-verse250,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse250,sub-verse250,False,L5,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L1,0.5516339365920082,0.7306846104852686,0.8212186067059162,10.712235994413128,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L2,0.21189620100417192,0.5914389233048695,0.6303173803727773,11.725267587564856,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L3,0.19672315572907473,0.5093132631298855,0.5557877292635875,12.60277350427277,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L4,0.6758698099486404,4.4153595550079485,4.0817398251235915,12.193957520017875,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L5,1.2641598000252883,3.3286934373714843,3.850934951411131,11.264270948445796,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L1,1.1042644610781012,0.8160882305241144,1.4607532303575277,11.799851693983278,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L2,0.7250517222929698,0.7854298186343497,1.3572766851309115,12.25104485339923,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L3,0.7938513714795753,0.7679192665899117,0.9185314365877774,12.64865605509139,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L4,1.144814395437097,0.3801315561749595,0.8951536181013929,12.2499387753572,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L5,1.7046113926640276,3.791648717906238,4.416797482339445,11.740472733242054,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse241,sub-verse414,False,L1,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse241,sub-verse414,False,L2,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse241,sub-verse414,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse241,sub-verse414,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse241,sub-verse414,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L1,0.9709788875150704,0.6613622305514559,0.6664833081180649,11.24036031450949,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L2,1.0247926619565615,0.5569560126257727,0.7698051701567089,11.346603015881,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L3,1.921535844058069,3.5859447848509984,1.7902234497402945,12.390395473914461,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L4,0.6738694235532546,3.106589770149887,2.9586145406253888,11.313191415334583,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L5,0.6047313453095947,0.8440971508067059,0.4069397989875242,10.189749751588591,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse247,sub-verse416,False,L1,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse247,sub-verse416,False,L2,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse247,sub-verse416,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse247,sub-verse416,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse247,sub-verse416,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L1,0.33376638536556674,1.0991360243391188,0.986052736926388,15.38640308844144,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L2,0.5146843692983137,1.7696044755820473,1.4343639705458247,16.634740755419067,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L3,2.996130838264574,3.204621662536786,0.9520504188329536,17.012874536656064,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L4,0.398120584747894,4.9765550333539,4.696424171643766,15.163911104988706,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L5,1.5862849680937077,6.0910015596780624,4.991072029133628,14.485765426790586,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L1,2.2242976419535627,2.601115145471348,0.4592385001282598,11.014522232035276,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L2,,,,,eroded_body,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L3,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L4,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L5,,,,,whole_vertebra_fallback,
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L1,0.4170131892398663,0.5389805191284774,0.3043024810940622,11.174855703766376,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L2,0.3749666651850583,0.4263801121065352,0.14352700094406745,12.124380396539866,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L3,0.5462600113498726,0.47518417482064595,0.3466987164672127,12.182204234045676,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L4,0.373630833845394,0.6792643079096433,0.5822370651203674,11.214954302180637,eroded_body,eroded_body
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L5,30.090425387488303,35.27982709708197,5.409870608434145,9.83578161611974,eroded_body,eroded_body

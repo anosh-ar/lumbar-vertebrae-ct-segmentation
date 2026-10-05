@@ -21,7 +21,9 @@ Quick facts:
   `00_extract_verse_archives`, `01_find_header_and_label_anomalies`,
   `02_preprocess_cases_for_training`, `03_verify_preprocessed_cases`,
   `04_train_lumbar_segmentation_model`, `05_predict_lumbar_vertebrae`,
-  `06_evaluate_on_test_sets`, `07_make_report_figures`. Report: `report/lumbar_spine_report.pdf`.
+  `06_evaluate_on_test_sets`, `07_make_report_figures`, `08_compare_two_evaluations`.
+  Report: `report/lumbar_spine_report.pdf`. Two trained models: 2 mm (deliverable so far) and
+  1.5 mm (branch `retrain-1.5mm`, HANDOFF §9); the user decides which one is used.
 - Workstation: conda env `EMGNet` (CUDA torch 2.6.0); see HANDOFF.md §2.
   With no `--source`, every script processes all downloaded full datasets
   (TotalSegmentator v3 train + test from the zip, VerSe19 validation + test).

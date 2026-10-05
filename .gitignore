@@ -5,14 +5,14 @@ data/
 *.nii.gz
 *.npz
 # ...except the predicted label maps of the test sets (model output, small)
-!outputs/predictions/**/*.nii.gz
+!outputs/predictions*/**/*.nii.gz
 
 # Model weights: only the final weights-only file is committed (via Git LFS, see
 # .gitattributes); resume checkpoints (819 MB, optimizer state) stay local
 *.pt
 *.pth
 *.ckpt
-!lumbar/weights/lumbar_vertebrae_resenc_unet.pt
+!lumbar/weights/lumbar_vertebrae_resenc_unet*.pt
 runs/
 checkpoints/
 

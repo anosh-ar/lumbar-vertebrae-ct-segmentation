@@ -1,0 +1,646 @@
+source,group,case_id,subject_id,gt_has_L6,level,gt_ml,pred_ml,dice,dice_if_pred_one_level_up,dice_if_pred_one_level_down,dice_ceiling,truncated,fragment
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L1,54.5,55.14,0.9623837960967802,0.0007120893348438259,5.750761975961815e-05,0.9986695956189474,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L2,61.74,62.87,0.9647103431465482,0.0,0.00010248264200251083,0.9988795058894263,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L3,69.72,69.99,0.9626999081992559,0.001985440105890139,0.0014927529253142004,0.9969014766400387,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L4,69.8,70.46,0.9640751702398999,0.00024143509017600617,0.00043725404459991256,0.9973436368027047,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0013,s0013,False,L5,67.93,69.13,0.9596670934699104,0.0015607852700890135,0.000696295490398738,0.9982118021060997,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L1,52.78,52.93,0.9797899173078765,0.0,0.0015227189669874527,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L2,57.31,58.04,0.9812745040669436,0.00012246272540795394,0.0005012531328320802,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L3,62.76,63.89,0.9785215583861856,0.0,0.0023722916337181716,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L4,63.06,65.28,0.9728862590401052,0.0,0.0016513077291855323,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0029,s0029,False,L5,63.81,63.66,0.9628531335222007,0.006693160426688978,0.00047099652949925635,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L1,53.72,54.12,0.9881079051136008,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L2,60.15,60.42,0.9877393349009069,0.0,0.0018869450359867376,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L3,64.94,65.05,0.9852528819192025,0.0,0.0029725569297733424,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L4,62.25,62.22,0.9815618221258134,0.0,0.001765858234693596,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0038,s0038,False,L5,59.67,60.07,0.9768883878241262,0.0,0.0017956421147139058,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L1,46.91,48.32,0.9802587276271487,0.0,0.0009527050017012589,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L2,51.33,52.28,0.9821818300270367,0.001896761956374475,0.0018401015228426396,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L3,53.99,55.05,0.9847725162488393,0.0,0.00012128195021375944,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L4,56.4,57.32,0.9817480338329129,0.0,0.0038673031603118015,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0040,s0040,False,L5,53.56,55.3,0.9781429235777399,0.0,0.00023941343707915608,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L1,54.92,55.62,0.9850399951151004,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L2,60.07,60.32,0.981020997448908,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L3,63.91,63.92,0.9791941701431061,0.0,0.0015098816360646014,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L4,64.03,61.27,0.9377255831492755,0.0002637756851573422,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0119,s0119,False,L5,65.21,64.81,0.0,0.013769179452968646,0.0006130918694585928,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0230,s0230,False,L1,12.39,3.79,0.0,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L1,35.14,35.99,0.9564887307236062,0.003205770386696053,0.0006173383896287151,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L2,40.09,41.4,0.9545661627666183,0.002484251619199716,0.00039720368605020655,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L3,43.91,44.88,0.9552590565248793,0.001582528881152081,0.0011072562190890972,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L4,46.57,47.54,0.9580060964676349,0.0015499298841242896,0.001585471317382531,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0235,s0235,False,L5,45.26,47.09,0.9504074845594416,0.0,0.0013538461538461538,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L1,78.05,75.65,0.9472112428634167,0.0013545705077303938,0.00463455877747855,0.9980972150147034,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L2,87.29,83.62,0.9269323432994984,0.00028999316444683804,0.017609198036631715,0.9976618809298371,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L3,91.17,89.42,0.9290226125957765,0.004788661684913785,0.024601414845317283,0.9979829382483022,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L4,100.73,100.62,0.9246215994233896,0.0004614592762188737,0.024476626675814496,0.9977560452809967,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0236,s0236,False,L5,94.38,81.28,0.8570714930735681,0.004915450784914412,0.013521527695409798,0.9980328337923388,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L1,59.94,60.44,0.9824482700611227,0.0004841003297933497,0.0010799427630335593,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L2,63.87,65.07,0.9822798063080749,5.4300608166811465e-05,0.0007440660730672884,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L3,71.28,72.2,0.9832055322952439,0.0,9.451572505375582e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L4,71.18,71.55,0.9815327138161783,0.0,0.004177622686948615,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0244,s0244,False,L5,65.18,66.16,0.9678281426662555,0.0002468282568988498,0.0013653430424394129,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L1,36.12,37.4,0.9713997153743745,0.003180440292202952,0.00104826381305962,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L2,39.2,41.15,0.9695060483870968,0.0011455763130066973,0.0002424536307431204,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L3,43.25,44.32,0.9753333847221152,0.0007997760627024433,0.002983849912349409,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L4,45.75,47.24,0.9715447154471545,7.494285607224491e-05,0.005567204106716795,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0291,s0291,False,L5,44.51,47.61,0.9557794467851255,0.0008092698179142909,0.0018543865071305576,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L1,55.4,55.59,0.9631454114212735,0.0027400751927611038,0.00016842105263157895,0.9980503259611284,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L2,63.49,64.84,0.9602356406480118,5.6681309338245714e-05,0.0013080444735120995,0.9987238115495055,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L3,69.31,70.68,0.9648953611727265,5.031952900920847e-05,0.0015551119050120836,0.99939156465234,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L4,70.59,91.29,0.7720724664873767,0.0006211476898083998,6.25919318999781e-05,0.999283119862359,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0308,s0308,False,L5,62.49,37.25,0.6925419599350298,0.3193609270069789,0.007227671657201859,0.9989468283330183,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L1,64.16,65.09,0.9668642452411416,0.00016776177827484973,0.0015932684408374617,0.998421384971585,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L2,70.09,71.41,0.9629576624925462,0.0005492722143160312,0.0007687090210264526,0.9976658565343985,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L3,78.49,79.19,0.9632911663348959,0.0003152159229071914,0.003122460327644467,0.9984956589014012,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L4,78.48,79.32,0.9641527997604483,0.0002996896071925506,0.003926475664480497,0.9988814317673378,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0311,s0311,False,L5,74.71,77.96,0.9579750193434288,4.382409010232925e-05,0.00042832389073846935,0.998848212470923,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L1,70.68,67.41,0.9619943785897592,5.397964967207363e-05,0.003404056889717883,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L2,75.71,74.07,0.9741556071291769,0.0,0.0006351510752200344,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L3,81.34,73.07,0.9338608148277671,0.0010857999087928076,0.002084700613828514,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L4,79.89,93.5,0.5786636043365708,0.0014120865785583478,0.0003008242584682029,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0423,s0423,False,L5,83.14,32.3,0.5308735820371886,0.45965723456695773,0.002615339143207731,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L1,45.65,46.59,0.9830223197950969,0.0,0.0010587986165031412,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L2,49.14,49.97,0.9827691888578628,0.0,0.002958385379002038,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L3,52.75,53.54,0.981392099580846,0.0,0.0035655007069527265,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L4,55.48,57.05,0.9792760099571124,0.0,0.002922232824427481,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0440,s0440,False,L5,54.78,57.71,0.9605736917906865,0.00024143654745737136,0.0023253859300142884,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L1,54.07,54.4,0.9873055382700685,0.00019915029208709506,0.00030290179923668747,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L2,56.87,57.35,0.9862009869101439,0.00024265218841942432,0.0005187917915609869,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L3,59.65,60.23,0.9844871758776993,0.0,0.00016423507513754686,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L4,62.62,63.65,0.9829203752706278,0.001373664111651419,0.0002627154266498529,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0441,s0441,False,L5,64.19,65.85,0.9819361536465092,0.0,6.947258727493776e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L1,68.0,67.32,0.9860574165066222,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L2,76.11,76.02,0.9873546898571302,0.001035342839663043,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L3,79.88,80.06,0.9889636835552554,0.0,8.58534910175785e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L4,76.69,77.37,0.9860882900646292,0.0,0.003000419176208441,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0450,s0450,False,L5,72.48,76.29,0.9680580762250454,0.0009459885580431551,0.0008380788653701515,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L1,63.32,58.2,0.9434832115977448,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0459,s0459,False,L2,29.04,24.28,0.9073300417774401,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L1,73.2,72.74,0.9806896232742074,9.719117504130625e-05,0.0026716303514726816,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L2,79.67,80.92,0.9775545374301207,0.0,0.003907203907203907,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L3,84.74,86.18,0.9763437462975396,0.0,0.0020933977455716585,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L4,80.98,82.93,0.9753335529566793,0.00016151827175449224,0.0014298845878868349,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0468,s0468,False,L5,83.13,84.24,0.9745120180674303,0.0010568031704095112,0.0003804595951909907,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L1,61.68,61.0,0.9788451486891695,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0470,s0470,False,L2,13.2,9.29,0.8223289315726291,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0482,s0482,False,L1,17.03,7.98,0.6340936698609799,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L1,46.08,47.29,0.9798677124371995,0.0,0.0018360477372411682,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L2,52.16,53.18,0.9793355332713933,0.00020360378703043877,0.00029694738092410025,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L3,60.36,61.49,0.9805833310251225,0.00023781212841854935,0.001145475372279496,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L4,56.63,57.5,0.9730592932130712,0.0008000457168981085,0.0041133593442821284,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0499,s0499,False,L5,52.5,54.96,0.9597688514807952,0.001288620255883165,0.002289543487365629,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L1,64.86,66.31,0.9756348573339851,0.0,0.0024556197882027934,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L2,65.64,67.08,0.9670676194593495,0.0003580928995293636,0.00322234156820623,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L3,76.13,72.62,0.9345192176793574,0.000282798765112059,0.0030200240726556515,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L4,78.69,78.09,0.9626504208554884,0.0028551034975017845,0.002232973576479345,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0505,s0505,False,L5,77.25,75.48,0.9530417872848209,0.0033458622113107525,0.003004864123800402,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L1,67.15,69.95,0.949705817188154,5.297872904029032e-05,0.004133409350057012,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L2,73.28,74.92,0.969963336597363,0.0003298930204062397,0.002246992994668899,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L3,79.87,79.92,0.9519062202978139,0.0045351473922902496,0.002000212788594531,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L4,85.38,78.74,0.9323243332168047,0.01992690745013169,0.007530864197530864,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0543,s0543,False,L5,78.82,78.64,0.9397492230200407,0.011995544512038386,0.0018792777593883805,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L1,49.22,50.78,0.9617980561555075,0.0,6.539794650447976e-05,0.9996228614530119,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L2,52.15,53.99,0.9572019077901431,6.557377049180328e-05,0.0023303059273422563,0.999547013524882,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L3,59.4,60.81,0.955755193711398,0.0004166914697303411,0.0046997536876079386,0.9997159090909091,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L4,56.57,59.8,0.9459122415243177,5.750431282346176e-05,0.008574678449558141,0.9999403341288783,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0561,s0561,False,L5,54.25,59.15,0.9361904761904762,0.0008285494466473338,0.0006218583199461056,0.9998444741671592,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L1,77.07,74.13,0.9338392857142858,0.0,0.0496149476076253,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L2,86.07,83.33,0.9223964455778925,0.0,0.006308650737323555,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L3,93.59,85.12,0.9286699023625616,0.00011446449692853599,0.0002539037704709915,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L4,91.75,92.51,0.9668461735721874,0.0,0.00043645092654894614,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0667,s0667,False,L5,93.14,93.84,0.9619334693067162,0.0133435136707388,0.001573482497168596,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L4,17.39,11.28,0.7815848345696456,0.0,0.0010222098318000187,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0673,s0673,False,L5,63.65,55.25,0.9137050073804928,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L1,48.18,49.62,0.981504485852312,7.705347511172754e-05,0.00034408010184771014,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L2,48.95,49.9,0.9852173022430099,0.0,0.00039211841976276833,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L3,53.6,54.33,0.9861471590731418,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L4,55.77,56.63,0.9872984415818394,0.0,0.00017889087656529517,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0687,s0687,False,L5,56.23,57.43,0.9783518930957684,0.0,0.0010597266890934407,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L1,44.52,45.39,0.948577434126567,0.0003931126660901014,0.0035146511913032815,0.9981796116504854,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L2,43.66,38.06,0.8819593589955395,0.0,0.0,0.9977199829964833,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0735,s0735,False,L3,27.46,23.46,0.890833167627759,0.0,0.0,0.9977271331162848,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0753,s0753,False,L1,27.54,9.45,0.46674573487820453,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0829,s0829,False,L1,27.38,40.89,0.0004943886883868097,0.0,0.6500040054474084,0.9668228441180196,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L3,12.75,8.37,0.0,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L4,62.02,59.32,0.9650357430947679,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0907,s0907,False,L5,62.89,41.18,0.0,0.0,0.01855514740510502,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L1,41.96,42.97,0.9787403139280747,0.0,0.0003786014462575247,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L2,45.96,47.18,0.9774250824364967,0.00015180841777676573,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L3,50.05,50.92,0.9790747426126487,0.0002082682495053629,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L4,52.68,54.16,0.9752321981424149,0.00026063725809604484,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0923,s0923,False,L5,52.18,50.14,0.9433651086848963,0.005014917793436171,0.0005171901061532693,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L1,51.32,52.24,0.9586415930645634,0.0001372730704554034,0.00294781170100767,0.9984880357612411,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L2,59.73,60.88,0.96191835250007,6.028272598486903e-05,0.0015710067986673527,0.9985310734463276,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L3,63.96,64.87,0.9662833040790129,0.00021626882214592738,0.0028793994395454664,0.9987875593041645,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L4,66.33,67.32,0.9654284199095937,0.0,0.00019664233217805963,0.9992878942014242,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0933,s0933,False,L5,69.78,70.98,0.9653766844099171,0.0009354536950420954,0.000319891236979427,0.9991539149563662,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L3,0.03,7.24,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L4,44.01,25.02,0.7025229806375904,0.27781070934597907,0.0008444672316554574,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0951,s0951,False,L5,71.37,67.9,0.9597479704349934,0.00938375350140056,0.0012486953928731177,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L1,56.28,56.84,0.9860970224953756,0.0,0.0010360904852357105,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L2,60.49,60.99,0.9848026005056538,0.00023011649647634115,0.0019927828943825067,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L3,63.65,64.84,0.9819538206940029,0.0,0.0012275900872100458,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L4,67.15,68.32,0.982635342185904,0.0,0.0009300883583940474,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s0994,s0994,False,L5,61.94,63.48,0.9795764604579824,0.00020727536532283138,4.7797148900068114e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L3,0.03,0.18,0.0,0.0,0.0011787488423002442,1.0,False,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L4,43.93,40.06,0.8691179425356641,0.0,0.06645334552311297,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1057,s1057,False,L5,72.96,74.2,0.921725569341559,0.00041808516992175836,0.0043169757319181925,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1096,s1096,False,L1,0.91,57.25,0.0,0.0,0.003644909117068726,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L1,60.58,25.21,0.5702596380802518,0.0,0.47153575516086643,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1119,s1119,False,L2,2.56,19.04,0.011253516723976243,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L1,38.37,36.31,0.9512834417932032,0.0001659613310098747,0.0003375242595561556,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L2,41.49,41.63,0.9835146987169076,0.0,0.0023869104908565927,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L3,45.26,46.17,0.9817644887412329,0.0003107640912092608,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L4,48.91,59.56,0.0,0.0026267215675138435,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1121,s1121,False,L5,48.32,58.95,0.885162345834382,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L1,59.91,59.25,0.9698068316999944,0.006134252497517088,0.000213857998289136,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L2,65.88,66.34,0.9752150496464762,0.0001078894133513149,0.0003027016118860833,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L3,73.33,67.92,0.9319952210274791,0.0020297699594046007,0.07044110959527057,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L4,76.94,75.1,0.8781798002219756,0.006663560111835974,0.007154542480095976,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1152,s1152,False,L5,77.99,77.79,0.9409394228269348,0.017151297369987432,0.0015664487562396876,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L1,58.72,59.12,0.9548058196815213,0.0017173699705593719,0.000918869250310794,0.996129476189111,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L2,65.55,66.16,0.9565150544522741,0.0023281626465253527,0.00024271844660194174,0.9964764280754096,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L3,72.66,73.5,0.9580417965592888,0.0005348893751519572,0.0024968222262574903,0.9968162487509005,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L4,75.72,76.03,0.9611458310166137,0.00018094634940740072,0.005380719840839212,0.997435268404737,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1174,s1174,False,L5,74.45,73.56,0.9475796338098821,0.00017942047187584104,0.0009028016289681566,0.9971662397134502,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L1,47.65,48.0,0.9766424387834309,0.0006655820144948972,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L2,50.24,50.32,0.9837903144611874,0.00041224363598886944,0.004586199708150928,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L3,51.01,46.9,0.9357785514840222,0.0,0.06592985370216572,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1176,s1176,False,L4,0.46,1.82,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L1,50.51,51.27,0.9756599018437458,0.0021990494431439315,0.0014822592100793626,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L2,57.63,58.79,0.9652993187418466,0.003904797322424693,0.0051253017074406266,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L3,56.56,55.63,0.9364659166115156,0.00854350751945696,0.0071841499691306055,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L4,63.19,63.7,0.9347305707750412,0.03022212122933591,0.0025301509656742854,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1212,s1212,False,L5,58.53,56.86,0.9317304317304317,0.03203092641170786,0.00349963161772445,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L1,47.43,48.87,0.9793214636197953,0.0005993407252022775,7.025678856219482e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L2,47.47,48.65,0.9817773252343668,0.0,0.000794912559618442,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L3,53.45,54.43,0.9830423628058319,0.00019834055072559585,0.002112187320841254,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L4,56.86,58.4,0.9777764764442363,6.065384848668648e-05,0.0005296610169491525,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1240,s1240,False,L5,52.44,45.09,0.8803682043118662,6.08976310821509e-05,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L1,38.01,42.31,0.00546287347144598,0.0,0.9482344874871443,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L2,42.92,40.75,0.00838946476828137,0.0,0.8950610533989429,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L3,47.4,49.67,0.10848023364973401,0.0,0.6994693960393169,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L4,60.33,69.0,0.38251565762004175,0.0,0.4434382704342879,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1248,s1248,False,L5,52.46,82.04,0.698115574737159,0.0,0.00817971490409732,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L1,64.21,63.91,0.977186512118019,0.002386105099606015,0.0015403870222393376,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L2,75.02,76.02,0.9693638130991487,0.00029152394140368777,0.0033801191285888,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L3,86.94,88.74,0.9623254116155309,0.0020711223411966945,0.004446048906537972,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L4,87.72,90.69,0.9648897128371987,0.0004207949198576948,0.0013485641757893067,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1249,s1249,False,L5,80.89,82.46,0.9484732035866287,0.008261211644374508,0.001911370577358569,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L1,42.44,44.42,0.9461454771526266,0.0011205827030055628,0.0014573541734980142,0.9980932708349884,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L2,48.22,50.2,0.9434842249657065,0.0017486975846114612,0.0027742915648325517,0.9970232883908248,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L3,51.69,53.97,0.9446449675791356,0.00013249859220245785,0.0034318398474737846,0.9986940907606922,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L4,50.57,54.52,0.9406815043196197,6.457028475495577e-05,0.001174474748792901,0.9987654732908479,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1276,s1276,False,L5,48.51,52.88,0.9371234563791898,0.001768867924528302,0.000131218097600021,0.9988517345767076,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L1,53.02,53.02,0.9878421387651177,0.0,0.0009081002542680712,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L2,58.09,58.48,0.9865083960625362,0.0,0.0011749895090222408,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L3,62.21,62.55,0.9875020288914137,0.0002796342384161517,0.0003217416950424967,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L4,63.3,63.66,0.9848214997740503,0.0,0.0033129391648187233,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1322,s1322,False,L5,61.61,63.02,0.9790402946273831,0.0,0.0002980899314393158,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1323,s1323,False,L1,0.01,13.65,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L1,63.29,63.83,0.9833532457188371,0.0011688420115214427,0.0009659379766141333,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L2,67.67,69.48,0.9786396298848312,0.0,0.002831567409572525,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L3,79.48,80.13,0.9717511735103819,0.0014046853051792106,0.01175713009700671,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L4,81.09,82.99,0.9707503702484779,0.00020934078586531013,0.0045628997867803835,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1347,s1347,False,L5,77.5,77.2,0.957959726858215,0.001135575042584064,0.001746499558413464,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L1,5.63,2.89,0.42217821782178216,0.22917771883289126,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L2,51.48,48.34,0.9481301142895787,0.03650360069530668,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L3,57.15,57.17,0.9793628767972602,0.00364741641337386,0.00011290823383295227,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L4,63.34,62.42,0.9759802474437079,0.0028007281893292256,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1355,s1355,False,L5,58.49,59.36,0.9739110512901286,0.00044661549197487786,0.0022935779816513763,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L2,2.5,5.18,0.0,0.0,0.04668395702111893,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L3,35.67,15.71,0.576513857874688,0.0,0.02589262396000448,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L4,65.9,54.79,0.8646774238653206,0.0,0.10651852299145557,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1357,s1357,False,L5,68.17,45.88,0.645499201041605,0.008124725516029864,0.009454169436442868,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L1,55.38,55.18,0.9879415086851665,0.00019455883783520866,5.826996474667133e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L2,60.77,60.46,0.9862479817382106,0.0,0.0018308114802649293,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L3,64.61,64.58,0.9846386958566278,0.0,0.001404019656275188,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L4,64.54,65.2,0.984235991883877,0.0001568258448992394,0.000735815835807952,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1377,s1377,False,L5,62.89,63.89,0.9834145302558369,0.0012120573355817875,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L1,74.62,74.14,0.9866376278953697,0.0004264998578333807,0.00017610672067272767,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L2,78.7,78.69,0.9873700010721561,0.0006624417603285711,0.0002406883687345809,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L3,89.16,89.57,0.9873102198051212,0.00012064181445288937,0.0005390109149710281,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L4,85.99,86.16,0.9846491658007724,0.0,0.0012004801920768306,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1386,s1386,False,L5,82.8,82.69,0.9730600591414296,0.0007191083057009308,0.003215239543989144,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L1,19.44,31.78,0.6847654190827622,0.0,0.016176867080075492,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1436,s1436,False,L2,5.89,5.59,0.8862099382534548,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L1,14.12,14.37,0.971692526353192,0.0005090353779587681,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L2,15.13,15.58,0.9675788548192109,0.005491362544331312,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L3,16.3,16.73,0.9662852472415202,0.0002117074203450831,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L4,16.13,17.1,0.9591795288383428,0.00041080414912190614,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1446,s1446,False,L5,14.05,14.94,0.9479566887879847,0.002383273751489546,0.0011817644652515795,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L1,19.51,20.94,0.9374165554072096,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L2,21.34,23.49,0.927049612286381,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L3,22.68,24.49,0.9320263308528907,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L4,22.19,25.02,0.919502430654847,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1455,s1455,False,L5,21.78,23.92,0.923042836041359,0.00028843380444188056,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L1,15.89,16.35,0.9422110552763819,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L2,17.31,18.14,0.9448728934590117,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L3,18.45,18.93,0.9417607223476298,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L4,19.82,20.13,0.9459368136509545,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1531,s1531,False,L5,17.68,18.48,0.9293645609778856,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L1,22.46,23.69,0.9352054994880795,0.0,0.0002748385323622372,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L2,25.85,26.66,0.942666152461756,0.0,0.0005957700327673518,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L3,29.46,30.8,0.9433772052646318,0.0,0.00011180054782268433,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L4,29.39,30.91,0.9362511893434824,0.0,0.0012349143979792309,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1542,s1542,False,L5,29.53,30.74,0.9398062601489445,0.0,0.003765833618623759,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L4,7.02,1.15,0.1982651796778191,0.0,0.40784595144121516,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1551,s1551,False,L5,13.95,21.2,0.7155064810369659,0.0,0.008499217177365242,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L1,13.04,12.86,0.9662540716612378,0.0002747630168979255,0.0002489110143123833,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L2,14.1,14.07,0.9675410228769913,0.0005006884466140943,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L3,15.65,15.7,0.9674849267872524,0.0002271178741766977,0.001291294522759066,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L4,15.35,15.72,0.9630675646317619,0.0,0.0006588338640606127,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1564,s1564,False,L5,14.49,15.38,0.9574059428313185,0.0,0.00032485110990795884,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L4,0.32,0.63,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1573,s1573,False,L5,7.98,6.57,0.8814660171653909,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L2,1.05,0.4,0.0,0.0,0.0,1.0,False,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1593,s1593,False,L3,1.89,0.44,0.0,0.0,0.0,1.0,False,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L1,7.04,22.9,0.0,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L2,11.23,25.96,0.0,0.0,0.004872766648619383,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L3,11.5,13.7,0.8229306188052504,0.0,0.0045152722443559095,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L4,11.7,13.92,0.8359899881438546,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1762,s1762,False,L5,10.27,17.06,0.0,0.015345982142857142,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L1,51.93,51.88,0.9874841520106629,0.000699765578531192,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L2,56.26,56.47,0.9884135205532768,0.0,0.001075116706747772,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L3,63.0,63.03,0.9845214503775909,0.00039550257076671,0.003291794027745121,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L4,65.22,66.19,0.9835619253094982,0.0008421274244059054,0.0017128328649805968,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1775,s1775,False,L5,59.44,60.89,0.9805637358014304,0.0003223726627981947,0.0003444924273182495,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L1,49.41,49.76,0.9799904716531682,0.0012111712738671987,0.0001862081807460741,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L2,58.58,59.34,0.9840006869114742,6.229947356944834e-05,0.0016259281339764781,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L3,64.78,65.96,0.9835820124941917,0.0,0.0003130462004017426,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L4,65.07,64.59,0.9732951587714732,0.001493882807469414,0.00020549704597996405,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1785,s1785,False,L5,64.86,66.32,0.978232902794216,0.00031285848367921577,0.00046659019771759627,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L1,52.77,53.63,0.9843303939605406,0.00020302507359658918,6.097932800780535e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L2,57.32,57.93,0.9858264027175823,0.0016425355882710793,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L3,61.84,62.54,0.9871920112883968,0.0004508820379868117,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L4,62.99,63.36,0.9700304503445697,0.001344302844544819,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1806,s1806,False,L5,62.94,62.66,0.980465916113604,0.011917804558693852,0.00018893546672964516,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1827,s1827,False,L1,0.5,0.39,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L1,44.74,45.84,0.9790960241457689,0.00024401154988002767,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L2,50.18,50.69,0.9846421521062669,0.0005624296962879641,0.0013333756627194515,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L3,55.86,56.13,0.9866192514013622,6.335128286347799e-05,0.00035630511594762315,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L4,56.75,57.81,0.9832076361065284,5.979609531497593e-05,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1834,s1834,False,L5,59.06,61.5,0.9694017524705355,0.0019060270886880181,0.0004038820189349394,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L1,40.27,41.67,0.9777979157227005,0.0,0.000383670963781461,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L2,46.37,47.7,0.9803738653080263,0.00030670142616163164,0.0014322739053335152,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L3,51.05,52.6,0.9794536159682199,0.0,0.001775466852667956,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L4,53.62,55.4,0.9769673704414588,0.0,0.0032524316529103127,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1854,s1854,False,L5,54.05,56.38,0.9707823960880195,0.0,0.0014887033685562496,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L1,34.75,36.02,0.9733905579399141,0.0,9.229349330872173e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L2,37.18,38.38,0.9757906021082723,0.0,0.0026662079642212093,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L3,39.59,41.31,0.9745515227367543,0.0,0.0004143360265175057,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L4,40.26,41.86,0.9743969095467061,0.0005792783846408474,0.001216298398540442,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1943,s1943,False,L5,40.44,42.98,0.963226667745459,0.0,0.0005589090096132349,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L1,72.61,72.36,0.9393085787451985,0.0010351966873706005,0.03395341275923733,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L2,88.6,72.71,0.8454859294905325,0.0007548594074353652,0.026274186724855826,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L3,84.48,62.98,0.8123412144377561,4.2941492216854536e-05,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s1997,s1997,False,L4,0.46,12.11,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L1,14.94,15.97,0.9188953171051195,0.0,0.004851845434066886,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2016,s2016,False,L2,4.53,4.53,0.9388971684053651,0.0032927230819888046,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L1,58.34,58.98,0.9808129332911428,0.0007288187063467963,0.0002702483582412237,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L2,66.69,66.54,0.9811779607346421,0.0005908419497784342,0.0005825808330905913,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L3,72.81,72.35,0.978585877374503,0.00014532067428792869,0.0003268965839306979,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L4,72.61,71.74,0.9816455844186209,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2036,s2036,False,L5,76.5,72.21,0.9648222958558395,0.0,0.0002723064355087592,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L1,34.99,37.12,0.9665855484837139,0.0006946511858688102,0.0003472071524673408,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L2,39.78,42.77,0.9617758881484813,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L3,47.36,49.22,0.9690743264493134,0.0030704710551935892,0.0002664446294754371,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L4,52.17,53.97,0.9675039745627981,0.0013980427401637707,0.0029533562325447017,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2040,s2040,False,L5,51.91,52.96,0.9651155306687262,0.00586491569183693,0.002666217982734297,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L1,36.48,53.73,0.45194358187736167,0.0012666861541459611,0.005202526941657376,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L2,43.61,27.09,0.7209890686906296,0.02593530044034534,0.004081632653061225,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L3,44.74,27.5,0.7269924320284032,0.012778952313836035,0.0033497096918267085,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L4,47.25,45.94,0.965374864179645,0.0,0.0006643292120317402,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2060,s2060,False,L5,44.22,44.2,0.9779745772416689,0.0,0.000459896983075791,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L1,54.08,56.46,0.9614997099502336,0.0,0.0040206947524020695,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L2,57.56,60.08,0.9595753837326065,0.001184027469437291,0.006404046927133786,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L3,64.78,67.87,0.95527172806839,0.002486822543586971,0.004160681559264946,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L4,70.52,71.5,0.9583174904942966,0.008730429693215627,0.007949652202716132,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2073,s2073,False,L5,76.38,82.31,0.9361747378719241,0.0056602912311133425,0.002963770089893762,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L1,66.44,66.65,0.979991377780032,0.0,0.00048243921265920495,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L2,74.88,73.48,0.9751802898286962,0.0007631039252158153,0.005245460659045057,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L3,80.68,75.68,0.9408565014677949,8.757525998905309e-05,0.0017156422686376604,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L4,87.15,88.5,0.9642424824670958,0.00012436264146250465,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2119,s2119,False,L5,15.15,42.7,0.0,0.004753842146392289,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L1,58.45,58.78,0.9826975672952354,0.00011829069939376017,0.0020902773854584488,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L2,60.6,61.03,0.9770810210876804,0.0023181522630254716,0.002669318538678949,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L3,66.71,68.36,0.9739130434782609,0.0004755865567533291,0.005264841193692031,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L4,66.61,70.48,0.9519917278054064,0.0011502588082318522,0.01884203786700814,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2123,s2123,False,L5,6.32,7.19,0.7957042957042957,0.015556336790297064,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L1,42.96,44.88,0.9730685005186522,0.0,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L2,50.4,51.9,0.9801385681293302,0.00014168319637291018,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L3,53.24,53.61,0.9800056855870368,0.0007704407563160091,6.1007229356678764e-05,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L4,56.49,57.41,0.9792580301054877,0.0004291319274153997,0.0,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2133,s2133,False,L5,35.23,35.84,0.9729319023648969,0.003133311473020731,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L1,52.66,54.54,0.9439879097005762,0.0,0.0009122145528628334,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L2,61.71,58.34,0.930922994742613,0.0,0.005283105547260825,1.0,False,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L3,68.49,55.84,0.8392648695604963,0.0,0.0,1.0,True,False
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2137,s2137,False,L4,1.94,10.51,0.0,0.0,0.0,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L4,0.97,0.79,0.0,0.0,0.017692591227423518,1.0,True,True
+totalseg_v3_test,TotalSegmentator v3 test (in-domain),s2139,s2139,False,L5,44.99,44.81,0.9598616957306073,0.0,0.00023010420433253344,1.0,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L1,40.16,43.2,0.915978886756238,0.0005922814952415566,0.000365379242160466,0.9321294056022549,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L2,51.13,52.9,0.9320504070823681,0.0004028026584975461,0.0071285122396917006,0.9446089208070741,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L3,54.76,59.41,0.9224584176367029,0.0,0.010598699327618515,0.9432564741851535,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L4,57.44,63.18,0.9167350661194711,3.423280015747088e-05,0.005131021227669761,0.9465517091073935,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse010,sub-verse010,False,L5,56.3,59.11,0.90367584617251,0.015451448468666036,0.0005627876749499186,0.9377390565235869,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L1,39.83,37.45,0.9170031055900622,0.0010439970171513796,0.0021583234700271532,0.9561126166817224,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L2,49.43,46.34,0.9391386061080658,0.0004143789495493629,0.0027370934397111493,0.9609382102487954,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L3,55.85,53.6,0.9473193728757812,0.0002348382551517642,0.0025282365550028853,0.9632232624265672,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L4,55.92,53.31,0.9403751613523386,0.0,0.002503407415649078,0.9617994336699257,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse013,sub-verse013,False,L5,53.97,51.93,0.9331444759206798,0.0,0.0015096015096015096,0.9568195105654389,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L1,45.44,43.74,0.9525988225399495,0.0,0.0027895771254675713,0.9644626461457163,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L2,50.54,49.2,0.9492616319287798,0.00019091256204658267,0.0002859675712774171,0.9646193540733711,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L3,56.21,54.36,0.9522750088178636,0.0004553604462532373,0.001454898157129001,0.9621465450362484,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L4,57.28,55.14,0.944598633646456,0.000752425227742993,0.0023250898330162756,0.9614229372894194,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse016,sub-verse016,False,L5,60.13,56.27,0.935821434094541,0.0030711571495497373,0.0004960551802333822,0.9573033707865168,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L1,46.25,46.13,0.9475871923101903,0.0,0.005235936402528574,0.962262925435178,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L2,48.12,47.71,0.9452462198290705,0.0003183192742320548,0.002789731414156403,0.9604791166287158,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L3,52.61,52.97,0.9495070042337965,0.0,0.005832538836857159,0.9642490591857681,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse018,sub-verse018,False,L4,54.28,54.37,0.9490046660592507,0.0,0.0040210513866713975,0.9663615308260726,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L1,37.65,32.59,0.8503531153889965,0.0,0.025174372327077966,0.9394330068182725,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L2,40.08,36.48,0.8748367208318094,0.0,0.07232135160762003,0.942040407831363,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L3,33.4,29.53,0.7470442410373761,0.0,0.17589836208507192,0.9278837529151468,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L4,37.8,46.88,0.8443316013226264,0.001069471057439508,0.0020962732919254656,0.9409597009818115,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse022,sub-verse022,False,L5,38.62,39.48,0.933393085787452,0.003321637426900585,0.0015090543259557343,0.9451944961721498,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L1,60.04,59.33,0.9473102246645111,0.0006123907052699622,0.004176108773065717,0.9639202657807309,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L2,65.54,63.52,0.9392037441691075,0.0024665257223396757,0.002389146448988879,0.9608613547758285,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L3,76.12,75.1,0.9435259886258431,0.0006015554505220642,0.0027567369339521236,0.9649660176944616,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L4,80.85,82.04,0.9351816607934383,0.005540308307897504,0.0012685620476083875,0.9653867088920778,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse023,sub-verse023,True,L5,75.12,79.96,0.8779097509704543,0.027972205960955992,0.0,0.9633574606547579,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L1,45.52,49.19,0.9252924532285992,0.00021307877522320001,0.00011570279807933355,0.9591599112458534,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L2,55.72,58.19,0.9439070208395512,7.624857033930614e-05,0.002216103686790679,0.9635486705036487,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L3,60.75,63.4,0.9425239215180902,0.0001345148218519328,0.004147784007988325,0.9654106661405931,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L4,67.1,69.43,0.9390774459109087,0.0030344827586206895,0.002988351527718485,0.9667133533986948,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse024,sub-verse024,False,L5,62.3,64.07,0.9345170274718319,0.0006072474988993639,0.0004946497806810164,0.9640033425467636,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L1,69.86,69.56,0.939362205741009,0.0015974741115224868,0.004912590688833561,0.9525882125548533,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L2,81.69,79.55,0.9329744413503104,0.0009653339328101135,0.014980874219869494,0.9519596458567575,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L3,87.74,87.2,0.9264171220817232,0.00022715453083622757,0.0053703811803163855,0.9513856872086471,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L4,84.21,83.57,0.9319108356180713,0.000688440041539772,0.01174015131750587,0.9522806516487571,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse026,sub-verse026,False,L5,77.84,76.78,0.9209426860343288,6.195172721415473e-05,0.004473740570639887,0.9504091884322367,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L1,38.98,38.27,0.9411490562618129,0.0022224966045190763,0.0017003589646703192,0.9601601807167061,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L2,46.56,45.71,0.938027008865671,0.0015561633499952844,0.0024971855490737898,0.9610143993122716,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L3,52.18,51.15,0.935279089571882,0.005598005965758182,0.0006962980155506556,0.9626611576571407,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L4,52.78,51.22,0.9414434337801196,0.005503492601073758,0.0035298806293056002,0.9626666161051175,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse030,sub-verse030,False,L5,54.12,52.61,0.92723149866007,0.004860544153107141,0.0012899943676302258,0.9574570319719091,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L1,58.34,56.89,0.9428656260604004,0.0014638274513391733,0.00955683696923263,0.9661556504984502,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L2,64.69,62.86,0.9352236804291599,0.0006834308227301051,0.0064365654775895426,0.9639502268406092,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L3,72.22,70.47,0.9380212704012605,0.005065397905096152,0.002588148297536217,0.9632069734441516,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L4,80.74,73.19,0.9263328358682882,0.004331313131313131,0.004751131221719457,0.9642062567160565,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse041,sub-verse041,False,L5,72.54,70.49,0.9301689818374426,0.0022135394831720692,0.0015516375861387042,0.9593421961616877,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L1,46.62,48.8,0.9394422310756972,0.00013197545256582276,0.0032323071090803886,0.9582117727818774,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L2,51.02,53.66,0.9369266055045872,0.0,0.005013723696248857,0.961532416502947,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L3,55.48,58.32,0.9364791926721637,0.000513299968835359,0.006060502302648474,0.9623200983582845,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L4,59.65,61.39,0.9386891478634598,3.391957668368299e-05,0.010566115916506967,0.96419240302807,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse047,sub-verse047,False,L5,54.35,56.24,0.9272131859383763,0.000449477050739044,0.0027615126952875296,0.9616316639741519,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L1,44.25,43.5,0.9316498393235636,0.0008768297732420781,0.0029295380512013294,0.9607194635737586,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L2,48.55,47.23,0.9298839054539381,0.0,0.004558673268883125,0.957972805933251,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L3,54.07,53.23,0.9346703696110045,0.00217172415154686,0.0002198124267291911,0.9620126624458514,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L4,56.6,55.11,0.9350472643941564,0.001675316398069744,0.001088521366621019,0.9635111268103144,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse058,sub-verse058,False,L5,59.69,57.32,0.9197135189648394,0.007595686486298148,0.0008788481918990875,0.9565845383853143,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L1,39.98,41.29,0.9291937389249852,0.0,0.0074188562596599695,0.9596728814195146,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L2,46.14,47.37,0.9443321461802547,6.863417982155113e-05,0.0060532309900464916,0.960364168427898,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L3,49.19,50.02,0.9411764705882353,0.0,0.009434243917002538,0.9593125645229854,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L4,50.23,51.31,0.9350196507195414,0.00017958157493041214,0.010150732259149418,0.9582872349968603,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse067,sub-verse067,False,L5,58.86,47.91,0.8393895961554675,0.006155186970613067,0.040530716103235186,0.9582451217956893,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L1,48.24,48.84,0.9447660644018212,0.0012066034113969177,0.0010707805792129763,0.9476456138890046,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L2,53.02,52.62,0.9462593598833742,0.0015316040607143558,0.000858996618843096,0.9462765455403492,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L3,57.21,56.41,0.9494195615247182,0.00029136467931674984,0.004766266217309727,0.9518474499248436,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L4,55.7,55.25,0.9477507683710533,0.00016055229991169623,0.008521364546985074,0.9514919663351186,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse071,sub-verse071,False,L5,49.98,50.62,0.9363817097415507,7.602539248108869e-05,0.0024336583234128477,0.9452264473723702,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L1,44.21,46.13,0.937497232431475,0.0,0.001050773369199731,0.9430921870409293,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L2,49.75,50.96,0.9437521719704115,0.0,0.002429877932116481,0.9453961563550605,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L3,52.93,54.78,0.9406805626479736,0.0,0.005551201069666651,0.9458531556497148,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L4,53.78,55.52,0.9360109789569991,0.0012896094325718496,0.006221553369549259,0.947362566051729,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse073,sub-verse073,False,L5,54.36,55.2,0.9338116493687871,0.0063344709897610926,0.0024894002568568462,0.9440746775663509,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L1,42.55,39.54,0.8957838443640439,0.0012772798343940628,0.002147263215429062,0.9332895014910654,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L2,61.79,59.9,0.9394382631847092,0.00015790460587997276,0.008610038310008004,0.9508788690885832,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L3,66.6,66.9,0.9454428322084304,0.00015810276679841898,0.0022409711864532548,0.9526404023470243,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L4,68.05,68.17,0.947232418147115,0.00016302334197851055,0.0014215483030267132,0.9550486488079016,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse078,sub-verse078,False,L5,68.95,67.01,0.9317240719901738,0.005221741698816357,0.002955014195162047,0.9470094667500399,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L1,56.82,55.06,0.8807657589217885,0.009934704110460438,0.016785726263540933,0.9401905030195257,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L2,61.0,62.44,0.8969589942160945,0.005962073629886187,0.012090239618901174,0.94254493029047,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L3,68.83,71.67,0.9208014520089682,0.005484794929611798,0.007646447038832818,0.9483492883922396,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L4,67.87,67.71,0.9140328231606122,0.014419217979589496,0.006162268183082305,0.9447219888883976,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse080,sub-verse080,False,L5,69.35,68.77,0.9092185950203804,0.015861666423464177,0.002231778092156561,0.9446956672493751,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L1,48.97,50.91,0.9086976981687476,0.00013372261472285987,0.0009159423752775205,0.9402620158513477,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L2,45.49,51.48,0.7917620609285729,0.0007883817427385892,0.0013935062608245576,0.9252411310941152,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L3,55.26,54.98,0.7935848474677746,0.006220781532523258,4.896600127311603e-05,0.9225435834142535,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L4,68.09,67.27,0.9383666383481698,0.0022263752336068904,0.0018488221095647197,0.948555185719756,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse093,sub-verse093,False,L5,68.5,68.21,0.9338804889288771,0.0006628906451399067,0.0022598089833684334,0.9477490375976099,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L1,47.32,50.15,0.9435038683330255,0.0008564943685495268,0.001422503210510718,0.9640403357080947,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L2,51.88,53.92,0.9472330932259467,3.9210304468014195e-05,0.0006296179700375919,0.9621038435603506,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L3,54.51,56.14,0.9467271642654422,0.000258250170629577,0.001344256934730876,0.9616697874215222,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L4,54.11,55.6,0.9456123397815742,0.000254005116388773,0.0002482665673600397,0.9614049342591224,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse095,sub-verse095,False,L5,57.44,58.69,0.9416972390154843,0.0001061665044678404,0.0018617206953526798,0.9597481213470638,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse116,sub-verse116,False,L5,73.03,69.93,0.9302107597283137,0.0,0.0003722414251528849,0.9522599680367168,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L1,53.39,55.57,0.9420715478790771,0.0,0.002505513895015439,0.9488663456593894,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L2,56.54,59.96,0.941482467058672,0.0,0.000897482968220944,0.9498662098077484,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L3,63.03,66.03,0.9378510936688853,9.756811474010293e-05,0.0016657115568290354,0.9525957938562123,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L4,63.61,67.84,0.9401302376532878,0.0,0.0017537403994456928,0.9517041881524336,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse124,sub-verse124,False,L5,58.85,64.12,0.9280887363687373,6.314327208435941e-05,0.000766545855070738,0.9503771675440312,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse125,sub-verse125,False,L1,42.46,43.08,0.9344260378549634,0.0019426198657164018,0.0005213829060890075,0.9394983364402181,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L1,50.94,57.28,0.8941415634817963,0.001010274491579362,0.003177481327979968,0.939213278986397,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse150,sub-verse150,False,L2,64.14,64.88,0.942948156530231,3.294133148861877e-05,0.0022436813972415916,0.9490720860691895,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L1,53.04,51.98,0.9457946061252476,0.00035690916661709597,0.0013633265167007499,0.962145050969456,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L2,62.68,61.4,0.9497388613063382,3.4887574790238456e-05,0.0004902862045719189,0.9644713761760485,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L3,68.55,67.86,0.950923034062083,0.00018470916003509474,0.0019680413582422746,0.9668651836281894,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L4,66.82,67.64,0.9486367084653488,2.970091181799281e-05,0.003790026560028649,0.9663129854387094,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse153,sub-verse153,False,L5,66.14,67.22,0.9365288859559662,5.98041414367945e-05,0.0011783585155783647,0.9616355910417518,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L1,58.55,19.02,0.43667019000232027,0.0,0.7745747173270857,0.9660340001365467,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L2,63.96,39.6,0.007607499372477844,0.0,0.8375386395821596,0.9646359583952452,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L3,66.01,67.36,0.13866314810927519,0.0,0.7763719244930162,0.9667448724740786,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse252,sub-verse252,False,L4,68.82,70.86,0.21353719292217832,2.9367713136178086e-05,0.8185419327717506,0.9655502670071976,True,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L1,41.9,42.83,0.9227845710778528,0.0,0.0,0.9406334971139627,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L2,52.34,53.3,0.9415540156764739,4.2033143133360655e-05,0.00010696903246510135,0.945907983373943,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L3,59.12,59.85,0.9457907788004876,0.0010140634590238304,0.00011954368467791516,0.9514487476926724,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L4,60.59,57.99,0.9217860606316145,0.005230907188761022,4.9218250127147146e-05,0.9521732665906726,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse264,sub-verse264,False,L5,61.48,61.31,0.9443372179195882,0.003498727735368957,0.0025994856336937584,0.9502580986058611,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L1,58.66,58.64,0.9481725252146335,0.0018518348750011459,0.00021126016689553185,0.9510237538209327,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L2,65.25,64.41,0.9519666820916243,0.00046818746872023375,0.0003462525686671534,0.9534917604116343,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L3,68.56,67.61,0.9496875206544808,7.520040909022545e-05,0.0003849570624814924,0.951241587714048,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L4,68.02,66.52,0.9483425003716367,0.00023593774192834865,0.0018929870744476324,0.9527140212184442,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse269,sub-verse269,False,L5,69.29,67.21,0.945526203976382,0.0,0.0006936423750053168,0.9526958400864398,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L1,48.58,51.68,0.9369326230522137,0.0018587744480472541,0.004645548321018363,0.9632632900450719,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L2,57.79,60.79,0.9396761133603239,0.0010963910461397899,0.003397418596897871,0.9628312473025464,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L3,65.8,68.21,0.9425428055352372,0.0010429835651074588,0.006940971432901417,0.961109335281672,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L4,63.71,66.2,0.94080872162853,6.065568798714099e-05,0.005968386204323972,0.9621875196776022,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse276,sub-verse276,False,L5,63.87,64.99,0.928935113318845,0.00015379173523214862,0.0024413481005120877,0.9602190923317684,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L1,57.27,57.01,0.9462484140525879,0.00024868331068538896,0.0018599213518971198,0.9512775583858566,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L2,55.93,55.64,0.9364955587225613,0.0,0.0032430206420837695,0.9466103133684202,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L3,60.18,60.63,0.9254749389512024,0.00022449790180807157,0.004796566025342367,0.9485548172757475,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L4,70.37,70.75,0.9480867346938775,4.580222598818303e-05,0.002668339787830928,0.95734671252736,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse400_split-verse155,sub-verse400,False,L5,70.01,68.29,0.9383523014851557,0.0,0.0013979382167506717,0.9577660083910486,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L1,60.64,62.63,0.9497712450111944,0.0,0.000537209669774056,0.9629421951018389,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L2,64.87,65.94,0.9523736717376348,0.00021959750913682494,0.00291095643652818,0.9643121529919803,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L3,72.27,73.91,0.9531574915180038,0.0,0.001334604385128694,0.9648676311931174,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L4,74.97,74.58,0.9549879646964429,0.0006984928673132204,0.0014242526032919047,0.9656875175165823,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse404_split-verse256,sub-verse404,False,L5,72.64,73.87,0.9491127491127491,0.00024451538409291584,0.0007600067556156055,0.9619269405134282,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L1,71.51,70.88,0.9486916583563915,0.001209117642668418,0.00020536411056803713,0.9570057339690408,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L2,74.05,74.57,0.9417828497604565,8.279973504084787e-05,7.32524707447945e-05,0.9499456150899547,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L3,89.99,89.77,0.9462013873822755,0.0011302730885623656,0.0001880634990873389,0.9561097672866794,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L4,89.67,90.8,0.9479843737012718,0.00031208551143013184,0.001490872608858922,0.955491628597978,False,False
+verse19_validation,VerSe19 val + test (out-of-domain),sub-verse412_split-verse290,sub-verse412,False,L5,90.33,88.75,0.9395392991763227,0.00015459278603806295,0.003103516623373914,0.9571799020368359,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L1,54.45,53.26,0.9335970140939224,0.0019084505065813477,0.00526857171529642,0.9592919380995575,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L2,67.68,65.13,0.9443628724389528,9.922603691208574e-05,0.005304258140562841,0.9657144123578821,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse012,sub-verse012,False,L3,77.68,74.85,0.942569428054441,8.402655239055541e-05,0.007485830392471394,0.9675850891410048,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L1,37.77,39.59,0.8684659531565069,9.859502095144196e-05,0.027215012603865184,0.9518228135476888,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L2,46.0,47.91,0.9039759780224461,0.00046734431592475756,0.020314123806349144,0.956050414680337,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L3,54.2,56.0,0.9300738643581786,0.00047004445837168764,0.008746355685131196,0.9613976705490849,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L4,60.56,61.04,0.927287380141774,0.0004461374789800611,0.007337001834250459,0.962105193603806,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse020,sub-verse020,False,L5,62.43,59.38,0.8972481282017601,0.020895764153235605,0.003727312459284059,0.9578155814587375,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L1,47.47,45.25,0.9514657348087749,0.000759118042855664,0.0020231125279710632,0.9627122932414055,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L2,52.67,50.4,0.9568355793579183,0.00012254901960784314,0.003794421633866629,0.9674275455244935,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L3,55.69,53.27,0.9520112331708929,0.00045245030116223173,0.0030481166993250597,0.9636883565339376,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L4,56.74,54.54,0.9496697668149346,0.0,0.005751564372254028,0.9635591207747315,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse029,sub-verse029,False,L5,58.48,55.92,0.9381129700529711,5.308700960874874e-05,0.0019822541060977913,0.9573131649788489,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L1,70.6,65.19,0.9273530711444985,0.0003252878797735996,0.003878455616470314,0.9624920353982301,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L2,66.97,66.58,0.9444768965775481,0.0002421637329539435,0.001268852553565764,0.9610029102305798,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L3,71.99,71.75,0.9472087716368899,0.001010407194099222,0.0026054165238258483,0.9649110607346008,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L4,75.05,73.87,0.9332061837669402,0.0016622159245735463,0.014118388269996278,0.9622654092915928,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse032,sub-verse032,False,L5,68.74,64.64,0.8030473448208635,0.008836400359066427,0.002514598279962929,0.9440881792668208,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L1,70.9,68.3,0.9445689655172413,0.00027788069655427936,0.0029289824879849837,0.9670850708041403,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L2,77.74,74.54,0.9459022852639873,0.0,0.0007395154227887515,0.9702763775421519,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L3,87.02,76.42,0.8998733503423212,0.00014854426619132502,0.0026795917563147732,0.9670318331126283,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L4,81.37,65.24,0.8584407612031921,0.0,0.0022971045367814603,0.9673886994193013,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse038,sub-verse038,False,L5,85.61,80.57,0.9409300982091277,0.00035798810683956167,0.0006413577049261206,0.9654254853561612,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L1,39.77,38.5,0.9313808172966342,0.0018561484918793504,0.0031316329726156097,0.954091063412426,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L2,48.02,46.46,0.9412138342808143,0.0014566137199139904,0.003727865796831314,0.9640589320904627,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L3,53.08,51.79,0.9461245744041659,0.00560663149962321,0.0007255201720519265,0.9632413189048682,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L4,62.84,62.72,0.9032859361930936,0.0035075779389053215,0.0019479254593857541,0.963370486805754,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse040,sub-verse040,False,L5,52.59,29.58,0.361279485868692,0.041479091311249314,0.005671590264592016,0.9525525525525526,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L1,54.95,52.51,0.9556405460484073,0.0,0.0023399898954981784,0.9664007867132867,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L2,60.42,57.87,0.956453371883639,0.0,0.002727664258027468,0.9645474646592631,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L3,68.68,64.96,0.9497384784609514,0.0,0.008168919887259351,0.9665105131277917,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L4,66.02,56.92,0.9050268423621278,0.0,0.006152818849565964,0.9665349861508423,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse050,sub-verse050,False,L5,63.54,59.78,0.9420522551452343,0.00014942471484783584,0.0007368563252975058,0.9609247571094248,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L1,49.57,48.03,0.9433026658197242,0.0,0.0019503921984312064,0.962995951417004,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L2,47.45,44.77,0.9282987767849397,0.0009216396807775288,0.00949000848699946,0.9586713995943205,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L3,58.24,56.24,0.9390286512928022,0.0015532774153463808,0.007721587819467102,0.9643175735950045,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L4,50.86,52.1,0.8586413877503448,0.0005228855814300921,0.00041818734793187346,0.9505986557190728,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse053,sub-verse053,False,L5,58.18,54.36,0.8564980185175313,0.016321497225345472,0.0006865222535458144,0.9478861412438092,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L1,52.95,50.52,0.934513684861605,0.0014407491895785808,0.0028894239674013707,0.9616590488422166,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L2,54.59,55.03,0.9049078635285532,0.0017124590912550423,0.001251966772125129,0.9593567412128872,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L3,65.59,63.62,0.9312613184329871,0.009219034985906151,0.0006418190987026085,0.966959814339807,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L4,67.61,65.29,0.9163882618510159,0.011399311164619464,0.003942646290711193,0.9653966937251881,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse054,sub-verse054,False,L5,56.55,51.09,0.9009327040986957,0.02944797360516078,0.0013347772433072254,0.9570983942845016,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L1,68.69,65.36,0.954523074168569,0.0014180235685296563,0.0007223437931547303,0.9674140638632002,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L2,74.77,72.52,0.9569202566452796,0.0005566498244412092,0.000738136399836833,0.9676940959557497,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L3,82.18,79.68,0.9528840450771056,0.0005817786913857968,0.003915496467154324,0.9670281520429401,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L4,90.91,86.38,0.9355128009882059,0.001969680982026661,0.008779387524941442,0.9639137088413882,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse055,sub-verse055,False,L5,84.95,82.0,0.9346079893618933,0.007564217051005935,0.003284819082272084,0.9635634680937495,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse059,sub-verse059,False,L1,59.42,56.44,0.9321802772167849,0.0011697958706205767,0.0008738435819988222,0.9636048526863085,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L1,61.16,57.82,0.9375830013280213,0.0003343052950244229,0.004660918200885575,0.9642606180445475,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L2,69.16,67.57,0.9435082792112808,0.00018901805122389188,0.0027332288275252223,0.9636939817963448,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L3,81.88,80.12,0.9400348161043002,0.0024088646218082543,0.00582842419921704,0.9664678401092937,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L4,80.45,78.03,0.9410517548177034,0.003811516759463398,0.001270219825798424,0.9654820946911785,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse066,sub-verse066,False,L5,80.63,73.86,0.9096346547215246,0.000504229222604596,0.020304125638788483,0.9626100980027292,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L1,43.99,43.91,0.9092708677004289,0.008605832334645893,0.0003840098306516647,0.9327943520838078,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L2,62.68,60.17,0.9277353606720172,0.0019138935537438197,0.0022638196952313484,0.9475059969238371,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L3,68.48,67.19,0.9289963071888199,0.0017566496183562112,0.002243685791782885,0.9441172392149993,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L4,63.98,61.66,0.9223128656134347,0.00012197818115284628,0.004307182130911655,0.9445082101613923,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse070,sub-verse070,False,L5,81.2,40.96,0.6497159416493394,0.0030098976634794416,0.09654406351311207,0.9473405434702273,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L1,48.2,46.26,0.9075260165786214,0.0037469063372018497,0.00033437752982999543,0.9361896933817486,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse081,sub-verse081,False,L2,67.63,65.45,0.945001765894933,0.000772661819969796,0.0018567365644479156,0.9503485222950674,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L1,41.14,40.4,0.9372577875889134,0.000868709098279956,0.007031963470319634,0.9592575496222152,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L2,47.09,46.46,0.944438506103427,0.0010515006743319541,0.0005624071023982646,0.9617595283038877,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L3,53.25,52.47,0.946583944919422,0.004572895565494695,0.00014395738861297056,0.9625730555971826,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L4,56.88,57.88,0.9194040254421887,0.004425668879501106,3.452383007370838e-05,0.9620413105663093,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse083,sub-verse083,True,L5,56.37,58.97,0.8657720448004439,0.042603094587971714,0.0,0.9599050335748835,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L1,69.78,51.5,0.8185588601489129,0.0,0.0005570214013485782,0.9537550340131188,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L2,72.57,66.66,0.9085437674164728,0.0024017731210961113,8.485662765618923e-05,0.9499896530316617,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L3,80.72,68.84,0.8805547011861619,0.005075349948093012,0.0012276479234981505,0.9514726855583804,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L4,84.66,105.0,0.8022967052087123,0.005693811074918567,0.0005750461900527658,0.9498943092311144,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse085,sub-verse085,False,L5,80.4,103.15,0.5116124498101365,0.2593457565869313,0.0,0.9525578044554301,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L1,57.93,56.9,0.9474619377765391,3.7519228604659885e-05,0.0011213047910295616,0.9635487714330115,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L2,61.33,59.81,0.947222405707114,0.0,0.0017428380249910524,0.9611882614961352,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L3,68.41,67.22,0.9481291388286655,0.00024962556165751375,0.0032480597872951997,0.9645275953366588,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L4,72.72,70.78,0.942247375831161,0.0011435105774728416,0.00666327855892484,0.9637277169798334,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse089,sub-verse089,False,L5,71.47,68.98,0.9306234065887111,0.0033468331645854425,0.002480502827352799,0.9587840384105406,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L1,69.13,60.78,0.9067060779604655,0.00033195571710733786,0.0026031764602649976,0.950736355760901,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L2,77.17,67.63,0.8969289310304345,0.0009133148254191463,0.0007360914856560744,0.9479560388439844,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L3,83.79,74.98,0.9006638366483177,6.604060176196326e-05,0.001092171949588288,0.9502838117134127,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L4,82.74,79.18,0.9366056705965181,0.0041085728415726705,0.00015114206724562476,0.9507830112843078,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse092,sub-verse092,False,L5,78.47,76.05,0.9418579065222175,0.00433872502378687,9.602083652152516e-05,0.9535219969553946,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L1,44.51,45.51,0.9496251041377395,0.0007244429384340347,0.0009341235326476174,0.9468620802307112,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L2,50.54,51.84,0.9497435897435897,0.0007912298418581408,0.0005914958165981358,0.9480320562862535,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L3,54.02,54.28,0.9507031199505093,0.0005101125081476304,0.0011483820778306693,0.94674688057041,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L4,53.01,53.95,0.9514701070443603,0.0,0.001782700221889283,0.9522275595742676,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse101,sub-verse101,False,L5,52.18,52.45,0.9463251457516965,3.768714020558335e-05,0.0004148983066962858,0.948227522372009,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L1,48.34,75.43,0.499769732323926,0.0,0.0005271536863857289,0.9472953367875647,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L2,53.14,46.51,0.8952069366946329,0.0,8.873586881289154e-05,0.9510800030104614,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L3,60.58,59.56,0.9492645651070064,0.00026147941316548843,0.0007672765094033999,0.9497526513459407,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L4,58.29,56.72,0.9437643458301453,0.0,0.012055530676220332,0.9478886048147703,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse108,sub-verse108,False,L5,54.13,53.36,0.9341123495152858,0.0,0.0005198257841014997,0.9459586509480049,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse119,sub-verse119,False,L1,42.12,41.9,0.9322070196311719,5.5906524291384805e-05,0.006156826121545432,0.9637534761010624,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L1,44.51,45.41,0.9429740669899026,7.587253414264036e-05,0.00019613825567711283,0.948250900643076,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L2,47.71,47.26,0.9333361412671504,0.0003865937865787524,0.0068260066862930995,0.9421968341650712,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L3,51.86,52.5,0.9432924492142584,0.0015939631169040798,0.0009266175622393889,0.9469272935713529,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L4,54.4,53.9,0.9392330492432986,0.0019457800894310464,0.0034347662748886384,0.9470279013344116,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse130,sub-verse130,False,L5,57.4,57.4,0.9374646120610807,0.0005750224618149147,0.0035558341619471704,0.9471198096660473,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L1,44.32,42.38,0.9169493481019961,0.00045557048814377803,0.004368702770780856,0.9545618626477754,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L2,59.81,57.34,0.9400816215016308,0.0,0.004609500147111707,0.9648024112525118,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L3,64.62,62.57,0.942090528766003,0.0,0.004271784553474695,0.9651427245300533,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L4,65.58,64.63,0.9342121435594887,0.0010615048392132375,0.0003868908484193897,0.9641735524590663,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse131,sub-verse131,True,L5,63.28,58.52,0.9100256224952369,0.012355526361062888,0.0029282296650717703,0.956298851302174,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L1,54.3,53.93,0.947661150992729,0.0,0.0003889984174837107,0.9497962720551633,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L2,59.09,58.81,0.946598812553011,0.0001769504361828252,0.00032899606849698144,0.9471423377106569,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L3,62.61,62.49,0.9481518194026988,0.00046123181840644406,0.0005844027640671273,0.9505019976235856,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L4,65.56,64.02,0.9403293769003997,0.0,0.00045039339047699476,0.9491209580106615,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse138,sub-verse138,False,L5,81.2,76.54,0.9080950177191437,0.000330535260537533,0.02657701151022166,0.9532569972989103,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L1,47.92,47.1,0.932463295269168,2.3861792497852438e-05,0.006480471307004146,0.9452412266967287,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L2,45.27,43.74,0.9166488782033277,0.0009527521545190767,0.011095197173684714,0.937863347996198,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L3,61.16,59.46,0.9159523138399297,0.0041753653444676405,0.00467152330861455,0.945849082789756,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L4,63.87,61.28,0.9078444845715016,0.007134980865278588,0.0036454510214685722,0.9450805568590646,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse143,sub-verse143,False,L5,61.62,57.37,0.90230517761549,0.01666341209399206,0.0013643200644026863,0.9496478930505635,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L1,40.19,38.87,0.0017708517797060386,0.0,0.7137991901152528,0.9399732770569799,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L2,36.04,56.12,0.3054319755203021,0.0,0.35354682413505945,0.9381364526750114,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L3,43.39,69.64,0.6640065117760515,0.0,0.005656655874362696,0.9570012806165419,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L4,52.59,64.09,0.7421372868283486,0.0025852477256364946,0.010750746101779464,0.9247878033248106,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse144,sub-verse144,False,L5,59.49,63.68,0.8460245678701621,0.0005016668284946759,0.005597988178027536,0.9349123367345223,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L1,63.04,60.56,0.9497224784374646,5.924229109687102e-05,0.002695039880358923,0.9535791963676198,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L2,67.34,65.35,0.946565575870853,0.0001563770563582911,0.00010084929513546221,0.9512599050893779,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L3,74.76,71.48,0.9407219490847425,0.0006709110115054101,0.0006249044361567047,0.951085356387677,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L4,78.38,75.66,0.9395283012743526,0.002001881768862731,0.0006988359585357332,0.9522269586946935,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse147,sub-verse147,False,L5,70.8,67.58,0.9419059250319773,0.0045472856255248835,0.0026672208943849802,0.952184450584004,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L1,46.69,41.61,0.8798181781120692,0.007873413851093105,0.0,0.9464546377301948,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L2,53.65,49.15,0.9104343030228751,0.0021728656318787728,0.0010124061242272105,0.9464959817458852,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L3,55.92,54.8,0.9174470022109507,0.009678966663240484,0.000406269043861431,0.9419365245795862,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L4,60.77,59.28,0.8987134888742278,0.020402759823695236,0.001610002320724066,0.9420499469675055,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse149,sub-verse149,False,L5,69.14,63.33,0.9026783166419807,0.035660718541050476,0.003633870414809736,0.9497278007866427,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L1,82.81,81.65,0.9511145647282596,0.002086007702182285,6.68229581409853e-05,0.9565247502467233,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L2,87.89,88.45,0.9559621219086145,0.001507532035055745,0.0001325820351342393,0.957822007910046,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L3,99.59,99.13,0.9505540651440474,0.0010447677927505287,0.0007671330274156504,0.9568780264175811,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L4,108.07,104.29,0.949697086733342,0.0019700170765498924,0.00048449612403100775,0.957687122907587,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse154,sub-verse154,False,L5,100.57,92.71,0.9317866711402111,0.0006796514226128407,0.0014337331428104056,0.9580025923157706,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L1,59.23,59.32,0.9452355243622621,0.0005475651602540703,0.001510692872991644,0.9511004509906592,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L2,66.82,67.87,0.9430911210269584,0.00026954391583887616,0.0010262455361786222,0.9488385328520721,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L3,76.99,77.39,0.9397659038353166,0.0011459735597666631,0.0035303702362632387,0.9459152798789713,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L4,81.26,77.67,0.9197151018661834,0.00022690458032106997,0.019962508835008143,0.9431619404272094,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse236,sub-verse236,False,L5,79.35,81.44,0.916536059904968,0.001834196297216225,0.0049613270913901894,0.9481196365471983,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L1,46.62,45.34,0.9478033927794693,0.0002736290046744955,0.0022677606893992497,0.9664774552854236,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L2,52.05,50.39,0.9531042561499414,8.214564422721485e-05,0.0010966916468652897,0.9659353348729792,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L3,58.98,57.37,0.9498435834851662,0.00021942656524283206,0.0012081632653061225,0.9644728391305818,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L4,64.56,63.52,0.9520612117426608,0.00032804093950925076,0.0017003648055400977,0.9636726670484622,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse260,sub-verse260,False,L5,65.84,64.82,0.9505602155146023,0.0006493506493506494,0.0005525334315614989,0.9632322865063855,True,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L1,55.48,57.61,0.9347562754754684,0.003843123690935993,0.0,0.9478919346715591,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L2,68.94,69.85,0.950349806543652,0.005673332964593029,0.00017953817257761575,0.9532973821532915,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L3,74.89,75.87,0.9528926387285921,0.0006356356702156325,0.0004973008342875838,0.9531649883396925,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L4,77.84,77.94,0.9511545350083773,1.30111766007e-05,0.0006703866553621074,0.9556045198465976,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse271,sub-verse271,False,L5,75.86,74.31,0.9392421921821935,0.0,0.002621354387188364,0.9516288905041961,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L1,48.3,46.4,0.9529572021414768,0.0004148230088495575,0.009676934635612321,0.9662635658914729,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L2,52.88,51.53,0.9524137931034483,6.043756799226399e-05,0.004537474679270763,0.9666903308249326,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L3,60.17,58.2,0.9491585563665855,0.0,0.0032539339553092506,0.9623606295677334,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L4,59.84,57.84,0.9556949117976955,5.082979642666531e-05,0.0021106277830686467,0.9660290320154437,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse414_split-verse273,sub-verse414,False,L5,57.92,56.71,0.9555363638742771,5.18295843267337e-05,0.0005125707988415899,0.9635816559452168,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L1,77.32,75.0,0.9466520212788869,0.0011816699359534894,0.0010917947425883934,0.9796976788311935,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L2,84.03,78.93,0.9433886294089225,0.0002475502836513667,0.0010033767486734202,0.979485266691533,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L3,90.12,85.99,0.9483449136598178,0.00046574810789831164,0.00018832037061448936,0.9773832015701525,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L4,89.36,84.08,0.9468487553907846,0.00011225444340505144,0.0006040015100037751,0.9794709686796018,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse416_split-verse279,sub-verse416,False,L5,88.27,84.45,0.9503694277194249,0.001294325903648857,0.0006444856199146056,0.9803200772344138,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse277,sub-verse417,False,L1,42.38,39.61,0.9073970197302637,0.0,0.005293060748798135,0.9604002454335205,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L1,42.58,42.4,0.9482624755899584,5.041211907342525e-05,0.0006207187035846505,0.9613018362842248,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L2,48.58,47.61,0.9477644515579206,0.0,0.0018750124668382104,0.9593365436062066,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L3,52.8,51.66,0.9492927011351238,0.0,0.003160044703071409,0.9597730496453901,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L4,52.18,50.97,0.9453974530441356,0.0,0.0005822077317186772,0.9591123737858487,False,False
+verse19_test,VerSe19 val + test (out-of-domain),sub-verse417_split-verse278,sub-verse417,False,L5,65.35,16.5,0.39591577507450293,0.00017188923457723843,0.2532173227630322,0.9566322234978951,False,False

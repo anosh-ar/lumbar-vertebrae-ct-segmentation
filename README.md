@@ -69,4 +69,16 @@ python scripts/06_evaluate_on_test_sets.py               # Part D: -> outputs/ev
 python scripts/07_make_report_figures.py                 # failure-case figure for the report
 ```
 
+Another voxel size (here 1.5 mm, the native TotalSegmentator size) runs side by side with the
+2 mm model, every file name carries the voxel size, and nothing of the 2 mm run is overwritten:
+
+```bash
+python scripts/02_preprocess_cases_for_training.py --spacing 1.5 --workers 8
+python scripts/03_verify_preprocessed_cases.py --spacing 1.5
+python scripts/04_train_lumbar_segmentation_model.py --spacing 1.5 --batch-size 3 --max-hours 6 \
+    --same-cases-as ../outputs/training/resenc_m_2mm/training_cases.csv   # -> weights/..._1.5mm.pt
+python scripts/06_evaluate_on_test_sets.py --weights weights/lumbar_vertebrae_resenc_unet_1.5mm.pt
+python scripts/08_compare_two_evaluations.py      # -> outputs/evaluation_comparison_2mm_vs_1.5mm.md
+```
+
 To rebuild the report PDF: `tectonic report/lumbar_spine_report.tex` (or any XeLaTeX).
