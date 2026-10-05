@@ -4,11 +4,8 @@ Take-home assignment: preprocessing, 3D segmentation, vertebral body centroids a
 cross-dataset evaluation for the lumbar vertebrae L1–L5. The code is in `lumbar/`, the
 two-page report in `report/lumbar_spine_report.pdf` (LaTeX source next to it).
 
-Two trained models, one per branch. **`main` (this branch) is the deliverable: the model trained at
-1.5 mm voxels**, the native TotalSegmentator size. Branch `model-2mm` keeps the first model, trained at
-2 mm, with its own results and report. The 1.5 mm model is better on both test sets (median Dice
-0.97 vs 0.93 on TotalSegmentator, 0.94 vs 0.92 on VerSe; comparison in
-`outputs/evaluation_comparison_2mm_vs_1.5mm.md`).
+The model is trained at 1.5 mm voxels, the native TotalSegmentator voxel size. Median Dice on the
+test sets: 0.97 on TotalSegmentator (in-domain) and 0.94 on VerSe (out-of-domain).
 
 ## 0. Only want to run the trained model?
 
@@ -73,17 +70,12 @@ the CPU build):
 
 ```bash
 python scripts/04_train_lumbar_segmentation_model.py --max-hours 6 \
-    --same-cases-as ../outputs/training/resenc_m_2mm/training_cases.csv
+    --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv
                                                       # Part B: 2.6 h on an RTX 3090 (batch 3) -> weights/..._1.5mm.pt
 python scripts/05_predict_lumbar_vertebrae.py <in> <out>   # Parts B+C on any CT folder (what run_inference.sh calls)
 python scripts/06_evaluate_on_test_sets.py                 # Part D: -> outputs/evaluation_1.5mm/evaluation_report.md
 python scripts/07_make_report_figures.py --tag 1.5mm       # failure-case figure for the report
-python scripts/08_compare_two_evaluations.py               # -> outputs/evaluation_comparison_2mm_vs_1.5mm.md
 python scripts/09_draw_body_centre_steps.py                # body-centre figure for the report (Part C)
 ```
-
-All defaults are the 1.5 mm model. The 2 mm model is reproduced with `--spacing 2` in steps 02–04
-(add `--batch-size 8`, which fits at 2 mm) and `--weights weights/lumbar_vertebrae_resenc_unet.pt` in
-steps 05–06; every file name carries the voxel size, so the two never overwrite each other.
 
 To rebuild the report PDF: `cd report && pdflatex lumbar_spine_report.tex` (any LaTeX with TikZ).

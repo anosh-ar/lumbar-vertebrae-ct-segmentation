@@ -24,40 +24,36 @@
 \setlength{\floatsep}{5pt}
 \setlength{\intextsep}{5pt}
 \setlength{\tabcolsep}{4pt}
-\newcommand{\gr}[1]{\textcolor{black!55}{#1}}
 \pagestyle{empty}
 
 \begin{document}
 \small
 
-{\sffamily\bfseries\Large Lumbar spine L1--L5 segmentation from CT}\\[2pt]
-{\footnotesize Take-home assignment report. Code, model weights and inference are in \texttt{lumbar/}; one command runs inference:
-\texttt{./run\_inference.sh <input\_dir> <output\_dir>} (Python 3.10--3.12, CPU only, no GPU or Docker; tested on Windows~11, plain bash, about 1--3\,min per CT on a laptop CPU).}
+{\sffamily\bfseries\Large Lumbar spine L1--L5 segmentation from CT}
 
-\section{Overview}
-We built one pipeline for lumbar CT (Fig.~\ref{fig:pipeline}). It standardises scans from two datasets, segments the vertebrae L1--L5 with a 3D network trained from scratch on TotalSegmentator, finds the centre of each vertebral body, and tests how well the model transfers to the VerSe dataset.
-The median Dice is 0.97 on TotalSegmentator and 0.94 on VerSe. The lower means come from a few scans where the vertebrae are found but misnamed; in scans without a lumbar spine the model also wrongly labels other vertebrae.
+\section{Introduction}
+This report presents a pipeline that segments the lumbar vertebrae L1--L5 in CT and locates the centre of each vertebral body (Fig.~\ref{fig:pipeline}). A residual-encoder U-Net (ResEnc U-Net), trained from scratch on TotalSegmentator, segments the vertebrae; a shape rule then extracts the vertebral body. On the TotalSegmentator test split (in-domain) and on VerSe (out-of-domain), the median Dice is 0.97 and 0.94. Most of the remaining error comes from a few scans in which whole vertebrae receive the wrong level name.
 
 \begin{figure}[h]
 \centering
-\resizebox{0.66\linewidth}{!}{\input{pipeline_overview_diagram.tex}}
-\caption{Pipeline. Training and inference use the same standardisation code, so the network sees the same kind of input in both.}
+\resizebox{0.72\linewidth}{!}{\input{pipeline_diagram.tex}}
+\caption{Pipeline overview. Preprocessing (Part A) is shared by training (Part B, top) and inference (Parts B and C, bottom); the evaluation (Part D) compares the outputs with the ground-truth labels on the original CT grid.}
 \label{fig:pipeline}
 \end{figure}
 
-\section{Data and preprocessing (Part A)}
-\textbf{Data.} TotalSegmentator v3 (1939 CTs) with its official split: 1830 training and 109 test scans. VerSe 2019 (validation and test sets, 80 CTs) is used only for testing, so it stays a truly unseen dataset. One loader reads both datasets.
+\section{Preprocessing and header anomalies (Part A)}
+\textbf{Data.} TotalSegmentator v3 (1939 CTs) is used with its official split of 1830 training and 109 test scans. VerSe 2019 (validation and test sets, 80 CTs) is used only for testing, so it remains an unseen dataset. One loader reads both.
 
-\textbf{Three steps}, the same for both datasets and for training and inference.
-(1)~\emph{Orientation}: image and labels are resampled onto a grid in RAS orientation using their affine matrix. This handles any axis order, flip or tilt at once.
-(2)~\emph{Spacing}: 1.5\,mm in every direction, the voxel size of every TotalSegmentator scan, so the training data lose nothing to resampling. A first model at 2\,mm was capped at Dice 0.94 by resampling alone (Table~\ref{tab:dice}). The CT is smoothed before downsampling; labels use nearest-neighbour interpolation.
-(3)~\emph{Intensity}: Hounsfield units (HU) are clipped to a fixed window of $-1000$ to $1500$ and scaled to [0,\,1]. A fixed window, unlike per-scan normalisation, gives bone the same value in every scan, whatever the field of view.
+\textbf{Preprocessing.} Every scan passes through the same three steps, in training and in inference.
+(1)~\emph{Orientation:} image and labels are resampled onto a RAS grid through their affine matrix, which handles any axis order, flip or tilt in one step.
+(2)~\emph{Voxel size:} 1.5\,mm in every direction. This is the native voxel size of all TotalSegmentator scans, so the training data are not degraded by resampling. The CT is smoothed before any downsampling; labels use nearest-neighbour interpolation.
+(3)~\emph{Intensity:} Hounsfield units (HU) are clipped to a fixed window of $-1000$ to $1500$ and scaled to [0,\,1]. I chose a fixed window over per-scan normalisation because bone then keeps the same value in every scan, regardless of the field of view.
 
-\textbf{Anomalies.} An automatic check reads every header and label file and looks for 30 kinds of problems; Table~\ref{tab:anom} lists those that occurred. Checks of the output: structure centres move less than 1\,mm (median 0.07\,mm on TotalSegmentator, 0.5\,mm on VerSe), and side views of all scans show the correct orientation.
+\textbf{Anomalies.} An automatic check reads every header and label file and tests for 30 kinds of problems; Table~\ref{tab:anom} lists those that occurred. Through preprocessing, structure centres move a median of 0.07\,mm (TotalSegmentator) and 0.46\,mm (VerSe), always below 1\,mm; side views of all scans confirm the orientation.
 
 \begin{table}[h]
 \centering\footnotesize
-\caption{Anomalies found (number of scans; TS = TotalSegmentator, 1939; VS = VerSe19, 80). Checked but never found: conflicting qform/sform, tilted axes, zero voxel size, 4D images, NaN.}
+\caption{Anomalies found by the automatic check, with the detection and handling of each. Counts are numbers of scans (TS = TotalSegmentator, 1939; VS = VerSe19, 80). Upper block: header; lower block: image and label content. Also checked, never found: conflicting qform/sform, tilted axes, zero voxel size, 4D images, NaN values.}
 \label{tab:anom}
 \begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xrr@{}}
 \toprule
@@ -65,7 +61,7 @@ Anomaly & How detected & How handled & TS & VS\\
 \midrule
 Image not stored axially (PIR, PSR, LAS) & orientation codes of the affine & resampled to RAS & 0 & 48\\
 Thick slices (up to 3\,mm, 3$\times$ the in-plane size) & voxel sizes & smoothed before downsampling & 0 & 4\\
-Only qform or only sform set & header codes & use the one that is set & 1939 & 80\\
+Only qform or only sform set & header codes & the one that is set is used & 1939 & 80\\
 CT stored as float, HU not whole numbers & data type and values & accepted (resampled by provider) & 0 & 77\\
 Label and CT affines differ by $\le$\,0.001\,mm & affine difference & treated as the same grid & 228 & 36\\
 Label mask stored as float & data type & rounded to whole numbers & 0 & 1\\
@@ -73,7 +69,7 @@ Label mask stored as float & data type & rounded to whole numbers & 0 & 1\\
 Two masks claim the same voxel (mostly S1 and L5) & overlap of the masks & the lumbar level wins & 817 & 0\\
 Padding below $-2000$\,HU outside the scan circle & share of such voxels & set to air by the HU window & 104 & 0\\
 Metal near the spine & $>$\,0.5\,ml above 3000\,HU & clipped at 1500\,HU, flagged & 124 & 4\\
-Vertebra cut off by the scan edge & mask touches the border & kept; Dice also reported without them & 431 & 8\\
+Vertebra cut off by the scan edge & mask touches the border & kept; Dice also reported without & 431 & 8\\
 No lumbar vertebra in the scan & label content & excluded from training & 720 & 13\\
 Sixth lumbar vertebra (L6) & VerSe label 25 & own class, never merged into L5 & 0 & 3\\
 \bottomrule
@@ -81,36 +77,36 @@ Sixth lumbar vertebra (L6) & VerSe label 25 & own class, never merged into L5 & 
 \end{table}
 
 \section{Model and training (Part B)}
-\textbf{Network.} We use the residual-encoder U-Net (``ResEnc M'', 102\,M parameters) from Isensee et al., \emph{nnU-Net Revisited} (MICCAI 2024), trained from scratch. In their benchmark, where all models were trained from scratch with the same budget, this CNN beat Transformer- and Mamba-based networks. We use only the network, not the full nnU-Net framework: the framework would replace our own preprocessing, and its default mirroring along every axis would swap L1 and L5.
+\textbf{Network.} The segmentation model is the ResEnc U-Net in its ``M'' configuration (102\,M parameters) from Isensee et al., \emph{nnU-Net Revisited} (MICCAI 2024), trained from scratch. In their benchmark, with all models trained from scratch on the same budget, this CNN outperformed Transformer- and Mamba-based networks. I use only the network, not the full nnU-Net framework: the framework would replace my own preprocessing, and its default mirroring along every axis would swap L1 and L5.
 
-\textbf{Training data.} The network predicts L1--L5 plus T12 and the sacrum; the two extra classes are fixed landmarks that help it count the levels. Training uses crops from T12 to the sacrum with a 3\,cm margin. Crops without a lumbar level, or with only a tiny piece of one ($<$\,2\,ml), were removed. This leaves 902 training and 100 validation scans; the official test split is never used. Patches of 128$\times$128$\times$224 voxels (19$\times$19$\times$34\,cm) contain T12 to the sacrum, so the network sees the whole lumbar spine at once.
+\textbf{Training data.} The network predicts L1--L5 plus T12 and the sacrum; these two extra classes act as landmarks for counting the levels. Training uses crops from T12 to the sacrum with a 3\,cm margin. Crops without a lumbar level, or with only a small piece of one ($<$\,2\,ml), are removed, which leaves 902 training and 100 validation scans. The official test split is not used for any decision. Each patch is 128$\times$128$\times$224 voxels (19$\times$19$\times$34\,cm), large enough to hold T12 to the sacrum, so the network sees the whole lumbar spine at once.
 
-\textbf{Training setup.} Loss: cross-entropy plus Dice. Optimiser: the nnU-Net defaults without change (SGD, learning rate 0.01 with polynomial decay), so nothing was tuned by hand. No data augmentation: flips would swap levels or mirror the anatomy, and about 900 scans are enough for a short run. Training ran for 11\,000 steps (batch size 3, the most that fits; mixed precision) in 2.6\,h on one RTX~3090, with the same scans and settings as the 2\,mm run; the best validation Dice (0.905) came at the last step. At inference the network runs over the whole scan in overlapping windows. For each level only the largest connected piece is kept, and the result is mapped back to the original CT grid.
+\textbf{Training setup.} The loss is cross-entropy plus Dice. The optimiser uses the nnU-Net defaults unchanged (SGD, learning rate 0.01 with polynomial decay), so no setting was tuned by hand. No data augmentation is applied: flips would swap levels or mirror the anatomy, and about 900 scans suffice for a short run. Training ran for 11\,000 steps (batch size 3, the largest that fits in memory; mixed precision) in 2.6\,h on one RTX~3090. The best validation Dice, 0.905, was reached at the last step. At inference the network runs over the whole scan in overlapping windows; per level only the largest connected piece is kept, and the result is mapped back to the original CT grid.
 
 \section{Vertebral body centroid (Part C)}
-\textbf{Method.} The vertebral body is the only part of a vertebra that is thicker than about 12\,mm; the pedicles, laminae and processes are thinner. We therefore
-(1)~shrink the vertebra mask by 6\,mm, which removes all thin parts,
-(2)~keep the largest remaining piece that is not behind the centre of the vertebra,
-(3)~grow it back by 6\,mm, but only inside the original mask, and
-(4)~take its centre of mass in world coordinates (RAS, mm) (Fig.~\ref{fig:body}).
-It uses only the shape of the bone, not a fixed cutting plane, so it works for any position and vertebra size. If nothing survives step~1 (pieces cut off by the scan edge), the whole-vertebra centre is used (28 of 645).
+\textbf{Method.} The vertebral body is the only part of a vertebra thicker than about 12\,mm; the pedicles, laminae and processes are thinner. The method therefore
+(1)~shrinks the vertebra mask by 6\,mm, which removes all thin parts,
+(2)~keeps the largest remaining piece that does not lie behind the centre of the vertebra,
+(3)~grows this piece back by 6\,mm, but only inside the original mask, and
+(4)~takes its centre of mass in world coordinates (RAS, mm), written to one JSON file per scan (Fig.~\ref{fig:body}).
+It relies only on the shape of the bone, not on a fixed cutting plane, so it works for any patient position and vertebra size. When nothing survives step~1 (small pieces cut off by the scan edge), the whole-vertebra centre is used instead (28 of 645 vertebrae).
 
-\textbf{Validation.} VerSe provides one annotated point per vertebra. These points lie a median of 11.7\,mm in front of the centre of the whole vertebra, so they mark the centre of the \emph{body} and can serve as a reference. On the VerSe ground-truth masks, our body centre lies a median of \textbf{0.9\,mm} from the annotated point (90th percentile 4.4\,mm), compared with 12.5\,mm for the centre of the whole vertebra. On the predicted masks the distance is 1.0\,mm (90th percentile 5.6\,mm). Only the rule ``not behind the centre'' was added after inspecting VerSe outliers.
+\textbf{Validation.} VerSe provides one annotated point per vertebra. These points lie a median of 11.7\,mm in front of the whole-vertebra centre, so they mark the centre of the \emph{body}. On the VerSe ground-truth masks, the extracted body centre lies a median of \textbf{0.9\,mm} from the annotated point (90th percentile 4.4\,mm), against 12.5\,mm for the whole-vertebra centre. On the predicted masks the distance is 1.0\,mm (90th percentile 5.6\,mm). Only the rule ``not behind the centre'' was added after inspecting VerSe outliers.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.46\linewidth]{figures/body_centre_steps.png}
-\caption{Finding the body centre on one slice (green: kept, red: removed). Our body centre lies on the VerSe point; the whole-vertebra centre lies behind the body.}
+\caption{Body extraction on an axial slice of L3 (VerSe scan sub-verse020), anterior at the top. Green: kept; red: removed. The right panel marks the whole-vertebra centre, the extracted body centre and the VerSe annotated point.}
 \label{fig:body}
 \end{figure}
 
 \section{Cross-dataset evaluation (Part D)}
-\textbf{Label mapping.} TotalSegmentator \texttt{vertebrae\_L1}--\texttt{L5} and VerSe labels 20--24 both become L1--L5. Transitional vertebrae (VerSe 25 = L6, 28 = T13) keep their own classes, so they are never counted as L5, T12 or background.
-\textbf{Scoring.} Dice is computed on the original CT grid, only for levels that exist in the ground truth (tiny label pieces $<$\,2\,ml are excluded). Levels predicted where the ground truth has none are counted separately as false positives. These rules were fixed before seeing the results.
+\textbf{Label mapping.} TotalSegmentator \texttt{vertebrae\_L1}--\texttt{L5} and VerSe labels 20--24 both map to L1--L5. Transitional vertebrae (VerSe 25 = L6, 28 = T13) keep their own classes, so they are never counted as L5, T12 or background.
+\textbf{Scoring.} Dice is computed on the original CT grid, only for levels present in the ground truth (label pieces $<$\,2\,ml excluded). Levels predicted where the ground truth has none are counted separately as false positives. These rules were fixed before evaluation.
 
 \begin{table}[h]
 \centering\footnotesize
-\caption{Dice per vertebra, mean / median; $n$ = scored vertebrae. \emph{Limit}: ground truth resampled to the model grid and back; no model at that voxel size can do better. Grey: the first model, trained at 2\,mm.}
+\caption{Dice per vertebra on the two test sets, mean / median. \emph{Limit}: Dice of the ground truth after resampling to 1.5\,mm and back, i.e.\ the highest score possible at this voxel size. $n$: number of scored vertebrae.}
 \label{tab:dice}
 \begin{tabular}{@{}lcccccccc@{}}
 \toprule
@@ -118,43 +114,42 @@ Test set & L1 & L2 & L3 & L4 & L5 & All & Limit & $n$\\
 \midrule
 TotalSegmentator test (in-domain, 78 scans) & .88 / .97 & .90 / .97 & .92 / .97 & .91 / .97 & .87 / .96 & \textbf{.89 / .97} & 1.00 & 328\\
 VerSe19 (out-of-domain, 67 scans) & .90 / .94 & .91 / .94 & .92 / .94 & .91 / .94 & .89 / .93 & \textbf{.91 / .94} & .96 & 305\\
-\gr{2\,mm model: TotalSegmentator} & \gr{.86 / .93} & \gr{.88 / .93} & \gr{.89 / .93} & \gr{.90 / .93} & \gr{.88 / .92} & \gr{.88 / .93} & \gr{.94} & \\
-\gr{2\,mm model: VerSe19} & \gr{.85 / .92} & \gr{.85 / .92} & \gr{.86 / .92} & \gr{.86 / .92} & \gr{.84 / .91} & \gr{.85 / .92} & \gr{.94} & \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Why the results differ.} The medians are close to their limits (0.97 of 1.00, 0.94 of 0.96); going from 2 to 1.5\,mm raised them by 0.04 and 0.02 and the VerSe mean by 0.06. The means stay lower because a few scans fail completely, through naming rather than boundary errors (Fig.~\ref{fig:fail}):
+\textbf{Differences between the test sets.} The median is lower on VerSe (0.94 vs 0.97), but VerSe voxels do not lie on the 1.5\,mm grid, which alone limits its Dice to 0.96. Relative to these limits, a typical vertebra is segmented about equally well on both datasets, so the domain shift (scanners, fractures, metal) has little effect. The means fall below the medians because a few scans fail as a whole (Fig.~\ref{fig:fail}):
 \begin{itemize}
-\item \emph{Wrong level count.} In 3 scans (2 TotalSegmentator, 1 VerSe; 5 with the 2\,mm model), renaming all predicted levels by one raises the Dice by more than 0.1 (e.g.\ 0.00 to 0.65). Causes: metal, and short scans without the sacrum or ribs as landmarks.
-\item \emph{Cut-off vertebrae} are harder to segment and name; without them the TotalSegmentator mean rises from 0.89 to 0.92.
-\item \emph{Domain shift.} VerSe has other scanners, more fractures and metal, and voxels off the 1.5\,mm grid (limit 0.96).
+\item \emph{Wrong level count} (Fig.~\ref{fig:fail}b, c). In 3 scans (2 TotalSegmentator, 1 VerSe), renaming every predicted level by one raises the Dice by more than 0.1 (e.g.\ from 0.00 to 0.65). The vertebrae are segmented correctly but counted from the wrong start, in short scans without the sacrum or ribs as landmarks, or next to metal.
+\item \emph{Cut-off vertebrae} are harder to segment and name. TotalSegmentator labels them (431 scans), VerSe hardly does (8 scans); without them the TotalSegmentator mean rises from 0.89 to 0.92. This explains why the TotalSegmentator mean is the lower one.
 \end{itemize}
 
-\textbf{Odd findings.}
+\textbf{Unexpected findings.}
 \begin{itemize}
-\item \emph{False vertebrae in scans without a lumbar spine.} The model labels 23 whole vertebrae of the chest or neck ($\ge$\,20\,ml; 7 TotalSegmentator, 16 VerSe) as L1--L5; the 2\,mm model did this 3 times. Training saw lumbar crops only, and at 1.5\,mm fewer patches (33\,000 vs 88\,000).
-\item \emph{VerSe does not label vertebrae cut off by the scan edge; TotalSegmentator does.} In VerSe scans with a lumbar spine, 10 predicted vertebra-sized levels are missing from the ground truth; those inspected are real vertebrae: a labelling difference, not a model error.
-\item \emph{Patients with L6} (3 VerSe scans) are handled correctly (Dice 0.87--0.95): the model counts from the top, as VerSe does.
+\item \emph{False lumbar vertebrae in scans without a lumbar spine} (Fig.~\ref{fig:fail}d). The model labels 23 whole vertebrae of the chest or neck ($\ge$\,20\,ml; 7 in TotalSegmentator, 16 in VerSe) as L1--L5. It was trained on lumbar crops only and never saw such anatomy.
+\item \emph{VerSe leaves vertebrae at the scan edge unlabelled} (Fig.~\ref{fig:fail}a), while TotalSegmentator labels them. In VerSe scans with a lumbar spine, 10 predicted vertebra-sized levels are absent from the ground truth; visual inspection shows real vertebrae.
+\item \emph{Patients with L6} (3 VerSe scans) are handled correctly (Dice 0.87--0.95 per level): the model counts from the top, as VerSe does, and leaves L6 unlabelled.
 \end{itemize}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\linewidth]{figures/failure_cases_side_views_1.5mm.png}
-\caption{Typical failures of the 1.5\,mm model, side view (head up, front to the right): ground truth next to prediction. L1 red, L2 orange, L3 yellow, L4 green, L5 blue, T12 grey, sacrum purple.}
+\includegraphics[width=0.74\linewidth]{figures/failure_cases_side_views_1.5mm.png}
+\caption{Sagittal views of four failure cases, ground truth next to prediction (head up, anterior to the right): (a) cut-off vertebra unlabelled in VerSe, (b, c) levels shifted by one in a short scan and next to metal, (d) neck and chest scan with vertebrae labelled L1--L5. L1 red, L2 orange, L3 yellow, L4 green, L5 blue, T12 grey, sacrum purple.}
 \label{fig:fail}
 \end{figure}
 
-\section{Next steps, and what we would not do}
-\textbf{With more resources we would:}
-(1)~add whole-scan patches to training, or a ``lumbar spine present?'' check, against the false vertebrae;
-(2)~check level names with a rule (vertebrae ordered head to feet, T12 and sacrum as anchors);
+\section{Next steps and deliberate omissions}
+\textbf{With more resources I would:}
+(1)~add patches from whole scans to training, or a ``lumbar spine present?'' check, against the false vertebrae;
+(2)~check the level names with a rule (vertebrae ordered from head to feet, with T12 and the sacrum as anchors) against the off-by-one errors;
 (3)~train longer, since the best checkpoint was the last one;
-(4)~score VerSe only on complete vertebrae (same labelling rule for both datasets), and add confidence intervals: 67--78 test scans is a small sample.
+(4)~score VerSe only on complete vertebrae, so both datasets follow the same labelling rule, and add confidence intervals, as 67--78 test scans is a small sample.
 
-\textbf{We would deliberately not:}
-train or tune on VerSe, because it would then no longer test transfer to an unseen dataset;
+\textbf{I would deliberately not:}
+train or tune on VerSe, because it would then no longer measure transfer to an unseen dataset;
 use a larger model to raise the Dice, because the medians are already near their limits and the remaining errors are naming and labelling differences;
-train a network for the vertebral body, because no body labels exist and the shape rule is already within 1\,mm of the expert points.
+train a network for the vertebral body, because no body labels exist and the shape rule is already within 1\,mm of expert points.
+
+\textbf{Code availability.} Code, trained weights and an inference script are provided in \texttt{lumbar/}. The command \texttt{./run\_inference.sh <input\_dir> <output\_dir>} produces a label map and a centroid JSON per CT (Python 3.10--3.12, CPU only, no Docker; tested on Windows~11; 1--3\,min per CT).
 
 \end{document}

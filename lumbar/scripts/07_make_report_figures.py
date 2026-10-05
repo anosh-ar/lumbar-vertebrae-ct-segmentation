@@ -39,10 +39,10 @@ CASES_PER_MODEL = {
         ("verse19_validation", "sub-verse078", "fractured vertebrae:\ncounted one level off"),
     ],
     "1.5mm": [
-        ("verse19_test", "sub-verse012", "VerSe leaves the cut-off\nvertebra unlabelled; model: L4"),
-        ("totalseg_v3_test", "s0829", "short scan, no sacrum:\ncounted one level off"),
-        ("totalseg_v3_test", "s1248", "metal near the spine:\ncounted one level off"),
-        ("verse19_test", "sub-verse250", "no lumbar spine (neck/chest scan):\nother vertebrae called L1-L5"),
+        ("verse19_test", "sub-verse012", "(a) cut-off vertebra,\nunlabelled in VerSe"),
+        ("totalseg_v3_test", "s0829", "(b) short scan without sacrum:\nlevels shifted by one"),
+        ("totalseg_v3_test", "s1248", "(c) metal near the spine:\nlevels shifted by one"),
+        ("verse19_test", "sub-verse250", "(d) neck and chest scan:\nvertebrae labelled L1-L5"),
     ],
 }
 # background, L1 red, L2 orange, L3 yellow, L4 green, L5 blue, T12 grey, sacrum purple, L6 pink

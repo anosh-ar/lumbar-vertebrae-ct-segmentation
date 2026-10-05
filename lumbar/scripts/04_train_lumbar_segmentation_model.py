@@ -29,7 +29,7 @@ Output
     python scripts/04_train_lumbar_segmentation_model.py
     python scripts/04_train_lumbar_segmentation_model.py --steps 200 --validate-every 100 --run smoke_test
     python scripts/04_train_lumbar_segmentation_model.py --spacing 1.5 --batch-size 3 \\
-        --same-cases-as ../outputs/training/resenc_m_2mm/training_cases.csv
+        --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv
 """
 
 import argparse

@@ -7,7 +7,7 @@ What it does
     1. the vertebra mask,
     2. the mask shrunk by 6 mm: thin parts (arch, processes) vanish,
     3. the body grown back inside the mask, with three centres:
-       whole vertebra, our body centre, and the VerSe annotated point.
+       whole vertebra, the body centre, and the VerSe annotated point.
   Needs no GPU and no torch: only the downloaded VerSe data.
 
 Output
@@ -100,7 +100,7 @@ def main():
         ax.axis("off")
     ax = axes[2]
     ax.plot(*to_plot(whole_c), "x", color="white", ms=7, mew=2, label="whole-vertebra centre")
-    ax.plot(*to_plot(body_c), "o", color="#ffe119", ms=6, mec="black", label="our body centre")
+    ax.plot(*to_plot(body_c), "o", color="#ffe119", ms=6, mec="black", label="body centre (this method)")
     if verse_c is not None:
         ax.plot(*to_plot(verse_c), "+", color="#00e5ff", ms=9, mew=2, label="VerSe annotated point")
     ax.legend(loc="upper left", bbox_to_anchor=(1.02, 1.0), fontsize=7, facecolor="#333333",
