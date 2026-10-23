@@ -9,6 +9,11 @@ vertebral body. For every CT it writes:
 A 3D U-Net, trained from scratch on TotalSegmentator, does the segmentation. A shape rule then
 cuts the vertebral body out of each vertebra.
 
+![Example segmentations](report/figures/example_segmentations.png)
+
+*Model output on four test scans (side view, head up, front of the body to the right): predicted
+L1 (red) to L5 (blue), and the predicted centre of each vertebral body (white cross).*
+
 **Results** (Dice per vertebra, 1 = perfect overlap with the ground truth):
 
 | Test set | Median Dice | Mean Dice |
@@ -162,6 +167,7 @@ python scripts/05_predict_lumbar_vertebrae.py <in> <out>          # what run_inf
 python scripts/06_evaluate_on_test_sets.py                        # Dice, centres -> outputs/evaluation_1.5mm/
 python scripts/07_make_report_figures.py --tag 1.5mm              # failure-case figure
 python scripts/09_draw_body_centre_steps.py                       # body-centre figure
+python scripts/10_draw_example_segmentations.py                   # example figure at the top of this README
 ```
 
 Add `--limit 5` to steps 01, 02 and 06 for a quick test. For training, install the CUDA build of
