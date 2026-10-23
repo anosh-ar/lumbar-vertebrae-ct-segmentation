@@ -38,5 +38,9 @@ desktop.ini
 .vscode/
 .idea/
 
-# Claude Code machine-local settings
+# Machine-local settings
 .claude/settings.local.json
+
+# Local notes (not tracked)
+CLAUDE.md
+HANDOFF.md
