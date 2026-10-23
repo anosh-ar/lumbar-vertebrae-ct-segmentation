@@ -18,8 +18,8 @@ L1 (red) to L5 (blue), and the predicted centre of each vertebral body (white cr
 
 | Test set | Median Dice | Mean Dice |
 |---|---|---|
-| [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) test split (same kind of data as training, 78 scans) | **0.97** | 0.89 |
-| [VerSe 2019](https://github.com/anjany/verse) (a different dataset, never seen in training, 67 scans) | **0.94** | 0.91 |
+| [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) test split (in-domain, 78 scans) | **0.97** | 0.89 |
+| [VerSe 2019](https://github.com/anjany/verse) (out-of-domain, never seen in training, 67 scans) | **0.94** | 0.91 |
 
 Body centres lie a median of **1.0 mm** from the centre points marked by VerSe experts. Most of
 the remaining errors come from a few scans where whole vertebrae get the wrong level name.
@@ -106,8 +106,8 @@ L6 and T13 keep their own labels, so they are never counted as L5, T12 or backgr
 
 | Test set | L1 | L2 | L3 | L4 | L5 | All | Limit |
 |---|---|---|---|---|---|---|---|
-| TotalSegmentator test (78 scans) | .88 / .97 | .90 / .97 | .92 / .97 | .91 / .97 | .87 / .96 | **.89 / .97** | 1.00 |
-| VerSe19 (67 scans) | .90 / .94 | .91 / .94 | .92 / .94 | .91 / .94 | .89 / .93 | **.91 / .94** | .96 |
+| TotalSegmentator test (in-domain, 78 scans) | .88 / .97 | .90 / .97 | .92 / .97 | .91 / .97 | .87 / .96 | **.89 / .97** | 1.00 |
+| VerSe19 (out-of-domain, 67 scans) | .90 / .94 | .91 / .94 | .92 / .94 | .91 / .94 | .89 / .93 | **.91 / .94** | .96 |
 
 *Mean / median Dice. Limit: the best score possible at 1.5 mm (ground truth resampled to 1.5 mm and back).*
 
