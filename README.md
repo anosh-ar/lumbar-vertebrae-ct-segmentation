@@ -13,8 +13,8 @@ cuts the vertebral body out of each vertebra.
 
 | Test set | Median Dice | Mean Dice |
 |---|---|---|
-| TotalSegmentator test split (same kind of data as training, 78 scans) | **0.97** | 0.89 |
-| VerSe 2019 (a different dataset, never seen in training, 67 scans) | **0.94** | 0.91 |
+| [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) test split (same kind of data as training, 78 scans) | **0.97** | 0.89 |
+| [VerSe 2019](https://github.com/anjany/verse) (a different dataset, never seen in training, 67 scans) | **0.94** | 0.91 |
 
 Body centres lie a median of **1.0 mm** from the centre points marked by VerSe experts. Most of
 the remaining errors come from a few scans where whole vertebrae get the wrong level name.
@@ -168,6 +168,15 @@ Add `--limit 5` to steps 01, 02 and 06 for a quick test. For training, install t
 PyTorch first (`pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124`)
 and check `torch.cuda.is_available()` afterwards: installing other packages can replace it with
 the CPU build.
+
+## Datasets
+
+- **TotalSegmentator** v3.0.0 — https://github.com/wasserth/TotalSegmentator (data: Zenodo record 22688904).
+  Wasserthal J. et al., *TotalSegmentator: Robust segmentation of 104 anatomic structures in CT images*,
+  Radiology: Artificial Intelligence, 2023.
+- **VerSe 2019** — https://github.com/anjany/verse.
+  Sekuboyina A. et al., *VerSe: A Vertebrae labelling and segmentation benchmark for multi-detector CT images*,
+  Medical Image Analysis, 2021.
 
 **Where things are:** code in `lumbar/` (library in `lumbar/src/lumbar/`, scripts in
 `lumbar/scripts/`), results in `outputs/`, report and figures in `report/`. The first model,
