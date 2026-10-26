@@ -1,0 +1,12 @@
+{
+  "case_id": "s1773",
+  "coordinate_system": "RAS",
+  "unit": "mm",
+  "centroids": {
+    "L2": [
+      -58.08,
+      2.02,
+      -63.0
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "sub-verse242",
+  "coordinate_system": "RAS",
+  "unit": "mm",
+  "centroids": {
+    "L5": [
+      -28.39,
+      164.04,
+      -1240.36
+    ]
+  }
+}

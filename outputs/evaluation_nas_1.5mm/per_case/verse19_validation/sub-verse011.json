@@ -1,0 +1,67 @@
+{
+ "case_id": "sub-verse011",
+ "source": "verse19_validation",
+ "subject_id": "sub-verse011",
+ "flags": "NONAXIAL LABEL_AFFINE_EPS NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L1",
+  "L2",
+  "L3",
+  "L4"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -10.55,
+    -231.76,
+    -218.91
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    0.91,
+    -238.0,
+    -243.78
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    5.09,
+    -234.69,
+    -271.51
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    8.68,
+    -230.6,
+    -291.03
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 2.2,
+ "model_spacing_mm": 1.5
+}

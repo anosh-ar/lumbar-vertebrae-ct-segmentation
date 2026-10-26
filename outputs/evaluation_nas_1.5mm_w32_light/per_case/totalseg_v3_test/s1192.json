@@ -1,0 +1,80 @@
+{
+ "case_id": "s1192",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1192",
+ "flags": "NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L1",
+  "L2",
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -103.38,
+    86.75,
+    172.99
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    36.4,
+    167.67,
+    252.3
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    33.95,
+    174.44,
+    233.54
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    36.23,
+    166.19,
+    220.79
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    18.66,
+    174.5,
+    208.84
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 7.3,
+ "model_spacing_mm": 1.5
+}

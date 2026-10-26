@@ -1,0 +1,13 @@
+{
+ "case_id": "s1951",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1951",
+ "flags": "NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [],
+ "centroids": {},
+ "seconds": 1.3,
+ "model_spacing_mm": 1.5
+}

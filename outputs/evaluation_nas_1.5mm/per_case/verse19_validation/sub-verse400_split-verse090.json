@@ -1,0 +1,80 @@
+{
+ "case_id": "sub-verse400_split-verse090",
+ "source": "verse19_validation",
+ "subject_id": "sub-verse400",
+ "flags": "NONAXIAL NO_LUMBAR SPLIT_SCAN",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L1",
+  "L2",
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    36.04,
+    -126.68,
+    -109.58
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    40.32,
+    -135.39,
+    -131.87
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    38.56,
+    -117.38,
+    -145.7
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    35.37,
+    -144.05,
+    -202.73
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    28.31,
+    -170.15,
+    -210.13
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 1.4,
+ "model_spacing_mm": 1.5
+}

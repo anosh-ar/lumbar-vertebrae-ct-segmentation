@@ -1,0 +1,44 @@
+[verify] totalseg_v3_train: 1257 cases | worst centre error per case: median 0.06 mm, max 2.81 mm (s1133, L3) | volume ratio preprocessed/original: 0.526 - 1.006
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p01.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p02.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p03.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p04.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p05.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p06.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p07.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p08.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p09.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p10.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p11.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p12.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p13.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p14.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p15.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p16.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p17.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p18.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p19.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p20.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p21.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p22.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p23.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p24.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p25.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p26.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p27.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p28.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p29.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p30.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p31.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p32.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p33.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p34.png
+   pictures -> preprocessing_check_totalseg_v3_train_1.5mm_lumbar_crop_side_views_p35.png
+[verify] totalseg_v3_test: 87 cases | worst centre error per case: median 0.07 mm, max 0.63 mm (s0829, L1) | volume ratio preprocessed/original: 0.952 - 1.002
+   pictures -> preprocessing_check_totalseg_v3_test_1.5mm_lumbar_crop_side_views_p01.png
+   pictures -> preprocessing_check_totalseg_v3_test_1.5mm_lumbar_crop_side_views_p02.png
+   pictures -> preprocessing_check_totalseg_v3_test_1.5mm_lumbar_crop_side_views_p03.png
+[verify] verse19_validation: 32 cases | worst centre error per case: median 0.44 mm, max 0.60 mm (sub-verse071, L3) | volume ratio preprocessed/original: 0.991 - 1.008
+   pictures -> preprocessing_check_verse19_validation_1.5mm_lumbar_crop_side_views_p01.png
+[verify] verse19_test: 36 cases | worst centre error per case: median 0.48 mm, max 0.92 mm (sub-verse029, L2) | volume ratio preprocessed/original: 0.987 - 1.023
+   pictures -> preprocessing_check_verse19_test_1.5mm_lumbar_crop_side_views_p01.png

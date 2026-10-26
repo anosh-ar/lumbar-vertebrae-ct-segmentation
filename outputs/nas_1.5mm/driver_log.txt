@@ -1,0 +1,28 @@
+12:27:31 waiting for the downloads
+12:48:01 downloads complete (sizes match)
+12:48:01 START extract_verse: scripts/00_extract_verse_archives.py
+12:48:24 END extract_verse: exit code 0
+12:48:24 START preprocess: scripts/02_preprocess_cases_for_training.py --spacing 1.5 --workers 8
+12:54:48 END preprocess: exit code 0
+12:54:48 START verify: scripts/03_verify_preprocessed_cases.py --spacing 1.5
+13:02:13 END verify: exit code 0
+13:02:13 START search: scripts/12_search_architectures_with_nsga2.py --spacings 1.5 --steps 3000 --trials 12 --population 6 --validation-cases 20 --max-hours 6 --study lumbar_cpu_nas_1.5mm --out-dir D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas_1.5mm
+18:03:14 END search: exit code 0
+18:03:14 START pareto: scripts/13_plot_pareto_front.py --out-dir D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas_1.5mm --min-speedup 1.5 --dice-margin 0.03
+18:03:21 END pareto: exit code 0
+18:03:21 chosen: 1.5mm_5stages_w16_M
+18:03:21 START retrain: scripts/04_train_lumbar_segmentation_model.py --architecture {"spacing_mm": 1.5, "n_stages": 5, "base_width": 16, "blocks": "M"} --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --steps 11000 --max-hours 5 --run nas_1.5mm
+19:27:20 END retrain: exit code 0
+19:27:20 START evaluate: scripts/06_evaluate_on_test_sets.py --weights D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas\weights\1.5mm_5stages_w16_M.pt --tag nas_1.5mm
+20:03:24 END evaluate: exit code 0
+20:03:24 START compare: scripts/08_compare_two_evaluations.py --tags 1.5mm nas_fast nas_1.5mm --names deliverable_1.5mm nas_fast_3mm nas_1.5mm
+20:03:42 END compare: exit code 0
+20:03:42 ALL DONE
+20:03:53 second retrain (asked by the user after the search): 1.5mm_5stages_w32_light
+20:03:53 START retrain_w32_light: scripts/04_train_lumbar_segmentation_model.py --architecture {"spacing_mm": 1.5, "n_stages": 5, "base_width": 32, "blocks": "light"} --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --steps 11000 --max-hours 5 --run nas_1.5mm_w32_light
+22:03:23 END retrain_w32_light: exit code 0
+22:03:23 START evaluate_w32_light: scripts/06_evaluate_on_test_sets.py --weights D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas\weights\1.5mm_5stages_w32_light.pt --tag nas_1.5mm_w32_light
+22:40:47 END evaluate_w32_light: exit code 0
+22:40:47 START compare_four: scripts/08_compare_two_evaluations.py --tags 1.5mm nas_fast nas_1.5mm nas_1.5mm_w32_light --names deliverable nas_3mm_w32_light nas_1.5mm_w16_M nas_1.5mm_w32_light
+22:41:15 END compare_four: exit code 0
+22:41:15 SECOND RETRAIN DONE

@@ -175,7 +175,7 @@ point of the space.
 | | Deliverable (1.5 mm, 6 stages, w32, M) | NAS model (3 mm, 4 stages, w32, light) |
 |---|---|---|
 | Parameters | 102.4 M | 9.5 M |
-| CPU s per scan, 6 scans, 18 cores, median | 31.5 (33.5 earlier) | **3.5** |
+| CPU s per scan, 6 scans, 18 cores, median | 32.0 | **3.5** |
 | Peak RAM during CPU inference (8 threads) | 10.3 GB | 1.9 GB |
 | Dice TotalSegmentator test, mean / median | 0.894 / 0.965 | 0.788 / 0.882 |
 | Dice VerSe19, mean / median | 0.906 / 0.939 | 0.828 / 0.893 |
@@ -187,11 +187,76 @@ from the 3 mm voxels, not from the small network: even a perfect 3 mm prediction
 more than 0.89–0.91, and the median Dice (0.88 / 0.89) is close to that limit. Level counting stays
 about as good. Full tables: `outputs/evaluation_comparison_deliverable_1.5mm_vs_nas_fast.md`.
 
+### Second search: 1.5 mm voxels only
+
+**Question.** The 3 mm model is fast but loses about 0.1 Dice through its voxel size. Is there a
+model at the deliverable's 1.5 mm voxels that is faster and nearly as good on the test sets?
+
+**How.** The same search, but only over the 18 architectures at 1.5 mm, with a longer short budget
+of 3000 steps (1500 steps had left the narrow models at Dice 0). 12 different architectures in
+5 h; population 6; same 20 validation CTs and the same CPU-time table. The pick rule was fixed
+before the search started (`13 --min-speedup 1.5 --dice-margin 0.03`): among the Pareto points at
+least 1.5x faster than the baseline, the fastest one within 0.03 Dice of it; if none, the one with
+the best Dice. No point was both, so the rule took the best Dice among the fast ones:
+**5 stages, width 16, M blocks**. The best Dice of the whole search, **5 stages, width 32, light
+blocks** (only 1.2x faster), was also fully retrained, on request, to see what a wide but shallower
+model gives. Both models were retrained with the full schedule on the same training cases as the
+deliverable and evaluated like it.
+
+![Pareto front, 1.5 mm search](outputs/nas_1.5mm/pareto_front_dice_vs_cpu_time.png)
+
+| Search Dice after 3000 steps | CPU s per CT (search table) | Architecture (1.5 mm) |
+|---|---|---|
+| 0.842 | 21.0 | 6 stages, w32, M (baseline) |
+| 0.858 | 17.2 | 5 stages, w32, light (retrained) |
+| 0.856 | 16.9 | 6 stages, w32, light |
+| 0.374 | 9.7 | 5 stages, w16, M (retrained, chosen by the rule) |
+| 0.327 / 0.293 | 8.4 / 8.3 | 6 / 5 stages, w16, light |
+| 0.07–0.15 | 4.8–5.2 | width 8 (4 architectures) |
+
+Full table: `outputs/nas_1.5mm/pareto_front.md`.
+
+### All models side by side
+
+Test sets as in section 4. CPU time measured for all four models in one session on the same
+6 scans (`outputs/cpu_inference_seconds_per_scan.csv`); parameters and peak RAM from script 11.
+
+| | Deliverable | NAS 3 mm | NAS 1.5 mm, w16 M | NAS 1.5 mm, w32 light |
+|---|---|---|---|---|
+| Architecture | 1.5 mm, 6 stages, w32, M | 3 mm, 4 stages, w32, light | 1.5 mm, 5 stages, w16, M | 1.5 mm, 5 stages, w32, light |
+| Parameters | 102.4 M | 9.5 M | 28.0 M | 24.3 M |
+| CPU s per scan, median of 6 (speed-up) | 32.0 | **3.5 (9x)** | **15.0 (2.1x)** | 25.5 (1.25x) |
+| Peak RAM, CPU inference (8 threads) | 10.3 GB | 1.9 GB | 5.8 GB | 10.0 GB |
+| Validation Dice (100 cases, model grid) | 0.905 | 0.90 | 0.913 | 0.915 |
+| Dice TotalSeg test, mean / median | 0.894 / 0.965 | 0.788 / 0.882 | **0.900 / 0.962** | 0.896 / 0.968 |
+| Dice TotalSeg test, not cut off, mean | 0.921 | 0.833 | 0.923 | 0.937 |
+| Dice VerSe19, mean / median | 0.906 / 0.939 | 0.828 / 0.893 | **0.895 / 0.937** | 0.891 / 0.939 |
+| Scans counted one level off, TotalSeg / VerSe | 2 / 1 | 3 / 2 | 1 / 1 | 1 / 1 |
+| Body centre to ground truth, 90th pct, TotalSeg / VerSe (mm) | 15.7 / 3.9 | 26.9 / 8.3 | 6.3 / 4.0 | 13.9 / 4.0 |
+| Vertebra-sized false-positive levels (>= 20 ml), TotalSeg / VerSe | 11 / 26 | 8 / 15 | 26 / 21 | 8 / 12 |
+
+In plain words: **the 1.5 mm, width 16, M model answers the question.** It is about 2x faster on
+the CPU, needs about half the memory and is 3.7x smaller, and its test Dice is the same as the
+deliverable's on TotalSegmentator (0.900 vs 0.894) and 0.011 lower on VerSe (0.895 vs 0.906; the
+medians differ by 0.002). It counts levels at least as well. Its one weak point: more large
+false-positive pieces on TotalSegmentator (26 vs 11 levels of at least 20 ml predicted where the
+ground truth has none). The width 32, light model has the best Dice on complete vertebrae and
+the fewest large false positives, but it is only 1.25x faster. The 3 mm model remains the choice
+only when speed matters much more than accuracy. Full tables:
+`outputs/evaluation_comparison_deliverable_vs_nas_3mm_w32_light_vs_nas_1.5mm_w16_M_vs_nas_1.5mm_w32_light.md`.
+
 **Limitations (honest).**
 - The short training is a weak stand-in for the full one. After 1500 steps most narrow models
   (width 8 or 16) had not started to segment yet (Dice 0), and the chosen model rose from 0.43 in
   the search to 0.90 validation Dice after the full training. The search can rank the models only
-  roughly.
+  roughly. Even 3000 steps (second search) underrate narrow models badly: width 16, M went from
+  0.374 in the search to 0.913 after the full training, as good as the wide models. A search that
+  trains each candidate longer (or the narrow ones with a higher learning rate) would probably move
+  the front towards smaller models.
+- The second retrained model (width 32, light) was not picked by the fixed rule but added on
+  request after the search; it is reported as an extra comparison, not as a search result.
+- One training run per model: Dice differences of about 0.01 between the 1.5 mm models are within
+  what another random seed could change.
 - With the planned rule nothing faster than the baseline was within 0.02 Dice, so the fallback
   rule (best Dice among models at least 2x faster) was added during the overnight run.
 - Small search: 12 of 36 architectures, about 2.5 generations of 6; no 2 mm. A 2 mm model is probably the
@@ -199,12 +264,14 @@ about as good. Full tables: `outputs/evaluation_comparison_deliverable_1.5mm_vs_
 - One CPU (i9-10980XE), one run per CT in step 1. Peak RAM includes the three loaded CTs.
 - The 3 mm training crops are coarser: volume ratio preprocessed / original 0.87–1.30 (script 03),
   against 0.95–1.00 at 1.5 mm.
-- The NAS weights (`outputs/nas/weights/`, 37 MB) are not in git.
+- The NAS weights (`outputs/nas/weights/`, 3 files, 237 MB) are not in git.
 
 **Files.** `outputs/nas/`: CPU-time table, search table (`search_trials.csv`), Optuna study
 (`architecture_search.db`), Pareto plot and table (`pareto_front.md`), chosen architecture, console
 logs. Evaluation: `outputs/evaluation_nas_fast/`, `outputs/predictions_nas_fast/`; training log:
-`outputs/training/nas_fast/`.
+`outputs/training/nas_fast/`. Second search: `outputs/nas_1.5mm/` (same files, plus
+`driver_log.txt`); evaluations `outputs/evaluation_nas_1.5mm/` (w16 M) and
+`outputs/evaluation_nas_1.5mm_w32_light/`, with the matching `predictions_*` and `training/*` folders.
 
 **Sources.**
 [1] M. Tan, Q. V. Le. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML 2019.
@@ -253,6 +320,18 @@ python scripts/13_plot_pareto_front.py                            # Pareto plot,
 python scripts/04_train_lumbar_segmentation_model.py --architecture ../outputs/nas/chosen_architecture.json \
     --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --run nas_fast
 python scripts/06_evaluate_on_test_sets.py --weights ../outputs/nas/weights/3mm_4stages_w32_light.pt --tag nas_fast
+# second search, 1.5 mm only
+python scripts/12_search_architectures_with_nsga2.py --spacings 1.5 --steps 3000 --trials 12 --population 6 \
+    --validation-cases 20 --max-hours 6 --study lumbar_cpu_nas_1.5mm --out-dir ../outputs/nas_1.5mm
+python scripts/13_plot_pareto_front.py --out-dir ../outputs/nas_1.5mm --min-speedup 1.5 --dice-margin 0.03
+python scripts/04_train_lumbar_segmentation_model.py --architecture ../outputs/nas_1.5mm/chosen_architecture.json \
+    --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --run nas_1.5mm
+python scripts/06_evaluate_on_test_sets.py --weights ../outputs/nas/weights/1.5mm_5stages_w16_M.pt --tag nas_1.5mm
+python scripts/04_train_lumbar_segmentation_model.py --architecture ../outputs/nas_1.5mm/second_choice_architecture.json \
+    --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --run nas_1.5mm_w32_light
+python scripts/06_evaluate_on_test_sets.py --weights ../outputs/nas/weights/1.5mm_5stages_w32_light.pt --tag nas_1.5mm_w32_light
+python scripts/08_compare_two_evaluations.py --tags 1.5mm nas_fast nas_1.5mm nas_1.5mm_w32_light \
+    --names deliverable nas_3mm_w32_light nas_1.5mm_w16_M nas_1.5mm_w32_light
 ```
 
 Add `--limit 5` to steps 01, 02 and 06 for a quick test. For training, install the CUDA build of

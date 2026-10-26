@@ -105,9 +105,13 @@ def main():
                zorder=5, label="baseline (deliverable architecture)")
     ax.scatter([chosen["cpu_seconds_per_case"]], [chosen["dice_mean"]], s=200, facecolors="none",
                edgecolors="tab:green", linewidths=2, zorder=6, label="chosen for full retraining")
-    for _, r in front.iterrows():
-        ax.annotate(r["architecture"], (r["cpu_seconds_per_case"], r["dice_mean"]), fontsize=7,
-                    xytext=(4, -10), textcoords="offset points")
+    # numbers next to the front points and a key with the names: close points stay readable
+    for i, (_, r) in enumerate(front.iterrows(), 1):
+        ax.annotate(str(i), (r["cpu_seconds_per_case"], r["dice_mean"]), fontsize=8, fontweight="bold",
+                    xytext=(5, -12 if i % 2 else 5), textcoords="offset points", color="tab:blue")
+    key = "\n".join(f"{i}  {r['architecture']}" for i, (_, r) in enumerate(front.iterrows(), 1))
+    ax.text(0.98, 0.03, "Pareto front:\n" + key, transform=ax.transAxes, fontsize=7, ha="right", va="bottom", multialignment="left",
+            family="monospace", bbox={"facecolor": "white", "edgecolor": "0.7", "alpha": 0.9})
     ax.set_xscale("log")
     ax.set_xlabel("CPU seconds per CT (median of 3 CTs, log scale)")
     ax.set_ylabel(f"validation Dice L1-L5 after {int(df['steps'].iloc[0])} training steps")

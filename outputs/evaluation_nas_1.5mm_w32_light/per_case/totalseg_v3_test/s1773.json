@@ -1,0 +1,28 @@
+{
+ "case_id": "s1773",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1773",
+ "flags": "NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L2"
+ ],
+ "centroids": {
+  "L2": {
+   "pred_body": [
+    -58.08,
+    2.02,
+    -63.0
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 2.2,
+ "model_spacing_mm": 1.5
+}

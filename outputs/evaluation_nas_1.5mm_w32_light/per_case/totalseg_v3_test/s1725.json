@@ -1,0 +1,41 @@
+{
+ "case_id": "s1725",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1725",
+ "flags": "NO_LUMBAR",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {},
+ "false_positive_levels": [
+  "L2",
+  "L5"
+ ],
+ "centroids": {
+  "L2": {
+   "pred_body": [
+    -4.48,
+    147.56,
+    625.28
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    9.25,
+    127.11,
+    739.37
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 1.5,
+ "model_spacing_mm": 1.5
+}

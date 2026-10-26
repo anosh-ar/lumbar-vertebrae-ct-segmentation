@@ -1,0 +1,1 @@
+[compare] -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\evaluation_comparison_deliverable_vs_nas_3mm_w32_light_vs_nas_1.5mm_w16_M_vs_nas_1.5mm_w32_light.md

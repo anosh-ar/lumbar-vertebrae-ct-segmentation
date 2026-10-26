@@ -1,0 +1,5 @@
+[skip] Totalsegmentator_dataset_v300.zip: not a VerSe archive (TotalSegmentator v3 is read from its zip)
+[extract] dataset-verse19test.zip -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\data\raw\verse19\test
+          201 written, 0 already present
+[extract] dataset-verse19validation.zip -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\data\raw\verse19\validation
+          200 written, 0 already present

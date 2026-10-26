@@ -1,0 +1,165 @@
+{
+ "case_id": "s1446",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1446",
+ "flags": NaN,
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 14.12,
+   "pred_ml": 14.44,
+   "dice": 0.9699905482041588,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.002035048049745619,
+   "dice_ceiling": 1.0,
+   "truncated": false,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 15.13,
+   "pred_ml": 15.73,
+   "dice": 0.9683911188887674,
+   "dice_if_pred_one_level_up": 0.00022825838849577722,
+   "dice_if_pred_one_level_down": 0.000836470096194061,
+   "dice_ceiling": 1.0,
+   "truncated": false,
+   "fragment": false
+  },
+  "L3": {
+   "gt_ml": 16.3,
+   "pred_ml": 17.15,
+   "dice": 0.9584342211460856,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0020362451639177356,
+   "dice_ceiling": 1.0,
+   "truncated": false,
+   "fragment": false
+  },
+  "L4": {
+   "gt_ml": 16.13,
+   "pred_ml": 16.84,
+   "dice": 0.9595742503326169,
+   "dice_if_pred_one_level_up": 0.0004056383733901227,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 1.0,
+   "truncated": false,
+   "fragment": false
+  },
+  "L5": {
+   "gt_ml": 14.05,
+   "pred_ml": 14.96,
+   "dice": 0.949046067938576,
+   "dice_if_pred_one_level_up": 0.00305877212147695,
+   "dice_if_pred_one_level_down": 0.0005173305742369374,
+   "dice_ceiling": 1.0,
+   "truncated": false,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -2.82,
+    69.66,
+    -417.93
+   ],
+   "gt_body": [
+    -2.99,
+    69.63,
+    -417.88
+   ],
+   "gt_whole": [
+    -2.13,
+    59.99,
+    -418.5
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    -1.41,
+    72.03,
+    -439.08
+   ],
+   "gt_body": [
+    -1.51,
+    71.9,
+    -439.16
+   ],
+   "gt_whole": [
+    -0.91,
+    62.53,
+    -440.16
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L3": {
+   "pred_body": [
+    0.4,
+    74.97,
+    -461.18
+   ],
+   "gt_body": [
+    0.1,
+    75.03,
+    -461.31
+   ],
+   "gt_whole": [
+    0.75,
+    65.46,
+    -462.47
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L4": {
+   "pred_body": [
+    2.02,
+    76.63,
+    -483.09
+   ],
+   "gt_body": [
+    2.04,
+    76.6,
+    -483.12
+   ],
+   "gt_whole": [
+    2.52,
+    68.91,
+    -483.89
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L5": {
+   "pred_body": [
+    3.12,
+    76.8,
+    -504.93
+   ],
+   "gt_body": [
+    2.88,
+    76.71,
+    -504.96
+   ],
+   "gt_whole": [
+    3.03,
+    69.94,
+    -504.36
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  }
+ },
+ "seconds": 4.1,
+ "model_spacing_mm": 1.5
+}

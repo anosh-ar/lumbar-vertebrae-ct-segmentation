@@ -1,0 +1,1 @@
+[compare] -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\evaluation_comparison_deliverable_1.5mm_vs_nas_fast_3mm_vs_nas_1.5mm.md

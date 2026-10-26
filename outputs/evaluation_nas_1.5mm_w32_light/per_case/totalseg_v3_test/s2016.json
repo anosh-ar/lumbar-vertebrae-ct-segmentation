@@ -1,0 +1,115 @@
+{
+ "case_id": "s2016",
+ "source": "totalseg_v3_test",
+ "subject_id": "s2016",
+ "flags": "MASK_OVERLAP TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 14.94,
+   "pred_ml": 11.11,
+   "dice": 0.058815908796476225,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.6154074074074074,
+   "dice_ceiling": 1.0,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 4.53,
+   "pred_ml": 7.84,
+   "dice": 0.03003003003003003,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 1.0,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    19.56,
+    79.19,
+    1571.77
+   ],
+   "gt_body": [
+    19.37,
+    82.04,
+    1551.12
+   ],
+   "gt_whole": [
+    20.7,
+    72.48,
+    1549.27
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    22.26,
+    64.79,
+    1549.38
+   ],
+   "gt_body": [
+    22.5,
+    81.14,
+    1534.7
+   ],
+   "gt_whole": [
+    22.5,
+    81.14,
+    1534.7
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    83.88,
+    149.55,
+    1597.01
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    88.13,
+    147.98,
+    1572.74
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    -73.64,
+    84.07,
+    1552.27
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 2.6,
+ "model_spacing_mm": 1.5
+}
