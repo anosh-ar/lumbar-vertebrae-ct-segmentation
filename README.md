@@ -136,6 +136,83 @@ T12 grey, sacrum purple.*
 - Check the level names with a rule (vertebrae ordered head to feet, T12 and sacrum as anchors).
 - Train longer: the best checkpoint was the last one.
 
+## 6. Extension: a faster model for CPU-only inference (architecture search)
+
+*Branch `nas-efficiency` only. The deliverable model above is unchanged.*
+
+**Question.** Can a smaller or coarser model run much faster on a CPU and keep nearly the same
+Dice? Instead of guessing, a small multi-objective architecture search answers it.
+
+**What was searched** (36 architectures, `lumbar/src/lumbar/architecture_search_space.py`):
+voxel size 1.5 or 3 mm (the "sensor" setting: how finely the CT is resampled), 4, 5 or 6
+resolution stages (depth), 8, 16 or 32 channels in the first stage (width; doubles per stage, at
+most 320), and "light" (1-1-2-2-2-2) or "M" (1-3-4-6-6-6) residual blocks. Changing resolution,
+depth and width together follows EfficientNet [1]. The patch stays 19.2 x 19.2 x 32 cm; at 3 mm it
+is 64 x 64 x 96 voxels (28.8 cm long, rounded to a multiple of 32). 2 mm was planned too but left
+out to finish overnight. The deliverable's architecture (1.5 mm, 6 stages, width 32, M) is one
+point of the space.
+
+**How.**
+1. *CPU cost, measured* (script 11): the full CPU inference of `predict_ct` (resampling, sliding
+   window, clean-up) with untrained weights, on 3 fixed CTs, 8 threads, for all 36 architectures.
+   The cost is measured on the real machine, not estimated from FLOPs, as in MnasNet [2]. Width
+   and voxel size set the cost; depth and blocks hardly matter (`outputs/nas/cpu_time_per_architecture.csv`).
+2. *Search* (script 12): Optuna's [3] NSGA-II sampler [4], the genetic algorithm also used by
+   NSGA-Net [5], with two objectives: Dice L1–L5 on the **original CT grid** of 20 fixed validation
+   CTs (the only grid where 1.5 and 3 mm models are comparable; maximise), and CPU seconds per CT
+   from step 1 (minimise). Every candidate trains from scratch for the same short budget, 1500
+   steps (same batch, optimiser and schedule as script 04). The baseline was the first trial.
+   12 different architectures in 2 h (15 trials, 3 were repeats); population 6.
+3. *Pick and retrain* (scripts 13, 04): the fastest point of the Pareto front within 0.02 Dice of
+   the baseline, if none: the best Dice among Pareto points at least 2x faster than the baseline.
+   Retrained with the full 11 000-step schedule (`04 --architecture`, 15 min on the GPU), then
+   evaluated with script 06 and compared with script 08.
+
+![Pareto front](outputs/nas/pareto_front_dice_vs_cpu_time.png)
+
+**Result.** The chosen model: 3 mm voxels, 4 stages, width 32, light blocks.
+
+| | Deliverable (1.5 mm, 6 stages, w32, M) | NAS model (3 mm, 4 stages, w32, light) |
+|---|---|---|
+| Parameters | 102.4 M | 9.5 M |
+| CPU s per scan, 6 scans, 18 cores, median | 31.5 (33.5 earlier) | **3.5** |
+| Peak RAM during CPU inference (8 threads) | 10.3 GB | 1.9 GB |
+| Dice TotalSegmentator test, mean / median | 0.894 / 0.965 | 0.788 / 0.882 |
+| Dice VerSe19, mean / median | 0.906 / 0.939 | 0.828 / 0.893 |
+| Best possible Dice at this voxel size (resampling ceiling), TotalSeg / VerSe | 1.000 / 0.956 | 0.891 / 0.913 |
+| Scans counted one level off, TotalSeg / VerSe | 2 / 1 | 3 / 2 |
+
+In plain words: **9x faster and 11x smaller, but about 0.1 Dice lower.** Most of the loss comes
+from the 3 mm voxels, not from the small network: even a perfect 3 mm prediction cannot score
+more than 0.89–0.91, and the median Dice (0.88 / 0.89) is close to that limit. Level counting stays
+about as good. Full tables: `outputs/evaluation_comparison_deliverable_1.5mm_vs_nas_fast.md`.
+
+**Limitations (honest).**
+- The short training is a weak stand-in for the full one. After 1500 steps most narrow models
+  (width 8 or 16) had not started to segment yet (Dice 0), and the chosen model rose from 0.43 in
+  the search to 0.90 validation Dice after the full training. The search can rank the models only
+  roughly.
+- With the planned rule nothing faster than the baseline was within 0.02 Dice, so the fallback
+  rule (best Dice among models at least 2x faster) was added during the overnight run.
+- Small search: 12 of 36 architectures, about 2.5 generations of 6; no 2 mm. A 2 mm model is probably the
+  better middle point (the first 2 mm model: 13.5 s per scan, Dice 0.881 / 0.851).
+- One CPU (i9-10980XE), one run per CT in step 1. Peak RAM includes the three loaded CTs.
+- The 3 mm training crops are coarser: volume ratio preprocessed / original 0.87–1.30 (script 03),
+  against 0.95–1.00 at 1.5 mm.
+- The NAS weights (`outputs/nas/weights/`, 37 MB) are not in git.
+
+**Files.** `outputs/nas/`: CPU-time table, search table (`search_trials.csv`), Optuna study
+(`architecture_search.db`), Pareto plot and table (`pareto_front.md`), chosen architecture, console
+logs. Evaluation: `outputs/evaluation_nas_fast/`, `outputs/predictions_nas_fast/`; training log:
+`outputs/training/nas_fast/`.
+
+**Sources.**
+[1] M. Tan, Q. V. Le. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML 2019.
+[2] M. Tan, B. Chen, R. Pang, V. Vasudevan, M. Sandler, A. Howard, Q. V. Le. MnasNet: Platform-Aware Neural Architecture Search for Mobile. CVPR 2019.
+[3] T. Akiba, S. Sano, T. Yanase, T. Ohta, M. Koyama. Optuna: A Next-generation Hyperparameter Optimization Framework. KDD 2019.
+[4] K. Deb, A. Pratap, S. Agarwal, T. Meyarivan. A Fast and Elitist Multiobjective Genetic Algorithm: NSGA-II. IEEE Transactions on Evolutionary Computation 6(2), 2002.
+[5] Z. Lu, I. Whalen, V. Boddeti, Y. Dhebar, K. Deb, E. Goodman, W. Banzhaf. NSGA-Net: Neural Architecture Search using Multi-Objective Genetic Algorithm. GECCO 2019.
+
 ## Reproduce the whole pipeline
 
 **Setup** (any OS, Python 3.10+):
@@ -168,6 +245,14 @@ python scripts/06_evaluate_on_test_sets.py                        # Dice, centre
 python scripts/07_make_report_figures.py --tag 1.5mm              # failure-case figure
 python scripts/09_draw_body_centre_steps.py                       # body-centre figure
 python scripts/10_draw_example_segmentations.py                   # example figure at the top of this README
+# architecture search (section 6; needs `pip install optuna`)
+python scripts/02_preprocess_cases_for_training.py --spacing 3 --workers 8   # 3 mm crops
+python scripts/11_measure_cpu_time_of_architectures.py            # CPU time of all architectures
+python scripts/12_search_architectures_with_nsga2.py --max-hours 2 # NSGA-II search -> outputs/nas/
+python scripts/13_plot_pareto_front.py                            # Pareto plot, chosen_architecture.json
+python scripts/04_train_lumbar_segmentation_model.py --architecture ../outputs/nas/chosen_architecture.json \
+    --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --run nas_fast
+python scripts/06_evaluate_on_test_sets.py --weights ../outputs/nas/weights/3mm_4stages_w32_light.pt --tag nas_fast
 ```
 
 Add `--limit 5` to steps 01, 02 and 06 for a quick test. For training, install the CUDA build of
