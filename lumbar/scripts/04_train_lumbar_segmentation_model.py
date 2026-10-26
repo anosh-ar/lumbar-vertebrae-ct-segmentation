@@ -25,15 +25,18 @@ Output
   outputs/training/<run>/training_log.csv              loss per 100 steps, validation Dice
   outputs/training/<run>/training_cases.csv            every case: train / validation / excluded + why
   where <run> defaults to resenc_m_<s>mm, e.g. resenc_m_2mm, resenc_m_1.5mm.
+  NAS extension (--architecture): outputs/nas/weights/<name>.pt and run nas_<name> instead,
+  so a searched model never replaces the deliverable's weights.
 
     python scripts/04_train_lumbar_segmentation_model.py
     python scripts/04_train_lumbar_segmentation_model.py --steps 200 --validate-every 100 --run smoke_test
     python scripts/04_train_lumbar_segmentation_model.py --spacing 1.5 --batch-size 3 \\
         --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv
+    python scripts/04_train_lumbar_segmentation_model.py --architecture ../outputs/nas/chosen_architecture.json \
+        --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv
 """
 
 import argparse
-import queue
 import threading
 import time
 from pathlib import Path
@@ -42,37 +45,17 @@ import numpy as np
 import pandas as pd
 import torch
 
+from lumbar.architecture_search_space import (architecture_name, network_settings_for, patch_size_for,
+                                              read_architecture)
 from lumbar.inference import predict_labels_on_model_grid
 from lumbar.labels import CANONICAL, TARGET_IDS
 from lumbar.network import NETWORK_SETTINGS, build_lumbar_segmentation_network, patch_size_for_spacing
 from lumbar.preprocess import HU_WINDOW, TARGET_SPACING
-from lumbar.sources import PROJECT_ROOT, weights_file_for_spacing
-from lumbar.training import (choose_training_cases, dice_per_level, dice_plus_cross_entropy,
-                             load_cases_into_memory, sample_patch)
+from lumbar.sources import NAS_WEIGHTS_DIR, PROJECT_ROOT, weights_file_for_spacing
+from lumbar.training import (batches_in_background, choose_training_cases, dice_per_level,
+                             dice_plus_cross_entropy, load_cases_into_memory)
 
 TRAINING_RUNS_DIR = PROJECT_ROOT / "outputs" / "training"
-
-
-def batches_in_background(data: dict, patch_size, batch_size: int, seed: int, stop: threading.Event):
-    """Prepare batches in a separate thread so the GPU never waits for numpy."""
-    q = queue.Queue(maxsize=6)
-    ids = list(data)
-
-    def work():
-        rng = np.random.default_rng(seed)
-        while not stop.is_set():
-            pairs = [sample_patch(*data[ids[rng.integers(len(ids))]], patch_size, rng) for _ in range(batch_size)]
-            x = torch.from_numpy(np.stack([p[0] for p in pairs])[:, None])
-            y = torch.from_numpy(np.stack([p[1] for p in pairs]))
-            while not stop.is_set():
-                try:
-                    q.put((x, y), timeout=1)
-                    break
-                except queue.Full:
-                    pass
-
-    threading.Thread(target=work, daemon=True).start()
-    return q
 
 
 def validate(net, val_data: dict, patch_size, device) -> dict:
@@ -89,15 +72,16 @@ def validate(net, val_data: dict, patch_size, device) -> dict:
     return res
 
 
-def save_checkpoint(path, net, opt, scaler, step, best, spacing, patch_size, extra, for_resuming=True):
+def save_checkpoint(path, net, opt, scaler, step, best, spacing, patch_size, settings, extra, for_resuming=True):
     """for_resuming=False writes only the weights and settings (half the size: the
-    optimizer state is only needed to continue training). The voxel size and patch
-    size are stored, so inference and evaluation never assume them."""
+    optimizer state is only needed to continue training). The voxel size, patch
+    size and the settings of the network that was really trained are stored, so
+    inference and evaluation never assume them."""
     resume = {"optimizer_state": opt.state_dict(), "scaler_state": scaler.state_dict()} if for_resuming else {}
     torch.save({"model_state": net.state_dict(), **resume, "step": step, "best_val_dice": best,
-                "network_settings": NETWORK_SETTINGS, "patch_size": tuple(patch_size),
+                "network_settings": settings, "patch_size": tuple(patch_size),
                 "spacing_mm": spacing, "hu_window": HU_WINDOW,
-                "class_names": {i: CANONICAL.get(i, "background") for i in range(NETWORK_SETTINGS["num_classes"])},
+                "class_names": {i: CANONICAL.get(i, "background") for i in range(settings["num_classes"])},
                 **extra}, path)
 
 
@@ -116,13 +100,24 @@ def main():
     ap.add_argument("--overwrite-weights", action="store_true", help="allow replacing an existing weights file")
     ap.add_argument("--resume", action="store_true", help="continue from the run's last checkpoint")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--architecture", help="NAS extension: architecture as a JSON string or file "
+                    "(lumbar/architecture_search_space.py); sets the voxel size (overrides --spacing). "
+                    "Default run nas_<name>, default weights outputs/nas/weights/<name>.pt")
     args = ap.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    patch_size = patch_size_for_spacing(args.spacing)
-    run_dir = TRAINING_RUNS_DIR / (args.run or f"resenc_m_{args.spacing:g}mm")
+    if args.architecture:
+        arch = read_architecture(args.architecture)
+        args.spacing = arch["spacing_mm"]
+        settings, patch_size = network_settings_for(arch), patch_size_for(arch)
+        default_run, default_weights = f"nas_{architecture_name(arch)}", NAS_WEIGHTS_DIR / f"{architecture_name(arch)}.pt"
+    else:
+        arch = None
+        settings, patch_size = NETWORK_SETTINGS, patch_size_for_spacing(args.spacing)
+        default_run, default_weights = f"resenc_m_{args.spacing:g}mm", weights_file_for_spacing(args.spacing)
+    run_dir = TRAINING_RUNS_DIR / (args.run or default_run)
     run_dir.mkdir(parents=True, exist_ok=True)
-    weights_out = Path(args.weights_out) if args.weights_out else weights_file_for_spacing(args.spacing)
+    weights_out = Path(args.weights_out) if args.weights_out else default_weights
     if weights_out.exists() and not (args.resume or args.overwrite_weights):
         raise SystemExit(f"{weights_out} already exists (a trained model). Use --weights-out <new file>, "
                          "or --overwrite-weights if you really want to replace it.")
@@ -138,7 +133,7 @@ def main():
     train_data = load_cases_into_memory(train_ids, spacing=args.spacing)
     val_data = load_cases_into_memory(val_ids, spacing=args.spacing)
 
-    net = build_lumbar_segmentation_network().to(device)
+    net = build_lumbar_segmentation_network(settings).to(device)
     opt = torch.optim.SGD(net.parameters(), lr=args.learning_rate, momentum=0.99, nesterov=True, weight_decay=3e-5)
     scaler = torch.amp.GradScaler(enabled=device.type == "cuda")
     step, best = 0, -1.0
@@ -188,12 +183,13 @@ def main():
             msg = "  ".join(f"{k[9:]} {v:.3f}" for k, v in res.items())
             if res["val_dice_mean"] > best:
                 best = res["val_dice_mean"]
-                save_checkpoint(weights_out, net, opt, scaler, step, best, args.spacing, patch_size,
-                                {"training_cases": len(train_ids), "validation_cases": len(val_ids)},
+                save_checkpoint(weights_out, net, opt, scaler, step, best, args.spacing, patch_size, settings,
+                                {"training_cases": len(train_ids), "validation_cases": len(val_ids),
+                                 "architecture": arch},
                                 for_resuming=False)
                 msg += "  -> new best, saved"
             print(f"   [validation] step {step}: {msg}", flush=True)
-            save_checkpoint(last_path, net, opt, scaler, step, best, args.spacing, patch_size, {})
+            save_checkpoint(last_path, net, opt, scaler, step, best, args.spacing, patch_size, settings, {})
             pd.DataFrame(log).to_csv(log_path, index=False)
         if out_of_time:
             print(f"[train] stopped at the time limit ({args.max_hours} h) after {step} steps")

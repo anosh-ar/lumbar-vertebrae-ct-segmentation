@@ -33,6 +33,11 @@ def weights_file_for_spacing(spacing: float) -> Path:
 
 WEIGHTS_FILE = weights_file_for_spacing(1.5)
 
+# NAS extension: everything of the architecture search. Searched models keep their
+# weights here, not in lumbar/weights/ (those files are committed via Git LFS).
+NAS_OUTPUTS_DIR = PROJECT_ROOT / "outputs" / "nas"
+NAS_WEIGHTS_DIR = NAS_OUTPUTS_DIR / "weights"
+
 TOTALSEG_V3_ZIP = ARCHIVES_DIR / "Totalsegmentator_dataset_v300.zip"
 
 # name -> (location, how to find its cases). TotalSegmentator v3 is read

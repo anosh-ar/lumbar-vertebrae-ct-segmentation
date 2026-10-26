@@ -29,6 +29,9 @@ Loss (dice_plus_cross_entropy)
 
 from __future__ import annotations
 
+import queue
+import threading
+
 import numpy as np
 import pandas as pd
 import torch
@@ -127,3 +130,25 @@ def dice_per_level(pred: np.ndarray, gt: np.ndarray, ids=TARGET_IDS) -> dict[int
             p = pred == c
             out[c] = 2 * float((p & g).sum()) / float(p.sum() + g.sum())
     return out
+
+
+def batches_in_background(data: dict, patch_size, batch_size: int, seed: int, stop: threading.Event):
+    """Prepare batches in a separate thread so the GPU never waits for numpy."""
+    q = queue.Queue(maxsize=6)
+    ids = list(data)
+
+    def work():
+        rng = np.random.default_rng(seed)
+        while not stop.is_set():
+            pairs = [sample_patch(*data[ids[rng.integers(len(ids))]], patch_size, rng) for _ in range(batch_size)]
+            x = torch.from_numpy(np.stack([p[0] for p in pairs])[:, None])
+            y = torch.from_numpy(np.stack([p[1] for p in pairs]))
+            while not stop.is_set():
+                try:
+                    q.put((x, y), timeout=1)
+                    break
+                except queue.Full:
+                    pass
+
+    threading.Thread(target=work, daemon=True).start()
+    return q
