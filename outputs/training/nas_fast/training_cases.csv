@@ -1,0 +1,1831 @@
+case_id,dataset,split,subject_id,status,shape,labels,fixes,flags,use
+s0000,totalseg,train,s0000,written,"[75, 55, 35]",sacrum,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0001,totalseg,train,s0001,written,"[104, 82, 165]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0002,totalseg,train,s0002,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0003,totalseg,train,s0003,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0004,totalseg,train,s0004,written,"[101, 82, 195]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0006,totalseg,train,s0006,written,"[89, 92, 163]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,validation
+s0009,totalseg,train,s0009,written,"[88, 82, 139]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0010,totalseg,train,s0010,written,"[85, 80, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0011,totalseg,train,s0011,written,"[87, 88, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0012,totalseg,train,s0012,written,"[102, 77, 196]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0014,totalseg,train,s0014,written,"[88, 92, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0015,totalseg,train,s0015,written,"[88, 87, 211]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0016,totalseg,train,s0016,written,"[86, 91, 209]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0019,totalseg,train,s0019,written,"[90, 88, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0021,totalseg,train,s0021,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0022,totalseg,train,s0022,written,"[89, 91, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0024,totalseg,train,s0024,written,"[90, 93, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0025,totalseg,train,s0025,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0028,totalseg,train,s0028,written,"[82, 88, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0030,totalseg,train,s0030,written,"[88, 97, 182]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0031,totalseg,train,s0031,written,"[93, 95, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0032,totalseg,train,s0032,written,"[56, 68, 45]",L1 T12,,TRUNCATED,train
+s0034,totalseg,train,s0034,written,"[91, 90, 165]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0035,totalseg,train,s0035,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0036,totalseg,train,s0036,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0037,totalseg,train,s0037,written,"[63, 71, 54]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0039,totalseg,train,s0039,written,"[64, 68, 44]",L1 T12,,TRUNCATED,train
+s0042,totalseg,train,s0042,written,"[91, 91, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0043,totalseg,train,s0043,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0044,totalseg,train,s0044,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0045,totalseg,train,s0045,written,"[92, 83, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0046,totalseg,train,s0046,written,"[65, 69, 39]",L1 T12,,TRUNCATED,train
+s0048,totalseg,train,s0048,written,"[86, 82, 88]",L1 L2 L3 L4 L5 T12,,LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0049,totalseg,train,s0049,written,"[89, 85, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0050,totalseg,train,s0050,written,"[86, 81, 186]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0052,totalseg,train,s0052,written,"[91, 93, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0053,totalseg,train,s0053,written,"[92, 97, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0054,totalseg,train,s0054,written,"[85, 89, 166]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0056,totalseg,train,s0056,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0057,totalseg,train,s0057,written,"[76, 83, 84]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0058,totalseg,train,s0058,written,"[88, 92, 185]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0059,totalseg,train,s0059,written,"[91, 84, 209]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0061,totalseg,train,s0061,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0062,totalseg,train,s0062,written,"[112, 76, 151]",L3 L4 L5 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,validation
+s0063,totalseg,train,s0063,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0065,totalseg,train,s0065,written,"[93, 92, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0066,totalseg,train,s0066,written,"[99, 82, 165]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0067,totalseg,train,s0067,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0068,totalseg,train,s0068,written,"[78, 82, 142]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s0069,totalseg,train,s0069,written,"[83, 78, 87]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0070,totalseg,train,s0070,written,"[73, 75, 91]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0071,totalseg,train,s0071,written,"[87, 84, 100]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0072,totalseg,train,s0072,written,"[91, 94, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0073,totalseg,train,s0073,written,"[98, 91, 199]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0074,totalseg,train,s0074,written,"[86, 85, 119]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0075,totalseg,train,s0075,written,"[90, 90, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0076,totalseg,train,s0076,written,"[89, 89, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0077,totalseg,train,s0077,written,"[86, 94, 184]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0078,totalseg,train,s0078,written,"[86, 80, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0079,totalseg,train,s0079,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0080,totalseg,train,s0080,written,"[70, 79, 59]",L1 L2 T12,,TRUNCATED,train
+s0081,totalseg,train,s0081,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0082,totalseg,train,s0082,written,"[99, 87, 193]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0083,totalseg,train,s0083,written,"[54, 41, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0084,totalseg,train,s0084,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0085,totalseg,train,s0085,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0086,totalseg,train,s0086,written,"[91, 93, 171]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0088,totalseg,train,s0088,written,"[62, 71, 38]",L1 T12,,TRUNCATED,train
+s0089,totalseg,train,s0089,written,"[80, 89, 175]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0090,totalseg,train,s0090,written,"[92, 81, 184]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0091,totalseg,train,s0091,written,"[87, 90, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0092,totalseg,train,s0092,written,"[98, 82, 158]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0095,totalseg,train,s0095,written,"[102, 85, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0096,totalseg,train,s0096,written,"[87, 92, 210]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0098,totalseg,train,s0098,written,"[92, 72, 165]",L1 L2 L3 L4 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0099,totalseg,train,s0099,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0100,totalseg,train,s0100,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0101,totalseg,train,s0101,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0102,totalseg,train,s0102,written,"[71, 56, 86]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0103,totalseg,train,s0103,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0104,totalseg,train,s0104,written,"[91, 83, 115]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0105,totalseg,train,s0105,written,"[76, 87, 87]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0106,totalseg,train,s0106,written,"[77, 78, 95]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0107,totalseg,train,s0107,written,"[97, 77, 199]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0108,totalseg,train,s0108,written,"[90, 87, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0109,totalseg,train,s0109,written,"[92, 95, 184]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0110,totalseg,train,s0110,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0111,totalseg,train,s0111,written,"[76, 81, 58]",L1 L2 T12,,TRUNCATED,train
+s0112,totalseg,train,s0112,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0114,totalseg,train,s0114,written,"[77, 78, 64]",L1 L2 T12,,LABEL_AFFINE_EPS,train
+s0115,totalseg,train,s0115,written,"[82, 85, 91]",L1 L2 L3 L4 T12,,TRUNCATED MULTI_CC,train
+s0117,totalseg,train,s0117,written,"[107, 77, 201]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,train
+s0120,totalseg,train,s0120,written,"[109, 94, 217]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0122,totalseg,train,s0122,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0123,totalseg,train,s0123,written,"[63, 73, 51]",L1 T12,,LABEL_AFFINE_EPS,train
+s0124,totalseg,train,s0124,written,"[92, 75, 192]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0128,totalseg,train,s0128,written,"[49, 52, 23]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0129,totalseg,train,s0129,written,"[37, 73, 111]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0130,totalseg,train,s0130,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0131,totalseg,train,s0131,written,"[86, 87, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0132,totalseg,train,s0132,written,"[59, 73, 36]",L1 T12,,TRUNCATED,validation
+s0133,totalseg,train,s0133,written,"[94, 92, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0135,totalseg,train,s0135,written,"[76, 82, 89]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0136,totalseg,train,s0136,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0137,totalseg,train,s0137,written,"[88, 93, 172]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0138,totalseg,train,s0138,written,"[70, 81, 58]",L1 L2 T12,,TRUNCATED,train
+s0139,totalseg,train,s0139,written,"[91, 85, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0140,totalseg,train,s0140,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0141,totalseg,train,s0141,written,"[92, 82, 166]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0143,totalseg,train,s0143,written,"[92, 86, 190]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0145,totalseg,train,s0145,written,"[94, 97, 212]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0146,totalseg,train,s0146,written,"[64, 68, 34]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0147,totalseg,train,s0147,written,"[88, 88, 201]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0149,totalseg,train,s0149,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0150,totalseg,train,s0150,written,"[92, 86, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0151,totalseg,train,s0151,written,"[93, 89, 190]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0152,totalseg,train,s0152,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0153,totalseg,train,s0153,written,"[92, 94, 193]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0154,totalseg,train,s0154,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0156,totalseg,train,s0156,written,"[70, 76, 52]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0157,totalseg,train,s0157,written,"[90, 94, 174]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0158,totalseg,train,s0158,written,"[90, 96, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0159,totalseg,train,s0159,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0160,totalseg,train,s0160,written,"[55, 65, 37]",L1 T12,,TRUNCATED,validation
+s0161,totalseg,train,s0161,written,"[101, 89, 212]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS,train
+s0162,totalseg,train,s0162,written,"[57, 75, 36]",L1 T12,,LABEL_AFFINE_EPS FRAGMENT,excluded: FRAGMENT
+s0163,totalseg,train,s0163,written,"[100, 97, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0165,totalseg,train,s0165,written,"[67, 71, 41]",L1 T12,,TRUNCATED,train
+s0166,totalseg,train,s0166,written,"[85, 83, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0167,totalseg,train,s0167,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0168,totalseg,train,s0168,written,"[86, 82, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0169,totalseg,train,s0169,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0170,totalseg,train,s0170,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0171,totalseg,train,s0171,written,"[92, 92, 181]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0172,totalseg,train,s0172,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0174,totalseg,train,s0174,written,"[86, 76, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0175,totalseg,train,s0175,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0178,totalseg,train,s0178,written,"[91, 91, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0179,totalseg,train,s0179,written,"[87, 90, 165]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0181,totalseg,train,s0181,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0182,totalseg,train,s0182,written,"[92, 85, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0183,totalseg,train,s0183,written,"[88, 73, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0184,totalseg,train,s0184,written,"[61, 68, 26]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0185,totalseg,train,s0185,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0187,totalseg,train,s0187,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0188,totalseg,train,s0188,written,"[94, 79, 125]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0189,totalseg,train,s0189,written,"[88, 81, 203]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0190,totalseg,train,s0190,written,"[87, 85, 156]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0191,totalseg,train,s0191,written,"[73, 79, 142]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0192,totalseg,train,s0192,written,"[88, 86, 199]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS,train
+s0193,totalseg,train,s0193,written,"[91, 76, 202]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0194,totalseg,train,s0194,written,"[93, 76, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0196,totalseg,train,s0196,written,"[84, 90, 153]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0197,totalseg,train,s0197,written,"[69, 80, 73]",L1 L2 T12,,LABEL_AFFINE_EPS,train
+s0199,totalseg,train,s0199,written,"[58, 62, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0201,totalseg,train,s0201,written,"[85, 87, 164]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0204,totalseg,train,s0204,written,"[89, 85, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0206,totalseg,train,s0206,written,"[88, 93, 188]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0208,totalseg,train,s0208,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0209,totalseg,train,s0209,written,"[70, 99, 145]",L1 L2 L3 L4 L5 T12 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0210,totalseg,train,s0210,written,"[93, 83, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0211,totalseg,train,s0211,written,"[70, 75, 43]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0212,totalseg,train,s0212,written,"[88, 81, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0213,totalseg,train,s0213,written,"[76, 77, 126]",L1 L2 L3 L4 L5 T12,,,train
+s0215,totalseg,train,s0215,written,"[57, 68, 40]",L1 T12,,TRUNCATED,train
+s0216,totalseg,train,s0216,written,"[86, 85, 124]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0217,totalseg,train,s0217,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0218,totalseg,train,s0218,written,"[92, 84, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0219,totalseg,train,s0219,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0220,totalseg,train,s0220,written,"[73, 82, 112]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0221,totalseg,train,s0221,written,"[77, 75, 145]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0222,totalseg,train,s0222,written,"[75, 81, 76]",L1 L2 L3 T12,,TRUNCATED,validation
+s0223,totalseg,train,s0223,written,"[66, 73, 48]",L1 L2 T12,,TRUNCATED,train
+s0224,totalseg,train,s0224,written,"[87, 94, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0226,totalseg,train,s0226,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0227,totalseg,train,s0227,written,"[89, 83, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0228,totalseg,train,s0228,written,"[91, 88, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0229,totalseg,train,s0229,written,"[84, 65, 61]",sacrum,,METAL NO_LUMBAR,excluded: NO_LUMBAR
+s0231,totalseg,train,s0231,written,"[74, 73, 68]",L1 L2 L3 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0232,totalseg,train,s0232,written,"[86, 61, 154]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s0233,totalseg,train,s0233,written,"[68, 68, 115]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0234,totalseg,train,s0234,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0237,totalseg,train,s0237,written,"[50, 67, 29]",L1 T12,,TRUNCATED MULTI_CC,train
+s0238,totalseg,train,s0238,written,"[85, 64, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0239,totalseg,train,s0239,written,"[89, 94, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0240,totalseg,train,s0240,written,"[58, 73, 36]",L1 T12,,TRUNCATED MULTI_CC,train
+s0241,totalseg,train,s0241,written,"[53, 59, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0242,totalseg,train,s0242,written,"[93, 89, 180]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0243,totalseg,train,s0243,written,"[88, 84, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0245,totalseg,train,s0245,written,"[71, 79, 53]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0246,totalseg,train,s0246,written,"[90, 74, 58]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0247,totalseg,train,s0247,written,"[64, 73, 63]",L1 L2 T12,,TRUNCATED,train
+s0248,totalseg,train,s0248,written,"[88, 88, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0249,totalseg,train,s0249,written,"[68, 76, 48]",L1 T12,,TRUNCATED,train
+s0250,totalseg,train,s0250,written,"[93, 133, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0252,totalseg,train,s0252,written,"[85, 67, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0253,totalseg,train,s0253,written,"[91, 81, 108]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0254,totalseg,train,s0254,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0255,totalseg,train,s0255,written,"[89, 91, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0256,totalseg,train,s0256,written,"[75, 79, 103]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0257,totalseg,train,s0257,written,"[92, 97, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP FRAGMENT,excluded: FRAGMENT
+s0258,totalseg,train,s0258,written,"[79, 81, 83]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0259,totalseg,train,s0259,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0260,totalseg,train,s0260,written,"[105, 108, 181]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0261,totalseg,train,s0261,written,"[89, 84, 143]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0262,totalseg,train,s0262,written,"[57, 69, 37]",L1 T12,,TRUNCATED,train
+s0263,totalseg,train,s0263,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0264,totalseg,train,s0264,written,"[73, 76, 109]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0265,totalseg,train,s0265,written,"[72, 74, 33]",L1 L2 T12,,TRUNCATED,train
+s0266,totalseg,train,s0266,written,"[68, 73, 53]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0270,totalseg,train,s0270,written,"[58, 69, 27]",L1 T12,,MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0271,totalseg,train,s0271,written,"[74, 77, 70]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0275,totalseg,train,s0275,written,"[85, 93, 160]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0277,totalseg,train,s0277,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0278,totalseg,train,s0278,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0279,totalseg,train,s0279,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0281,totalseg,train,s0281,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0282,totalseg,train,s0282,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0283,totalseg,train,s0283,written,"[78, 84, 72]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0285,totalseg,train,s0285,written,"[56, 69, 35]",L1 T12,,TRUNCATED,train
+s0286,totalseg,train,s0286,written,"[93, 85, 106]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0287,totalseg,train,s0287,written,"[89, 94, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0288,totalseg,train,s0288,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0289,totalseg,train,s0289,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0290,totalseg,train,s0290,written,"[65, 74, 46]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0292,totalseg,train,s0292,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0293,totalseg,train,s0293,written,"[94, 90, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0294,totalseg,train,s0294,written,"[54, 63, 23]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0296,totalseg,train,s0296,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0298,totalseg,train,s0298,written,"[90, 79, 189]",L1 L2 L3 L4 L5 T12 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,train
+s0299,totalseg,train,s0299,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0300,totalseg,train,s0300,written,"[92, 89, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0301,totalseg,train,s0301,written,"[89, 88, 121]",L3 L4 L5 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,train
+s0303,totalseg,train,s0303,written,"[71, 79, 74]",L1 L2 L3 T12,,,train
+s0304,totalseg,train,s0304,written,"[93, 91, 173]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0305,totalseg,train,s0305,written,"[73, 82, 52]",L1 L2 T12,,TRUNCATED,train
+s0306,totalseg,train,s0306,written,"[91, 91, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0307,totalseg,train,s0307,written,"[91, 86, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0310,totalseg,train,s0310,written,"[54, 66, 32]",L1 T12,,TRUNCATED,train
+s0312,totalseg,train,s0312,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0313,totalseg,train,s0313,written,"[82, 75, 127]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0314,totalseg,train,s0314,written,"[86, 85, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0315,totalseg,train,s0315,written,"[85, 93, 103]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0316,totalseg,train,s0316,written,"[91, 75, 43]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,validation
+s0319,totalseg,train,s0319,written,"[123, 117, 211]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0320,totalseg,train,s0320,written,"[91, 87, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0321,totalseg,train,s0321,written,"[92, 91, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0322,totalseg,train,s0322,written,"[55, 72, 34]",L1 T12,,TRUNCATED,train
+s0324,totalseg,train,s0324,written,"[82, 78, 166]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0325,totalseg,train,s0325,written,"[94, 96, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0326,totalseg,train,s0326,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0327,totalseg,train,s0327,written,"[99, 82, 197]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0328,totalseg,train,s0328,written,"[91, 91, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0329,totalseg,train,s0329,written,"[107, 88, 215]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0330,totalseg,train,s0330,written,"[64, 75, 65]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0331,totalseg,train,s0331,written,"[57, 72, 49]",L1 T12,,TRUNCATED,train
+s0332,totalseg,train,s0332,written,"[92, 89, 198]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0333,totalseg,train,s0333,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0334,totalseg,train,s0334,written,"[90, 95, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0335,totalseg,train,s0335,written,"[46, 25, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0336,totalseg,train,s0336,written,"[54, 31, 30]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0338,totalseg,train,s0338,written,"[59, 76, 34]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0339,totalseg,train,s0339,written,"[94, 98, 174]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0340,totalseg,train,s0340,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0341,totalseg,train,s0341,written,"[91, 95, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0342,totalseg,train,s0342,written,"[96, 87, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0343,totalseg,train,s0343,written,"[82, 91, 107]",L1 L2 L3 L4 L5 T12,,TRUNCATED MULTI_CC,train
+s0344,totalseg,train,s0344,written,"[108, 90, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0345,totalseg,train,s0345,written,"[98, 98, 199]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0346,totalseg,train,s0346,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0347,totalseg,train,s0347,written,"[50, 29, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0349,totalseg,train,s0349,written,"[76, 85, 68]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0350,totalseg,train,s0350,written,"[93, 94, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0352,totalseg,train,s0352,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0353,totalseg,train,s0353,written,"[40, 83, 192]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0354,totalseg,train,s0354,written,"[66, 76, 59]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0355,totalseg,train,s0355,written,"[97, 93, 217]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0356,totalseg,train,s0356,written,"[52, 40, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0357,totalseg,train,s0357,written,"[64, 73, 52]",L1 L2 T12,,TRUNCATED,train
+s0358,totalseg,train,s0358,written,"[86, 88, 169]",L1 L2 L3 L4 T12 sacrum,,METAL MASK_OVERLAP,train
+s0359,totalseg,train,s0359,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0360,totalseg,train,s0360,written,"[85, 76, 40]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0361,totalseg,train,s0361,written,"[94, 88, 118]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0362,totalseg,train,s0362,written,"[95, 95, 205]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0363,totalseg,train,s0363,written,"[69, 70, 43]",L1 T12,,TRUNCATED,train
+s0364,totalseg,train,s0364,written,"[52, 56, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0365,totalseg,train,s0365,written,"[67, 74, 46]",L1 T12,,TRUNCATED,train
+s0366,totalseg,train,s0366,written,"[88, 85, 175]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0367,totalseg,train,s0367,written,"[67, 69, 41]",L1 T12,,TRUNCATED,train
+s0368,totalseg,train,s0368,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0369,totalseg,train,s0369,written,"[90, 90, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0370,totalseg,train,s0370,written,"[89, 79, 202]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0371,totalseg,train,s0371,written,"[73, 80, 108]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED,train
+s0372,totalseg,train,s0372,written,"[75, 81, 106]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0373,totalseg,train,s0373,written,"[56, 55, 30]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0374,totalseg,train,s0374,written,"[65, 76, 49]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0375,totalseg,train,s0375,written,"[85, 82, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0376,totalseg,train,s0376,written,"[57, 46, 34]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0377,totalseg,train,s0377,written,"[47, 54, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0378,totalseg,train,s0378,written,"[53, 57, 22]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0379,totalseg,train,s0379,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0380,totalseg,train,s0380,written,"[53, 56, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0381,totalseg,train,s0381,written,"[88, 86, 90]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0382,totalseg,train,s0382,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0383,totalseg,train,s0383,written,"[94, 73, 170]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0385,totalseg,train,s0385,written,"[91, 97, 90]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0386,totalseg,train,s0386,written,"[51, 70, 43]",L1 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0388,totalseg,train,s0388,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0389,totalseg,train,s0389,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0390,totalseg,train,s0390,written,"[89, 94, 193]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0391,totalseg,train,s0391,written,"[53, 60, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0392,totalseg,train,s0392,written,"[79, 79, 93]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0393,totalseg,train,s0393,written,"[64, 74, 46]",L1 T12,,TRUNCATED,train
+s0394,totalseg,train,s0394,written,"[84, 85, 83]",L1 L2 L3 L4 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0395,totalseg,train,s0395,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0396,totalseg,train,s0396,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0398,totalseg,train,s0398,written,"[68, 72, 44]",L1 T12,,TRUNCATED,train
+s0399,totalseg,train,s0399,written,"[94, 88, 106]",L4 L5 sacrum,,TRUNCATED MULTI_CC,train
+s0400,totalseg,train,s0400,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0401,totalseg,train,s0401,written,"[89, 79, 176]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0402,totalseg,train,s0402,written,"[90, 92, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0403,totalseg,train,s0403,written,"[96, 91, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0405,totalseg,train,s0405,written,"[52, 69, 34]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0406,totalseg,train,s0406,written,"[88, 93, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0407,totalseg,train,s0407,written,"[71, 76, 56]",L1 L2 T12,,TRUNCATED,train
+s0408,totalseg,train,s0408,written,"[96, 94, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0410,totalseg,train,s0410,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0411,totalseg,train,s0411,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0412,totalseg,train,s0412,written,"[75, 75, 75]",L1 L2 L3 L4 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0413,totalseg,train,s0413,written,"[54, 72, 40]",L1 T12,,TRUNCATED,train
+s0414,totalseg,train,s0414,written,"[60, 64, 37]",L1 T12,,TRUNCATED,train
+s0416,totalseg,train,s0416,written,"[88, 82, 221]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0417,totalseg,train,s0417,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0418,totalseg,train,s0418,written,"[55, 48, 37]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0419,totalseg,train,s0419,written,"[94, 85, 111]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0420,totalseg,train,s0420,written,"[67, 72, 52]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0421,totalseg,train,s0421,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0422,totalseg,train,s0422,written,"[76, 79, 55]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0424,totalseg,train,s0424,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0425,totalseg,train,s0425,written,"[58, 73, 35]",L1 T12,,TRUNCATED,train
+s0426,totalseg,train,s0426,written,"[85, 85, 101]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0428,totalseg,train,s0428,written,"[85, 88, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0429,totalseg,train,s0429,written,"[92, 82, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0430,totalseg,train,s0430,written,"[66, 77, 49]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0431,totalseg,train,s0431,written,"[79, 88, 71]",L1 L2 L3 T12,,TRUNCATED,train
+s0433,totalseg,train,s0433,written,"[55, 61, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0435,totalseg,train,s0435,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0436,totalseg,train,s0436,written,"[97, 85, 187]",L1 L2 L3 L4 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0437,totalseg,train,s0437,written,"[56, 65, 52]",L1 T12,,VOLUME_OUTLIER,validation
+s0438,totalseg,train,s0438,written,"[54, 68, 34]",L1 T12,,TRUNCATED,train
+s0439,totalseg,train,s0439,written,"[72, 76, 46]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0442,totalseg,train,s0442,written,"[88, 84, 109]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0443,totalseg,train,s0443,written,"[59, 41, 33]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0444,totalseg,train,s0444,written,"[51, 60, 26]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0445,totalseg,train,s0445,written,"[76, 79, 73]",L1 L2 L3 T12,,TRUNCATED,train
+s0446,totalseg,train,s0446,written,"[85, 81, 199]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0447,totalseg,train,s0447,written,"[91, 85, 176]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0449,totalseg,train,s0449,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0452,totalseg,train,s0452,written,"[58, 69, 34]",L1 T12,,TRUNCATED,train
+s0453,totalseg,train,s0453,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0454,totalseg,train,s0454,written,"[91, 90, 110]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0455,totalseg,train,s0455,written,"[71, 76, 43]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0456,totalseg,train,s0456,written,"[87, 88, 167]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0457,totalseg,train,s0457,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0458,totalseg,train,s0458,written,"[91, 89, 178]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0460,totalseg,train,s0460,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0461,totalseg,train,s0461,written,"[88, 87, 207]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0462,totalseg,train,s0462,written,"[106, 72, 149]",L1 L2 L3 L4 T12 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0463,totalseg,train,s0463,written,"[75, 73, 55]",L1 L2 T12,,TRUNCATED,train
+s0465,totalseg,train,s0465,written,"[56, 25, 37]",L1 T12,,TRUNCATED,train
+s0466,totalseg,train,s0466,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0467,totalseg,train,s0467,written,"[91, 89, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0469,totalseg,train,s0469,written,"[64, 75, 67]",L1 L2 L3 T12,,TRUNCATED,train
+s0471,totalseg,train,s0471,written,"[72, 75, 77]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0472,totalseg,train,s0472,written,"[94, 88, 172]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0473,totalseg,train,s0473,written,"[87, 85, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0474,totalseg,train,s0474,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0475,totalseg,train,s0475,written,"[79, 99, 106]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0476,totalseg,train,s0476,written,"[94, 87, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0477,totalseg,train,s0477,written,"[85, 94, 165]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s0478,totalseg,train,s0478,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0480,totalseg,train,s0480,written,"[91, 98, 187]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0481,totalseg,train,s0481,written,"[52, 60, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0483,totalseg,train,s0483,written,"[94, 90, 214]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0484,totalseg,train,s0484,written,"[91, 88, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0485,totalseg,train,s0485,written,"[73, 79, 60]",L1 L2 T12,,TRUNCATED,train
+s0486,totalseg,train,s0486,written,"[73, 74, 46]",L1 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0487,totalseg,train,s0487,written,"[64, 74, 48]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0488,totalseg,train,s0488,written,"[65, 73, 54]",L1 L2 T12,,TRUNCATED,validation
+s0490,totalseg,train,s0490,written,"[67, 72, 51]",L1 L2 T12,,TRUNCATED,train
+s0491,totalseg,train,s0491,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0492,totalseg,train,s0492,written,"[91, 81, 57]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0493,totalseg,train,s0493,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0494,totalseg,train,s0494,written,"[92, 85, 203]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0495,totalseg,train,s0495,written,"[88, 84, 186]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0497,totalseg,train,s0497,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0498,totalseg,train,s0498,written,"[74, 77, 52]",L1 L2 T12,,TRUNCATED MULTI_CC,validation
+s0500,totalseg,train,s0500,written,"[90, 89, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0501,totalseg,train,s0501,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0502,totalseg,train,s0502,written,"[84, 91, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0503,totalseg,train,s0503,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0504,totalseg,train,s0504,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0506,totalseg,train,s0506,written,"[91, 88, 113]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s0507,totalseg,train,s0507,written,"[91, 85, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0508,totalseg,train,s0508,written,"[70, 73, 46]",L1 T12,,TRUNCATED,train
+s0509,totalseg,train,s0509,written,"[87, 88, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0510,totalseg,train,s0510,written,"[66, 72, 45]",L1 T12,,TRUNCATED,validation
+s0511,totalseg,train,s0511,written,"[100, 138, 112]",L1 L2 L3 L4 L5 T12,,TRUNCATED,train
+s0513,totalseg,train,s0513,written,"[90, 88, 180]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s0514,totalseg,train,s0514,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0515,totalseg,train,s0515,written,"[56, 70, 29]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0516,totalseg,train,s0516,written,"[86, 93, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0517,totalseg,train,s0517,written,"[70, 77, 44]",L1 T12,,TRUNCATED,train
+s0518,totalseg,train,s0518,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0519,totalseg,train,s0519,written,"[111, 133, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0520,totalseg,train,s0520,written,"[53, 55, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0521,totalseg,train,s0521,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0522,totalseg,train,s0522,written,"[61, 72, 49]",L1 T12,,TRUNCATED MULTI_CC,train
+s0523,totalseg,train,s0523,written,"[81, 79, 100]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0525,totalseg,train,s0525,written,"[85, 85, 42]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0526,totalseg,train,s0526,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0527,totalseg,train,s0527,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0528,totalseg,train,s0528,written,"[53, 60, 26]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0529,totalseg,train,s0529,written,"[93, 94, 187]",L1 L2 L3 L4 T12 sacrum,,,train
+s0530,totalseg,train,s0530,written,"[48, 36, 17]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0531,totalseg,train,s0531,written,"[64, 70, 44]",L1 T12,,TRUNCATED,train
+s0532,totalseg,train,s0532,written,"[49, 21, 31]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0535,totalseg,train,s0535,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0536,totalseg,train,s0536,written,"[89, 93, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0537,totalseg,train,s0537,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0539,totalseg,train,s0539,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0541,totalseg,train,s0541,written,"[96, 87, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0542,totalseg,train,s0542,written,"[90, 89, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0544,totalseg,train,s0544,written,"[71, 81, 48]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0545,totalseg,train,s0545,written,"[94, 86, 133]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0546,totalseg,train,s0546,written,"[88, 103, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0548,totalseg,train,s0548,written,"[100, 76, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0549,totalseg,train,s0549,written,"[92, 97, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0550,totalseg,train,s0550,written,"[94, 90, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0551,totalseg,train,s0551,written,"[85, 94, 161]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0552,totalseg,train,s0552,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0553,totalseg,train,s0553,written,"[86, 97, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0555,totalseg,train,s0555,written,"[77, 79, 94]",L1 L2 L3 L4 T12,,TRUNCATED,validation
+s0556,totalseg,train,s0556,written,"[78, 94, 97]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0557,totalseg,train,s0557,written,"[61, 62, 26]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0559,totalseg,train,s0559,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0560,totalseg,train,s0560,written,"[79, 82, 110]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED,train
+s0563,totalseg,train,s0563,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0564,totalseg,train,s0564,written,"[92, 101, 91]",L4 L5 sacrum,,TRUNCATED,train
+s0565,totalseg,train,s0565,written,"[73, 73, 40]",L1 T12,,TRUNCATED,train
+s0566,totalseg,train,s0566,written,"[86, 76, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0567,totalseg,train,s0567,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0568,totalseg,train,s0568,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0571,totalseg,train,s0571,written,"[91, 81, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0572,totalseg,train,s0572,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0573,totalseg,train,s0573,written,"[92, 85, 99]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0574,totalseg,train,s0574,written,"[88, 94, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0575,totalseg,train,s0575,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0576,totalseg,train,s0576,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0577,totalseg,train,s0577,written,"[88, 85, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0578,totalseg,train,s0578,written,"[88, 85, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0579,totalseg,train,s0579,written,"[90, 85, 124]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0580,totalseg,train,s0580,written,"[60, 77, 52]",L1 T12,,LABEL_AFFINE_EPS,train
+s0581,totalseg,train,s0581,written,"[89, 88, 125]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0582,totalseg,train,s0582,written,"[65, 75, 53]",L1 L2 T12,,TRUNCATED,train
+s0583,totalseg,train,s0583,written,"[88, 91, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0584,totalseg,train,s0584,written,"[89, 88, 143]",L1 L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0585,totalseg,train,s0585,written,"[103, 95, 183]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0586,totalseg,train,s0586,written,"[91, 91, 179]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0587,totalseg,train,s0587,written,"[99, 94, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0588,totalseg,train,s0588,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0589,totalseg,train,s0589,written,"[87, 84, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0590,totalseg,train,s0590,written,"[88, 82, 137]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0591,totalseg,train,s0591,written,"[94, 93, 349]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0592,totalseg,train,s0592,written,"[85, 91, 160]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,validation
+s0593,totalseg,train,s0593,written,"[91, 82, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0594,totalseg,train,s0594,written,"[54, 68, 34]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0595,totalseg,train,s0595,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0597,totalseg,train,s0597,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0598,totalseg,train,s0598,written,"[69, 79, 52]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0600,totalseg,train,s0600,written,"[92, 82, 201]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0601,totalseg,train,s0601,written,"[85, 84, 94]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0602,totalseg,train,s0602,written,"[89, 81, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0603,totalseg,train,s0603,written,"[88, 91, 170]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0604,totalseg,train,s0604,written,"[74, 72, 42]",L1 T12,,TRUNCATED,train
+s0605,totalseg,train,s0605,written,"[46, 32, 16]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0606,totalseg,train,s0606,written,"[72, 79, 50]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0607,totalseg,train,s0607,written,"[95, 88, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0608,totalseg,train,s0608,written,"[59, 43, 22]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0610,totalseg,train,s0610,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0611,totalseg,train,s0611,written,"[91, 82, 107]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP FRAGMENT,excluded: FRAGMENT
+s0612,totalseg,train,s0612,written,"[92, 85, 174]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0613,totalseg,train,s0613,written,"[86, 99, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0614,totalseg,train,s0614,written,"[96, 70, 116]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0615,totalseg,train,s0615,written,"[70, 75, 84]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s0616,totalseg,train,s0616,written,"[105, 91, 222]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS,train
+s0617,totalseg,train,s0617,written,"[88, 93, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0618,totalseg,train,s0618,written,"[58, 67, 45]",L1 T12,,TRUNCATED,validation
+s0619,totalseg,train,s0619,written,"[87, 76, 166]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0620,totalseg,train,s0620,written,"[86, 91, 178]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0621,totalseg,train,s0621,written,"[91, 99, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0622,totalseg,train,s0622,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0623,totalseg,train,s0623,written,"[94, 88, 210]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0624,totalseg,train,s0624,written,"[100, 84, 202]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0625,totalseg,train,s0625,written,"[104, 77, 200]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0626,totalseg,train,s0626,written,"[97, 92, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0627,totalseg,train,s0627,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0628,totalseg,train,s0628,written,"[90, 92, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0629,totalseg,train,s0629,written,"[112, 84, 217]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0632,totalseg,train,s0632,written,"[66, 76, 58]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0633,totalseg,train,s0633,written,"[24, 34, 22]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0635,totalseg,train,s0635,written,"[88, 88, 175]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0636,totalseg,train,s0636,written,"[90, 83, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0637,totalseg,train,s0637,written,"[91, 88, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0638,totalseg,train,s0638,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0639,totalseg,train,s0639,written,"[99, 93, 196]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0640,totalseg,train,s0640,written,"[91, 86, 54]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0641,totalseg,train,s0641,written,"[72, 82, 61]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0642,totalseg,train,s0642,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0643,totalseg,train,s0643,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0644,totalseg,train,s0644,written,"[86, 86, 170]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0645,totalseg,train,s0645,written,"[52, 55, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0646,totalseg,train,s0646,written,"[91, 103, 101]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s0647,totalseg,train,s0647,written,"[89, 79, 194]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0648,totalseg,train,s0648,written,"[90, 88, 172]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0649,totalseg,train,s0649,written,"[89, 81, 173]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0650,totalseg,train,s0650,written,"[94, 89, 231]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0651,totalseg,train,s0651,written,"[76, 82, 109]",L1 L2 L3 L4 T12,,,train
+s0652,totalseg,train,s0652,written,"[52, 40, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0653,totalseg,train,s0653,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0654,totalseg,train,s0654,written,"[58, 76, 41]",L1 T12,,TRUNCATED,train
+s0655,totalseg,train,s0655,written,"[49, 26, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0656,totalseg,train,s0656,written,"[91, 88, 170]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0657,totalseg,train,s0657,written,"[95, 95, 213]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0658,totalseg,train,s0658,written,"[73, 78, 54]",L1 L2 T12,,TRUNCATED,train
+s0659,totalseg,train,s0659,written,"[55, 64, 29]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0660,totalseg,train,s0660,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0661,totalseg,train,s0661,written,"[91, 90, 176]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0662,totalseg,train,s0662,written,"[88, 93, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0663,totalseg,train,s0663,written,"[94, 91, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0664,totalseg,train,s0664,written,"[89, 87, 172]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0665,totalseg,train,s0665,written,"[68, 76, 73]",L1 L2 L3 T12,,TRUNCATED,train
+s0666,totalseg,train,s0666,written,"[62, 47, 42]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0668,totalseg,train,s0668,written,"[89, 73, 163]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0669,totalseg,train,s0669,written,"[91, 91, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0670,totalseg,train,s0670,written,"[93, 96, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0671,totalseg,train,s0671,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0672,totalseg,train,s0672,written,"[69, 72, 53]",L1 L2 T12,,TRUNCATED,validation
+s0674,totalseg,train,s0674,written,"[71, 80, 55]",L1 L2 T12,,TRUNCATED,train
+s0675,totalseg,train,s0675,written,"[67, 74, 48]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0676,totalseg,train,s0676,written,"[55, 68, 28]",L1 L2 T12,,TRUNCATED,train
+s0677,totalseg,train,s0677,written,"[91, 88, 109]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0679,totalseg,train,s0679,written,"[47, 79, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0680,totalseg,train,s0680,written,"[90, 96, 200]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s0681,totalseg,train,s0681,written,"[54, 60, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0682,totalseg,train,s0682,written,"[87, 89, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0683,totalseg,train,s0683,written,"[94, 99, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0685,totalseg,train,s0685,written,"[91, 94, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0686,totalseg,train,s0686,written,"[90, 94, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0688,totalseg,train,s0688,written,"[68, 80, 49]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0690,totalseg,train,s0690,written,"[91, 89, 177]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0691,totalseg,train,s0691,written,"[55, 62, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0692,totalseg,train,s0692,written,"[86, 94, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0693,totalseg,train,s0693,written,"[82, 83, 49]",L1 L2 L3 L4,,TRUNCATED MULTI_CC,validation
+s0694,totalseg,train,s0694,written,"[91, 94, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0695,totalseg,train,s0695,written,"[54, 63, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0696,totalseg,train,s0696,written,"[56, 73, 37]",L1 T12,,TRUNCATED,validation
+s0697,totalseg,train,s0697,written,"[56, 61, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0698,totalseg,train,s0698,written,"[60, 79, 45]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0699,totalseg,train,s0699,written,"[85, 95, 162]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0700,totalseg,train,s0700,written,"[97, 94, 124]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0702,totalseg,train,s0702,written,"[91, 95, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0703,totalseg,train,s0703,written,"[109, 97, 215]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0704,totalseg,train,s0704,written,"[74, 79, 73]",L1 L2 L3 T12,,TRUNCATED,train
+s0705,totalseg,train,s0705,written,"[92, 93, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0706,totalseg,train,s0706,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0707,totalseg,train,s0707,written,"[93, 89, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0708,totalseg,train,s0708,written,"[87, 85, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0709,totalseg,train,s0709,written,"[82, 85, 91]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0710,totalseg,train,s0710,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0711,totalseg,train,s0711,written,"[92, 91, 194]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0712,totalseg,train,s0712,written,"[102, 84, 111]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0713,totalseg,train,s0713,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0714,totalseg,train,s0714,written,"[60, 64, 22]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0715,totalseg,train,s0715,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0716,totalseg,train,s0716,written,"[70, 80, 62]",L1 L2 T12,,TRUNCATED,validation
+s0717,totalseg,train,s0717,written,"[75, 78, 49]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0718,totalseg,train,s0718,written,"[74, 79, 58]",L1 L2 T12,,TRUNCATED,train
+s0719,totalseg,train,s0719,written,"[70, 82, 64]",L1 L2 T12,,TRUNCATED,validation
+s0720,totalseg,train,s0720,written,"[93, 88, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0721,totalseg,train,s0721,written,"[85, 82, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0723,totalseg,train,s0723,written,"[90, 85, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0724,totalseg,train,s0724,written,"[88, 91, 99]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s0726,totalseg,train,s0726,written,"[91, 92, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0727,totalseg,train,s0727,written,"[85, 91, 167]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0728,totalseg,train,s0728,written,"[86, 87, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0729,totalseg,train,s0729,written,"[67, 68, 57]",L1 L2 T12,,TRUNCATED,train
+s0730,totalseg,train,s0730,written,"[62, 52, 42]",sacrum,,NO_LUMBAR MULTI_CC,excluded: NO_LUMBAR
+s0731,totalseg,train,s0731,written,"[84, 87, 177]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0732,totalseg,train,s0732,written,"[76, 79, 93]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0733,totalseg,train,s0733,written,"[87, 93, 198]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0734,totalseg,train,s0734,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0736,totalseg,train,s0736,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0737,totalseg,train,s0737,written,"[96, 84, 179]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0738,totalseg,train,s0738,written,"[51, 25, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0739,totalseg,train,s0739,written,"[88, 89, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0740,totalseg,train,s0740,written,"[44, 90, 179]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0741,totalseg,train,s0741,written,"[84, 67, 30]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0743,totalseg,train,s0743,written,"[64, 72, 43]",L1 T12,,TRUNCATED,train
+s0744,totalseg,train,s0744,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0746,totalseg,train,s0746,written,"[92, 91, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0747,totalseg,train,s0747,written,"[69, 88, 57]",L1 L2 T12,,TRUNCATED,train
+s0748,totalseg,train,s0748,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0749,totalseg,train,s0749,written,"[87, 85, 213]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0750,totalseg,train,s0750,written,"[66, 71, 50]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0751,totalseg,train,s0751,written,"[97, 82, 205]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0752,totalseg,train,s0752,written,"[73, 79, 55]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0754,totalseg,train,s0754,written,"[97, 97, 203]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0756,totalseg,train,s0756,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0759,totalseg,train,s0759,written,"[83, 85, 57]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0760,totalseg,train,s0760,written,"[91, 95, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0762,totalseg,train,s0762,written,"[87, 88, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0763,totalseg,train,s0763,written,"[87, 91, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0764,totalseg,train,s0764,written,"[92, 100, 179]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV METAL MASK_OVERLAP,train
+s0765,totalseg,train,s0765,written,"[87, 82, 169]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s0766,totalseg,train,s0766,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0767,totalseg,train,s0767,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0768,totalseg,train,s0768,written,"[96, 85, 176]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0769,totalseg,train,s0769,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0770,totalseg,train,s0770,written,"[58, 73, 31]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0771,totalseg,train,s0771,written,"[74, 79, 56]",L1 L2 T12,,TRUNCATED,train
+s0772,totalseg,train,s0772,written,"[99, 85, 112]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0773,totalseg,train,s0773,written,"[56, 62, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0774,totalseg,train,s0774,written,"[89, 91, 103]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0775,totalseg,train,s0775,written,"[60, 70, 28]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0776,totalseg,train,s0776,written,"[108, 92, 110]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0777,totalseg,train,s0777,written,"[86, 94, 152]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0778,totalseg,train,s0778,written,"[93, 88, 187]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0780,totalseg,train,s0780,written,"[55, 67, 35]",L1 T12,,TRUNCATED,train
+s0781,totalseg,train,s0781,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0782,totalseg,train,s0782,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0783,totalseg,train,s0783,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0784,totalseg,train,s0784,written,"[62, 75, 47]",L1 L2 T12,,TRUNCATED,validation
+s0785,totalseg,train,s0785,written,"[73, 79, 55]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0786,totalseg,train,s0786,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0787,totalseg,train,s0787,written,"[59, 66, 30]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0788,totalseg,train,s0788,written,"[88, 79, 95]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0789,totalseg,train,s0789,written,"[70, 76, 54]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0790,totalseg,train,s0790,written,"[91, 84, 168]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0791,totalseg,train,s0791,written,"[53, 48, 34]",L1 T12,,TRUNCATED,train
+s0792,totalseg,train,s0792,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0793,totalseg,train,s0793,written,"[51, 58, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0794,totalseg,train,s0794,written,"[94, 91, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0795,totalseg,train,s0795,written,"[62, 70, 34]",L1 T12,,PAD_OUTSIDE_FOV LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0796,totalseg,train,s0796,written,"[85, 94, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0797,totalseg,train,s0797,written,"[94, 88, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0798,totalseg,train,s0798,written,"[74, 83, 59]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0800,totalseg,train,s0800,written,"[82, 85, 36]",L3 L4 L5 sacrum,,METAL TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0801,totalseg,train,s0801,written,"[91, 80, 196]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0804,totalseg,train,s0804,written,"[90, 87, 195]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0805,totalseg,train,s0805,written,"[64, 65, 47]",L1 T12,,LABEL_AFFINE_EPS,train
+s0806,totalseg,train,s0806,written,"[105, 99, 214]",L1 L2 L3 L4 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0807,totalseg,train,s0807,written,"[87, 105, 193]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0808,totalseg,train,s0808,written,"[67, 72, 46]",L1 T12,,METAL LABEL_AFFINE_EPS TRUNCATED,train
+s0809,totalseg,train,s0809,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0810,totalseg,train,s0810,written,"[58, 61, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0811,totalseg,train,s0811,written,"[66, 75, 50]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0812,totalseg,train,s0812,written,"[90, 87, 172]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0813,totalseg,train,s0813,written,"[41, 33, 16]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0814,totalseg,train,s0814,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0815,totalseg,train,s0815,written,"[93, 97, 106]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0816,totalseg,train,s0816,written,"[76, 79, 55]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0818,totalseg,train,s0818,written,"[89, 80, 106]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0819,totalseg,train,s0819,written,"[90, 91, 96]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0820,totalseg,train,s0820,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0821,totalseg,train,s0821,written,"[73, 77, 64]",L1 L2 T12,,TRUNCATED,train
+s0822,totalseg,train,s0822,written,"[70, 74, 52]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0824,totalseg,train,s0824,written,"[71, 70, 44]",L1 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0825,totalseg,train,s0825,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0826,totalseg,train,s0826,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0830,totalseg,train,s0830,written,"[92, 91, 211]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV,train
+s0831,totalseg,train,s0831,written,"[89, 90, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0832,totalseg,train,s0832,written,"[57, 62, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0833,totalseg,train,s0833,written,"[78, 80, 60]",L1 L2 T12,,LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0834,totalseg,train,s0834,written,"[56, 66, 40]",L1 T12,,LABEL_AFFINE_EPS,train
+s0835,totalseg,train,s0835,written,"[91, 92, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0836,totalseg,train,s0836,written,"[92, 97, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0837,totalseg,train,s0837,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0838,totalseg,train,s0838,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0839,totalseg,train,s0839,written,"[49, 30, 26]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0840,totalseg,train,s0840,written,"[54, 38, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0842,totalseg,train,s0842,written,"[93, 81, 210]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0843,totalseg,train,s0843,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0844,totalseg,train,s0844,written,"[66, 70, 46]",L1 T12,,PAD_OUTSIDE_FOV LABEL_AFFINE_EPS TRUNCATED,validation
+s0845,totalseg,train,s0845,written,"[67, 67, 60]",L1 L2 L3 T12,,LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0846,totalseg,train,s0846,written,"[50, 34, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0847,totalseg,train,s0847,written,"[70, 78, 45]",L1 T12,,TRUNCATED,train
+s0848,totalseg,train,s0848,written,"[55, 65, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0849,totalseg,train,s0849,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0850,totalseg,train,s0850,written,"[29, 25, 27]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0851,totalseg,train,s0851,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0852,totalseg,train,s0852,written,"[51, 56, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0853,totalseg,train,s0853,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0855,totalseg,train,s0855,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0857,totalseg,train,s0857,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0858,totalseg,train,s0858,written,"[49, 22, 17]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0859,totalseg,train,s0859,written,"[94, 90, 202]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0860,totalseg,train,s0860,written,"[90, 85, 190]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0861,totalseg,train,s0861,written,"[94, 85, 97]",L5 sacrum,,METAL TRUNCATED,train
+s0862,totalseg,train,s0862,written,"[91, 88, 118]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0863,totalseg,train,s0863,written,"[90, 83, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0864,totalseg,train,s0864,written,"[87, 81, 181]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0865,totalseg,train,s0865,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0866,totalseg,train,s0866,written,"[76, 87, 67]",L1 L2 L3 T12,,TRUNCATED MULTI_CC,train
+s0867,totalseg,train,s0867,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0868,totalseg,train,s0868,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0869,totalseg,train,s0869,written,"[91, 89, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0870,totalseg,train,s0870,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0871,totalseg,train,s0871,written,"[61, 64, 43]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0873,totalseg,train,s0873,written,"[91, 89, 98]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0874,totalseg,train,s0874,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0875,totalseg,train,s0875,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0876,totalseg,train,s0876,written,"[51, 25, 26]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0877,totalseg,train,s0877,written,"[33, 31, 16]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0878,totalseg,train,s0878,written,"[88, 93, 200]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0879,totalseg,train,s0879,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0880,totalseg,train,s0880,written,"[93, 89, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0881,totalseg,train,s0881,written,"[52, 42, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0883,totalseg,train,s0883,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0884,totalseg,train,s0884,written,"[92, 85, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0885,totalseg,train,s0885,written,"[119, 86, 212]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s0889,totalseg,train,s0889,written,"[55, 71, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0890,totalseg,train,s0890,written,"[69, 70, 52]",L1 L2 T12,,TRUNCATED,train
+s0891,totalseg,train,s0891,written,"[52, 47, 32]",L1 T12,,TRUNCATED,train
+s0892,totalseg,train,s0892,written,"[82, 86, 78]",L1 L2 L3 T12,,TRUNCATED,train
+s0894,totalseg,train,s0894,written,"[89, 84, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0895,totalseg,train,s0895,written,"[88, 88, 162]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0896,totalseg,train,s0896,written,"[87, 82, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s0897,totalseg,train,s0897,written,"[66, 70, 51]",L1 T12,,TRUNCATED,train
+s0898,totalseg,train,s0898,written,"[67, 72, 38]",L1 T12,,TRUNCATED,validation
+s0899,totalseg,train,s0899,written,"[88, 91, 208]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0901,totalseg,train,s0901,written,"[55, 31, 31]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0903,totalseg,train,s0903,written,"[85, 79, 123]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP,train
+s0904,totalseg,train,s0904,written,"[85, 89, 180]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0908,totalseg,train,s0908,written,"[62, 76, 42]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0909,totalseg,train,s0909,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0910,totalseg,train,s0910,written,"[55, 63, 37]",L1 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0911,totalseg,train,s0911,written,"[58, 45, 40]",L1 T12,,TRUNCATED,train
+s0912,totalseg,train,s0912,written,"[112, 88, 229]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0913,totalseg,train,s0913,written,"[88, 87, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0914,totalseg,train,s0914,written,"[53, 67, 34]",L1 T12,,TRUNCATED,train
+s0915,totalseg,train,s0915,written,"[91, 91, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0916,totalseg,train,s0916,written,"[91, 85, 200]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0918,totalseg,train,s0918,written,"[93, 86, 199]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0919,totalseg,train,s0919,written,"[91, 84, 184]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0921,totalseg,train,s0921,written,"[72, 48, 55]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0922,totalseg,train,s0922,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0924,totalseg,train,s0924,written,"[89, 81, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0925,totalseg,train,s0925,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0927,totalseg,train,s0927,written,"[94, 82, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0928,totalseg,train,s0928,written,"[94, 84, 203]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0930,totalseg,train,s0930,written,"[74, 77, 69]",L1 L2 L3 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s0931,totalseg,train,s0931,written,"[99, 78, 211]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0934,totalseg,train,s0934,written,"[85, 94, 104]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED,train
+s0935,totalseg,train,s0935,written,"[58, 40, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0936,totalseg,train,s0936,written,"[49, 30, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0937,totalseg,train,s0937,written,"[92, 99, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0938,totalseg,train,s0938,written,"[91, 71, 52]",L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0939,totalseg,train,s0939,written,"[93, 88, 201]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0940,totalseg,train,s0940,written,"[94, 94, 202]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s0941,totalseg,train,s0941,written,"[70, 82, 52]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s0943,totalseg,train,s0943,written,"[85, 51, 52]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s0944,totalseg,train,s0944,written,"[87, 76, 106]",L3 L4 L5 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED,train
+s0945,totalseg,train,s0945,written,"[85, 82, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0946,totalseg,train,s0946,written,"[68, 77, 53]",L1 L2 T12,,TRUNCATED,train
+s0947,totalseg,train,s0947,written,"[91, 89, 110]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0949,totalseg,train,s0949,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s0950,totalseg,train,s0950,written,"[91, 86, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0952,totalseg,train,s0952,written,"[86, 76, 94]",L1 L2 L3 L4 T12 sacrum,,MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0953,totalseg,train,s0953,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0954,totalseg,train,s0954,written,"[64, 76, 50]",L1 L2 T12,,TRUNCATED,train
+s0955,totalseg,train,s0955,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0956,totalseg,train,s0956,written,"[57, 62, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0957,totalseg,train,s0957,written,"[94, 82, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0958,totalseg,train,s0958,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0959,totalseg,train,s0959,written,"[88, 85, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0960,totalseg,train,s0960,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0961,totalseg,train,s0961,written,"[85, 77, 199]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s0962,totalseg,train,s0962,written,"[95, 77, 73]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s0963,totalseg,train,s0963,written,"[92, 91, 181]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0965,totalseg,train,s0965,written,"[89, 78, 179]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0968,totalseg,train,s0968,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0970,totalseg,train,s0970,written,"[86, 86, 149]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0971,totalseg,train,s0971,written,"[93, 86, 113]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s0972,totalseg,train,s0972,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0973,totalseg,train,s0973,written,"[63, 61, 48]",L1 T12,,TRUNCATED,train
+s0974,totalseg,train,s0974,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0975,totalseg,train,s0975,written,"[73, 79, 53]",L1 L2 T12,,TRUNCATED,validation
+s0976,totalseg,train,s0976,written,"[56, 65, 25]",T12,,PAD_OUTSIDE_FOV LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s0977,totalseg,train,s0977,written,"[56, 58, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0978,totalseg,train,s0978,written,"[58, 76, 35]",L1 T12,,LABEL_AFFINE_EPS TRUNCATED MULTI_CC,train
+s0979,totalseg,train,s0979,written,"[99, 81, 215]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s0980,totalseg,train,s0980,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0981,totalseg,train,s0981,written,"[88, 88, 93]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s0982,totalseg,train,s0982,written,"[114, 122, 215]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0983,totalseg,train,s0983,written,"[88, 90, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0984,totalseg,train,s0984,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0985,totalseg,train,s0985,written,"[86, 85, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0986,totalseg,train,s0986,written,"[89, 76, 169]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s0987,totalseg,train,s0987,written,"[55, 43, 28]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0988,totalseg,train,s0988,written,"[97, 94, 188]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s0989,totalseg,train,s0989,written,"[61, 72, 37]",L1 T12,,TRUNCATED,validation
+s0991,totalseg,train,s0991,written,"[89, 82, 194]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV METAL MASK_OVERLAP,train
+s0992,totalseg,train,s0992,written,"[91, 92, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s0993,totalseg,train,s0993,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0995,totalseg,train,s0995,written,"[49, 37, 18]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s0996,totalseg,train,s0996,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0997,totalseg,train,s0997,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s0999,totalseg,train,s0999,written,"[60, 64, 39]",L1 T12,,TRUNCATED,validation
+s1000,totalseg,train,s1000,written,"[67, 41, 45]",sacrum,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s1001,totalseg,train,s1001,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1002,totalseg,train,s1002,written,"[56, 28, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1003,totalseg,train,s1003,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1004,totalseg,train,s1004,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1005,totalseg,train,s1005,written,"[88, 83, 117]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1006,totalseg,train,s1006,written,"[91, 91, 181]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1007,totalseg,train,s1007,written,"[72, 79, 56]",L1 L2 T12,,TRUNCATED,train
+s1008,totalseg,train,s1008,written,"[87, 90, 172]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1009,totalseg,train,s1009,written,"[93, 90, 98]",L3 L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC,validation
+s1010,totalseg,train,s1010,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1011,totalseg,train,s1011,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1012,totalseg,train,s1012,written,"[90, 86, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1013,totalseg,train,s1013,written,"[76, 81, 84]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1014,totalseg,train,s1014,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1015,totalseg,train,s1015,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1016,totalseg,train,s1016,written,"[96, 98, 204]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1017,totalseg,train,s1017,written,"[58, 70, 40]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1018,totalseg,train,s1018,written,"[86, 79, 72]",L1 L2 L3 L4 T12 sacrum,,METAL TRUNCATED MULTI_CC,train
+s1020,totalseg,train,s1020,written,"[88, 74, 67]",L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1021,totalseg,train,s1021,written,"[52, 46, 23]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1022,totalseg,train,s1022,written,"[91, 93, 188]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1023,totalseg,train,s1023,written,"[82, 83, 75]",L1 L2 L3 T12,,LABEL_AFFINE_EPS MULTI_CC,train
+s1024,totalseg,train,s1024,written,"[85, 106, 176]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1025,totalseg,train,s1025,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1026,totalseg,train,s1026,written,"[56, 46, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1028,totalseg,train,s1028,written,"[80, 75, 103]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP TRUNCATED,train
+s1029,totalseg,train,s1029,written,"[89, 91, 167]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1031,totalseg,train,s1031,written,"[91, 97, 184]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s1032,totalseg,train,s1032,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1033,totalseg,train,s1033,written,"[57, 57, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1034,totalseg,train,s1034,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1035,totalseg,train,s1035,written,"[54, 57, 46]",L1 T12,,LABEL_AFFINE_EPS,train
+s1036,totalseg,train,s1036,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1037,totalseg,train,s1037,written,"[93, 87, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1038,totalseg,train,s1038,written,"[92, 91, 199]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,train
+s1039,totalseg,train,s1039,written,"[66, 72, 58]",L1 L2 T12,,TRUNCATED,train
+s1040,totalseg,train,s1040,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1041,totalseg,train,s1041,written,"[96, 97, 99]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1042,totalseg,train,s1042,written,"[61, 76, 52]",L1 L2 T12,,TRUNCATED MULTI_CC,train
+s1043,totalseg,train,s1043,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1044,totalseg,train,s1044,written,"[92, 97, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1045,totalseg,train,s1045,written,"[94, 77, 205]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1046,totalseg,train,s1046,written,"[97, 79, 202]",L1 L2 L3 L4 L5 T12 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1047,totalseg,train,s1047,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1048,totalseg,train,s1048,written,"[48, 59, 25]",L1 L4 L5 T12,,LEVEL_GAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1049,totalseg,train,s1049,written,"[53, 62, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1050,totalseg,train,s1050,written,"[98, 84, 105]",L3 L4 L5 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1052,totalseg,train,s1052,written,"[70, 79, 54]",L1 L2 T12,,TRUNCATED,train
+s1055,totalseg,train,s1055,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1056,totalseg,train,s1056,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1058,totalseg,train,s1058,written,"[73, 74, 77]",L1 L2 L3 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s1059,totalseg,train,s1059,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1060,totalseg,train,s1060,written,"[79, 76, 59]",L1 L2 T12,,TRUNCATED,train
+s1061,totalseg,train,s1061,written,"[88, 82, 182]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1062,totalseg,train,s1062,written,"[93, 95, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1063,totalseg,train,s1063,written,"[94, 83, 150]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP MULTI_CC,train
+s1065,totalseg,train,s1065,written,"[81, 63, 40]",L5 sacrum,,METAL FRAGMENT,excluded: FRAGMENT
+s1066,totalseg,train,s1066,written,"[52, 67, 36]",L1 T12,,TRUNCATED MULTI_CC,train
+s1067,totalseg,train,s1067,written,"[67, 68, 52]",L1 L2 T12,,TRUNCATED,train
+s1068,totalseg,train,s1068,written,"[64, 43, 40]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1069,totalseg,train,s1069,written,"[89, 85, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1070,totalseg,train,s1070,written,"[91, 92, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1071,totalseg,train,s1071,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1072,totalseg,train,s1072,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1073,totalseg,train,s1073,written,"[58, 73, 33]",L1 T12,,TRUNCATED,train
+s1077,totalseg,train,s1077,written,"[80, 77, 78]",L1 L2 L3 T12,,TRUNCATED,train
+s1079,totalseg,train,s1079,written,"[54, 68, 31]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1082,totalseg,train,s1082,written,"[91, 91, 148]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1083,totalseg,train,s1083,written,"[65, 69, 29]",T12,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s1084,totalseg,train,s1084,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1085,totalseg,train,s1085,written,"[87, 89, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1086,totalseg,train,s1086,written,"[85, 88, 193]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1088,totalseg,train,s1088,written,"[90, 97, 154]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1089,totalseg,train,s1089,written,"[88, 89, 205]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1090,totalseg,train,s1090,written,"[95, 100, 203]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1093,totalseg,train,s1093,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1097,totalseg,train,s1097,written,"[49, 39, 27]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1098,totalseg,train,s1098,written,"[91, 91, 96]",L4 L5 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1099,totalseg,train,s1099,written,"[82, 88, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1100,totalseg,train,s1100,written,"[73, 79, 87]",L1 L2 L3 L4 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1101,totalseg,train,s1101,written,"[70, 76, 51]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED,validation
+s1102,totalseg,train,s1102,written,"[79, 76, 114]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP TRUNCATED,train
+s1103,totalseg,train,s1103,written,"[97, 106, 201]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1104,totalseg,train,s1104,written,"[84, 43, 490]",sacrum,,NO_LUMBAR MULTI_CC,excluded: NO_LUMBAR
+s1105,totalseg,train,s1105,written,"[86, 82, 171]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1106,totalseg,train,s1106,written,"[50, 29, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1107,totalseg,train,s1107,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1109,totalseg,train,s1109,written,"[73, 77, 45]",L1 L2 L3 L4 L5,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1110,totalseg,train,s1110,written,"[76, 85, 63]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1111,totalseg,train,s1111,written,"[93, 94, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1113,totalseg,train,s1113,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1114,totalseg,train,s1114,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1115,totalseg,train,s1115,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1120,totalseg,train,s1120,written,"[139, 139, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,validation
+s1122,totalseg,train,s1122,written,"[64, 46, 45]",L1 T12,,TRUNCATED,train
+s1123,totalseg,train,s1123,written,"[91, 85, 157]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1124,totalseg,train,s1124,written,"[95, 85, 211]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1125,totalseg,train,s1125,written,"[89, 91, 103]",L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s1127,totalseg,train,s1127,written,"[105, 85, 195]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s1128,totalseg,train,s1128,written,"[94, 82, 89]",L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1129,totalseg,train,s1129,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1130,totalseg,train,s1130,written,"[89, 88, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1131,totalseg,train,s1131,written,"[94, 73, 200]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1132,totalseg,train,s1132,written,"[67, 75, 52]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED MULTI_CC,train
+s1133,totalseg,train,s1133,written,"[73, 80, 66]",L1 L2 L3 T12,,LABEL_AFFINE_EPS TRUNCATED,train
+s1134,totalseg,train,s1134,written,"[49, 40, 32]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1135,totalseg,train,s1135,written,"[90, 86, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1136,totalseg,train,s1136,written,"[93, 90, 94]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1137,totalseg,train,s1137,written,"[96, 76, 136]",L3 L4 L5 sacrum,,METAL LABEL_AFFINE_EPS MASK_OVERLAP MULTI_CC,train
+s1138,totalseg,train,s1138,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1140,totalseg,train,s1140,written,"[76, 85, 62]",L1 L2 T12,,TRUNCATED,train
+s1141,totalseg,train,s1141,written,"[113, 97, 106]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP TRUNCATED MULTI_CC,validation
+s1142,totalseg,train,s1142,written,"[76, 86, 75]",L1 L2 L3 T12,,TRUNCATED,train
+s1143,totalseg,train,s1143,written,"[94, 91, 212]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1144,totalseg,train,s1144,written,"[67, 76, 53]",L1 L2 T12,,TRUNCATED,train
+s1145,totalseg,train,s1145,written,"[85, 81, 197]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1146,totalseg,train,s1146,written,"[54, 68, 52]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s1147,totalseg,train,s1147,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1148,totalseg,train,s1148,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1149,totalseg,train,s1149,written,"[94, 94, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1150,totalseg,train,s1150,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1151,totalseg,train,s1151,written,"[92, 100, 111]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1153,totalseg,train,s1153,written,"[78, 78, 102]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED,train
+s1154,totalseg,train,s1154,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1155,totalseg,train,s1155,written,"[67, 73, 43]",L1 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s1156,totalseg,train,s1156,written,"[58, 76, 76]",sacrum,,METAL NO_LUMBAR,excluded: NO_LUMBAR
+s1157,totalseg,train,s1157,written,"[56, 68, 38]",L1 T12,,TRUNCATED,train
+s1158,totalseg,train,s1158,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1159,totalseg,train,s1159,written,"[88, 92, 165]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1161,totalseg,train,s1161,written,"[90, 91, 152]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1162,totalseg,train,s1162,written,"[64, 70, 46]",L1 T12,,PAD_OUTSIDE_FOV TRUNCATED,validation
+s1163,totalseg,train,s1163,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1164,totalseg,train,s1164,written,"[70, 81, 63]",L1 L2 T12,,TRUNCATED,train
+s1165,totalseg,train,s1165,written,"[81, 76, 93]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1167,totalseg,train,s1167,written,"[63, 76, 61]",L1 L2 T12,,TRUNCATED,train
+s1168,totalseg,train,s1168,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1169,totalseg,train,s1169,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1170,totalseg,train,s1170,written,"[18, 21, 17]",sacrum,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s1171,totalseg,train,s1171,written,"[82, 79, 113]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1172,totalseg,train,s1172,written,"[66, 70, 47]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1173,totalseg,train,s1173,written,"[65, 73, 72]",L1 L2 L3 T12,,PAD_OUTSIDE_FOV TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1175,totalseg,train,s1175,written,"[61, 67, 31]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1177,totalseg,train,s1177,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1178,totalseg,train,s1178,written,"[154, 98, 157]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MULTI_CC,validation
+s1179,totalseg,train,s1179,written,"[55, 60, 37]",L1 T12,,TRUNCATED,train
+s1182,totalseg,train,s1182,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1183,totalseg,train,s1183,written,"[91, 90, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1185,totalseg,train,s1185,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1187,totalseg,train,s1187,written,"[91, 86, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1189,totalseg,train,s1189,written,"[78, 79, 97]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED MULTI_CC,train
+s1190,totalseg,train,s1190,written,"[69, 76, 58]",L1 L2 T12,,TRUNCATED,train
+s1191,totalseg,train,s1191,written,"[52, 58, 24]",T12,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: NO_LUMBAR
+s1194,totalseg,train,s1194,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1196,totalseg,train,s1196,written,"[73, 76, 55]",L1 L2 L3 T12,,TRUNCATED MULTI_CC,train
+s1197,totalseg,train,s1197,written,"[51, 57, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1199,totalseg,train,s1199,written,"[68, 74, 49]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1201,totalseg,train,s1201,written,"[61, 79, 38]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1203,totalseg,train,s1203,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1205,totalseg,train,s1205,written,"[50, 20, 68]",L3 L4 L5,,LABEL_AFFINE_EPS TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1206,totalseg,train,s1206,written,"[94, 89, 174]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1207,totalseg,train,s1207,written,"[90, 92, 177]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1208,totalseg,train,s1208,written,"[84, 81, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1209,totalseg,train,s1209,written,"[88, 90, 199]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s1210,totalseg,train,s1210,written,"[88, 94, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1215,totalseg,train,s1215,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1216,totalseg,train,s1216,written,"[90, 85, 187]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV METAL MASK_OVERLAP MULTI_CC,train
+s1218,totalseg,train,s1218,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1220,totalseg,train,s1220,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1221,totalseg,train,s1221,written,"[71, 82, 58]",L1 L2 T12,,TRUNCATED,train
+s1222,totalseg,train,s1222,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1223,totalseg,train,s1223,written,"[99, 82, 186]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1224,totalseg,train,s1224,written,"[94, 92, 206]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1225,totalseg,train,s1225,written,"[49, 55, 19]",T12,,NO_LUMBAR MULTI_CC,excluded: NO_LUMBAR
+s1226,totalseg,train,s1226,written,"[53, 57, 32]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1227,totalseg,train,s1227,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1228,totalseg,train,s1228,written,"[93, 92, 192]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1230,totalseg,train,s1230,written,"[96, 88, 191]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1231,totalseg,train,s1231,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1233,totalseg,train,s1233,written,"[90, 88, 167]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1234,totalseg,train,s1234,written,"[92, 82, 96]",L4 L5 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1235,totalseg,train,s1235,written,"[101, 87, 116]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1236,totalseg,train,s1236,written,"[82, 85, 102]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1237,totalseg,train,s1237,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1238,totalseg,train,s1238,written,"[91, 85, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1239,totalseg,train,s1239,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1241,totalseg,train,s1241,written,"[84, 100, 110]",L1 L2 L3 L4 L5 T12 sacrum,,METAL TRUNCATED MULTI_CC,train
+s1242,totalseg,train,s1242,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1243,totalseg,train,s1243,written,"[57, 45, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1244,totalseg,train,s1244,written,"[94, 91, 219]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1245,totalseg,train,s1245,written,"[65, 75, 46]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1246,totalseg,train,s1246,written,"[96, 88, 48]",L5 sacrum,,METAL TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1247,totalseg,train,s1247,written,"[87, 85, 187]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MULTI_CC,train
+s1250,totalseg,train,s1250,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1251,totalseg,train,s1251,written,"[91, 100, 109]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1252,totalseg,train,s1252,written,"[88, 75, 165]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1254,totalseg,train,s1254,written,"[58, 36, 21]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1255,totalseg,train,s1255,written,"[68, 70, 46]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1256,totalseg,train,s1256,written,"[86, 82, 109]",L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,validation
+s1257,totalseg,train,s1257,written,"[81, 76, 102]",L1 L2 L3 L4 L5 T12 sacrum,,METAL TRUNCATED,validation
+s1258,totalseg,train,s1258,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1259,totalseg,train,s1259,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1260,totalseg,train,s1260,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1261,totalseg,train,s1261,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1262,totalseg,train,s1262,written,"[83, 89, 108]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1264,totalseg,train,s1264,written,"[84, 79, 102]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1267,totalseg,train,s1267,written,"[90, 81, 218]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1268,totalseg,train,s1268,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1269,totalseg,train,s1269,written,"[55, 67, 31]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1270,totalseg,train,s1270,written,"[57, 76, 28]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1271,totalseg,train,s1271,written,"[73, 85, 58]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1272,totalseg,train,s1272,written,"[59, 73, 39]",L1 T12,,LABEL_AFFINE_EPS TRUNCATED,validation
+s1273,totalseg,train,s1273,written,"[95, 89, 216]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1274,totalseg,train,s1274,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1275,totalseg,train,s1275,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1277,totalseg,train,s1277,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1278,totalseg,train,s1278,written,"[70, 79, 58]",L1 L2 T12,,TRUNCATED,train
+s1279,totalseg,train,s1279,written,"[57, 73, 43]",sacrum,,METAL NO_LUMBAR,excluded: NO_LUMBAR
+s1280,totalseg,train,s1280,written,"[56, 69, 31]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1281,totalseg,train,s1281,written,"[73, 78, 74]",L1 L2 L3 L4 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1283,totalseg,train,s1283,written,"[85, 85, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1285,totalseg,train,s1285,written,"[78, 77, 92]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1286,totalseg,train,s1286,written,"[73, 72, 45]",L1 L2 L3 L4 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1287,totalseg,train,s1287,written,"[88, 90, 207]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1288,totalseg,train,s1288,written,"[80, 77, 77]",L1 L2 L3 T12,,TRUNCATED,train
+s1289,totalseg,train,s1289,written,"[85, 80, 82]",L1 L2 L3 L4 L5 T12,,TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1290,totalseg,train,s1290,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1291,totalseg,train,s1291,written,"[92, 91, 184]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1292,totalseg,train,s1292,written,"[76, 79, 70]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1293,totalseg,train,s1293,written,"[88, 92, 175]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1294,totalseg,train,s1294,written,"[133, 139, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1295,totalseg,train,s1295,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1296,totalseg,train,s1296,written,"[74, 80, 70]",L1 L2 L3 T12,,TRUNCATED,train
+s1297,totalseg,train,s1297,written,"[85, 91, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1298,totalseg,train,s1298,written,"[76, 82, 61]",L1 L2 T12,,TRUNCATED,train
+s1299,totalseg,train,s1299,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1300,totalseg,train,s1300,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1301,totalseg,train,s1301,written,"[90, 90, 127]",L2 L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1303,totalseg,train,s1303,written,"[37, 40, 41]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1304,totalseg,train,s1304,written,"[88, 85, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1305,totalseg,train,s1305,written,"[67, 82, 96]",L1 L2 L3 L4 L5 T12,,TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1307,totalseg,train,s1307,written,"[90, 100, 214]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1308,totalseg,train,s1308,written,"[59, 72, 31]",T12,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: NO_LUMBAR
+s1309,totalseg,train,s1309,written,"[90, 94, 185]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s1310,totalseg,train,s1310,written,"[95, 84, 181]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1311,totalseg,train,s1311,written,"[61, 69, 30]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1312,totalseg,train,s1312,written,"[70, 89, 68]",L1 L2 L3 T12,,TRUNCATED,train
+s1314,totalseg,train,s1314,written,"[88, 80, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1315,totalseg,train,s1315,written,"[73, 76, 43]",L2 L3 L4 L5 sacrum,,METAL MASK_OVERLAP TRUNCATED,train
+s1316,totalseg,train,s1316,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1317,totalseg,train,s1317,written,"[43, 36, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1318,totalseg,train,s1318,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1319,totalseg,train,s1319,written,"[97, 96, 177]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1321,totalseg,train,s1321,written,"[91, 83, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1325,totalseg,train,s1325,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1326,totalseg,train,s1326,written,"[91, 73, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1327,totalseg,train,s1327,written,"[57, 73, 33]",L1 T12,,TRUNCATED,train
+s1328,totalseg,train,s1328,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1329,totalseg,train,s1329,written,"[75, 77, 88]",L1 L2 L3 L4 T12,,MULTI_CC VOLUME_OUTLIER,train
+s1330,totalseg,train,s1330,written,"[78, 87, 63]",L1 L2 L3 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1331,totalseg,train,s1331,written,"[87, 93, 170]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s1332,totalseg,train,s1332,written,"[96, 79, 106]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1333,totalseg,train,s1333,written,"[54, 36, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1334,totalseg,train,s1334,written,"[98, 88, 208]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1335,totalseg,train,s1335,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1336,totalseg,train,s1336,written,"[112, 112, 214]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1337,totalseg,train,s1337,written,"[72, 75, 59]",L1 L2 T12,,TRUNCATED,train
+s1338,totalseg,train,s1338,written,"[73, 80, 60]",L1 L2 L3 T12,,TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1339,totalseg,train,s1339,written,"[97, 93, 183]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,train
+s1340,totalseg,train,s1340,written,"[91, 96, 192]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV METAL MASK_OVERLAP,train
+s1341,totalseg,train,s1341,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1342,totalseg,train,s1342,written,"[89, 97, 61]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1343,totalseg,train,s1343,written,"[68, 76, 56]",L1 L2 T12,,TRUNCATED,train
+s1344,totalseg,train,s1344,written,"[98, 86, 180]",L1 L2 L3 L4 L5 T12 sacrum,,LABEL_AFFINE_EPS MASK_OVERLAP,validation
+s1345,totalseg,train,s1345,written,"[38, 28, 27]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1346,totalseg,train,s1346,written,"[70, 72, 45]",L1 T12,,TRUNCATED,train
+s1348,totalseg,train,s1348,written,"[90, 93, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1349,totalseg,train,s1349,written,"[92, 97, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1350,totalseg,train,s1350,written,"[88, 84, 172]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1352,totalseg,train,s1352,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1353,totalseg,train,s1353,written,"[68, 73, 48]",L1 L2 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1354,totalseg,train,s1354,written,"[82, 73, 109]",L1 L2 L3 L4 L5 T12 sacrum,,TRUNCATED,validation
+s1358,totalseg,train,s1358,written,"[93, 93, 134]",L1 L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1359,totalseg,train,s1359,written,"[52, 46, 34]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1361,totalseg,train,s1361,written,"[96, 94, 210]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1362,totalseg,train,s1362,written,"[96, 93, 193]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1363,totalseg,train,s1363,written,"[90, 87, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1364,totalseg,train,s1364,written,"[92, 77, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1365,totalseg,train,s1365,written,"[97, 82, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1366,totalseg,train,s1366,already_done,"[99, 90, 210]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1367,totalseg,train,s1367,written,"[86, 91, 154]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1368,totalseg,train,s1368,written,"[93, 85, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1369,totalseg,train,s1369,written,"[92, 94, 168]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1370,totalseg,train,s1370,written,"[75, 79, 86]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s1371,totalseg,train,s1371,written,"[90, 91, 196]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV METAL MASK_OVERLAP,train
+s1372,totalseg,train,s1372,written,"[91, 88, 175]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1373,totalseg,train,s1373,written,"[91, 94, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1374,totalseg,train,s1374,written,"[94, 79, 176]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s1375,totalseg,train,s1375,written,"[92, 85, 124]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1378,totalseg,train,s1378,written,"[73, 46, 39]",sacrum,,NO_LUMBAR MULTI_CC,excluded: NO_LUMBAR
+s1379,totalseg,train,s1379,written,"[100, 96, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1380,totalseg,train,s1380,written,"[85, 86, 175]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1382,totalseg,train,s1382,written,"[91, 100, 200]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1383,totalseg,train,s1383,written,"[94, 99, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1384,totalseg,train,s1384,written,"[88, 93, 148]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1385,totalseg,train,s1385,written,"[88, 88, 127]",L1 L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1387,totalseg,train,s1387,written,"[116, 89, 226]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1388,totalseg,train,s1388,written,"[86, 97, 164]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1389,totalseg,train,s1389,written,"[80, 84, 55]",L1 L2 T12,,PAD_OUTSIDE_FOV LABEL_AFFINE_EPS TRUNCATED,train
+s1390,totalseg,train,s1390,written,"[97, 94, 211]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1391,totalseg,train,s1391,written,"[91, 86, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1394,totalseg,train,s1394,written,"[91, 86, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1395,totalseg,train,s1395,written,"[91, 96, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1397,totalseg,train,s1397,written,"[112, 103, 367]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1399,totalseg,train,s1399,written,"[90, 109, 70]",L4 L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1400,totalseg,train,s1400,written,"[93, 91, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1401,totalseg,train,s1401,written,"[93, 86, 132]",L2 L3 L4 L5 sacrum,,MASK_OVERLAP TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1403,totalseg,train,s1403,written,"[96, 91, 206]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1404,totalseg,train,s1404,written,"[91, 84, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1405,totalseg,train,s1405,written,"[98, 136, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1406,totalseg,train,s1406,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1407,totalseg,train,s1407,already_done,"[44, 48, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1408,totalseg,train,s1408,written,"[67, 64, 66]",L4 L5 sacrum,,TRUNCATED MULTI_CC,train
+s1409,totalseg,train,s1409,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1410,totalseg,train,s1410,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1411,totalseg,train,s1411,written,"[53, 52, 91]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1412,totalseg,train,s1412,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1413,totalseg,train,s1413,written,"[50, 52, 32]",L1 T12,,MASK_OVERLAP TRUNCATED,train
+s1414,totalseg,train,s1414,written,"[60, 60, 56]",L3 L4 L5 sacrum,,VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1415,totalseg,train,s1415,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1416,totalseg,train,s1416,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1417,totalseg,train,s1417,written,"[67, 63, 155]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1418,totalseg,train,s1418,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1419,totalseg,train,s1419,written,"[49, 49, 33]",L1 T12,,MASK_OVERLAP TRUNCATED,train
+s1420,totalseg,train,s1420,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1421,totalseg,train,s1421,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1422,totalseg,train,s1422,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1423,totalseg,train,s1423,written,"[64, 71, 82]",L1 L2 L3 L4 L5 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1424,totalseg,train,s1424,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1425,totalseg,train,s1425,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1426,totalseg,train,s1426,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1427,totalseg,train,s1427,written,"[67, 59, 141]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1428,totalseg,train,s1428,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1429,totalseg,train,s1429,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1430,totalseg,train,s1430,written,"[48, 55, 28]",L1 T12,,TRUNCATED,validation
+s1431,totalseg,train,s1431,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1432,totalseg,train,s1432,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1433,totalseg,train,s1433,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1434,totalseg,train,s1434,written,"[48, 56, 30]",L1 T12,,TRUNCATED,train
+s1435,totalseg,train,s1435,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1437,totalseg,train,s1437,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1438,totalseg,train,s1438,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1439,totalseg,train,s1439,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1440,totalseg,train,s1440,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1441,totalseg,train,s1441,written,"[40, 22, 19]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1442,totalseg,train,s1442,written,"[40, 45, 18]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1443,totalseg,train,s1443,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1444,totalseg,train,s1444,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1445,totalseg,train,s1445,written,"[68, 55, 133]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1447,totalseg,train,s1447,written,"[59, 55, 92]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER,train
+s1448,totalseg,train,s1448,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1449,totalseg,train,s1449,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1450,totalseg,train,s1450,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1451,totalseg,train,s1451,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1452,totalseg,train,s1452,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1453,totalseg,train,s1453,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1454,totalseg,train,s1454,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1456,totalseg,train,s1456,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1457,totalseg,train,s1457,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1459,totalseg,train,s1459,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1460,totalseg,train,s1460,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1461,totalseg,train,s1461,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1462,totalseg,train,s1462,written,"[46, 40, 38]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1464,totalseg,train,s1464,written,"[45, 50, 25]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1465,totalseg,train,s1465,written,"[68, 54, 142]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1466,totalseg,train,s1466,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1467,totalseg,train,s1467,written,"[46, 36, 41]",sacrum,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: NO_LUMBAR
+s1468,totalseg,train,s1468,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1469,totalseg,train,s1469,written,"[41, 37, 17]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1470,totalseg,train,s1470,written,"[34, 31, 32]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1471,totalseg,train,s1471,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1472,totalseg,train,s1472,written,"[68, 72, 90]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1473,totalseg,train,s1473,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1474,totalseg,train,s1474,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1475,totalseg,train,s1475,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1476,totalseg,train,s1476,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1477,totalseg,train,s1477,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1478,totalseg,train,s1478,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1479,totalseg,train,s1479,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1480,totalseg,train,s1480,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1481,totalseg,train,s1481,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1482,totalseg,train,s1482,written,"[70, 62, 149]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1483,totalseg,train,s1483,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1484,totalseg,train,s1484,written,"[71, 74, 148]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1485,totalseg,train,s1485,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1486,totalseg,train,s1486,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1487,totalseg,train,s1487,written,"[58, 55, 106]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER,validation
+s1488,totalseg,train,s1488,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1489,totalseg,train,s1489,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1490,totalseg,train,s1490,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1491,totalseg,train,s1491,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1492,totalseg,train,s1492,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1493,totalseg,train,s1493,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1494,totalseg,train,s1494,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1495,totalseg,train,s1495,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1496,totalseg,train,s1496,written,"[43, 36, 22]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1497,totalseg,train,s1497,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1498,totalseg,train,s1498,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1499,totalseg,train,s1499,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1500,totalseg,train,s1500,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1501,totalseg,train,s1501,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1502,totalseg,train,s1502,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1503,totalseg,train,s1503,written,"[52, 56, 35]",L1 T12,,TRUNCATED,train
+s1505,totalseg,train,s1505,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1506,totalseg,train,s1506,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1507,totalseg,train,s1507,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1508,totalseg,train,s1508,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1509,totalseg,train,s1509,written,"[65, 59, 59]",L4 L5 sacrum,,MULTI_CC VOLUME_OUTLIER,validation
+s1510,totalseg,train,s1510,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1511,totalseg,train,s1511,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1512,totalseg,train,s1512,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1513,totalseg,train,s1513,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1514,totalseg,train,s1514,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1515,totalseg,train,s1515,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1516,totalseg,train,s1516,skipped_no_spine,,,,LABEL_AFFINE_EPS NO_LUMBAR,excluded: skipped_no_spine
+s1517,totalseg,train,s1517,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1518,totalseg,train,s1518,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1519,totalseg,train,s1519,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1520,totalseg,train,s1520,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1521,totalseg,train,s1521,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1522,totalseg,train,s1522,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1523,totalseg,train,s1523,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1524,totalseg,train,s1524,written,"[55, 68, 35]",L1 T12,,TRUNCATED,train
+s1525,totalseg,train,s1525,written,"[84, 81, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1526,totalseg,train,s1526,written,"[92, 85, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1527,totalseg,train,s1527,written,"[90, 83, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1528,totalseg,train,s1528,written,"[92, 89, 166]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1529,totalseg,train,s1529,written,"[67, 72, 144]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1530,totalseg,train,s1530,written,"[67, 72, 81]",L3 L4 L5 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1532,totalseg,train,s1532,written,"[55, 56, 91]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1533,totalseg,train,s1533,written,"[90, 103, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1534,totalseg,train,s1534,written,"[68, 68, 148]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1535,totalseg,train,s1535,written,"[60, 60, 109]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER,train
+s1536,totalseg,train,s1536,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1537,totalseg,train,s1537,written,"[90, 82, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1538,totalseg,train,s1538,written,"[67, 72, 141]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1539,totalseg,train,s1539,written,"[69, 68, 130]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1540,totalseg,train,s1540,written,"[73, 64, 161]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1543,totalseg,train,s1543,written,"[72, 72, 157]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1544,totalseg,train,s1544,written,"[66, 61, 134]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,validation
+s1545,totalseg,train,s1545,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1546,totalseg,train,s1546,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1547,totalseg,train,s1547,written,"[74, 73, 143]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1548,totalseg,train,s1548,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1549,totalseg,train,s1549,written,"[73, 70, 145]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1550,totalseg,train,s1550,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1552,totalseg,train,s1552,written,"[78, 76, 182]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1553,totalseg,train,s1553,written,"[84, 85, 161]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1554,totalseg,train,s1554,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1555,totalseg,train,s1555,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1556,totalseg,train,s1556,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1557,totalseg,train,s1557,written,"[47, 53, 25]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1558,totalseg,train,s1558,written,"[42, 46, 64]",L1 L2 L3 L4 L5,,FRAGMENT,excluded: FRAGMENT
+s1559,totalseg,train,s1559,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1560,totalseg,train,s1560,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1561,totalseg,train,s1561,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1562,totalseg,train,s1562,written,"[52, 57, 46]",L1 L2 T12,,MASK_OVERLAP TRUNCATED,train
+s1563,totalseg,train,s1563,written,"[62, 62, 60]",L4 L5 sacrum,,TRUNCATED MULTI_CC VOLUME_OUTLIER,train
+s1565,totalseg,train,s1565,written,"[63, 61, 117]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1566,totalseg,train,s1566,written,"[49, 57, 35]",L1 L2 T12,,MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1567,totalseg,train,s1567,written,"[88, 103, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1568,totalseg,train,s1568,written,"[68, 59, 82]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1569,totalseg,train,s1569,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1570,totalseg,train,s1570,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1571,totalseg,train,s1571,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1572,totalseg,train,s1572,written,"[104, 103, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1574,totalseg,train,s1574,written,"[92, 89, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1575,totalseg,train,s1575,written,"[88, 94, 167]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1576,totalseg,train,s1576,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1577,totalseg,train,s1577,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1578,totalseg,train,s1578,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1579,totalseg,train,s1579,written,"[70, 67, 139]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1580,totalseg,train,s1580,written,"[70, 70, 151]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1581,totalseg,train,s1581,written,"[49, 55, 31]",L1 T12,,TRUNCATED,train
+s1582,totalseg,train,s1582,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1583,totalseg,train,s1583,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1584,totalseg,train,s1584,written,"[94, 98, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1585,totalseg,train,s1585,written,"[93, 104, 190]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1586,totalseg,train,s1586,written,"[67, 67, 84]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1587,totalseg,train,s1587,written,"[54, 58, 40]",L1 T12,,TRUNCATED,train
+s1588,totalseg,train,s1588,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1589,totalseg,train,s1589,written,"[86, 91, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1590,totalseg,train,s1590,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1591,totalseg,train,s1591,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1592,totalseg,train,s1592,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1594,totalseg,train,s1594,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1595,totalseg,train,s1595,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1596,totalseg,train,s1596,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1597,totalseg,train,s1597,written,"[71, 73, 104]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1598,totalseg,train,s1598,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1599,totalseg,train,s1599,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1600,totalseg,train,s1600,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1601,totalseg,train,s1601,written,"[61, 60, 113]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1602,totalseg,train,s1602,written,"[47, 52, 25]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1603,totalseg,train,s1603,written,"[49, 54, 33]",L1 T12,,MASK_OVERLAP TRUNCATED,train
+s1604,totalseg,train,s1604,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1605,totalseg,train,s1605,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1606,totalseg,train,s1606,written,"[50, 49, 62]",L1 L2 L3 L4 T12,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1607,totalseg,train,s1607,written,"[37, 28, 20]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1608,totalseg,train,s1608,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1609,totalseg,train,s1609,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1610,totalseg,train,s1610,written,"[89, 94, 189]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1611,totalseg,train,s1611,written,"[50, 57, 40]",L1 L2 T12,,TRUNCATED,validation
+s1612,totalseg,train,s1612,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1613,totalseg,train,s1613,written,"[63, 52, 56]",L4 L5 sacrum,,FRAGMENT,excluded: FRAGMENT
+s1614,totalseg,train,s1614,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1615,totalseg,train,s1615,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1616,totalseg,train,s1616,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1617,totalseg,train,s1617,written,"[69, 61, 60]",L5 sacrum,,FRAGMENT,excluded: FRAGMENT
+s1618,totalseg,train,s1618,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1619,totalseg,train,s1619,written,"[61, 63, 57]",L5 sacrum,,FRAGMENT,excluded: FRAGMENT
+s1620,totalseg,train,s1620,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1621,totalseg,train,s1621,written,"[59, 56, 98]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1622,totalseg,train,s1622,written,"[64, 61, 63]",L4 L5 sacrum,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1623,totalseg,train,s1623,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1624,totalseg,train,s1624,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1625,totalseg,train,s1625,written,"[96, 97, 169]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1627,totalseg,train,s1627,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1628,totalseg,train,s1628,written,"[68, 71, 64]",L4 L5 sacrum,,TRUNCATED MULTI_CC,train
+s1629,totalseg,train,s1629,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1630,totalseg,train,s1630,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1632,totalseg,train,s1632,written,"[48, 55, 28]",L1 T12,,TRUNCATED,train
+s1633,totalseg,train,s1633,written,"[48, 55, 33]",L1 T12,,TRUNCATED,train
+s1634,totalseg,train,s1634,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1635,totalseg,train,s1635,written,"[34, 26, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1636,totalseg,train,s1636,written,"[67, 59, 133]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1637,totalseg,train,s1637,written,"[46, 53, 28]",L1 T12,,MASK_OVERLAP TRUNCATED,train
+s1638,totalseg,train,s1638,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1639,totalseg,train,s1639,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1640,totalseg,train,s1640,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1642,totalseg,train,s1642,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1643,totalseg,train,s1643,written,"[50, 59, 28]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1644,totalseg,train,s1644,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1645,totalseg,train,s1645,written,"[65, 61, 84]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1646,totalseg,train,s1646,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1647,totalseg,train,s1647,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1648,totalseg,train,s1648,written,"[55, 58, 43]",L1 L2 T12,,TRUNCATED,train
+s1649,totalseg,train,s1649,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1650,totalseg,train,s1650,written,"[85, 94, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1651,totalseg,train,s1651,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1652,totalseg,train,s1652,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1653,totalseg,train,s1653,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1654,totalseg,train,s1654,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1655,totalseg,train,s1655,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1656,totalseg,train,s1656,written,"[46, 52, 35]",L1 T12,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1657,totalseg,train,s1657,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1658,totalseg,train,s1658,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1659,totalseg,train,s1659,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1660,totalseg,train,s1660,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1661,totalseg,train,s1661,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1662,totalseg,train,s1662,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1663,totalseg,train,s1663,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1664,totalseg,train,s1664,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1665,totalseg,train,s1665,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1666,totalseg,train,s1666,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1667,totalseg,train,s1667,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1668,totalseg,train,s1668,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1669,totalseg,train,s1669,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1670,totalseg,train,s1670,written,"[71, 64, 136]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1671,totalseg,train,s1671,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1672,totalseg,train,s1672,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1673,totalseg,train,s1673,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1674,totalseg,train,s1674,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1675,totalseg,train,s1675,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1676,totalseg,train,s1676,written,"[91, 94, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1677,totalseg,train,s1677,written,"[85, 92, 192]",L1 L2 L3 L4 L5 T12 sacrum,,METAL,train
+s1678,totalseg,train,s1678,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1679,totalseg,train,s1679,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1680,totalseg,train,s1680,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1681,totalseg,train,s1681,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1682,totalseg,train,s1682,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1683,totalseg,train,s1683,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1684,totalseg,train,s1684,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1685,totalseg,train,s1685,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1686,totalseg,train,s1686,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1687,totalseg,train,s1687,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1688,totalseg,train,s1688,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1689,totalseg,train,s1689,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1690,totalseg,train,s1690,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1691,totalseg,train,s1691,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1692,totalseg,train,s1692,written,"[49, 55, 33]",L1 T12,,TRUNCATED,validation
+s1693,totalseg,train,s1693,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1694,totalseg,train,s1694,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1695,totalseg,train,s1695,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1696,totalseg,train,s1696,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1697,totalseg,train,s1697,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1698,totalseg,train,s1698,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1699,totalseg,train,s1699,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1700,totalseg,train,s1700,written,"[64, 61, 122]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1701,totalseg,train,s1701,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1702,totalseg,train,s1702,written,"[49, 54, 39]",L1 L2 T12,,MASK_OVERLAP TRUNCATED MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1703,totalseg,train,s1703,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1704,totalseg,train,s1704,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1705,totalseg,train,s1705,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1706,totalseg,train,s1706,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1707,totalseg,train,s1707,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1708,totalseg,train,s1708,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1709,totalseg,train,s1709,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1710,totalseg,train,s1710,written,"[88, 90, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1711,totalseg,train,s1711,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1712,totalseg,train,s1712,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1713,totalseg,train,s1713,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1714,totalseg,train,s1714,written,"[61, 61, 79]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1715,totalseg,train,s1715,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1716,totalseg,train,s1716,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1717,totalseg,train,s1717,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1718,totalseg,train,s1718,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1719,totalseg,train,s1719,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1720,totalseg,train,s1720,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1721,totalseg,train,s1721,written,"[43, 37, 25]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1722,totalseg,train,s1722,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1723,totalseg,train,s1723,written,"[55, 58, 43]",L1 L2 T12,,TRUNCATED,train
+s1724,totalseg,train,s1724,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1726,totalseg,train,s1726,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1727,totalseg,train,s1727,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1729,totalseg,train,s1729,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1730,totalseg,train,s1730,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1731,totalseg,train,s1731,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1732,totalseg,train,s1732,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1733,totalseg,train,s1733,written,"[49, 43, 94]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1734,totalseg,train,s1734,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1735,totalseg,train,s1735,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1737,totalseg,train,s1737,written,"[91, 85, 220]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1738,totalseg,train,s1738,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1739,totalseg,train,s1739,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1740,totalseg,train,s1740,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1741,totalseg,train,s1741,written,"[64, 60, 103]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1742,totalseg,train,s1742,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1743,totalseg,train,s1743,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1744,totalseg,train,s1744,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1745,totalseg,train,s1745,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1746,totalseg,train,s1746,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1747,totalseg,train,s1747,written,"[58, 58, 82]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1748,totalseg,train,s1748,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1749,totalseg,train,s1749,written,"[91, 90, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1750,totalseg,train,s1750,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1751,totalseg,train,s1751,written,"[85, 85, 168]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1752,totalseg,train,s1752,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1753,totalseg,train,s1753,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1754,totalseg,train,s1754,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1755,totalseg,train,s1755,written,"[91, 95, 187]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1756,totalseg,train,s1756,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1757,totalseg,train,s1757,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1758,totalseg,train,s1758,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1759,totalseg,train,s1759,written,"[48, 55, 31]",L1 T12,,MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1760,totalseg,train,s1760,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1761,totalseg,train,s1761,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1763,totalseg,train,s1763,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1764,totalseg,train,s1764,written,"[87, 88, 167]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1765,totalseg,train,s1765,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1766,totalseg,train,s1766,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1767,totalseg,train,s1767,written,"[112, 102, 209]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1768,totalseg,train,s1768,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1769,totalseg,train,s1769,written,"[55, 61, 33]",L1 T12,,TRUNCATED,train
+s1770,totalseg,train,s1770,written,"[90, 91, 175]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1771,totalseg,train,s1771,written,"[44, 43, 17]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1772,totalseg,train,s1772,written,"[91, 84, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1774,totalseg,train,s1774,written,"[93, 88, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1776,totalseg,train,s1776,written,"[70, 66, 134]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1777,totalseg,train,s1777,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1778,totalseg,train,s1778,written,"[63, 62, 100]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1779,totalseg,train,s1779,written,"[95, 88, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1780,totalseg,train,s1780,written,"[92, 91, 207]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1781,totalseg,train,s1781,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1782,totalseg,train,s1782,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1783,totalseg,train,s1783,written,"[96, 100, 209]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1784,totalseg,train,s1784,written,"[90, 86, 229]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1786,totalseg,train,s1786,written,"[94, 90, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1787,totalseg,train,s1787,written,"[87, 92, 185]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1788,totalseg,train,s1788,written,"[94, 89, 182]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1789,totalseg,train,s1789,written,"[88, 90, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1790,totalseg,train,s1790,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1791,totalseg,train,s1791,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1792,totalseg,train,s1792,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1793,totalseg,train,s1793,written,"[96, 96, 213]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1794,totalseg,train,s1794,written,"[89, 90, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1795,totalseg,train,s1795,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1796,totalseg,train,s1796,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1797,totalseg,train,s1797,written,"[93, 93, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1798,totalseg,train,s1798,written,"[84, 91, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1799,totalseg,train,s1799,written,"[88, 91, 208]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1800,totalseg,train,s1800,written,"[62, 64, 108]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER,train
+s1801,totalseg,train,s1801,written,"[49, 52, 24]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1802,totalseg,train,s1802,written,"[64, 70, 57]",L3 L4 L5 sacrum,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1803,totalseg,train,s1803,written,"[88, 86, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1804,totalseg,train,s1804,written,"[91, 89, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1805,totalseg,train,s1805,written,"[99, 105, 201]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1807,totalseg,train,s1807,written,"[91, 101, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1808,totalseg,train,s1808,written,"[88, 85, 164]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,validation
+s1809,totalseg,train,s1809,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1810,totalseg,train,s1810,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1811,totalseg,train,s1811,written,"[87, 85, 187]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s1812,totalseg,train,s1812,written,"[83, 110, 182]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1813,totalseg,train,s1813,written,"[94, 88, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1814,totalseg,train,s1814,written,"[91, 86, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1815,totalseg,train,s1815,written,"[85, 74, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1816,totalseg,train,s1816,written,"[88, 91, 167]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1817,totalseg,train,s1817,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1818,totalseg,train,s1818,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1819,totalseg,train,s1819,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1820,totalseg,train,s1820,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1821,totalseg,train,s1821,written,"[88, 89, 203]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1822,totalseg,train,s1822,written,"[90, 88, 165]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1823,totalseg,train,s1823,written,"[90, 88, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1824,totalseg,train,s1824,written,"[88, 85, 171]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1825,totalseg,train,s1825,written,"[45, 34, 17]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1826,totalseg,train,s1826,written,"[89, 94, 173]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1828,totalseg,train,s1828,written,"[94, 88, 215]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1829,totalseg,train,s1829,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1830,totalseg,train,s1830,written,"[90, 89, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1831,totalseg,train,s1831,written,"[92, 91, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1832,totalseg,train,s1832,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1833,totalseg,train,s1833,written,"[90, 84, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1835,totalseg,train,s1835,written,"[91, 88, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1836,totalseg,train,s1836,written,"[93, 94, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1837,totalseg,train,s1837,written,"[62, 58, 54]",L4 L5 sacrum,,VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1838,totalseg,train,s1838,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1839,totalseg,train,s1839,written,"[89, 90, 180]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1840,totalseg,train,s1840,written,"[85, 81, 191]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1841,totalseg,train,s1841,written,"[91, 93, 201]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1842,totalseg,train,s1842,written,"[108, 108, 204]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1843,totalseg,train,s1843,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1844,totalseg,train,s1844,written,"[94, 96, 160]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1845,totalseg,train,s1845,written,"[87, 86, 175]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s1846,totalseg,train,s1846,written,"[88, 88, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1847,totalseg,train,s1847,written,"[92, 88, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1848,totalseg,train,s1848,written,"[95, 94, 171]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1849,totalseg,train,s1849,written,"[86, 86, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1850,totalseg,train,s1850,written,"[84, 86, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1851,totalseg,train,s1851,written,"[92, 86, 215]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1852,totalseg,train,s1852,written,"[89, 82, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1853,totalseg,train,s1853,written,"[88, 89, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1855,totalseg,train,s1855,written,"[43, 33, 24]",L1 T12,,PAD_OUTSIDE_FOV METAL TRUNCATED FRAGMENT,excluded: FRAGMENT
+s1856,totalseg,train,s1856,written,"[53, 53, 25]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1857,totalseg,train,s1857,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1858,totalseg,train,s1858,written,"[86, 88, 178]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1859,totalseg,train,s1859,written,"[63, 63, 56]",L4 L5 sacrum,,TRUNCATED MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1860,totalseg,train,s1860,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1861,totalseg,train,s1861,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1862,totalseg,train,s1862,written,"[59, 55, 70]",L1 L2 L3 L4 L5 sacrum,,TRUNCATED MULTI_CC,train
+s1863,totalseg,train,s1863,written,"[91, 92, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1864,totalseg,train,s1864,written,"[70, 54, 125]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1865,totalseg,train,s1865,written,"[76, 63, 150]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1866,totalseg,train,s1866,written,"[107, 94, 211]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1867,totalseg,train,s1867,written,"[92, 85, 226]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1868,totalseg,train,s1868,written,"[94, 88, 174]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1869,totalseg,train,s1869,written,"[88, 87, 183]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s1870,totalseg,train,s1870,written,"[93, 94, 169]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP TRUNCATED MULTI_CC,train
+s1871,totalseg,train,s1871,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1872,totalseg,train,s1872,written,"[95, 88, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1873,totalseg,train,s1873,written,"[175, 145, 157]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s1874,totalseg,train,s1874,written,"[98, 91, 211]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1875,totalseg,train,s1875,written,"[92, 88, 168]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1876,totalseg,train,s1876,written,"[85, 83, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1877,totalseg,train,s1877,written,"[93, 94, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1878,totalseg,train,s1878,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1879,totalseg,train,s1879,written,"[90, 91, 188]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1880,totalseg,train,s1880,written,"[85, 83, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1881,totalseg,train,s1881,written,"[99, 94, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1882,totalseg,train,s1882,written,"[54, 46, 60]",L1 L2 L3 L4 L5 T12,,PAD_OUTSIDE_FOV MASK_OVERLAP VOLUME_OUTLIER,train
+s1883,totalseg,train,s1883,written,"[94, 92, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1884,totalseg,train,s1884,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1885,totalseg,train,s1885,written,"[91, 88, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1886,totalseg,train,s1886,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1887,totalseg,train,s1887,written,"[91, 93, 186]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1888,totalseg,train,s1888,written,"[86, 84, 178]",L1 L2 L3 L4 L5 T12 sacrum,,,validation
+s1889,totalseg,train,s1889,written,"[92, 94, 200]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1890,totalseg,train,s1890,written,"[61, 46, 102]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1891,totalseg,train,s1891,written,"[87, 84, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1892,totalseg,train,s1892,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1893,totalseg,train,s1893,written,"[86, 87, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1894,totalseg,train,s1894,written,"[74, 68, 78]",L4 L5 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP MULTI_CC FRAGMENT,excluded: FRAGMENT
+s1895,totalseg,train,s1895,written,"[97, 88, 220]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1896,totalseg,train,s1896,written,"[85, 96, 170]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1897,totalseg,train,s1897,written,"[52, 48, 33]",L1 T12,,MASK_OVERLAP TRUNCATED,validation
+s1898,totalseg,train,s1898,written,"[42, 43, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1899,totalseg,train,s1899,written,"[38, 48, 42]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1900,totalseg,train,s1900,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1901,totalseg,train,s1901,written,"[63, 55, 91]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER,train
+s1902,totalseg,train,s1902,written,"[88, 85, 177]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1903,totalseg,train,s1903,written,"[59, 63, 81]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP TRUNCATED,train
+s1904,totalseg,train,s1904,written,"[86, 94, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1905,totalseg,train,s1905,written,"[83, 92, 166]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1906,totalseg,train,s1906,written,"[104, 97, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1907,totalseg,train,s1907,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1908,totalseg,train,s1908,written,"[54, 40, 34]",sacrum,,NO_LUMBAR,excluded: NO_LUMBAR
+s1909,totalseg,train,s1909,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1910,totalseg,train,s1910,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1911,totalseg,train,s1911,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1912,totalseg,train,s1912,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1913,totalseg,train,s1913,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1914,totalseg,train,s1914,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1915,totalseg,train,s1915,written,"[91, 93, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1916,totalseg,train,s1916,written,"[93, 87, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1917,totalseg,train,s1917,written,"[59, 55, 55]",L4 L5 sacrum,,TRUNCATED MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1918,totalseg,train,s1918,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1919,totalseg,train,s1919,written,"[90, 92, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1920,totalseg,train,s1920,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1921,totalseg,train,s1921,written,"[97, 106, 204]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1922,totalseg,train,s1922,written,"[85, 94, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1923,totalseg,train,s1923,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1924,totalseg,train,s1924,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1925,totalseg,train,s1925,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1926,totalseg,train,s1926,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1927,totalseg,train,s1927,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1928,totalseg,train,s1928,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1929,totalseg,train,s1929,written,"[89, 100, 173]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s1930,totalseg,train,s1930,written,"[89, 87, 192]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1931,totalseg,train,s1931,written,"[87, 95, 178]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1934,totalseg,train,s1934,written,"[39, 36, 19]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s1935,totalseg,train,s1935,written,"[92, 87, 201]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1936,totalseg,train,s1936,written,"[56, 55, 102]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC VOLUME_OUTLIER,train
+s1937,totalseg,train,s1937,written,"[95, 92, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1938,totalseg,train,s1938,written,"[90, 91, 192]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1939,totalseg,train,s1939,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1940,totalseg,train,s1940,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1941,totalseg,train,s1941,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1942,totalseg,train,s1942,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1944,totalseg,train,s1944,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1945,totalseg,train,s1945,written,"[96, 85, 166]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1946,totalseg,train,s1946,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1947,totalseg,train,s1947,written,"[58, 55, 95]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s1948,totalseg,train,s1948,written,"[90, 81, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1949,totalseg,train,s1949,written,"[97, 79, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1950,totalseg,train,s1950,written,"[88, 92, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1952,totalseg,train,s1952,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1953,totalseg,train,s1953,written,"[88, 85, 208]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1954,totalseg,train,s1954,written,"[92, 100, 156]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1955,totalseg,train,s1955,written,"[90, 90, 163]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1956,totalseg,train,s1956,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1957,totalseg,train,s1957,written,"[86, 79, 177]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1958,totalseg,train,s1958,written,"[91, 85, 226]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1959,totalseg,train,s1959,written,"[89, 88, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1960,totalseg,train,s1960,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1961,totalseg,train,s1961,written,"[95, 94, 200]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1962,totalseg,train,s1962,written,"[89, 81, 172]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1963,totalseg,train,s1963,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1964,totalseg,train,s1964,written,"[85, 85, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1965,totalseg,train,s1965,written,"[61, 52, 64]",L1 L2 L3 L4 L5 T12,,MASK_OVERLAP TRUNCATED VOLUME_OUTLIER,train
+s1966,totalseg,train,s1966,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1967,totalseg,train,s1967,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1968,totalseg,train,s1968,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1969,totalseg,train,s1969,written,"[87, 92, 177]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP MULTI_CC,train
+s1970,totalseg,train,s1970,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1971,totalseg,train,s1971,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1972,totalseg,train,s1972,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1973,totalseg,train,s1973,written,"[90, 83, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1974,totalseg,train,s1974,written,"[114, 119, 231]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1975,totalseg,train,s1975,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1976,totalseg,train,s1976,written,"[49, 54, 136]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s1977,totalseg,train,s1977,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1978,totalseg,train,s1978,written,"[91, 94, 213]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1979,totalseg,train,s1979,written,"[89, 89, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1980,totalseg,train,s1980,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1981,totalseg,train,s1981,written,"[91, 93, 187]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1982,totalseg,train,s1982,written,"[84, 99, 195]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1983,totalseg,train,s1983,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1984,totalseg,train,s1984,written,"[130, 129, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1985,totalseg,train,s1985,written,"[90, 91, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1986,totalseg,train,s1986,written,"[87, 88, 197]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s1987,totalseg,train,s1987,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1988,totalseg,train,s1988,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1989,totalseg,train,s1989,written,"[91, 88, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1990,totalseg,train,s1990,written,"[90, 86, 179]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1991,totalseg,train,s1991,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s1992,totalseg,train,s1992,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1993,totalseg,train,s1993,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s1994,totalseg,train,s1994,written,"[92, 82, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s1995,totalseg,train,s1995,written,"[107, 97, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1996,totalseg,train,s1996,written,"[92, 80, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s1998,totalseg,train,s1998,written,"[64, 53, 108]",L1 L2 L3 L4 L5 T12 sacrum,,VOLUME_OUTLIER,train
+s1999,totalseg,train,s1999,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2000,totalseg,train,s2000,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2001,totalseg,train,s2001,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2002,totalseg,train,s2002,written,"[68, 52, 145]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2003,totalseg,train,s2003,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2004,totalseg,train,s2004,written,"[88, 97, 176]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2005,totalseg,train,s2005,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2006,totalseg,train,s2006,written,"[93, 85, 170]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2007,totalseg,train,s2007,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2008,totalseg,train,s2008,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2009,totalseg,train,s2009,written,"[91, 91, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2010,totalseg,train,s2010,written,"[103, 97, 199]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2011,totalseg,train,s2011,written,"[90, 82, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2012,totalseg,train,s2012,written,"[90, 84, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2013,totalseg,train,s2013,written,"[86, 90, 175]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2014,totalseg,train,s2014,written,"[88, 86, 180]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s2015,totalseg,train,s2015,written,"[87, 86, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2017,totalseg,train,s2017,written,"[45, 42, 45]",L2 L3,,FRAGMENT,excluded: FRAGMENT
+s2018,totalseg,train,s2018,written,"[87, 90, 208]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2019,totalseg,train,s2019,written,"[91, 85, 205]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2020,totalseg,train,s2020,written,"[35, 34, 16]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s2021,totalseg,train,s2021,written,"[88, 82, 181]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2022,totalseg,train,s2022,written,"[87, 86, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2023,totalseg,train,s2023,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2024,totalseg,train,s2024,written,"[84, 85, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2025,totalseg,train,s2025,written,"[91, 88, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2026,totalseg,train,s2026,written,"[51, 44, 50]",L1 L2 L3 T12,,MASK_OVERLAP TRUNCATED MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s2027,totalseg,train,s2027,written,"[91, 76, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2028,totalseg,train,s2028,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2029,totalseg,train,s2029,written,"[86, 79, 179]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2030,totalseg,train,s2030,written,"[85, 95, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2031,totalseg,train,s2031,written,"[88, 73, 191]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2032,totalseg,train,s2032,written,"[90, 91, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s2033,totalseg,train,s2033,written,"[97, 88, 164]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2034,totalseg,train,s2034,written,"[92, 94, 212]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2035,totalseg,train,s2035,written,"[102, 81, 184]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2037,totalseg,train,s2037,written,"[91, 88, 196]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2038,totalseg,train,s2038,written,"[93, 97, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2039,totalseg,train,s2039,written,"[92, 91, 178]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2041,totalseg,train,s2041,written,"[69, 78, 55]",L1 L2 T12,,TRUNCATED,train
+s2042,totalseg,train,s2042,written,"[94, 85, 200]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2043,totalseg,train,s2043,written,"[87, 87, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2044,totalseg,train,s2044,written,"[85, 88, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2045,totalseg,train,s2045,written,"[85, 82, 199]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s2046,totalseg,train,s2046,written,"[91, 91, 198]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2047,totalseg,train,s2047,written,"[93, 85, 186]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP,train
+s2049,totalseg,train,s2049,written,"[65, 63, 121]",L1 L2 L3 L4 L5 T12 sacrum,,,validation
+s2050,totalseg,train,s2050,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2051,totalseg,train,s2051,written,"[48, 50, 30]",L1 T12,,MASK_OVERLAP TRUNCATED,train
+s2052,totalseg,train,s2052,written,"[88, 85, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2053,totalseg,train,s2053,written,"[91, 87, 218]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2054,totalseg,train,s2054,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2055,totalseg,train,s2055,written,"[88, 92, 193]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2056,totalseg,train,s2056,written,"[89, 94, 197]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2057,totalseg,train,s2057,written,"[88, 95, 190]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2058,totalseg,train,s2058,written,"[94, 94, 196]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2059,totalseg,train,s2059,written,"[91, 88, 213]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2061,totalseg,train,s2061,written,"[92, 87, 174]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2062,totalseg,train,s2062,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2063,totalseg,train,s2063,written,"[93, 80, 194]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2064,totalseg,train,s2064,written,"[92, 88, 179]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s2065,totalseg,train,s2065,written,"[49, 52, 82]",L1 L2 L3 L4 T12 sacrum,,MASK_OVERLAP VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s2066,totalseg,train,s2066,written,"[91, 88, 181]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2067,totalseg,train,s2067,written,"[94, 91, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2068,totalseg,train,s2068,written,"[85, 92, 187]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP,train
+s2069,totalseg,train,s2069,written,"[100, 87, 200]",L1 L2 L3 L4 L5 T12 sacrum,,METAL MASK_OVERLAP MULTI_CC,train
+s2070,totalseg,train,s2070,written,"[90, 82, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2071,totalseg,train,s2071,written,"[91, 79, 183]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2072,totalseg,train,s2072,written,"[59, 61, 34]",L1 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s2074,totalseg,train,s2074,written,"[92, 85, 203]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation
+s2075,totalseg,train,s2075,written,"[66, 60, 134]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV,train
+s2076,totalseg,train,s2076,written,"[72, 64, 127]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2077,totalseg,train,s2077,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2078,totalseg,train,s2078,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2079,totalseg,train,s2079,written,"[41, 40, 48]",L1 L2 L3 L4,,MULTI_CC FRAGMENT,excluded: FRAGMENT
+s2080,totalseg,train,s2080,written,"[72, 55, 148]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2082,totalseg,train,s2082,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2083,totalseg,train,s2083,written,"[45, 41, 60]",L1 L2 L3 L4 T12,,MULTI_CC VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s2084,totalseg,train,s2084,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2085,totalseg,train,s2085,written,"[52, 58, 40]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s2086,totalseg,train,s2086,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2087,totalseg,train,s2087,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2088,totalseg,train,s2088,written,"[58, 62, 39]",L1 L2 L3 T12,,TRUNCATED VOLUME_OUTLIER FRAGMENT,excluded: FRAGMENT
+s2089,totalseg,train,s2089,written,"[53, 59, 40]",L1 T12,,TRUNCATED,train
+s2090,totalseg,train,s2090,written,"[76, 72, 151]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2091,totalseg,train,s2091,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2092,totalseg,train,s2092,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2093,totalseg,train,s2093,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2094,totalseg,train,s2094,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2095,totalseg,train,s2095,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2096,totalseg,train,s2096,written,"[73, 72, 155]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2097,totalseg,train,s2097,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2098,totalseg,train,s2098,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2099,totalseg,train,s2099,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2100,totalseg,train,s2100,written,"[48, 52, 27]",L1 T12,,TRUNCATED FRAGMENT,excluded: FRAGMENT
+s2101,totalseg,train,s2101,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2102,totalseg,train,s2102,written,"[71, 56, 126]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2103,totalseg,train,s2103,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2104,totalseg,train,s2104,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2105,totalseg,train,s2105,written,"[61, 61, 121]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2106,totalseg,train,s2106,written,"[64, 61, 123]",L1 L2 L3 L4 L5 T12 sacrum,,,train
+s2107,totalseg,train,s2107,written,"[79, 82, 91]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED,train
+s2108,totalseg,train,s2108,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2109,totalseg,train,s2109,written,"[79, 82, 91]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED,train
+s2110,totalseg,train,s2110,written,"[79, 82, 91]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED,train
+s2111,totalseg,train,s2111,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2112,totalseg,train,s2112,written,"[73, 82, 73]",L1 L2 L3 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s2113,totalseg,train,s2113,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2114,totalseg,train,s2114,written,"[85, 81, 121]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s2115,totalseg,train,s2115,written,"[82, 87, 189]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2116,totalseg,train,s2116,skipped_no_spine,,,,PAD_OUTSIDE_FOV NO_LUMBAR,excluded: skipped_no_spine
+s2117,totalseg,train,s2117,written,"[70, 76, 57]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED,validation
+s2118,totalseg,train,s2118,written,"[88, 79, 88]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s2120,totalseg,train,s2120,written,"[75, 79, 80]",L1 L2 L3 L4 T12,,PAD_OUTSIDE_FOV TRUNCATED FRAGMENT,excluded: FRAGMENT
+s2121,totalseg,train,s2121,written,"[42, 21, 22]",T12,,NO_LUMBAR,excluded: NO_LUMBAR
+s2122,totalseg,train,s2122,written,"[76, 76, 90]",L1 L2 L3 L4 T12,,TRUNCATED,train
+s2124,totalseg,train,s2124,written,"[75, 79, 80]",L1 L2 L3 L4 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED MULTI_CC,validation
+s2125,totalseg,train,s2125,written,"[89, 89, 202]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2126,totalseg,train,s2126,written,"[91, 89, 187]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP,train
+s2127,totalseg,train,s2127,written,"[88, 76, 121]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2128,totalseg,train,s2128,written,"[84, 84, 115]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP TRUNCATED,train
+s2129,totalseg,train,s2129,written,"[77, 77, 87]",L1 L2 L3 L4 L5 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s2130,totalseg,train,s2130,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2131,totalseg,train,s2131,written,"[86, 91, 106]",L1 L2 L3 L4 L5 T12,,TRUNCATED MULTI_CC,validation
+s2132,totalseg,train,s2132,skipped_no_spine,,,,NO_LUMBAR,excluded: skipped_no_spine
+s2134,totalseg,train,s2134,written,"[91, 91, 168]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,train
+s2135,totalseg,train,s2135,written,"[87, 89, 119]",L1 L2 L3 L4 L5 T12 sacrum,,PAD_OUTSIDE_FOV MASK_OVERLAP TRUNCATED MULTI_CC,train
+s2136,totalseg,train,s2136,written,"[77, 81, 64]",L1 L2 T12,,PAD_OUTSIDE_FOV TRUNCATED,train
+s2138,totalseg,train,s2138,written,"[67, 74, 70]",L1 L2 L3 T12,,TRUNCATED,train
+s2140,totalseg,train,s2140,written,"[88, 87, 118]",L1 L2 L3 L4 L5 T12 sacrum,,MASK_OVERLAP,validation

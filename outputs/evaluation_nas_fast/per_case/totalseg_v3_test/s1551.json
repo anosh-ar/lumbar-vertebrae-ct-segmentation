@@ -1,0 +1,115 @@
+{
+ "case_id": "s1551",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1551",
+ "flags": "TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L4": {
+   "gt_ml": 7.02,
+   "pred_ml": 3.13,
+   "dice": 0.5678191489361702,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.1401129943502825,
+   "dice_ceiling": 0.8534798534798534,
+   "truncated": true,
+   "fragment": false
+  },
+  "L5": {
+   "gt_ml": 13.95,
+   "pred_ml": 16.88,
+   "dice": 0.6772498357784104,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0017095843573031308,
+   "dice_ceiling": 0.8488063660477454,
+   "truncated": false,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L1",
+  "L2",
+  "L3"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    47.1,
+    -26.4,
+    -100.25
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    -66.05,
+    -24.76,
+    -112.72
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    -75.21,
+    -19.76,
+    -161.54
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    -17.58,
+    -6.77,
+    -4.56
+   ],
+   "gt_body": [
+    -20.11,
+    -15.93,
+    -4.5
+   ],
+   "gt_whole": [
+    -20.11,
+    -15.93,
+    -4.5
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L5": {
+   "pred_body": [
+    -17.95,
+    -12.3,
+    -23.12
+   ],
+   "gt_body": [
+    -18.3,
+    -12.49,
+    -22.06
+   ],
+   "gt_whole": [
+    -17.49,
+    -18.93,
+    -19.87
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  }
+ },
+ "seconds": 1.2,
+ "model_spacing_mm": 3.0
+}

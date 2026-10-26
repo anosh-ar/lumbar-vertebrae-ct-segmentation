@@ -1,0 +1,115 @@
+{
+ "case_id": "s0673",
+ "source": "totalseg_v3_test",
+ "subject_id": "s0673",
+ "flags": "METAL MASK_OVERLAP TRUNCATED MULTI_CC",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L4": {
+   "gt_ml": 17.39,
+   "pred_ml": 5.89,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.8884529147982063,
+   "truncated": true,
+   "fragment": false
+  },
+  "L5": {
+   "gt_ml": 63.65,
+   "pred_ml": 56.21,
+   "dice": 0.8521709748268289,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 2.1352465142100656e-05,
+   "dice_ceiling": 0.9023356813728086,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L1",
+  "L2",
+  "L3"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    88.88,
+    141.89,
+    -949.85
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    114.38,
+    124.77,
+    -1001.71
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L3": {
+   "pred_body": [
+    -71.7,
+    128.38,
+    -935.67
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    -55.29,
+    147.01,
+    -963.96
+   ],
+   "gt_body": [
+    4.58,
+    119.44,
+    -808.46
+   ],
+   "gt_whole": [
+    4.58,
+    119.44,
+    -808.46
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L5": {
+   "pred_body": [
+    5.15,
+    124.81,
+    -834.68
+   ],
+   "gt_body": [
+    5.04,
+    125.29,
+    -834.57
+   ],
+   "gt_whole": [
+    5.39,
+    114.49,
+    -830.99
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  }
+ },
+ "seconds": 2.1,
+ "model_spacing_mm": 3.0
+}

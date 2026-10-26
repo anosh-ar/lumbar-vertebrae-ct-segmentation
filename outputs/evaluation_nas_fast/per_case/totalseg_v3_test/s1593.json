@@ -1,0 +1,115 @@
+{
+ "case_id": "s1593",
+ "source": "totalseg_v3_test",
+ "subject_id": "s1593",
+ "flags": "MULTI_CC FRAGMENT",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L2": {
+   "gt_ml": 1.05,
+   "pred_ml": 2.08,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.1794871794871795,
+   "dice_ceiling": 0.676737160120846,
+   "truncated": false,
+   "fragment": true
+  },
+  "L3": {
+   "gt_ml": 1.89,
+   "pred_ml": 3.43,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.12922173274596183,
+   "dice_ceiling": 0.7203867848509267,
+   "truncated": false,
+   "fragment": true
+  }
+ },
+ "false_positive_levels": [
+  "L1",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -22.22,
+    -74.08,
+    -350.04
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L2": {
+   "pred_body": [
+    2.32,
+    -57.44,
+    -232.57
+   ],
+   "gt_body": [
+    0.42,
+    -67.69,
+    -250.09
+   ],
+   "gt_whole": [
+    0.42,
+    -67.69,
+    -250.09
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    0.75,
+    -56.06,
+    -246.06
+   ],
+   "gt_body": [
+    0.42,
+    -58.7,
+    -264.82
+   ],
+   "gt_whole": [
+    0.42,
+    -58.7,
+    -264.82
+   ],
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L4": {
+   "pred_body": [
+    -1.11,
+    -49.11,
+    -263.15
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    1.17,
+    -58.17,
+    -276.05
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 1.7,
+ "model_spacing_mm": 3.0
+}

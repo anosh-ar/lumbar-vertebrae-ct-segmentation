@@ -1,0 +1,6 @@
+{
+  "spacing_mm": 3.0,
+  "n_stages": 4,
+  "base_width": 32,
+  "blocks": "light"
+}

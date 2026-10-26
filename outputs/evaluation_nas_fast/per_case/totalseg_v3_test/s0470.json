@@ -1,0 +1,115 @@
+{
+ "case_id": "s0470",
+ "source": "totalseg_v3_test",
+ "subject_id": "s0470",
+ "flags": "TRUNCATED",
+ "gt_has_L6": false,
+ "gt_has_T13": false,
+ "levels": {
+  "L1": {
+   "gt_ml": 61.68,
+   "pred_ml": 23.73,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.012597041160099605,
+   "dice_ceiling": 0.9079798311958786,
+   "truncated": true,
+   "fragment": false
+  },
+  "L2": {
+   "gt_ml": 13.2,
+   "pred_ml": 30.48,
+   "dice": 0.0,
+   "dice_if_pred_one_level_up": 0.0,
+   "dice_if_pred_one_level_down": 0.0,
+   "dice_ceiling": 0.8880698880698881,
+   "truncated": true,
+   "fragment": false
+  }
+ },
+ "false_positive_levels": [
+  "L3",
+  "L4",
+  "L5"
+ ],
+ "centroids": {
+  "L1": {
+   "pred_body": [
+    -14.99,
+    -178.3,
+    -281.65
+   ],
+   "gt_body": [
+    -1.51,
+    -168.4,
+    -343.05
+   ],
+   "gt_whole": [
+    -1.58,
+    -178.74,
+    -345.43
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "eroded_body"
+  },
+  "L2": {
+   "pred_body": [
+    -4.73,
+    -176.37,
+    -310.88
+   ],
+   "gt_body": [
+    0.36,
+    -162.17,
+    -365.78
+   ],
+   "gt_whole": [
+    0.36,
+    -162.17,
+    -365.78
+   ],
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": "whole_vertebra_fallback"
+  },
+  "L3": {
+   "pred_body": [
+    2.88,
+    -167.68,
+    -342.45
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "eroded_body",
+   "gt_method": null
+  },
+  "L4": {
+   "pred_body": [
+    -17.41,
+    -61.53,
+    -283.54
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  },
+  "L5": {
+   "pred_body": [
+    18.76,
+    -112.76,
+    -281.92
+   ],
+   "gt_body": null,
+   "gt_whole": null,
+   "verse_point": null,
+   "pred_method": "whole_vertebra_fallback",
+   "gt_method": null
+  }
+ },
+ "seconds": 2.9,
+ "model_spacing_mm": 3.0
+}

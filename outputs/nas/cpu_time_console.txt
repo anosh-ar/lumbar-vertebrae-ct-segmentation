@@ -1,0 +1,20 @@
+[cpu time] 18 architectures to measure, 8 threads, CTs ['s1446', 'sub-verse020', 'sub-verse053'], 1 run(s) each
+   1/18 1.5mm_4stages_w8_light      5.2 s/CT     0.6 M params      100 GFLOPs/patch  peak RAM 4.5 GB
+   2/18 1.5mm_4stages_w8_M          5.4 s/CT     1.6 M params      151 GFLOPs/patch  peak RAM 4.1 GB
+   3/18 1.5mm_4stages_w16_light     8.8 s/CT     2.4 M params      395 GFLOPs/patch  peak RAM 5.1 GB
+   4/18 1.5mm_4stages_w16_M         9.6 s/CT     6.5 M params      598 GFLOPs/patch  peak RAM 5.6 GB
+   5/18 1.5mm_4stages_w32_light    17.9 s/CT     9.5 M params     1573 GFLOPs/patch  peak RAM 9.9 GB
+   6/18 1.5mm_4stages_w32_M        21.2 s/CT    25.9 M params     2384 GFLOPs/patch  peak RAM 9.9 GB
+   7/18 1.5mm_5stages_w8_light      4.8 s/CT     2.4 M params      106 GFLOPs/patch  peak RAM 4.2 GB
+   8/18 1.5mm_5stages_w8_M          5.2 s/CT     7.0 M params      163 GFLOPs/patch  peak RAM 4.1 GB
+   9/18 1.5mm_5stages_w16_light     8.3 s/CT     9.8 M params      419 GFLOPs/patch  peak RAM 5.7 GB
+   10/18 1.5mm_5stages_w16_M         9.7 s/CT    28.0 M params      648 GFLOPs/patch  peak RAM 5.8 GB
+   11/18 1.5mm_5stages_w32_light    17.2 s/CT    24.3 M params     1643 GFLOPs/patch  peak RAM 10.0 GB
+   12/18 1.5mm_5stages_w32_M        20.9 s/CT    62.8 M params     2495 GFLOPs/patch  peak RAM 10.1 GB
+   13/18 1.5mm_6stages_w8_light      4.8 s/CT     9.8 M params      109 GFLOPs/patch  peak RAM 4.2 GB
+   14/18 1.5mm_6stages_w8_M          5.4 s/CT    28.5 M params      169 GFLOPs/patch  peak RAM 4.8 GB
+   15/18 1.5mm_6stages_w16_light     8.4 s/CT    24.6 M params      428 GFLOPs/patch  peak RAM 5.8 GB
+   16/18 1.5mm_6stages_w16_M         9.5 s/CT    64.9 M params      662 GFLOPs/patch  peak RAM 6.4 GB
+   17/18 1.5mm_6stages_w32_light    16.9 s/CT    41.7 M params     1656 GFLOPs/patch  peak RAM 10.1 GB
+   18/18 1.5mm_6stages_w32_M        21.0 s/CT   102.4 M params     2512 GFLOPs/patch  peak RAM 10.3 GB
+[cpu time] table -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas\cpu_time_per_architecture.csv

@@ -1,0 +1,14 @@
+01:48:15 START cpu_time: scripts/11_measure_cpu_time_of_architectures.py --spacings 1.5 3
+02:01:09 END cpu_time: exit code 0
+02:01:09 START search: scripts/12_search_architectures_with_nsga2.py --trials 12 --steps 1500 --validation-cases 20 --max-hours 2.0
+04:05:04 END search: exit code 0
+04:05:04 START pareto: scripts/13_plot_pareto_front.py
+04:05:10 END pareto: exit code 0
+04:05:10 retrain 3mm_4stages_w32_light: 0.081 s/step in the search -> 11000 steps
+04:05:10 START retrain: scripts/04_train_lumbar_segmentation_model.py --architecture {"spacing_mm": 3.0, "n_stages": 4, "base_width": 32, "blocks": "light"} --same-cases-as ../outputs/training/resenc_m_1.5mm/training_cases.csv --steps 11000 --validate-every 2200 --max-hours 1.83 --run nas_fast
+04:20:38 END retrain: exit code 0
+04:20:38 START evaluate: scripts/06_evaluate_on_test_sets.py --weights D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas\weights\3mm_4stages_w32_light.pt --tag nas_fast
+04:32:15 END evaluate: exit code 0
+04:32:15 START compare: scripts/08_compare_two_evaluations.py --tags 1.5mm nas_fast --names deliverable_1.5mm nas_fast
+04:32:27 END compare: exit code 0
+04:32:27 ALL DONE

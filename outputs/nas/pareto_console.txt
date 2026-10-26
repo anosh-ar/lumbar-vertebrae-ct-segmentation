@@ -1,0 +1,20 @@
+# Architecture search: every evaluated architecture
+
+Dice: validation Dice L1-L5 on the original CT grid after the short search training.
+Baseline: 1.5mm_6stages_w32_M. Chosen for full retraining: **3mm_4stages_w32_light** (rule: no faster model within the margin; fallback: best Dice among the Pareto points at least 2x faster than the baseline).
+
+| architecture | dice_mean | cpu_seconds_per_case | parameters_millions | peak_ram_gb | gflops_per_patch | training_minutes | pareto |
+|---|---|---|---|---|---|---|---|
+| 3mm_5stages_w8_light | 0.0 | 0.972 | 2.443 | 1.953 | 11.347 | 1.897 | True |
+| 3mm_4stages_w8_light | 0.0 | 1.051 | 0.597 | 1.24 | 10.695 | 1.594 | False |
+| 3mm_4stages_w8_M | 0.0 | 1.062 | 1.622 | 1.295 | 16.131 | 2.108 | False |
+| 3mm_4stages_w32_light | 0.433 | 3.083 | 9.521 | 1.916 | 168.485 | 2.018 | True |
+| 3mm_4stages_w32_M | 0.197 | 3.809 | 25.897 | 1.976 | 255.458 | 2.758 | False |
+| 1.5mm_5stages_w8_M | 0.0 | 5.193 | 7.01 | 4.092 | 162.978 | 7.46 | False |
+| 1.5mm_4stages_w16_light | 0.0 | 8.783 | 2.383 | 5.108 | 395.187 | 7.6 | False |
+| 1.5mm_5stages_w16_M | 0.046 | 9.704 | 28.019 | 5.776 | 647.802 | 9.618 | False |
+| 1.5mm_5stages_w32_light | 0.219 | 17.194 | 24.311 | 9.978 | 1643.411 | 14.3 | False |
+| 1.5mm_5stages_w32_M | 0.529 | 20.876 | 62.813 | 10.094 | 2494.796 | 18.985 | True |
+| 1.5mm_6stages_w32_M | 0.557 | 20.974 | 102.355 | 10.296 | 2512.32 | 19.349 | True |
+| 1.5mm_4stages_w32_M | 0.24 | 21.161 | 25.897 | 9.943 | 2384.277 | 18.257 | False |
+

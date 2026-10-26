@@ -1,0 +1,129 @@
+[search] 902 training cases; Dice on 20 validation CTs (original grid)
+[I 2026-10-26 02:01:30,232] A new study created in RDB with name: lumbar_cpu_nas
+   trial 0: 1.5mm_6stages_w32_M  patch (128, 128, 224)  CPU 21.0 s/CT
+      step 200/1500  loss 1.1764  2.6 min
+      step 400/1500  loss 1.0223  5.2 min
+      step 600/1500  loss 0.9610  7.7 min
+      step 800/1500  loss 0.9202  10.3 min
+      step 1000/1500  loss 0.8157  12.9 min
+      step 1200/1500  loss 0.6749  15.5 min
+      step 1400/1500  loss 0.5985  18.1 min
+   trial 0: 1.5mm_6stages_w32_M  Dice 0.557  CPU 21.0 s/CT  (19.3 min training)
+[I 2026-10-26 02:24:26,763] Trial 0 finished with values: [0.5573089001919224, 20.974033900012728] and parameters: {'spacing_mm': 1.5, 'n_stages': 6, 'base_width': 32, 'blocks': 'M'}.
+   trial 1: 3mm_4stages_w32_light  patch (64, 64, 96)  CPU 3.1 s/CT
+      step 200/1500  loss 1.1949  0.3 min
+      step 400/1500  loss 1.0581  0.5 min
+      step 600/1500  loss 0.9831  0.8 min
+      step 800/1500  loss 0.9350  1.1 min
+      step 1000/1500  loss 0.8193  1.3 min
+      step 1200/1500  loss 0.7005  1.6 min
+      step 1400/1500  loss 0.6339  1.9 min
+   trial 1: 3mm_4stages_w32_light  Dice 0.433  CPU 3.1 s/CT  (2.0 min training)
+[I 2026-10-26 02:27:13,509] Trial 1 finished with values: [0.4326805502583961, 3.0830003999872133] and parameters: {'spacing_mm': 3.0, 'n_stages': 4, 'base_width': 32, 'blocks': 'light'}.
+   trial 2: 1.5mm_5stages_w32_M  patch (128, 128, 224)  CPU 20.9 s/CT
+      step 200/1500  loss 1.1778  2.5 min
+      step 400/1500  loss 1.0270  5.1 min
+      step 600/1500  loss 0.9588  7.6 min
+      step 800/1500  loss 0.8497  10.1 min
+      step 1000/1500  loss 0.7378  12.7 min
+      step 1200/1500  loss 0.6142  15.2 min
+      step 1400/1500  loss 0.5071  17.7 min
+   trial 2: 1.5mm_5stages_w32_M  Dice 0.529  CPU 20.9 s/CT  (19.0 min training)
+[I 2026-10-26 02:48:32,834] Trial 2 finished with values: [0.529303207748403, 20.87577499996405] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 32, 'blocks': 'M'}.
+   trial 3: 1.5mm_5stages_w32_light  patch (128, 128, 224)  CPU 17.2 s/CT
+      step 200/1500  loss 1.1854  1.9 min
+      step 400/1500  loss 1.0482  3.8 min
+      step 600/1500  loss 0.9724  5.7 min
+      step 800/1500  loss 0.9450  7.6 min
+      step 1000/1500  loss 0.8823  9.5 min
+      step 1200/1500  loss 0.7728  11.4 min
+      step 1400/1500  loss 0.7109  13.3 min
+   trial 3: 1.5mm_5stages_w32_light  Dice 0.219  CPU 17.2 s/CT  (14.3 min training)
+[I 2026-10-26 03:04:53,109] Trial 3 finished with values: [0.219371240443521, 17.193731200008187] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 32, 'blocks': 'light'}.
+   trial 4: 3mm_5stages_w8_light  patch (64, 64, 96)  CPU 1.0 s/CT
+      step 200/1500  loss 1.3701  0.3 min
+      step 400/1500  loss 1.2105  0.5 min
+      step 600/1500  loss 1.1242  0.7 min
+      step 800/1500  loss 1.0637  1.0 min
+      step 1000/1500  loss 1.0216  1.3 min
+      step 1200/1500  loss 1.0033  1.5 min
+      step 1400/1500  loss 0.9993  1.8 min
+   trial 4: 3mm_5stages_w8_light  Dice 0.000  CPU 1.0 s/CT  (1.9 min training)
+[I 2026-10-26 03:07:14,391] Trial 4 finished with values: [0.0, 0.9723982000141403] and parameters: {'spacing_mm': 3.0, 'n_stages': 5, 'base_width': 8, 'blocks': 'light'}.
+   trial 5: 3mm_4stages_w8_M  patch (64, 64, 96)  CPU 1.1 s/CT
+      step 200/1500  loss 1.3783  0.3 min
+      step 400/1500  loss 1.2030  0.6 min
+      step 600/1500  loss 1.0809  0.8 min
+      step 800/1500  loss 1.0306  1.1 min
+      step 1000/1500  loss 1.0152  1.4 min
+      step 1200/1500  loss 0.9955  1.7 min
+      step 1400/1500  loss 0.9904  2.0 min
+   trial 5: 3mm_4stages_w8_M  Dice 0.000  CPU 1.1 s/CT  (2.1 min training)
+[I 2026-10-26 03:09:48,409] Trial 5 finished with values: [0.0, 1.0621187000069767] and parameters: {'spacing_mm': 3.0, 'n_stages': 4, 'base_width': 8, 'blocks': 'M'}.
+   trial 6: 1.5mm_4stages_w16_light  patch (128, 128, 224)  CPU 8.8 s/CT
+      step 200/1500  loss 1.3018  1.0 min
+      step 400/1500  loss 1.1516  2.0 min
+      step 600/1500  loss 1.1085  3.0 min
+      step 800/1500  loss 1.0493  4.1 min
+      step 1000/1500  loss 0.9896  5.1 min
+      step 1200/1500  loss 0.9626  6.1 min
+      step 1400/1500  loss 0.9584  7.1 min
+   trial 6: 1.5mm_4stages_w16_light  Dice 0.000  CPU 8.8 s/CT  (7.6 min training)
+[I 2026-10-26 03:18:57,883] Trial 6 finished with values: [0.0, 8.782560599967837] and parameters: {'spacing_mm': 1.5, 'n_stages': 4, 'base_width': 16, 'blocks': 'light'}.
+   trial 7: 3mm_4stages_w8_light  patch (64, 64, 96)  CPU 1.1 s/CT
+      step 200/1500  loss 1.3032  0.2 min
+      step 400/1500  loss 1.1573  0.4 min
+      step 600/1500  loss 1.0543  0.6 min
+      step 800/1500  loss 1.0052  0.9 min
+      step 1000/1500  loss 0.9948  1.1 min
+      step 1200/1500  loss 0.9825  1.3 min
+      step 1400/1500  loss 0.9802  1.5 min
+   trial 7: 3mm_4stages_w8_light  Dice 0.000  CPU 1.1 s/CT  (1.6 min training)
+[I 2026-10-26 03:21:02,729] Trial 7 finished with values: [0.0, 1.0514468999463134] and parameters: {'spacing_mm': 3.0, 'n_stages': 4, 'base_width': 8, 'blocks': 'light'}.
+   trial 8: 3mm_4stages_w32_M  patch (64, 64, 96)  CPU 3.8 s/CT
+      step 200/1500  loss 1.1913  0.4 min
+      step 400/1500  loss 1.0287  0.7 min
+      step 600/1500  loss 0.9838  1.1 min
+      step 800/1500  loss 0.9630  1.5 min
+      step 1000/1500  loss 0.9161  1.8 min
+      step 1200/1500  loss 0.7923  2.2 min
+      step 1400/1500  loss 0.7187  2.6 min
+   trial 8: 3mm_4stages_w32_M  Dice 0.197  CPU 3.8 s/CT  (2.8 min training)
+[I 2026-10-26 03:24:20,633] Trial 8 finished with values: [0.19665303193513736, 3.809196000045631] and parameters: {'spacing_mm': 3.0, 'n_stages': 4, 'base_width': 32, 'blocks': 'M'}.
+   trial 9: 1.5mm_5stages_w32_light already evaluated (trial 3)
+[I 2026-10-26 03:24:20,824] Trial 9 finished with values: [0.219371240443521, 17.193731200008187] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 32, 'blocks': 'light'}.
+   trial 10: 1.5mm_4stages_w32_M  patch (128, 128, 224)  CPU 21.2 s/CT
+      step 200/1500  loss 1.1921  2.4 min
+      step 400/1500  loss 1.0274  4.9 min
+      step 600/1500  loss 0.9634  7.3 min
+      step 800/1500  loss 0.9273  9.7 min
+      step 1000/1500  loss 0.8168  12.2 min
+      step 1200/1500  loss 0.7120  14.6 min
+      step 1400/1500  loss 0.6433  17.0 min
+   trial 10: 1.5mm_4stages_w32_M  Dice 0.240  CPU 21.2 s/CT  (18.3 min training)
+[I 2026-10-26 03:44:54,753] Trial 10 finished with values: [0.24011621366601485, 21.16108399996301] and parameters: {'spacing_mm': 1.5, 'n_stages': 4, 'base_width': 32, 'blocks': 'M'}.
+   trial 11: 1.5mm_5stages_w8_M  patch (128, 128, 224)  CPU 5.2 s/CT
+      step 200/1500  loss 1.3674  1.0 min
+      step 400/1500  loss 1.2169  2.0 min
+      step 600/1500  loss 1.1202  3.0 min
+      step 800/1500  loss 1.0488  4.0 min
+      step 1000/1500  loss 1.0007  5.0 min
+      step 1200/1500  loss 0.9723  6.0 min
+      step 1400/1500  loss 0.9687  7.0 min
+   trial 11: 1.5mm_5stages_w8_M  Dice 0.000  CPU 5.2 s/CT  (7.5 min training)
+[I 2026-10-26 03:53:49,901] Trial 11 finished with values: [0.0, 5.193431599996984] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 8, 'blocks': 'M'}.
+   trial 12: 1.5mm_5stages_w32_M already evaluated (trial 2)
+[I 2026-10-26 03:53:50,066] Trial 12 finished with values: [0.529303207748403, 20.87577499996405] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 32, 'blocks': 'M'}.
+   trial 13: 3mm_4stages_w8_M already evaluated (trial 5)
+[I 2026-10-26 03:53:50,236] Trial 13 finished with values: [0.0, 1.0621187000069767] and parameters: {'spacing_mm': 3.0, 'n_stages': 4, 'base_width': 8, 'blocks': 'M'}.
+   trial 14: 1.5mm_5stages_w16_M  patch (128, 128, 224)  CPU 9.7 s/CT
+      step 200/1500  loss 1.2788  1.3 min
+      step 400/1500  loss 1.1483  2.6 min
+      step 600/1500  loss 1.0603  3.9 min
+      step 800/1500  loss 0.9934  5.1 min
+      step 1000/1500  loss 0.9742  6.4 min
+      step 1200/1500  loss 0.9585  7.7 min
+      step 1400/1500  loss 0.9568  9.0 min
+   trial 14: 1.5mm_5stages_w16_M  Dice 0.046  CPU 9.7 s/CT  (9.6 min training)
+[I 2026-10-26 04:05:02,565] Trial 14 finished with values: [0.04622509875434239, 9.70444669999415] and parameters: {'spacing_mm': 1.5, 'n_stages': 5, 'base_width': 16, 'blocks': 'M'}.
+[search] 12 architectures evaluated in 2.06 h; table -> D:\Users\za76buso\temp\lumbar-vertebrae-ct-segmentation\outputs\nas\search_trials.csv

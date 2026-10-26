@@ -1,8 +1,8 @@
-scan,2 mm model (s),1.5 mm model (s)
-s0013,26.0,64.0
-s0291,38.0,96.0
-s1446,9.0,22.0
-sub-verse020,18.0,45.0
-sub-verse053,5.0,12.0
-sub-verse089,5.0,7.0
-median,13.5,33.5
+scan,2 mm model (s),1.5 mm model (s),3 mm NAS model (s)
+s0013,26.0,64.0,8.0
+s0291,38.0,96.0,8.0
+s1446,9.0,22.0,3.0
+sub-verse020,18.0,45.0,4.0
+sub-verse053,5.0,12.0,1.0
+sub-verse089,5.0,7.0,1.0
+median,13.5,33.5,3.5

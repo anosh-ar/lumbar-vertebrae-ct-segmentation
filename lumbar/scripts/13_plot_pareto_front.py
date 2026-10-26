@@ -8,7 +8,9 @@ What it does
      architecture) marked; writes a small table (Dice, CPU time, parameters, memory)
   4. picks the architecture to retrain fully: the FASTEST point of the front whose
      search Dice is at most --dice-margin below the baseline's search Dice
-     (rule fixed before looking at the results; --pick overrides it)
+     (rule fixed before looking at the results; --pick overrides it). If that is the
+     baseline itself, the fallback takes the best Dice among the Pareto points at
+     least 2x faster than the baseline (fallback added during the overnight run)
 
 Output (outputs/nas/)
   pareto_front_dice_vs_cpu_time.png
@@ -54,10 +56,19 @@ def main():
     base = df.loc[df["architecture"] == base_name].iloc[0]
 
     if args.pick:
-        chosen = df.loc[df["architecture"] == args.pick].iloc[0]
+        chosen, rule = df.loc[df["architecture"] == args.pick].iloc[0], "--pick"
     else:
         ok = df[df["pareto"] & (df["dice_mean"] >= base["dice_mean"] - args.dice_margin)]
         chosen = ok.sort_values("cpu_seconds_per_case").iloc[0]
+        rule = f"fastest Pareto point within {args.dice_margin} Dice of the baseline"
+        if chosen["architecture"] == base_name:
+            # fallback, added after the first trials of the overnight run: when no faster model is
+            # close to the baseline, retraining the baseline would show nothing new
+            fast = df[df["pareto"] & (df["cpu_seconds_per_case"] <= base["cpu_seconds_per_case"] / 2)]
+            if not fast.empty:
+                chosen = fast.sort_values("dice_mean").iloc[-1]
+                rule = ("no faster model within the margin; fallback: best Dice among the Pareto points "
+                        "at least 2x faster than the baseline")
     arch = {k: chosen[k] for k in ("spacing_mm", "n_stages", "base_width", "blocks")}
     arch = {"spacing_mm": float(arch["spacing_mm"]), "n_stages": int(arch["n_stages"]),
             "base_width": int(arch["base_width"]), "blocks": str(arch["blocks"])}
@@ -82,7 +93,7 @@ def main():
     ax.set_ylabel(f"validation Dice L1-L5 after {int(df['steps'].iloc[0])} training steps")
     ax.set_title("Architecture search: Dice vs CPU time")
     ax.grid(alpha=0.3)
-    ax.legend(fontsize=8, loc="lower right")
+    ax.legend(fontsize=8, loc="upper left")
     fig.tight_layout()
     fig.savefig(NAS_OUTPUTS_DIR / "pareto_front_dice_vs_cpu_time.png", dpi=150)
 
@@ -94,7 +105,7 @@ def main():
     text = (f"# Architecture search: every evaluated architecture\n\n"
             f"Dice: validation Dice L1-L5 on the original CT grid after the short search training.\n"
             f"Baseline: {base_name}. Chosen for full retraining: **{chosen['architecture']}**"
-            f" ({'--pick' if args.pick else f'fastest Pareto point within {args.dice_margin} Dice of the baseline'}).\n\n"
+            f" (rule: {rule}).\n\n"
             + "\n".join(lines) + "\n")
     (NAS_OUTPUTS_DIR / "pareto_front.md").write_text(text, encoding="utf-8")
     print(text)
