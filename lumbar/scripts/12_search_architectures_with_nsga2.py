@@ -22,18 +22,20 @@ How
   gets the stored result. The search stops after --trials different architectures
   or --max-hours.
 
-Output (outputs/nas/)
+Output (outputs/nas/, or --out-dir for another search, e.g. outputs/nas_1.5mm/)
   architecture_search.db       Optuna study (SQLite): a crashed search resumes from it
   search_trials.csv            one row per evaluated architecture: Dice per level, CPU s, size
   search_console_output.txt    when started detached (see README)
 
     python scripts/12_search_architectures_with_nsga2.py
+    python scripts/12_search_architectures_with_nsga2.py --spacings 1.5 --steps 3000 --out-dir ../outputs/nas_1.5mm
     python scripts/12_search_architectures_with_nsga2.py --trials 2 --steps 50 --validation-cases 2 --study smoke_test
 """
 
 import argparse
 import threading
 import time
+from pathlib import Path
 
 import numpy as np
 import optuna
@@ -53,8 +55,7 @@ from lumbar.sources import NAS_OUTPUTS_DIR, PROJECT_ROOT, load_cases
 from lumbar.training import (batches_in_background, choose_training_cases, dice_per_level,
                              dice_plus_cross_entropy, load_cases_into_memory)
 
-CPU_TIME_TABLE = NAS_OUTPUTS_DIR / "cpu_time_per_architecture.csv"
-TRIALS_TABLE = NAS_OUTPUTS_DIR / "search_trials.csv"
+CPU_TIME_TABLE = NAS_OUTPUTS_DIR / "cpu_time_per_architecture.csv"     # shared by every search
 DELIVERABLE_SPLIT = PROJECT_ROOT / "outputs" / "training" / "resenc_m_1.5mm" / "training_cases.csv"
 
 
@@ -128,10 +129,10 @@ def suggest_architecture(trial, spacings) -> dict:
             "blocks": trial.suggest_categorical("blocks", list(ENCODER_BLOCKS))}
 
 
-def write_trials_table(study):
+def write_trials_table(study, path):
     rows = [{"trial": t.number, **t.user_attrs, "dice_mean": t.values[0], "cpu_seconds_per_case": t.values[1]}
             for t in study.get_trials(states=(TrialState.COMPLETE,)) if "repeat_of" not in t.user_attrs]
-    pd.DataFrame(rows).to_csv(TRIALS_TABLE, index=False)
+    pd.DataFrame(rows).to_csv(path, index=False)
 
 
 def main():
@@ -146,11 +147,15 @@ def main():
     ap.add_argument("--same-cases-as", default=str(DELIVERABLE_SPLIT), help="train/validation split to use")
     ap.add_argument("--max-hours", type=float, default=10.0, help="no new trial starts after this time")
     ap.add_argument("--study", default="lumbar_cpu_nas", help="study name inside the SQLite file")
+    ap.add_argument("--out-dir", default=str(NAS_OUTPUTS_DIR),
+                    help="folder for the study, the trials table and logs (one folder per search)")
     ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    NAS_OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    trials_table = out_dir / "search_trials.csv"
     cpu_table = pd.read_csv(CPU_TIME_TABLE).set_index("architecture")
     t_start = time.time()
 
@@ -161,7 +166,7 @@ def main():
     val_cts = ValidationCTs(val_subset)
     train_data = {}                                     # voxel size -> crops in RAM, loaded when first needed
 
-    storage = f"sqlite:///{(NAS_OUTPUTS_DIR / 'architecture_search.db').as_posix()}"
+    storage = f"sqlite:///{(out_dir / 'architecture_search.db').as_posix()}"
     study = optuna.create_study(study_name=args.study, storage=storage, load_if_exists=True,
                                 directions=["maximize", "minimize"],
                                 sampler=optuna.samplers.NSGAIISampler(population_size=args.population, seed=args.seed))
@@ -210,10 +215,10 @@ def main():
             print(f"[search] time limit of {args.max_hours} h reached")
             break
         study.optimize(objective, n_trials=1)
-        write_trials_table(study)
+        write_trials_table(study, trials_table)
         attempts += 1
     print(f"[search] {len(evaluated())} architectures evaluated in {(time.time() - t_start) / 3600:.2f} h; "
-          f"table -> {TRIALS_TABLE}")
+          f"table -> {trials_table}")
 
 
 if __name__ == "__main__":

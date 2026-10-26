@@ -1,4 +1,4 @@
-"""Step 8: compare two evaluated models side by side (e.g. 2 mm vs 1.5 mm voxels).
+"""Step 8: compare two (or more) evaluated models side by side (e.g. 2 mm vs 1.5 mm voxels).
 
 What it does
   Reads the results that step 6 wrote for each model (outputs/evaluation*/ and
@@ -8,10 +8,12 @@ What it does
   and, if outputs/cpu_inference_seconds_per_scan.csv exists, the CPU time per scan.
 
 Output
-  outputs/evaluation_comparison_<a>_vs_<b>.md
+  outputs/evaluation_comparison_<a>_vs_<b>[_vs_<c>...].md
 
     python scripts/08_compare_two_evaluations.py                  # 2mm (no tag) vs 1.5mm
     python scripts/08_compare_two_evaluations.py --tags "" 1.5mm --names 2mm 1.5mm
+    python scripts/08_compare_two_evaluations.py --tags 1.5mm nas_fast nas_1.5mm \\
+        --names deliverable_1.5mm nas_fast nas_1.5mm               # three models
 """
 
 import argparse
@@ -90,26 +92,29 @@ def summarise_model(tag: str) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--tags", nargs=2, default=["", "1.5mm"], help="evaluation folder tags of the two models")
-    ap.add_argument("--names", nargs=2, default=["2mm", "1.5mm"], help="column names")
+    ap.add_argument("--tags", nargs="+", default=["", "1.5mm"],
+                    help="evaluation folder tags of the models (two or more)")
+    ap.add_argument("--names", nargs="+", default=["2mm", "1.5mm"], help="column names, one per tag")
     args = ap.parse_args()
+    if len(args.tags) < 2 or len(args.tags) != len(args.names):
+        raise SystemExit("give two or more --tags and the same number of --names")
 
-    a, b = (summarise_model(t) for t in args.tags)
-    rows = list(dict.fromkeys(k[0] for k in a))
-    L = [f"# Model comparison: {args.names[0]} vs {args.names[1]}", "",
+    models = [summarise_model(t) for t in args.tags]
+    rows = list(dict.fromkeys(k[0] for k in models[0]))
+    sets = ["TotalSeg test", "VerSe19"]
+    L = [f"# Model comparison: {' vs '.join(args.names)}", "",
          "Made by `scripts/08_compare_two_evaluations.py` from the step-6 results. Dice on the original CT grid.", "",
-         f"| | TotalSeg test {args.names[0]} | TotalSeg test {args.names[1]} | VerSe19 {args.names[0]} | VerSe19 {args.names[1]} |",
-         "|---|---|---|---|---|"]
+         "| | " + " | ".join(f"{s} {n}" for s in sets for n in args.names) + " |",
+         "|---|" + "---|" * (len(sets) * len(models))]
     for r in rows:
-        L.append(f"| {r} | {a.get((r, 'TotalSeg test'), '-')} | {b.get((r, 'TotalSeg test'), '-')} "
-                 f"| {a.get((r, 'VerSe19'), '-')} | {b.get((r, 'VerSe19'), '-')} |")
+        L.append(f"| {r} | " + " | ".join(m.get((r, s), "-") for s in sets for m in models) + " |")
     timing = OUTPUTS / "cpu_inference_seconds_per_scan.csv"
     if timing.exists():
         t = pd.read_csv(timing)
         L += ["", "CPU-only inference time per scan (same scans, same machine, seconds):", "",
               "| " + " | ".join(t.columns) + " |", "|" + "---|" * len(t.columns)]
         L += ["| " + " | ".join(str(v) for v in row) + " |" for row in t.itertuples(index=False)]
-    out = OUTPUTS / f"evaluation_comparison_{args.names[0]}_vs_{args.names[1]}.md"
+    out = OUTPUTS / f"evaluation_comparison_{'_vs_'.join(args.names)}.md"
     out.write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"[compare] -> {out}")
 
